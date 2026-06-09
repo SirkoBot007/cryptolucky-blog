@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "about": "Sobre Nosotros"
+  },
+  "hero": {
+    "title": "Guia Definitiva de Criptomonedas",
+    "subtitle": "Aprende, invierte y gana con crypto",
+    "cta": "Leer Blog"
+  },
+  "affiliate": {
+    "cta": "Jugar en BetFury",
+    "tagline": "El Casino Bitcoin Social #1",
+    "disclaimer": "Juega con responsabilidad. Solo mayores de 18."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "disclaimer": "Este sitio contiene enlaces de afiliados. El contenido es solo para fines informativos."
+  }
+}
