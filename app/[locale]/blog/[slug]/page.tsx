@@ -119,7 +119,6 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
       )}
 
       <div className="max-w-6xl mx-auto px-4 py-12 flex gap-10">
-        {/* Main content */}
         <article className="flex-1 min-w-0">
 
           {/* Breadcrumb */}
@@ -202,7 +201,6 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
 
           <BetFuryLeaderboard />
 
-          {/* Related articles */}
           {related.length > 0 && (
             <section className="mt-12">
               <h2 className="text-2xl font-bold text-white mb-6">
@@ -210,11 +208,8 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
               </h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {related.map((rel) => (
-                  <Link
-                    key={rel.id}
-                    href={`/${locale}/blog/${rel.slug}`}
-                    className="bg-slate-800 border border-slate-700 rounded-xl p-4 hover:border-amber-400 transition-colors group"
-                  >
+                  <Link key={rel.id} href={`/${locale}/blog/${rel.slug}`}
+                    className="bg-slate-800 border border-slate-700 rounded-xl p-4 hover:border-amber-400 transition-colors group">
                     <p className="text-amber-400 text-xs font-semibold uppercase mb-1">{rel.category}</p>
                     <h3 className="text-white font-bold text-sm group-hover:text-amber-400 transition-colors line-clamp-2">
                       {getTitle(rel, locale)}
