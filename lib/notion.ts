@@ -1,9 +1,14 @@
 import { Client } from '@notionhq/client';
 import { NotionToMarkdown } from 'notion-to-md';
 
-const notion = new Client({ auth: process.env.NOTION_API_KEY });
+const notion = new Client({ auth: process.env.NOTION_API_KEY || 'placeholder' });
 const n2m = new NotionToMarkdown({ notionClient: notion });
-const DB_ID = process.env.NOTION_DATABASE_ID!;
+const DB_ID = process.env.NOTION_DATABASE_ID || '';
+
+const isConfigured =
+  process.env.NOTION_API_KEY &&
+  process.env.NOTION_API_KEY !== 'secret_PENDIENTE_DE_CONFIGURAR' &&
+  process.env.NOTION_API_KEY !== 'placeholder';
 
 export interface Article {
   id: string;
@@ -43,26 +48,38 @@ function mapPage(page: any): Article {
 }
 
 export async function getPublishedArticles(): Promise<Article[]> {
-  const res = await notion.databases.query({
-    database_id: DB_ID,
-    filter: { property: 'Estado', select: { equals: 'Publicado' } },
-    sorts: [{ property: 'Fecha Publicación', direction: 'descending' }],
-  });
-  return res.results.map(mapPage);
+  if (!isConfigured) return [];
+  try {
+    const res = await notion.databases.query({
+      database_id: DB_ID,
+      filter: { property: 'Estado', select: { equals: 'Publicado' } },
+      sorts: [{ property: 'Fecha Publicación', direction: 'descending' }],
+    });
+    return res.results.map(mapPage);
+  } catch (e) {
+    console.error('[CryptoLucky] Notion API error in getPublishedArticles:', e);
+    return [];
+  }
 }
 
 export async function getArticleBySlug(
   slug: string
 ): Promise<{ article: Article; markdown: string } | null> {
-  const res = await notion.databases.query({
-    database_id: DB_ID,
-    filter: { property: 'Slug', rich_text: { equals: slug } },
-  });
-  if (!res.results.length) return null;
-  const article = mapPage(res.results[0]);
-  const mdBlocks = await n2m.pageToMarkdown(res.results[0].id);
-  const markdown = n2m.toMarkdownString(mdBlocks).parent;
-  return { article, markdown };
+  if (!isConfigured) return null;
+  try {
+    const res = await notion.databases.query({
+      database_id: DB_ID,
+      filter: { property: 'Slug', rich_text: { equals: slug } },
+    });
+    if (!res.results.length) return null;
+    const article = mapPage(res.results[0]);
+    const mdBlocks = await n2m.pageToMarkdown(res.results[0].id);
+    const markdown = n2m.toMarkdownString(mdBlocks).parent;
+    return { article, markdown };
+  } catch (e) {
+    console.error('[CryptoLucky] Notion API error in getArticleBySlug:', e);
+    return null;
+  }
 }
 
 export async function getAllSlugs(): Promise<string[]> {
