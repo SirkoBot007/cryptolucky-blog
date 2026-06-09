@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import { getArticleBySlug, getAllSlugs, getRelatedArticles, getTitle, getDescription } from '@/lib/notion';
 import { BetFuryLeaderboard, BetFuryMediumRect, BetFurySkyscraper } from '@/components/BetFuryBanners';
 import type { Metadata } from 'next';
@@ -18,6 +19,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  unstable_setRequestLocale(params.locale);
   const data = await getArticleBySlug(params.slug).catch(() => null);
   if (!data) return {};
   const { article } = data;
@@ -44,6 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ArticlePage({ params: { locale, slug } }: Props) {
+  unstable_setRequestLocale(locale);
   const data = await getArticleBySlug(slug).catch(() => null);
   if (!data) notFound();
 
