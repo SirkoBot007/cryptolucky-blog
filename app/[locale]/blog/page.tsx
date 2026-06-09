@@ -1,4 +1,5 @@
 import { getPublishedArticles, getTitle, getDescription } from '@/lib/notion';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -23,6 +24,7 @@ export default async function BlogPage({
 }: {
   params: { locale: string };
 }) {
+  unstable_setRequestLocale(locale);
   const articles = await getPublishedArticles().catch(() => []);
 
   return (
