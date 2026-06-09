@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { getPublishedArticles, getTitle, getDescription } from '@/lib/notion';
 
@@ -9,6 +9,7 @@ export default async function HomePage({
 }: {
   params: { locale: string };
 }) {
+  unstable_setRequestLocale(locale);
   const t = await getTranslations('hero');
   const tAffiliate = await getTranslations('affiliate');
   const articles = await getPublishedArticles().catch(() => []);
