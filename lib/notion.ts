@@ -16,7 +16,11 @@ export interface Article {
   category: string;
   keywords: string;
   publishedAt: string;
+  updatedAt?: string;
   status: string;
+  author?: string;
+  image?: string;
+  faqs?: Array<{ question: string; answer: string }>;
 }
 
 export function getTitle(article: Article, locale: string): string {
@@ -38,7 +42,11 @@ function toArticle(a: (typeof ARTICLES)[number]): Article {
     category: a.category,
     keywords: a.keywords,
     publishedAt: a.publishedAt,
+    updatedAt: a.updatedAt,
     status: a.status,
+    author: a.author,
+    image: a.image,
+    faqs: a.faqs,
   };
 }
 
