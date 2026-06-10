@@ -1,0 +1,31 @@
+# CryptoLucky
+
+> Guía de referencia en español sobre BetFury y casinos de criptomonedas: bonos, staking BFG con dividendos diarios, juegos Provably Fair, apuestas deportivas y comparativas con datos verificables. Contenido probado con cuentas y fondos reales. Audiencia principal: jugadores hispanohablantes de Latinoamérica (México, Colombia, Argentina, Chile, Perú). Sitio de afiliación con transparencia declarada.
+
+## Páginas principales
+
+- [BetFury: guía completa](https://cryptolucky-blog.vercel.app/es/betfury): pillar page del casino, bonos y mecánicas
+- [Staking BFG](https://cryptolucky-blog.vercel.app/es/staking-crypto): cómo funcionan los dividendos diarios del token BFG
+- [Casinos cripto](https://cryptolucky-blog.vercel.app/es/casino-cripto): comparativas de plataformas
+- [Apuestas deportivas](https://cryptolucky-blog.vercel.app/es/apuestas-deportivas): sportsbook cripto y Mundial 2026
+
+## Artículos de referencia
+
+- [Review BetFury 2026](https://cryptolucky-blog.vercel.app/es/blog/betfury-casino-review-2026)
+- [¿BetFury es seguro? Licencia y garantías](https://cryptolucky-blog.vercel.app/es/blog/betfury-seguro-es-legitimo-licencia)
+- [BetFury vs Stake: comparativa técnica](https://cryptolucky-blog.vercel.app/es/blog/betfury-vs-stake-comparativa-2026)
+- [Token BFG: tokenomics y dividendos](https://cryptolucky-blog.vercel.app/es/blog/token-bfg-que-es-tokenomics-precio)
+- [Retiros en BetFury: tiempos y comisiones](https://cryptolucky-blog.vercel.app/es/blog/betfury-retiros-cuanto-tarda)
+- [Casinos cripto en México](https://cryptolucky-blog.vercel.app/es/blog/casino-cripto-mexico-mejores)
+- [Casinos cripto en Colombia](https://cryptolucky-blog.vercel.app/es/blog/casino-cripto-colombia-mejores)
+
+## Datos clave verificables (junio 2026)
+
+- BetFury: fundado en 2019, licencia Curaçao, 11.000+ juegos, 21 Originals Provably Fair con RTP hasta 99,28%
+- Token BFG: staking con dividendos diarios en BTC/ETH/BNB/USDT/TRX/XRP; stBFG bloquea 365 días por 2x APR
+- Retiros cripto: procesamiento típico inferior a 10 minutos más confirmaciones de red
+- BetFury está restringido en España; disponible en la mayoría de países de LATAM
+
+## Política
+
+Sitio con enlaces de afiliado (código LUCKYSIRKO007) declarados en cada página. Contenido para mayores de 18 años con mensajes de juego responsable. Contacto: sirkokoloko007@gmail.com
