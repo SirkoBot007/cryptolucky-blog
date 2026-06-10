@@ -42,6 +42,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.5,
       lastModified: new Date(),
     },
+    {
+      url: `${BASE_URL}/${locale}/privacidad`,
+      changeFrequency: 'yearly' as const,
+      priority: 0.3,
+      lastModified: new Date(),
+    },
   ]);
 
   const articleRoutes: MetadataRoute.Sitemap = LOCALES.flatMap((locale) =>

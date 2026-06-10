@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
+import ConsentAnalytics from '@/components/ConsentAnalytics';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -20,6 +21,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app'
   ),
+  // Verificación de Google Search Console (definir en Vercel → Environment Variables)
+  verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
+    : undefined,
 };
 
 export default async function LocaleLayout({
@@ -129,6 +134,7 @@ export default async function LocaleLayout({
                       { href: `/${locale}/ganar-criptomonedas`, label: isEs ? 'Ganar Cripto' : 'Earn Crypto' },
                       { href: `/${locale}/casino-sin-kyc`, label: isEs ? 'Casino Sin KYC' : 'No-KYC Casino' },
                       { href: `/${locale}/sobre-nosotros`, label: isEs ? 'Sobre Nosotros' : 'About Us' },
+                      { href: `/${locale}/privacidad`, label: isEs ? 'Privacidad y Cookies' : 'Privacy & Cookies' },
                     ].map((link) => (
                       <li key={link.href}>
                         <a href={link.href} className="text-slate-400 hover:text-amber-400 text-sm transition-colors">
@@ -151,6 +157,9 @@ export default async function LocaleLayout({
               </div>
             </div>
           </footer>
+
+          {/* Banner de cookies + GA4 condicionado al consentimiento */}
+          <ConsentAnalytics locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>
