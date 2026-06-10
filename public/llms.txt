@@ -4,20 +4,20 @@
 
 ## Páginas principales
 
-- [BetFury: guía completa](https://cryptolucky-blog.vercel.app/es/betfury): pillar page del casino, bonos y mecánicas
-- [Staking BFG](https://cryptolucky-blog.vercel.app/es/staking-crypto): cómo funcionan los dividendos diarios del token BFG
-- [Casinos cripto](https://cryptolucky-blog.vercel.app/es/casino-cripto): comparativas de plataformas
-- [Apuestas deportivas](https://cryptolucky-blog.vercel.app/es/apuestas-deportivas): sportsbook cripto y Mundial 2026
+- [BetFury: guía completa](https://cryptoluckyguia.com/es/betfury): pillar page del casino, bonos y mecánicas
+- [Staking BFG](https://cryptoluckyguia.com/es/staking-crypto): cómo funcionan los dividendos diarios del token BFG
+- [Casinos cripto](https://cryptoluckyguia.com/es/casino-cripto): comparativas de plataformas
+- [Apuestas deportivas](https://cryptoluckyguia.com/es/apuestas-deportivas): sportsbook cripto y Mundial 2026
 
 ## Artículos de referencia
 
-- [Review BetFury 2026](https://cryptolucky-blog.vercel.app/es/blog/betfury-casino-review-2026)
-- [¿BetFury es seguro? Licencia y garantías](https://cryptolucky-blog.vercel.app/es/blog/betfury-seguro-es-legitimo-licencia)
-- [BetFury vs Stake: comparativa técnica](https://cryptolucky-blog.vercel.app/es/blog/betfury-vs-stake-comparativa-2026)
-- [Token BFG: tokenomics y dividendos](https://cryptolucky-blog.vercel.app/es/blog/token-bfg-que-es-tokenomics-precio)
-- [Retiros en BetFury: tiempos y comisiones](https://cryptolucky-blog.vercel.app/es/blog/betfury-retiros-cuanto-tarda)
-- [Casinos cripto en México](https://cryptolucky-blog.vercel.app/es/blog/casino-cripto-mexico-mejores)
-- [Casinos cripto en Colombia](https://cryptolucky-blog.vercel.app/es/blog/casino-cripto-colombia-mejores)
+- [Review BetFury 2026](https://cryptoluckyguia.com/es/blog/betfury-casino-review-2026)
+- [¿BetFury es seguro? Licencia y garantías](https://cryptoluckyguia.com/es/blog/betfury-seguro-es-legitimo-licencia)
+- [BetFury vs Stake: comparativa técnica](https://cryptoluckyguia.com/es/blog/betfury-vs-stake-comparativa-2026)
+- [Token BFG: tokenomics y dividendos](https://cryptoluckyguia.com/es/blog/token-bfg-que-es-tokenomics-precio)
+- [Retiros en BetFury: tiempos y comisiones](https://cryptoluckyguia.com/es/blog/betfury-retiros-cuanto-tarda)
+- [Casinos cripto en México](https://cryptoluckyguia.com/es/blog/casino-cripto-mexico-mejores)
+- [Casinos cripto en Colombia](https://cryptoluckyguia.com/es/blog/casino-cripto-colombia-mejores)
 
 ## Datos clave verificables (junio 2026)
 
