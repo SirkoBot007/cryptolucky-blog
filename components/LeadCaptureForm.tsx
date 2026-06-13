@@ -23,32 +23,32 @@ export default function LeadCaptureForm({
 
   const copy = {
     headline: isEs
-      ? 'ð Recibe alertas de bonos exclusivos'
-      : 'ð Get exclusive bonus alerts',
+      ? '🎁 Recibe alertas de bonos exclusivos'
+      : '🎁 Get exclusive bonus alerts',
     subheadline: isEs
-      ? 'Bonos sin depÃ³sito, free spins y ofertas VIP de BetFury â directo a tu email.'
-      : 'No-deposit bonuses, free spins and VIP offers from BetFury â straight to your inbox.',
+      ? 'Bonos sin depósito, free spins y ofertas VIP de BetFury — directo a tu email.'
+      : 'No-deposit bonuses, free spins and VIP offers from BetFury — straight to your inbox.',
     emailPlaceholder: isEs ? 'Tu email' : 'Your email',
-    countryPlaceholder: isEs ? 'PaÃ­s (opcional)' : 'Country (optional)',
-    cta: isEs ? 'Quiero mis bonos â' : 'Get my bonuses â',
+    countryPlaceholder: isEs ? 'País (opcional)' : 'Country (optional)',
+    cta: isEs ? 'Quiero mis bonos →' : 'Get my bonuses →',
     loading: isEs ? 'Enviando...' : 'Sending...',
     success: isEs
-      ? 'â Â¡SuscripciÃ³n confirmada! Revisa tu email, te hemos enviado tu cÃ³digo de bienvenida.'
-      : 'â Subscription confirmed! Check your email for your welcome code.',
+      ? '✅ ¡Suscripción confirmada! Revisa tu email, te hemos enviado tu código de bienvenida.'
+      : '✅ Subscription confirmed! Check your email for your welcome code.',
     consent: isEs
       ? 'Acepto recibir emails con ofertas y novedades de CryptoLucky. Puedo darme de baja en cualquier momento.'
       : 'I agree to receive emails with offers and news from CryptoLucky. I can unsubscribe at any time.',
-    privacy: isEs ? 'PolÃ­tica de privacidad' : 'Privacy policy',
-    error: isEs ? 'Error al suscribirse. IntÃ©ntalo de nuevo.' : 'Subscription error. Please try again.',
+    privacy: isEs ? 'Política de privacidad' : 'Privacy policy',
+    error: isEs ? 'Error al suscribirse. Inténtalo de nuevo.' : 'Subscription error. Please try again.',
     disclaimer: isEs
-      ? 'ð Sin spam. Solo bonos y guÃ­as exclusivas.'
-      : 'ð No spam. Only exclusive bonuses and guides.',
+      ? '🔒 Sin spam. Solo bonos y guías exclusivas.'
+      : '🔒 No spam. Only exclusive bonuses and guides.',
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!consent) {
-      setErrorMsg(isEs ? 'Debes aceptar la polÃ­tica de privacidad' : 'You must accept the privacy policy');
+      setErrorMsg(isEs ? 'Debes aceptar la política de privacidad' : 'You must accept the privacy policy');
       return;
     }
     setStatus('loading');
@@ -89,7 +89,7 @@ export default function LeadCaptureForm({
       <div className="bg-green-900/30 border border-green-500/40 rounded-xl p-6 text-center">
         <p className="text-green-400 font-bold text-lg">{copy.success}</p>
         <p className="text-slate-400 text-sm mt-2">
-          {isEs ? 'Pronto recibirÃ¡s tus primeras alertas de bonos.' : "You'll soon receive your first bonus alerts."}
+          {isEs ? 'Pronto recibirás tus primeras alertas de bonos.' : "You'll soon receive your first bonus alerts."}
         </p>
       </div>
     );
@@ -149,75 +149,75 @@ export default function LeadCaptureForm({
               className={inputClass}
             >
               <option value="">{copy.countryPlaceholder}</option>
-              <optgroup label="ââ LatinoamÃ©rica ââ">
-                <option value="MX">ð²ð½ MÃ©xico</option>
-                <option value="CO">ð¨ð´ Colombia</option>
-                <option value="AR">ð¦ð· Argentina</option>
-                <option value="PE">ðµðª PerÃº</option>
-                <option value="CL">ð¨ð± Chile</option>
-                <option value="VE">ð»ðª Venezuela</option>
-                <option value="EC">ðªð¨ Ecuador</option>
-                <option value="BO">ð§ð´ Bolivia</option>
-                <option value="PY">ðµð¾ Paraguay</option>
-                <option value="UY">ðºð¾ Uruguay</option>
-                <option value="GT">ð¬ð¹ Guatemala</option>
-                <option value="HN">ð­ð³ Honduras</option>
-                <option value="SV">ð¸ð» El Salvador</option>
-                <option value="CR">ð¨ð· Costa Rica</option>
-                <option value="PA">ðµð¦ PanamÃ¡</option>
-                <option value="DO">ð©ð´ Rep. Dominicana</option>
-                <option value="CU">ð¨ðº Cuba</option>
-                <option value="NI">ð³ð® Nicaragua</option>
-                <option value="PR">ðµð· Puerto Rico</option>
-                <option value="BR">ð§ð· Brasil</option>
+              <optgroup label="── Latinoamérica ──">
+                <option value="MX">🇲🇽 México</option>
+                <option value="CO">🇨🇴 Colombia</option>
+                <option value="AR">🇦🇷 Argentina</option>
+                <option value="PE">🇵🇪 Perú</option>
+                <option value="CL">🇨🇱 Chile</option>
+                <option value="VE">🇻🇪 Venezuela</option>
+                <option value="EC">🇪🇨 Ecuador</option>
+                <option value="BO">🇧🇴 Bolivia</option>
+                <option value="PY">🇵🇾 Paraguay</option>
+                <option value="UY">🇺🇾 Uruguay</option>
+                <option value="GT">🇬🇹 Guatemala</option>
+                <option value="HN">🇭🇳 Honduras</option>
+                <option value="SV">🇸🇻 El Salvador</option>
+                <option value="CR">🇨🇷 Costa Rica</option>
+                <option value="PA">🇵🇦 Panamá</option>
+                <option value="DO">🇩🇴 Rep. Dominicana</option>
+                <option value="CU">🇨🇺 Cuba</option>
+                <option value="NI">🇳🇮 Nicaragua</option>
+                <option value="PR">🇵🇷 Puerto Rico</option>
+                <option value="BR">🇧🇷 Brasil</option>
               </optgroup>
-              <optgroup label="ââ AmÃ©rica del Norte ââ">
-                <option value="CA">ð¨ð¦ CanadÃ¡</option>
+              <optgroup label="── América del Norte ──">
+                <option value="CA">🇨🇦 Canadá</option>
               </optgroup>
-              <optgroup label="ââ Asia / PacÃ­fico ââ">
-                <option value="IN">ð®ð³ India</option>
-                <option value="PH">ðµð­ Filipinas</option>
-                <option value="ID">ð®ð© Indonesia</option>
-                <option value="TH">ð¹ð­ Tailandia</option>
-                <option value="VN">ð»ð³ Vietnam</option>
-                <option value="MY">ð²ð¾ Malasia</option>
-                <option value="SG">ð¸ð¬ Singapur</option>
-                <option value="KH">ð°ð­ Camboya</option>
-                <option value="BD">ð§ð© Bangladesh</option>
-                <option value="JP">ð¯ðµ JapÃ³n</option>
-                <option value="KR">ð°ð· Corea del Sur</option>
-                <option value="TW">ð¹ð¼ TaiwÃ¡n</option>
-                <option value="HK">ð­ð° Hong Kong</option>
+              <optgroup label="── Asia / Pacífico ──">
+                <option value="IN">🇮🇳 India</option>
+                <option value="PH">🇵🇭 Filipinas</option>
+                <option value="ID">🇮🇩 Indonesia</option>
+                <option value="TH">🇹🇭 Tailandia</option>
+                <option value="VN">🇻🇳 Vietnam</option>
+                <option value="MY">🇲🇾 Malasia</option>
+                <option value="SG">🇸🇬 Singapur</option>
+                <option value="KH">🇰🇭 Camboya</option>
+                <option value="BD">🇧🇩 Bangladesh</option>
+                <option value="JP">🇯🇵 Japón</option>
+                <option value="KR">🇰🇷 Corea del Sur</option>
+                <option value="TW">🇹🇼 Taiwán</option>
+                <option value="HK">🇭🇰 Hong Kong</option>
               </optgroup>
-              <optgroup label="ââ Ãfrica ââ">
-                <option value="NG">ð³ð¬ Nigeria</option>
-                <option value="KE">ð°ðª Kenia</option>
-                <option value="ZA">ð¿ð¦ SudÃ¡frica</option>
-                <option value="GH">ð¬ð­ Ghana</option>
-                <option value="TZ">ð¹ð¿ Tanzania</option>
-                <option value="ET">ðªð¹ EtiopÃ­a</option>
+              <optgroup label="── África ──">
+                <option value="NG">🇳🇬 Nigeria</option>
+                <option value="KE">🇰🇪 Kenia</option>
+                <option value="ZA">🇿🇦 Sudáfrica</option>
+                <option value="GH">🇬🇭 Ghana</option>
+                <option value="TZ">🇹🇿 Tanzania</option>
+                <option value="ET">🇪🇹 Etiopía</option>
               </optgroup>
-              <optgroup label="ââ Europa ââ">
-                <option value="IT">ð®ð¹ Italia</option>
-                <option value="PL">ðµð± Polonia</option>
-                <option value="CZ">ð¨ð¿ Rep. Checa</option>
-                <option value="RO">ð·ð´ RumanÃ­a</option>
-                <option value="BG">ð§ð¬ Bulgaria</option>
-                <option value="GR">ð¬ð· Grecia</option>
-                <option value="SE">ð¸ðª Suecia</option>
-                <option value="NO">ð³ð´ Noruega</option>
-                <option value="FI">ð«ð® Finlandia</option>
-                <option value="DK">ð©ð° Dinamarca</option>
-                <option value="LT">ð±ð¹ Lituania</option>
-                <option value="LV">ð±ð» Letonia</option>
-                <option value="EE">ðªðª Estonia</option>
-                <option value="SK">ð¸ð° Eslovaquia</option>
-                <option value="SI">ð¸ð® Eslovenia</option>
-                <option value="HR">ð­ð· Croacia</option>
-                <option value="RS">ð·ð¸ Serbia</option>
-                <option value="CH">ð¨ð­ Suiza</option>
+              <optgroup label="── Europa ──">
+                <option value="IT">🇮🇹 Italia</option>
+                <option value="PL">🇵🇱 Polonia</option>
+                <option value="CZ">🇨🇿 Rep. Checa</option>
+                <option value="RO">🇷🇴 Rumanía</option>
+                <option value="BG">🇧🇬 Bulgaria</option>
+                <option value="GR">🇬🇷 Grecia</option>
+                <option value="SE">🇸🇪 Suecia</option>
+                <option value="NO">🇳🇴 Noruega</option>
+                <option value="FI">🇫🇮 Finlandia</option>
+                <option value="DK">🇩🇰 Dinamarca</option>
+                <option value="LT">🇱🇹 Lituania</option>
+                <option value="LV">🇱🇻 Letonia</option>
+                <option value="EE">🇪🇪 Estonia</option>
+                <option value="SK">🇸🇰 Eslovaquia</option>
+                <option value="SI">🇸🇮 Eslovenia</option>
+                <option value="HR">🇭🇷 Croacia</option>
+                <option value="RS">🇷🇸 Serbia</option>
+                <option value="CH">🇨🇭 Suiza</option>
               </optgroup>
-              <option value="OTHER">ð Otro</option>
+              <option value="OTHER">🌍 Otro</option>
             </select>
 
             <label className="flex items-start gap-3 cursor-pointer">
