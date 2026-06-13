@@ -10,7 +10,6 @@ import { NextRequest, NextResponse } from 'next/server';
  */
 
 const NOTION_KEY = process.env.NOTION_API_KEY ?? '';
-const ARTICLES_DB_ID = process.env.NOTION_DATABASE_ID ?? 'f909b580-4099-4b53-8e75-d663dfa68223';
 const BOOTSTRAP_SECRET = 'cryptolucky2026';
 
 export async function GET(req: NextRequest) {
@@ -25,28 +24,9 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    // Step 1: GET articles DB to find parent page
-    const articlesRes = await fetch(
-      `https://api.notion.com/v1/databases/${ARTICLES_DB_ID}`,
-      {
-        headers: {
-          Authorization: `Bearer ${NOTION_KEY}`,
-          'Notion-Version': '2022-06-28',
-        },
-      }
-    );
-
-    if (!articlesRes.ok) {
-      const err = await articlesRes.json();
-      return NextResponse.json({ error: 'Failed to fetch articles DB', details: err }, { status: 500 });
-    }
-
-    const articlesDb = await articlesRes.json();
-    const parent = articlesDb.parent;
-
-    // Step 2: Create the CryptoLucky Leads database
+    // Create the CryptoLucky Leads database directly in the workspace
     const newDbBody = {
-      parent,
+      parent: { type: 'workspace', workspace: true },
       icon: { type: 'emoji', emoji: '\u{1F4CB}' },
       title: [{ type: 'text', text: { content: 'CryptoLucky Leads' } }],
       properties: {
@@ -116,13 +96,13 @@ export async function GET(req: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: 'Database created! Copy the database_id and add to Vercel env vars as NOTION_LEADS_DATABASE_ID',
+      message: '\u2705 Database created! Copy the database_id and add it to Vercel env vars as NOTION_LEADS_DATABASE_ID',
       database_id: newDb.id,
       database_url: newDb.url,
-      next_step: 'Vercel Dashboard -> Settings -> Environment Variables -> Add NOTION_LEADS_DATABASE_ID',
+      next_step: `Go to Vercel \u2192 Settings \u2192 Environment Variables \u2192 Add: NOTION_LEADS_DATABASE_ID = ${newDb.id}`,
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
     return NextResponse.json({ error: 'Server error', details: message }, { status: 500 });
   }
-            }
+}
