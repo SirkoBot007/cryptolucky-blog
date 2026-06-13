@@ -4,6 +4,8 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import ConsentAnalytics from '@/components/ConsentAnalytics';
 import MobileNav from '@/components/MobileNav';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -51,7 +53,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        {/* Google AdSense — se activa añadiendo NEXT_PUBLIC_ADSENSE_ID en Vercel */}
         {adsenseId && (
           <script
             async
@@ -62,13 +63,11 @@ export default async function LocaleLayout({
       </head>
       <body className={`${inter.className} bg-slate-950 text-white min-h-screen`}>
         <NextIntlClientProvider messages={messages}>
-          {/* Header / Navigation */}
           <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
             <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
               <a href={`/${locale}`} className="text-amber-400 font-black text-xl tracking-tight">
                 🍀 CryptoLucky
               </a>
-              {/* Desktop nav */}
               <nav className="hidden md:flex items-center gap-5 text-sm">
                 {navLinks.map((link) => (
                   <a
@@ -94,7 +93,6 @@ export default async function LocaleLayout({
                   {locale === 'es' ? '🇬🇧 EN' : '🇪🇸 ES'}
                 </a>
               </nav>
-              {/* Mobile nav */}
               <MobileNav
                 navLinks={navLinks}
                 locale={locale}
@@ -105,7 +103,6 @@ export default async function LocaleLayout({
 
           {children}
 
-          {/* Footer */}
           <footer className="bg-slate-950 border-t border-slate-800 mt-16 py-12">
             <div className="max-w-6xl mx-auto px-4">
               <div className="grid sm:grid-cols-3 gap-8 mb-8">
@@ -161,9 +158,12 @@ export default async function LocaleLayout({
             </div>
           </footer>
 
-          {/* Banner de cookies + GA4 condicionado al consentimiento */}
           <ConsentAnalytics locale={locale} />
         </NextIntlClientProvider>
+        {/* Vercel Web Analytics */}
+        <Analytics />
+        {/* Vercel Speed Insights */}
+        <SpeedInsights />
       </body>
     </html>
   );
