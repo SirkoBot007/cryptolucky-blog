@@ -2420,7 +2420,6 @@ Para el jugador colombiano que prioriza retiros rápidos, privacidad y maximizar
       }
     ],
   },
-];
   // ─────────────────────────────────────────────────────────
   // 23. Copa del Mundo 2026: Favoritos y Apuestas en BetFury
   // ─────────────────────────────────────────────────────────
