@@ -797,7 +797,7 @@ Ganar criptomonedas gratis en 2026 es posible con los métodos correctos. El sta
     descriptionEn:
       'Complete guide to betting on the 2026 FIFA World Cup with BetFury. Best markets, crypto odds, winning strategies and how to claim your bonus with code LUCKYSIRKO007.',
     category: 'Sportsbook',
-    keywords: 'apuestas mundial 2026, betfury sportsbook, copa del mundo apuestas cripto, betfury futbol, apuestas deportivas cripto',
+    keywords: 'apuestas copa del mundo 2026, betfury sportsbook, copa del mundo apuestas cripto, betfury futbol, apuestas deportivas cripto, apostar mundial betfury, betfury apuestas futbol 2026, cuotas copa del mundo betfury, sportsbook cripto mundial, apostar con bitcoin copa del mundo',
     publishedAt: '2026-06-09',
     updatedAt: '2026-06-09',
     status: 'Publicado',
@@ -949,7 +949,7 @@ Si buscas un sportsbook cripto para apostar en la Copa del Mundo 2026, BetFury c
     descriptionEn:
       'Complete guide to BetFury welcome bonus 2026. Learn how to claim up to 590% bonus, free spins and Crypto Boxes using code LUCKYSIRKO007.',
     category: 'Reviews',
-    keywords: 'betfury bono bienvenida, betfury codigo promocional, betfury free spins, betfury bonus 2026, LUCKYSIRKO007',
+    keywords: 'betfury bono bienvenida, betfury codigo promocional, betfury free spins, betfury bonus 2026, LUCKYSIRKO007, codigo betfury 2026, betfury bono registro, betfury oferta bienvenida, bono casino cripto registro, betfury como registrarse bono',
     publishedAt: '2026-06-08',
     updatedAt: '2026-06-09',
     status: 'Publicado',
@@ -1101,7 +1101,7 @@ El bono de bienvenida de BetFury combinado con el sistema de staking BFG hace qu
     descriptionEn:
       'Is BetFury a safe casino? We analyze its Curaçao license, technical security, payment history and real user reviews to give you a definitive answer in 2026.',
     category: 'Reviews',
-    keywords: 'betfury seguro, betfury legítimo, betfury estafa, betfury licencia, betfury es fiable, betfury opiniones 2026',
+    keywords: 'betfury seguro, betfury legítimo, betfury estafa, betfury licencia, betfury es fiable, betfury opiniones 2026, betfury es confiable, betfury paga de verdad, betfury licencia curaçao, betfury reseña honesta, es betfury una estafa, betfury provably fair',
     publishedAt: '2026-06-07',
     updatedAt: '2026-06-09',
     status: 'Publicado',
@@ -2532,7 +2532,7 @@ Con Bellingham, Saka y Foden en su plenitud. **Cuota orientativa: 8.0–10.0**
     descriptionEn:
       'Follow World Cup 2026 groups and results live. Analysis of each group with the best odds and betting markets on BetFury with cryptocurrencies.',
     category: 'Copa del Mundo 2026',
-    keywords: 'copa del mundo 2026 grupos, mundial 2026 resultados, fase grupos mundial 2026, world cup 2026 groups, apostar fase grupos mundial, cuotas fase grupos 2026, betfury mundial 2026',
+    keywords: 'copa del mundo 2026 grupos, mundial 2026 resultados, fase grupos mundial 2026, world cup 2026 groups, apostar fase grupos mundial, cuotas fase grupos 2026, betfury mundial 2026, grupos copa del mundo 2026 clasificados, resultados mundial 2026 en vivo, apostar grupos mundial cripto',
     publishedAt: '2026-06-13',
     status: 'Publicado',
     tags: ['copa del mundo 2026', 'grupos', 'mundial', 'apuestas deportivas', 'betfury'],
@@ -2678,7 +2678,7 @@ Cada apuesta deportiva que hagas en BetFury **acumula tokens BFG**. Al ponerlos 
     descriptionEn:
       'Complete guide to bet on the 2026 World Cup with Bitcoin and crypto on BetFury. Markets, strategies, LUCKYSIRKO007 code and how to earn BFG while betting.',
     category: 'Copa del Mundo 2026',
-    keywords: 'apostar mundial 2026 criptomonedas, apostar copa del mundo bitcoin, betfury sportsbook mundial, apuestas deportivas cripto mundial 2026, como apostar mundial con crypto, world cup 2026 crypto betting',
+    keywords: 'apostar mundial 2026 criptomonedas, apostar copa del mundo bitcoin, betfury sportsbook mundial, apuestas deportivas cripto mundial 2026, como apostar mundial con crypto, world cup 2026 crypto betting, apostar bitcoin copa del mundo 2026, guia apuestas mundiales cripto, betfury tutorial apuestas deportivas, apostar con ethereum mundial 2026',
     publishedAt: '2026-06-13',
     status: 'Publicado',
     tags: ['copa del mundo 2026', 'apuestas cripto', 'betfury', 'bitcoin', 'sportsbook'],
