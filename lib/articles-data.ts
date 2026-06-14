@@ -2838,40 +2838,16 @@ El Mundial 2026 empezó el **11 de junio de 2026**. La fase de grupos se juega h
 
 *ð© ¿Quieres análisis semanales de los mejores partidos del Mundial? Suscríbete abajo y te envío mis picks exclusivos cada semana.*
 
-> â ï¸ *Apuesta con responsabilidad. Las apuestas deportivas implican riesgo de pérdida. Solo apuesta lo que puedas permitirte perder. Prohibido menores de 18 años. Contiene enlaces de afiliado.*`,
-    faqs: [
-      {
-        question: '¿Qué criptomoneda es mejor para apostar el Mundial en BetFury?',
-        answer: 'USDT (Tether) es la mejor opción si quieres evitar la volatilidad del mercado cripto mientras apuestas. BTC y ETH funcionan también pero su valor puede variar durante el torneo. BFG se acumula automáticamente con cualquier criptomoneda que uses.',
-      },
-      {
-        question: '¿Cuánto tarda en llegar el bono de bienvenida en BetFury?',
-        answer: 'El bono de bienvenida se activa inmediatamente al usar el código LUCKYSIRKO007 durante el registro. Los fondos del bono están disponibles para apostar en cuanto haces tu primer depósito.',
-      },
-      {
-        question: '¿Puedo retirar mis ganancias del Mundial en cualquier momento?',
-        answer: 'Sí. BetFury permite retiros en cualquier momento. Los retiros normales en cripto se procesan en minutos sin necesidad de KYC hasta ciertos límites. Las ganancias van directamente a tu wallet.',
-      },
-      {
-        question: '¿Qué es el staking BFG y cuánto puedo ganar?',
-        answer: 'BFG es el token nativo de BetFury. Cada apuesta que realizas genera BFG automáticamente. Al hacer staking de ese BFG, recibes dividendos diarios en BTC, ETH, BNB, USDT y TRX. Los rendimientos varían según el volumen total de la plataforma, pero históricamente oscilan entre el 20-40% APY.',
-      },
-      {
-        question: '¿BetFury tiene mercados en vivo para los partidos del Mundial?',
-        answer: 'Sí. BetFury ofrece mercados in-play completos para todos los partidos de la Copa del Mundo 2026: resultado en vivo, próximo gol, corners, tarjetas, handicap asiático y más, con cuotas que se actualizan en tiempo real.',
-      },
-    ],
-  },
-  // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // 26. Fury World Cup '26 BetFury: CÃ³mo ganar tu parte de los $600,000
-  // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ─────────────────────────────────────────────────────────
+  // 26. Fury World Cup \'26 BetFury: Cómo ganar tu parte de los $600,000
+  // ─────────────────────────────────────────────────────────
   {
     id: 'fury-world-cup-26-betfury-600000-promo',
     slug: 'fury-world-cup-2026-betfury-promo-600000',
-    titleEs: 'Fury World Cup '26 en BetFury: CÃ³mo Ganar tu Parte de los $600,000',
-    titleEn: 'Fury World Cup '26 at BetFury: How to Win Your Share of $600,000',
-    descriptionEs: 'BetFury lanza la promo Fury World Cup '26 con $600,000 en premios repartidos entre 5 eventos paralelos durante el Mundial 2026. Te explicamos cÃ³mo participar en cada uno y maximizar tus ganancias hasta el 27 de julio.',
-    descriptionEn: 'BetFury launches the Fury World Cup '26 promo with $600,000 in prizes across 5 parallel events during the 2026 World Cup. We explain how to participate and maximize your winnings until July 27.',
+    titleEs: 'Fury World Cup \'26 en BetFury: Cómo Ganar tu Parte de los $600,000',
+    titleEn: 'Fury World Cup \'26 at BetFury: How to Win Your Share of $600,000',
+    descriptionEs: 'BetFury lanza la promo Fury World Cup \'26 con $600,000 en premios repartidos entre 5 eventos paralelos durante el Mundial 2026. Te explicamos cómo participar en cada uno y maximizar tus ganancias hasta el 27 de julio.',
+    descriptionEn: 'BetFury launches the Fury World Cup \'26 promo with $600,000 in prizes across 5 parallel events during the 2026 World Cup. We explain how to participate and maximize your winnings until July 27.',
     category: 'Copa del Mundo 2026',
     keywords: 'fury world cup betfury 2026, betfury promo mundial 2026, betfury 600000 premios, fury world cup 26 como participar, betfury championship battles, golden ticket raffle betfury, mundial prediction betfury, betfury world cup rivals tournament, promo mundial betfury criptomonedas, betfury sport missions',
     publishedAt: '2026-06-13',
@@ -2879,178 +2855,178 @@ El Mundial 2026 empezó el **11 de junio de 2026**. La fase de grupos se juega h
     tags: ['betfury', 'fury world cup', 'promo', 'copa del mundo 2026', 'premios'],
     author: 'Sirko007',
     readingTime: 9,
-    content: `> ð **Promo activa hasta el 27 de julio de 2026.** BetFury ha lanzado el mayor evento de su historia: **Fury World Cup '26**, con $600,000 en premios distribuidos en 5 competiciones paralelas. Si ya tienes cuenta en BetFury, estÃ¡s a tiempo de entrar. Si aÃºn no, regÃ­strate con el cÃ³digo **[LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** y empieza hoy.
+    content: `> 🏆 **Promo activa hasta el 27 de julio de 2026.** BetFury ha lanzado el mayor evento de su historia: **Fury World Cup \'26**, con $600,000 en premios distribuidos en 5 competiciones paralelas. Si ya tienes cuenta en BetFury, estás a tiempo de entrar. Si aún no, regístrate con el código **[LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** y empieza hoy.
 
-El Mundial 2026 pasa una vez cada cuatro aÃ±os. BetFury lo convirtiÃ³ en el mayor festival de la plataforma: 48 equipos, 104 partidos, tres paÃ­ses anfitriones (EE.UU., MÃ©xico, CanadÃ¡) y $600,000 en premios para repartir entre apostadores, jugadores de casino y fans casuales.
+El Mundial 2026 pasa una vez cada cuatro años. BetFury lo convirtió en el mayor festival de la plataforma: 48 equipos, 104 partidos, tres países anfitriones (EE.UU., México, Canadá) y $600,000 en premios para repartir entre apostadores, jugadores de casino y fans casuales.
 
-En este artÃ­culo te explico exactamente cÃ³mo funcionan los 5 eventos de la promo Fury World Cup '26 y quÃ© estrategia seguir para sacar el mÃ¡ximo partido.
+En este artículo te explico exactamente cómo funcionan los 5 eventos de la promo Fury World Cup '26 y qué estrategia seguir para sacar el máximo partido.
 
 ---
 
 ## Los 5 Eventos del Fury World Cup '26
 
-### ð¥ 1. Fury Championship Battles â $360,000 en premios
+### 🥇 1. Fury Championship Battles — $360,000 en premios
 
-La parte mÃ¡s grande de la promo. Son **tres batallas deportivas** repartidas a lo largo del torneo:
+La parte más grande de la promo. Son **tres batallas deportivas** repartidas a lo largo del torneo:
 
-- **First Kick Battle** â Fase de grupos (11â27 junio)
-- **Midfield Battle** â Octavos y cuartos de final
-- **Final Whistle Battle** â Semifinales y final
+- **First Kick Battle** — Fase de grupos (11–27 junio)
+- **Midfield Battle** — Octavos y cuartos de final
+- **Final Whistle Battle** — Semifinales y final
 
 Plus **dos batallas de casino diarias** durante todo el evento.
 
-**CÃ³mo funciona:** Apuesta en deportes o juega en el casino para acumular puntos. Los mejores clasificados en cada batalla se reparten el premio correspondiente.
+**Cómo funciona:** Apuesta en deportes o juega en el casino para acumular puntos. Los mejores clasificados en cada batalla se reparten el premio correspondiente.
 
-**Estrategia recomendada:** Combina apuestas deportivas del Mundial con sesiones en los juegos Originales de BetFury (Dice, Plinko, Mines) para maximizar los puntos en ambas categorÃ­as simultÃ¡neamente.
+**Estrategia recomendada:** Combina apuestas deportivas del Mundial con sesiones en los juegos Originales de BetFury (Dice, Plinko, Mines) para maximizar los puntos en ambas categorías simultáneamente.
 
 ---
 
-### ð¯ 2. Sport Missions Journey â Free Bets y No Risk Bets
+### 🎯 2. Sport Missions Journey — Free Bets y No Risk Bets
 
-Las misiones son tareas temÃ¡ticas del Mundial que puedes completar a tu ritmo. Al completarlas, recibes:
+Las misiones son tareas temáticas del Mundial que puedes completar a tu ritmo. Al completarlas, recibes:
 
-- **Free Bets** â Apuestas gratuitas en el sportsbook
-- **No Risk Bets** â Si la apuesta pierde, BetFury te devuelve el dinero
+- **Free Bets** — Apuestas gratuitas en el sportsbook
+- **No Risk Bets** — Si la apuesta pierde, BetFury te devuelve el dinero
 
 **Tipos de misiones:**
 - Apostar en un partido concreto del Mundial
-- Apostar en un mercado especÃ­fico (BTTS, handicap, etc.)
-- Combinar apuesta de casino + deporte el mismo dÃ­a
-- Completar un nÃºmero determinado de apuestas en 24h
+- Apostar en un mercado específico (BTTS, handicap, etc.)
+- Combinar apuesta de casino + deporte el mismo día
+- Completar un número determinado de apuestas en 24h
 
-**Estrategia:** Las misiones de "No Risk Bet" son las mÃ¡s valiosas â Ãºsalas en partidos con cuotas medias (1.80â2.50) donde tengas anÃ¡lisis fundamentado. Si aciertas, cobras cuota completa. Si fallas, recuperas el dinero.
+**Estrategia:** Las misiones de "No Risk Bet" son las más valiosas — úsalas en partidos con cuotas medias (1.80–2.50) donde tengas análisis fundamentado. Si aciertas, cobras cuota completa. Si fallas, recuperas el dinero.
 
 ---
 
-### ð® 3. Mundial Prediction Event â $20,000 sin apuesta real requerida
+### 🔮 3. Mundial Prediction Event — $20,000 sin apuesta real requerida
 
-Este es el evento mÃ¡s accesible. **No necesitas apostar dinero real para participar.**
+Este es el evento más accesible. **No necesitas apostar dinero real para participar.**
 
-**CÃ³mo funciona:**
+**Cómo funciona:**
 1. Antes de cada partido, predice el resultado (1, X o 2)
 2. Si aciertas, acumulas puntos del pool de $20,000
 3. Los mejores predictores al final del evento se reparten los premios
 
-**Por quÃ© es especial:** Es el punto de entrada ideal para usuarios nuevos o para cualquiera que quiera participar en la promo sin arriesgar capital. Las predicciones son gratuitas.
+**Por qué es especial:** Es el punto de entrada ideal para usuarios nuevos o para cualquiera que quiera participar en la promo sin arriesgar capital. Las predicciones son gratuitas.
 
-**Estrategia:** Usa estadÃ­sticas reales para tus predicciones. En la fase de grupos, los equipos favoritos ganan el 65-70% de sus partidos. Combina predicciones conservadoras (favoritos claros) con 1-2 apuestas de riesgo en partidos muy igualados para diferenciarte en el ranking.
+**Estrategia:** Usa estadísticas reales para tus predicciones. En la fase de grupos, los equipos favoritos ganan el 65-70% de sus partidos. Combina predicciones conservadoras (favoritos claros) con 1-2 apuestas de riesgo en partidos muy igualados para diferenciarte en el ranking.
 
 ---
 
-### ðï¸ 4. Golden Ticket Raffle â $100,000 en sorteo final
+### 🎟️ 4. Golden Ticket Raffle — $100,000 en sorteo final
 
 El mayor sorteo de la historia de BetFury. Al final del Fury World Cup '26 (27 de julio), se sortean $100,000 entre los poseedores de tickets.
 
-**CÃ³mo conseguir tickets:**
+**Cómo conseguir tickets:**
 - Apostando en Originals, Slots, Casino en Vivo, Sportsbook, Futures o NFT Lootboxes
-- Haciendo un depÃ³sito (sin necesidad de apostar primero)
+- Haciendo un depósito (sin necesidad de apostar primero)
 
 Cada ticket es una entrada al sorteo de $100,000.
 
-**Estrategia:** Acumula tickets de forma constante a lo largo del evento. No necesitas hacer apuestas grandes â la acumulaciÃ³n gradual durante 7 semanas es mÃ¡s efectiva que intentar hacerlo todo en los Ãºltimos dÃ­as.
+**Estrategia:** Acumula tickets de forma constante a lo largo del evento. No necesitas hacer apuestas grandes — la acumulación gradual durante 7 semanas es más efectiva que intentar hacerlo todo en los últimos días.
 
 ---
 
-### â½ 5. World Cup Rivals Tournaments â $60,000 en tres torneos
+### ⚽ 5. World Cup Rivals Tournaments — $60,000 en tres torneos
 
 Tres torneos de leaderboard, cada uno con su propio pool de premios:
 
-- **Global Kick-Off** â Primeras semanas del torneo
-- **Soccer Combo Challenge** â Orientado a apuestas combinadas
-- **Grand Global Clash** â Torneo final con el mayor pool
+- **Global Kick-Off** — Primeras semanas del torneo
+- **Soccer Combo Challenge** — Orientado a apuestas combinadas
+- **Grand Global Clash** — Torneo final con el mayor pool
 
-**CÃ³mo funciona:** Escala el leaderboard apostando en los mercados especÃ­ficos de cada torneo. Los puestos mÃ¡s altos se llevan la mayor parte del premio.
+**Cómo funciona:** Escala el leaderboard apostando en los mercados específicos de cada torneo. Los puestos más altos se llevan la mayor parte del premio.
 
-**Estrategia para el Soccer Combo Challenge:** Las apuestas combinadas (parlays) de 3-5 selecciones con cuotas moderadas (1.40â1.70 cada selecciÃ³n) generan mÃ¡s volumen de puntos que una apuesta simple de cuota alta. Busca combinaciones con alta probabilidad estadÃ­stica.
+**Estrategia para el Soccer Combo Challenge:** Las apuestas combinadas (parlays) de 3-5 selecciones con cuotas moderadas (1.40–1.70 cada selección) generan más volumen de puntos que una apuesta simple de cuota alta. Busca combinaciones con alta probabilidad estadística.
 
 ---
 
-## Resumen: CuÃ¡nto Dinero Puedes Ganar
+## Resumen: Cuánto Dinero Puedes Ganar
 
-| Evento | Premio Total | Requiere inversiÃ³n | Dificultad |
+| Evento | Premio Total | Requiere inversión | Dificultad |
 |--------|-------------|-------------------|------------|
-| Fury Championship Battles | $360,000 | SÃ­ (apuestas normales) | Media-Alta |
-| Sport Missions Journey | Free Bets / No Risk | MÃ­nima | Baja |
+| Fury Championship Battles | $360,000 | Sí (apuestas normales) | Media-Alta |
+| Sport Missions Journey | Free Bets / No Risk | Mínima | Baja |
 | Mundial Prediction Event | $20,000 | **No** | Baja |
-| Golden Ticket Raffle | $100,000 | MÃ­nima (depÃ³sito) | Azar |
-| World Cup Rivals Tournaments | $60,000 | SÃ­ (apuestas normales) | Media |
+| Golden Ticket Raffle | $100,000 | Mínima (depósito) | Azar |
+| World Cup Rivals Tournaments | $60,000 | Sí (apuestas normales) | Media |
 | **TOTAL** | **$600,000** | | |
 
 ---
 
-## CÃ³mo Empezar en 5 Minutos
+## Cómo Empezar en 5 Minutos
 
 **Si ya tienes cuenta en BetFury:**
-1. Ve a la secciÃ³n "Promociones" o al banner de Fury World Cup '26
+1. Ve a la sección "Promociones" o al banner de Fury World Cup '26
 2. Activa cada evento que te interese
-3. Empieza con las predicciones gratuitas (Evento #3) â sin coste
-4. AÃ±ade las misiones (Evento #2) en tus sesiones habituales
+3. Empieza con las predicciones gratuitas (Evento #3) — sin coste
+4. Añade las misiones (Evento #2) en tus sesiones habituales
 5. Acumula tickets del Raffle con tus apuestas normales (Evento #4)
 
-**Si aÃºn no tienes cuenta:**
+**Si aún no tienes cuenta:**
 1. Entra en [betfury.io/?r=LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)
-2. RegÃ­strate con el cÃ³digo **LUCKYSIRKO007** para activar el bono de bienvenida (hasta 590%)
-3. Haz tu primer depÃ³sito y activa todos los eventos del Fury World Cup '26
+2. Regístrate con el código **LUCKYSIRKO007** para activar el bono de bienvenida (hasta 590%)
+3. Haz tu primer depósito y activa todos los eventos del Fury World Cup '26
 4. Tienes hasta el **27 de julio de 2026** para participar
 
 ---
 
 ## Mi Estrategia Personal para el Fury World Cup '26
 
-Como apostador con experiencia en BetFury, la estrategia que mÃ¡s sentido tiene para este evento es:
+Como apostador con experiencia en BetFury, la estrategia que más sentido tiene para este evento es:
 
-**Semana 1â2 (Fase de grupos):**
+**Semana 1–2 (Fase de grupos):**
 - Participa en todas las predicciones gratuitas (Evento #3)
 - Completa las misiones de menor riesgo (Evento #2)
 - Acumula tickets del Raffle apostando cantidades moderadas (Evento #4)
-- PosiciÃ³nate en el First Kick Battle (Evento #1)
+- Posiciónate en el First Kick Battle (Evento #1)
 
-**Semana 3â4 (Octavos y cuartos):**
+**Semana 3–4 (Octavos y cuartos):**
 - Incrementa el volumen en el Midfield Battle
 - Usa las Free Bets y No Risk Bets ganadas en las misiones
-- MantÃ©n la acumulaciÃ³n de tickets del Raffle
+- Mantén la acumulación de tickets del Raffle
 
-**Semana 5â7 (Semis, final y sorteo):**
-- Final Whistle Battle con mÃ¡ximo esfuerzo
+**Semana 5–7 (Semis, final y sorteo):**
+- Final Whistle Battle con máximo esfuerzo
 - Grand Global Clash si llevas buen ritmo
-- El sorteo del Golden Ticket se celebra el 27 de julio â cuantos mÃ¡s tickets, mÃ¡s opciones
+- El sorteo del Golden Ticket se celebra el 27 de julio — cuantos más tickets, más opciones
 
 ---
 
-*â ï¸ La promo Fury World Cup '26 estÃ¡ disponible hasta el 27 de julio de 2026. Los tÃ©rminos y condiciones especÃ­ficos de cada evento estÃ¡n en la pÃ¡gina oficial de BetFury. Apuesta siempre con responsabilidad. Solo arriesga lo que puedas permitirte perder. Prohibido menores de 18 aÃ±os. Contiene enlaces de afiliado.*`,
+*⚠️ La promo Fury World Cup '26 está disponible hasta el 27 de julio de 2026. Los términos y condiciones específicos de cada evento están en la página oficial de BetFury. Apuesta siempre con responsabilidad. Solo arriesga lo que puedas permitirte perder. Prohibido menores de 18 años. Contiene enlaces de afiliado.*`,
     faqs: [
       {
-        question: 'Â¿CuÃ¡ndo termina la promo Fury World Cup '26 en BetFury?',
-        answer: 'La promo Fury World Cup '26 corre desde el 11 de junio hasta el 27 de julio de 2026. El sorteo del Golden Ticket Raffle ($100,000) se celebra al final del evento, el 27 de julio.',
+        question: '¿Cuándo termina la promo Fury World Cup \'26 en BetFury?',
+        answer: 'La promo Fury World Cup \'26 corre desde el 11 de junio hasta el 27 de julio de 2026. El sorteo del Golden Ticket Raffle ($100,000) se celebra al final del evento, el 27 de julio.',
       },
       {
-        question: 'Â¿Necesito depositar dinero para participar en el Mundial Prediction Event?',
+        question: '¿Necesito depositar dinero para participar en el Mundial Prediction Event?',
         answer: 'No. El Mundial Prediction Event es completamente gratuito. Solo necesitas una cuenta en BetFury para hacer tus predicciones de resultado antes de cada partido y optar a una parte del pool de $20,000.',
       },
       {
-        question: 'Â¿CÃ³mo consigo tickets para el Golden Ticket Raffle?',
-        answer: 'Consigues tickets apostando en cualquier secciÃ³n de BetFury (Originals, Slots, Casino en Vivo, Sportsbook, Futures, NFT Lootboxes) o simplemente haciendo un depÃ³sito. Cuanto mÃ¡s volumen acumules, mÃ¡s tickets recibirÃ¡s.',
+        question: '¿Cómo consigo tickets para el Golden Ticket Raffle?',
+        answer: 'Consigues tickets apostando en cualquier sección de BetFury (Originals, Slots, Casino en Vivo, Sportsbook, Futures, NFT Lootboxes) o simplemente haciendo un depósito. Cuanto más volumen acumules, más tickets recibirás.',
       },
       {
-        question: 'Â¿QuÃ© son los No Risk Bets del Sport Missions Journey?',
-        answer: 'Los No Risk Bets son apuestas especiales donde, si el resultado es perdedor, BetFury te devuelve el importe de la apuesta. Si ganas, cobras la cuota completa. Son el regalo mÃ¡s valioso de las misiones porque eliminan el riesgo en esa apuesta concreta.',
+        question: '¿Qué son los No Risk Bets del Sport Missions Journey?',
+        answer: 'Los No Risk Bets son apuestas especiales donde, si el resultado es perdedor, BetFury te devuelve el importe de la apuesta. Si ganas, cobras la cuota completa. Son el regalo más valioso de las misiones porque eliminan el riesgo en esa apuesta concreta.',
       },
       {
-        question: 'Â¿Puedo participar en los 5 eventos a la vez?',
-        answer: 'SÃ­. Los 5 eventos del Fury World Cup '26 son completamente compatibles entre sÃ­. Una sola apuesta deportiva puede contar simultÃ¡neamente para los Fury Championship Battles, acumular tickets del Golden Ticket Raffle y contribuir al World Cup Rivals Tournament.',
+        question: '¿Puedo participar en los 5 eventos a la vez?',
+        answer: 'Sí. Los 5 eventos del Fury World Cup \'26 son completamente compatibles entre sí. Una sola apuesta deportiva puede contar simultáneamente para los Fury Championship Battles, acumular tickets del Golden Ticket Raffle y contribuir al World Cup Rivals Tournament.',
       },
     ],
   },
 
-  // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // 27. Mundial 2026: Resultados Jornada 1, ClasificaciÃ³n y Apuestas
-  // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ─────────────────────────────────────────────────────────
+  // 27. Mundial 2026: Resultados Jornada 1, Clasificación y Apuestas
+  // ─────────────────────────────────────────────────────────
   {
     id: 'mundial-2026-resultados-jornada1-clasificacion-apuestas',
     slug: 'mundial-2026-resultados-jornada-1-clasificacion-apuestas',
-    titleEs: 'Mundial 2026 Jornada 1: Resultados, ClasificaciÃ³n Actualizada y Mejores Apuestas',
+    titleEs: 'Mundial 2026 Jornada 1: Resultados, Clasificación Actualizada y Mejores Apuestas',
     titleEn: 'World Cup 2026 Matchday 1: Results, Updated Standings and Best Bets',
-    descriptionEs: 'Resultados reales de la primera jornada del Mundial 2026: MÃ©xico 2-0 SudÃ¡frica, Corea del Sur 2-1 Rep. Checa, USA 4-1 Paraguay. AnÃ¡lisis de cada partido, clasificaciÃ³n por grupos y las mejores apuestas para la jornada 2 en BetFury.',
+    descriptionEs: 'Resultados reales de la primera jornada del Mundial 2026: México 2-0 Sudáfrica, Corea del Sur 2-1 Rep. Checa, USA 4-1 Paraguay. Análisis de cada partido, clasificación por grupos y las mejores apuestas para la jornada 2 en BetFury.',
     descriptionEn: 'Real results from World Cup 2026 Matchday 1: Mexico 2-0 South Africa, South Korea 2-1 Czech Republic, USA 4-1 Paraguay. Match analysis, group standings and best bets for Matchday 2 at BetFury.',
     category: 'Copa del Mundo 2026',
     keywords: 'resultados copa del mundo 2026, mundial 2026 jornada 1 resultados, clasificacion mundial 2026, mexico sudafrica resultado, korea del sur rep checa, usa paraguay mundial, brasil marruecos mundial 2026, apuestas copa del mundo jornada 2, cuotas favoritos mundial 2026, betfury mundial apuestas en directo',
@@ -3059,183 +3035,183 @@ Como apostador con experiencia en BetFury, la estrategia que mÃ¡s sentido tien
     tags: ['copa del mundo 2026', 'resultados', 'fase de grupos', 'apuestas', 'betfury'],
     author: 'Sirko007',
     readingTime: 8,
-    content: `> â½ **El Mundial 2026 ya estÃ¡ en marcha.** Sigue todos los partidos en [BetFury](https://betfury.io/?r=LUCKYSIRKO007) con cuotas en tiempo real, live betting y la promo Fury World Cup '26 con $600,000 en premios. RegÃ­strate con cÃ³digo **LUCKYSIRKO007**.
+    content: `> ⚽ **El Mundial 2026 ya está en marcha.** Sigue todos los partidos en [BetFury](https://betfury.io/?r=LUCKYSIRKO007) con cuotas en tiempo real, live betting y la promo Fury World Cup \'26 con $600,000 en premios. Regístrate con código **LUCKYSIRKO007**.
 
-La Copa del Mundo 2026 arrancÃ³ el **11 de junio** con el partido inaugural entre MÃ©xico y SudÃ¡frica. AquÃ­ tienes el resumen completo de los primeros resultados, el anÃ¡lisis de cada partido y las mejores apuestas para los prÃ³ximos encuentros.
+La Copa del Mundo 2026 arrancó el **11 de junio** con el partido inaugural entre México y Sudáfrica. Aquí tienes el resumen completo de los primeros resultados, el análisis de cada partido y las mejores apuestas para los próximos encuentros.
 
 ---
 
-## Resultados Confirmados â Jornada 1
+## Resultados Confirmados — Jornada 1
 
 ### Grupo A
 
-**ð²ð½ MÃ©xico 2â0 ð¿ð¦ SudÃ¡frica** *(11 junio, Estadio Azteca, Ciudad de MÃ©xico)*
+**🇲🇽 México 2–0 🇿🇦 Sud¡frica** *(11 junio, Estadio Azteca, Ciudad de México)*
 
-MÃ©xico dominÃ³ el partido de principio a fin ante su aficiÃ³n. El combinado de *El Tri* mostrÃ³ una solidez defensiva notable y aprovechÃ³ sus ocasiones con efectividad. SudÃ¡frica, debutante en el Mundial, tuvo escasas llegadas al Ã¡rea rival.
+México dominó el partido de principio a fin ante su afición. El combinado de *El Tri* mostró una solidez defensiva notable y aprovechó sus ocasiones con efectividad. Sudáfrica, debutante en el Mundial, tuvo escasas llegadas al área rival.
 
-**Veredicto para la jornada 2:** MÃ©xico favorito para ganar el Grupo A. Cuotas BetFury orientativas: MÃ©xico gana el grupo ~1.60 | MÃ©xico pasa de ronda ~1.20.
+**Veredicto para la jornada 2:** México favorito para ganar el Grupo A. Cuotas BetFury orientativas: México gana el grupo ~1.60 | México pasa de ronda ~1.20.
 
 ---
 
-**ð°ð· Corea del Sur 2â1 ð¨ð¿ RepÃºblica Checa** *(11 junio, Estadio Jalisco, Guadalajara)*
+**🇰🇷 Corea del Sur 2–1 🇨🇿 República Checa** *(11 junio, Estadio Jalisco, Guadalajara)*
 
-Corea del Sur remontÃ³ en la segunda parte tras ir por detrÃ¡s. Un equipo muy bien organizado tÃ¡cticamente que demostrÃ³ capacidad de reacciÃ³n. RepÃºblica Checa fue competitiva pero fallÃ³ en la definiciÃ³n.
+Corea del Sur remontó en la segunda parte tras ir por detrás. Un equipo muy bien organizado tácticamente que demostró capacidad de reacción. República Checa fue competitiva pero falló en la definición.
 
-**Veredicto para la jornada 2:** Corea del Sur y MÃ©xico con 3 puntos cada uno. Grupo muy disputado. Cuotas BetFury: Corea del Sur pasa de ronda ~1.45.
+**Veredicto para la jornada 2:** Corea del Sur y México con 3 puntos cada uno. Grupo muy disputado. Cuotas BetFury: Corea del Sur pasa de ronda ~1.45.
 
 ---
 
 ### Grupo B
 
-**ðºð¸ Estados Unidos 4â1 ðµð¾ Paraguay** *(12 junio, SoFi Stadium, Los Ãngeles)*
+**🇺🇸 Estados Unidos 4–1 🇵🇾 Paraguay** *(12 junio, SoFi Stadium, Los Ángeles)*
 
-Aplastante victoria de los anfitriones. EE.UU. mostrÃ³ la versiÃ³n mÃ¡s potente vista en aÃ±os, con un fÃºtbol rÃ¡pido y efectivo ante su pÃºblico de Los Ãngeles. Paraguay apenas pudo frenar el ritmo americano. El resultado, 4-1, fue mÃ¡s justo de lo que pareciÃ³.
+Aplastante victoria de los anfitriones. EE.UU. mostró la versión más potente vista en años, con un fútbol rápido y efectivo ante su público de Los Ángeles. Paraguay apenas pudo frenar el ritmo americano. El resultado, 4-1, fue más justo de lo que pareció.
 
-**Veredicto para la jornada 2:** EE.UU. en una posiciÃ³n de lÃ­der cÃ³moda. Cuotas BetFury: USA pasa de ronda ~1.15 | USA gana el grupo ~1.40.
-
----
-
-**ð¨ð¦ CanadÃ¡ 1â1 ð§ð¦ Bosnia Herzegovina** *(12 junio, BMO Field, Toronto)*
-
-Empate justo entre dos equipos muy igualados. CanadÃ¡ aprovechÃ³ bien el factor local pero no pudo liquidar el partido. Bosnia se mostrÃ³ sÃ³lida y supo aprovechar su Ãºnica gran ocasiÃ³n.
-
-**Veredicto para la jornada 2:** Grupo abierto. Tanto CanadÃ¡ como Bosnia siguen con opciones reales de clasificaciÃ³n.
+**Veredicto para la jornada 2:** EE.UU. en una posición de líder cómoda. Cuotas BetFury: USA pasa de ronda ~1.15 | USA gana el grupo ~1.40.
 
 ---
 
-## Partidos de Hoy â 13 de Junio (Jornada 1, continuaciÃ³n)
+**🇨🇦 Canadá 1–1 🇧🇦 Bosnia Herzegovina** *(12 junio, BMO Field, Toronto)*
 
-### ð El partido clave: Brasil vs Marruecos
+Empate justo entre dos equipos muy igualados. Canadá aprovechó bien el factor local pero no pudo liquidar el partido. Bosnia se mostró sólida y supo aprovechar su única gran ocasión.
 
-**ð§ð· Brasil â ð²ð¦ Marruecos** *(13 junio, SoFi Stadium, Los Ãngeles, 23:00 CET)*
+**Veredicto para la jornada 2:** Grupo abierto. Tanto Canadá como Bosnia siguen con opciones reales de clasificación.
 
-El partido mÃ¡s esperado del dÃ­a. Brasil, uno de los tres favoritos al tÃ­tulo, debuta ante una Marruecos que en el Mundial de Qatar 2022 llegÃ³ hasta semifinales. Es el primer gran examen del torneo.
+---
 
-**AnÃ¡lisis:**
+## Partidos de Hoy — 13 de Junio (Jornada 1, continuación)
+
+### 🌟 El partido clave: Brasil vs Marruecos
+
+**🇧🇷 Brasil — 🇲🇦 Marruecos** *(13 junio, SoFi Stadium, Los Ángeles, 23:00 CET)*
+
+El partido más esperado del día. Brasil, uno de los tres favoritos al título, debuta ante una Marruecos que en el Mundial de Qatar 2022 llegó hasta semifinales. Es el primer gran examen del torneo.
+
+**Análisis:**
 - Brasil llega con Vinicius Jr. como referencia ofensiva y una plantilla de primer nivel
-- Marruecos es el mayor escollo posible en una primera jornada â defensa compacta, transiciones rÃ¡pidas
-- Las cuotas del mercado dan a Brasil como claro favorito: ~1.55â1.70 para victoria brasileÃ±a
+- Marruecos es el mayor escollo posible en una primera jornada — defensa compacta, transiciones rápidas
+- Las cuotas del mercado dan a Brasil como claro favorito: ~1.55–1.70 para victoria brasileña
 
-**Apuestas de valor en BetFury para BrasilâMarruecos:**
-- Brasil gana: cuota ~1.60 â alta probabilidad con margen de valor
-- Ambos equipos marcan (BTTS: SÃ­): cuota ~1.85 â Marruecos siempre es peligroso en ataque
-- Total goles Under 2.5: cuota ~1.75 â si la tÃ¡ctica de Marruecos es defensiva, poco goles
-
----
-
-### ð´ó §ó ¢ó ³ó £ó ´ó ¿ HaitÃ­ vs Escocia
-
-**ð­ð¹ HaitÃ­ â ð´ó §ó ¢ó ³ó £ó ´ó ¿ Escocia** *(13 junio, 22:00 CET)*
-
-Debut de ambas selecciones en este Mundial. Escocia es favorita, aunque su historial en grandes torneos no acompaÃ±a. HaitÃ­ sorprendiÃ³ en la clasificaciÃ³n CONCACAF.
-
-**Apuesta de valor:** Escocia gana con cuota ~1.65 â hay valor si confÃ­as en la calidad europea.
+**Apuestas de valor en BetFury para Brasil–Marruecos:**
+- Brasil gana: cuota ~1.60 — alta probabilidad con margen de valor
+- Ambos equipos marcan (BTTS: Sí): cuota ~1.85 — Marruecos siempre es peligroso en ataque
+- Total goles Under 2.5: cuota ~1.75 — si la táctica de Marruecos es defensiva, poco goles
 
 ---
 
-### ð¦ðº Australia vs TurquÃ­a
+### 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Haití vs Escocia
 
-**ð¦ðº Australia â ð¹ð· TurquÃ­a** *(13 junio, horario a confirmar)*
+**🇭🇹 Haití — 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia** *(13 junio, 22:00 CET)*
 
-Dos selecciones de nivel medio-alto que se verÃ¡n las caras en un encuentro igualado. TurquÃ­a llega con una generaciÃ³n talentosa; Australia siempre compite bien organizativamente.
+Debut de ambas selecciones en este Mundial. Escocia es favorita, aunque su historial en grandes torneos no acompaña. Haití sorprendió en la clasificación CONCACAF.
 
-**Apuesta de valor:** Doble oportunidad (Australia o empate): cuota ~1.50 â reduce el riesgo en un partido difÃ­cil de predecir.
+**Apuesta de valor:** Escocia gana con cuota ~1.65 — hay valor si confías en la calidad europea.
 
 ---
 
-## ClasificaciÃ³n Actualizada (tras Jornada 1, partidos jugados)
+### 🇦🇺 Australia vs Turquía
+
+**🇦🇺 Australia — 🇹🇷 Turquía** *(13 junio, horario a confirmar)*
+
+Dos selecciones de nivel medio-alto que se verán las caras en un encuentro igualado. Turquía llega con una generación talentosa; Australia siempre compite bien organizativamente.
+
+**Apuesta de valor:** Doble oportunidad (Australia o empate): cuota ~1.50 — reduce el riesgo en un partido difícil de predecir.
+
+---
+
+## Clasificación Actualizada (tras Jornada 1, partidos jugados)
 
 ### Grupo A
 
 | Equipo | PJ | G | E | P | GF | GC | Pts |
 |--------|----|----|---|---|----|----|-----|
-| ð²ð½ MÃ©xico | 1 | 1 | 0 | 0 | 2 | 0 | **3** |
-| ð°ð· Corea del Sur | 1 | 1 | 0 | 0 | 2 | 1 | **3** |
-| ð¨ð¿ Rep. Checa | 1 | 0 | 0 | 1 | 1 | 2 | **0** |
-| ð¿ð¦ SudÃ¡frica | 1 | 0 | 0 | 1 | 0 | 2 | **0** |
+| 🇲🇽 México | 1 | 1 | 0 | 0 | 2 | 0 | **3** |
+| 🇰🇷 Corea del Sur | 1 | 1 | 0 | 0 | 2 | 1 | **3** |
+| 🇨🇿 Rep. Checa | 1 | 0 | 0 | 1 | 1 | 2 | **0** |
+| 🇿🇦 Sudáfrica | 1 | 0 | 0 | 1 | 0 | 2 | **0** |
 
 ### Grupo B
 
 | Equipo | PJ | G | E | P | GF | GC | Pts |
 |--------|----|----|---|---|----|----|-----|
-| ðºð¸ Estados Unidos | 1 | 1 | 0 | 0 | 4 | 1 | **3** |
-| ð¨ð¦ CanadÃ¡ | 1 | 0 | 1 | 0 | 1 | 1 | **1** |
-| ð§ð¦ Bosnia-Herz. | 1 | 0 | 1 | 0 | 1 | 1 | **1** |
-| ðµð¾ Paraguay | 1 | 0 | 0 | 1 | 1 | 4 | **0** |
+| 🇺🇸 Estados Unidos | 1 | 1 | 0 | 0 | 4 | 1 | **3** |
+| 🇨🇦 Canadá | 1 | 0 | 1 | 0 | 1 | 1 | **1** |
+| 🇧🇦 Bosnia-Herz. | 1 | 0 | 1 | 0 | 1 | 1 | **1** |
+| 🇵🇾 Paraguay | 1 | 0 | 0 | 1 | 1 | 4 | **0** |
 
 *Nota: Los grupos C, D, E, F, G, H, I, J, K y L comienzan a jugar entre el 13 y el 16 de junio.*
 
 ---
 
-## Las Cuotas al TÃ­tulo DespuÃ©s de la Jornada 1
+## Las Cuotas al Título Después de la Jornada 1
 
-Las apuestas al campeÃ³n del Mundial se actualizan con cada partido. Estas son las cuotas orientativas de mercado tras los primeros resultados:
+Las apuestas al campeón del Mundial se actualizan con cada partido. Estas son las cuotas orientativas de mercado tras los primeros resultados:
 
-| SelecciÃ³n | Cuota aprox. | Tendencia |
+| Selección | Cuota aprox. | Tendencia |
 |-----------|-------------|-----------|
-| ðªð¸ EspaÃ±a | +460 (~5.6) | â¬ï¸ Sube |
-| ð«ð· Francia | +470 (~5.7) | â¬ï¸ Sube |
-| ð§ð· Brasil | +900 (~10) | â Estable |
-| ð´ó §ó ¢ó ¥ó ®ó §ó ¿ Inglaterra | +700 (~8) | â¬ï¸ Baja |
-| ðµð¹ Portugal | +800 (~9) | â Estable |
-| ð¦ð· Argentina | +950 (~10.5) | â¬ï¸ Baja |
-| ðºð¸ EE.UU. | Variable | â¬ï¸ Sube tras 4-1 |
+| 🇪🇸 España | +460 (~5.6) | ⬆️ Sube |
+| 🇫🇷 Francia | +470 (~5.7) | ⬆️ Sube |
+| 🇧🇷 Brasil | +900 (~10) | → Estable |
+| 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra | +700 (~8) | ⬇️ Baja |
+| 🇵🇹 Portugal | +800 (~9) | → Estable |
+| 🇦🇷 Argentina | +950 (~10.5) | ⬇️ Baja |
+| 🇺🇸 EE.UU. | Variable | ⬆️ Sube tras 4-1 |
 
-**Nota importante:** EspaÃ±a y Francia lideran las cuotas sin haber jugado aÃºn. Su debut se produce en los prÃ³ximos dÃ­as â cualquier tropiezo harÃ­a subir sus cuotas significativamente y crearÃ­a oportunidades de valor.
+**Nota importante:** España y Francia lideran las cuotas sin haber jugado aún. Su debut se produce en los próximos días — cualquier tropiezo haría subir sus cuotas significativamente y crearía oportunidades de valor.
 
 ---
 
 ## Estrategia de Apuestas para la Jornada 2
 
-Con la informaciÃ³n de la Jornada 1, estas son las apuestas que tienen mÃ¡s sentido:
+Con la información de la Jornada 1, estas son las apuestas que tienen más sentido:
 
 ### Alta probabilidad (cuotas bajas, apuesta segura)
-- **MÃ©xico pasa de octavos:** cuota ~1.20 â tras ganar el grupo, es casi seguro
-- **EE.UU. pasa de octavos:** cuota ~1.15 â dominÃ³ con autoridad
+- **México pasa de octavos:** cuota ~1.20 — tras ganar el grupo, es casi seguro
+- **EE.UU. pasa de octavos:** cuota ~1.15 — dominó con autoridad
 
 ### Valor esperado positivo (cuota-probabilidad equilibrado)
-- **Corea del Sur pasa de grupos:** cuota ~1.45 â equipo que demostrÃ³ capacidad real
+- **Corea del Sur pasa de grupos:** cuota ~1.45 — equipo que demostró capacidad real
 - **Brasil gana el Grupo C** (si debuta hoy con victoria): cuota ~1.40
 
 ### Apuestas de mayor riesgo y mayor cuota
-- **USA llega a cuartos de final:** cuota ~2.50 â la forma inicial anima, pero el nivel aumentarÃ¡
-- **Corea del Sur sorpresa de octavos:** cuota ~3.50 â lo han demostrado antes (Corea 2002)
+- **USA llega a cuartos de final:** cuota ~2.50 — la forma inicial anima, pero el nivel aumentará
+- **Corea del Sur sorpresa de octavos:** cuota ~3.50 — lo han demostrado antes (Corea 2002)
 
 ---
 
-## Por QuÃ© Apostar en BetFury Durante el Mundial
+## Por Qué Apostar en BetFury Durante el Mundial
 
 BetFury tiene tres ventajas clave frente a cualquier otro sportsbook para seguir el Mundial 2026:
 
-1. **Live betting completo** â Cuotas en tiempo real durante los 104 partidos
-2. **Promo Fury World Cup '26** â $600,000 en premios activos hasta el 27 de julio (ver [artÃ­culo completo de la promo](/es/blog/fury-world-cup-2026-betfury-promo-600000))
-3. **Doble retorno con BFG** â Cada apuesta genera tokens BFG con dividendos diarios en BTC
+1. **Live betting completo** — Cuotas en tiempo real durante los 104 partidos
+2. **Promo Fury World Cup '26** — $600,000 en premios activos hasta el 27 de julio (ver [artículo completo de la promo](/es/blog/fury-world-cup-2026-betfury-promo-600000))
+3. **Doble retorno con BFG** — Cada apuesta genera tokens BFG con dividendos diarios en BTC
 
-**[â½ Empieza a apostar el Mundial en BetFury â](https://betfury.io/?r=LUCKYSIRKO007)** *(CÃ³digo LUCKYSIRKO007 para el bono de bienvenida)*
+**[⚽ Empiera a apostar el Mundial en BetFury ₒ](https://betfury.io/?r=LUCKYSIRKO007)** *(Código LUCKYSIRKO007 para el bono de bienvenida)*
 
 ---
 
-*â ï¸ Apuesta con responsabilidad. Los resultados pasados no garantizan resultados futuros. Las cuotas incluidas son orientativas y pueden variar. Solo apuesta lo que puedas permitirte perder. Prohibido menores de 18 aÃ±os. Contiene enlaces de afiliado.*`,
+*⚠️ Apuesta con responsabilidad. Los resultados pasados no garantizan resultados futuros. Las cuotas incluidas son orientativas y pueden variar. Solo apuesta lo que puedas permitirte perder. Prohibido menores de 18 años. Contiene enlaces de afiliado.*`,
     faqs: [
       {
-        question: 'Â¿CuÃ¡ntos partidos se juegan en la fase de grupos del Mundial 2026?',
-        answer: 'La fase de grupos del Mundial 2026 tiene 72 partidos en total, repartidos entre los 12 grupos de 4 equipos. Se juegan del 11 al 27 de junio de 2026 en estadios de EE.UU., MÃ©xico y CanadÃ¡.',
+        question: '¿Cuántos partidos se juegan en la fase de grupos del Mundial 2026?',
+        answer: 'La fase de grupos del Mundial 2026 tiene 72 partidos en total, repartidos entre los 12 grupos de 4 equipos. Se juegan del 11 al 27 de junio de 2026 en estadios de EE.UU., México y Canadá.',
       },
       {
-        question: 'Â¿QuÃ© equipos pasaron tras la Jornada 1 del Mundial 2026?',
-        answer: 'Tras la Jornada 1, los equipos con mejor inicio fueron MÃ©xico (2-0 SudÃ¡frica), Corea del Sur (2-1 Rep. Checa) y sobre todo EE.UU. (4-1 Paraguay). NingÃºn equipo estÃ¡ clasificado aÃºn â quedan 2 jornadas mÃ¡s de grupos.',
+        question: '¿Qué equipos pasaron tras la Jornada 1 del Mundial 2026?',
+        answer: 'Tras la Jornada 1, los equipos con mejor inicio fueron México (2-0 Sudáfrica), Corea del Sur (2-1 Rep. Checa) y sobre todo EE.UU. (4-1 Paraguay). Ningún equipo está clasificado aún — quedan 2 jornadas más de grupos.',
       },
       {
-        question: 'Â¿DÃ³nde puedo ver los resultados del Mundial 2026 y apostar en directo?',
-        answer: 'En BetFury puedes seguir los resultados en directo y apostar en tiempo real (live betting) en todos los partidos del Mundial 2026 con criptomonedas. AdemÃ¡s, la promo Fury World Cup '26 te da acceso a $600,000 en premios adicionales mientras apuestas.',
+        question: '¿Dónde puedo ver los resultados del Mundial 2026 y apostar en directo?',
+        answer: 'En BetFury puedes seguir los resultados en directo y apostar en tiempo real (live betting) en todos los partidos del Mundial 2026 con criptomonedas. Además, la promo Fury World Cup \'26 te da acceso a $600,000 en premios adicionales mientras apuestas.',
       },
       {
-        question: 'Â¿QuiÃ©n es favorito para ganar el Mundial 2026 segÃºn las cuotas actuales?',
-        answer: 'EspaÃ±a (+460) y Francia (+470) lideran las cuotas al tÃ­tulo del Mundial 2026. Les siguen Inglaterra (+700), Portugal (+800) y Brasil (+900). Argentina, campeona vigente, cotiza en torno a +950. Las cuotas se actualizan con cada jornada.',
+        question: '¿Quién es favorito para ganar el Mundial 2026 según las cuotas actuales?',
+        answer: 'España (+460) y Francia (+470) lideran las cuotas al título del Mundial 2026. Les siguen Inglaterra (+700), Portugal (+800) y Brasil (+900). Argentina, campeona vigente, cotiza en torno a +950. Las cuotas se actualizan con cada jornada.',
       },
       {
-        question: 'Â¿Puedo apostar el Mundial 2026 con Bitcoin en BetFury?',
-        answer: 'SÃ­. BetFury acepta mÃ¡s de 15 criptomonedas para apostar el Mundial 2026: Bitcoin (BTC), Ethereum (ETH), USDT, BNB, TRX y otras. Los retiros se procesan en minutos y no requieren KYC para cantidades normales.',
+        question: '¿Puedo apostar el Mundial 2026 con Bitcoin en BetFury?',
+        answer: 'Sí. BetFury acepta más de 15 criptomonedas para apostar el Mundial 2026: Bitcoin (BTC), Ethereum (ETH), USDT, BNB, TRX y otras. Los retiros se procesan en minutos y no requieren KYC para cantidades normales.',
       },
     ],
   },
