@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     'Guía de casinos cripto, apuestas deportivas y criptomonedas. BetFury análisis, bonos, staking BFG y más.',
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app'
+        process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptoluckyguia.com'
   ),
   verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
