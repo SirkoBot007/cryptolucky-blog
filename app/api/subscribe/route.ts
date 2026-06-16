@@ -94,7 +94,7 @@ export async function POST(req: NextRequest) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: 'CryptoLucky <onboarding@resend.dev>',
+          from: 'CryptoLucky <noreply@cryptoluckyguia.com>',
           to: [emailLower],
           subject: 'Tu codigo de bienvenida BetFury esta aqui',
           html: welcomeHtml,
@@ -109,7 +109,7 @@ export async function POST(req: NextRequest) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: 'CryptoLucky <onboarding@resend.dev>',
+          from: 'CryptoLucky <noreply@cryptoluckyguia.com>',
           to: ['albertolm822@gmail.com'],
           subject: `Nuevo lead: ${emailLower}`,
           html: `<p>Nuevo suscriptor: ${emailLower}</p><p>Pais: ${country || 'No especificado'}</p>`,
