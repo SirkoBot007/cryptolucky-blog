@@ -172,6 +172,7 @@ export default function LeadCaptureForm({
                 <option value="BR">🇧🇷 Brasil</option>
               </optgroup>
               <optgroup label="── América del Norte ──">
+                <option value="US">🇺🇸 Estados Unidos</option>
                 <option value="CA">🇨🇦 Canadá</option>
               </optgroup>
               <optgroup label="── Asia / Pacífico ──">
@@ -198,12 +199,21 @@ export default function LeadCaptureForm({
                 <option value="ET">🇪🇹 Etiopía</option>
               </optgroup>
               <optgroup label="── Europa ──">
+                <option value="ES">🇪🇸 España</option>
+                <option value="PT">🇵🇹 Portugal</option>
+                <option value="DE">🇩🇪 Alemania</option>
+                <option value="FR">🇫🇷 Francia</option>
                 <option value="IT">🇮🇹 Italia</option>
+                <option value="NL">🇳🇱 Países Bajos</option>
+                <option value="BE">🇧🇪 Bélgica</option>
+                <option value="AT">🇦🇹 Austria</option>
                 <option value="PL">🇵🇱 Polonia</option>
                 <option value="CZ">🇨🇿 Rep. Checa</option>
+                <option value="HU">🇭🇺 Hungría</option>
                 <option value="RO">🇷🇴 Rumanía</option>
                 <option value="BG">🇧🇬 Bulgaria</option>
                 <option value="GR">🇬🇷 Grecia</option>
+                <option value="UA">🇺🇦 Ucrania</option>
                 <option value="SE">🇸🇪 Suecia</option>
                 <option value="NO">🇳🇴 Noruega</option>
                 <option value="FI">🇫🇮 Finlandia</option>
@@ -216,6 +226,7 @@ export default function LeadCaptureForm({
                 <option value="HR">🇭🇷 Croacia</option>
                 <option value="RS">🇷🇸 Serbia</option>
                 <option value="CH">🇨🇭 Suiza</option>
+                <option value="TR">🇹🇷 Turquía</option>
               </optgroup>
               <option value="OTHER">🌍 Otro</option>
             </select>
