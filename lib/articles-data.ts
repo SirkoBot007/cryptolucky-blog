@@ -18,6 +18,7 @@ export interface StaticArticle {
   status: string;
   tags: string[];
   author?: string;
+  readingTime?: number;
   image?: string;
   content: string;
   faqs?: Array<{ question: string; answer: string }>;
