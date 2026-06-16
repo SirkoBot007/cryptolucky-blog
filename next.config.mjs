@@ -8,6 +8,16 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  async redirects() {
+    return [
+      // Blog articles only exist in Spanish — redirect EN versions to ES
+      {
+        source: '/en/blog/:slug*',
+        destination: '/es/blog/:slug*',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
