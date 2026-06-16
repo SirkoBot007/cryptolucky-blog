@@ -26,12 +26,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = getTitle(article, params.locale);
   const description = getDescription(article, params.locale);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptoluckyguia.com';
+  // All blog content is in Spanish — canonical always points to /es/
+  const canonicalEs = `${siteUrl}/es/blog/${params.slug}`;
   return {
     title, description, keywords: article.keywords,
     authors: article.author ? [{ name: article.author }] : undefined,
+    // EN article pages redirect to ES (next.config.mjs) — noindex as belt-and-suspenders
+    ...(params.locale === 'en' && { robots: { index: false, follow: false } }),
     alternates: {
-      canonical: `${siteUrl}/es/blog/${params.slug}`,
-      languages: { es: `${siteUrl}/es/blog/${params.slug}` },
+      canonical: canonicalEs,
+      languages: {
+        es: canonicalEs,
+        'x-default': canonicalEs,
+      },
     },
     openGraph: {
       title, description, type: 'article',
@@ -75,16 +82,16 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
           <p className="text-slate-400 text-base mb-3">{description}</p>
 
           <div className="flex flex-wrap items-center gap-4 text-slate-500 text-sm mb-8">
-            <span>✍️ {article.author ?? 'Carlos Mendoza'}</span>
-            <span>📅 {new Date(article.publishedAt).toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-            {article.updatedAt && article.updatedAt !== article.publishedAt && <span>🔄 {locale === 'es' ? 'Actualizado' : 'Updated'}: {new Date(article.updatedAt).toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>}
+            <span>&#x270D; {article.author ?? 'Carlos Mendoza'}</span>
+            <span>&#x1F4C5; {new Date(article.publishedAt).toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+            {article.updatedAt && article.updatedAt !== article.publishedAt && <span>&#x1F504; {locale === 'es' ? 'Actualizado' : 'Updated'}: {new Date(article.updatedAt).toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>}
           </div>
           <hr className="border-slate-700 mb-8" />
 
           {locale === 'en' && (
             <div className="bg-slate-800 border border-amber-500/30 rounded-lg p-4 mb-8 flex items-start gap-3">
-              <span className="text-amber-400 text-lg">🌐</span>
-              <p className="text-slate-300 text-sm"><strong className="text-amber-400">Note:</strong> This article is written in Spanish, as our primary audience is Latin America.{' '}<a href={`/es/blog/${slug}`} className="text-amber-400 hover:underline">Read in Spanish →</a></p>
+              <span className="text-amber-400 text-lg">&#x1F310;</span>
+              <p className="text-slate-300 text-sm"><strong className="text-amber-400">Note:</strong> This article is written in Spanish, as our primary audience is Latin America.{' '}<a href={`/es/blog/${slug}`} className="text-amber-400 hover:underline">Read in Spanish</a></p>
             </div>
           )}
 
@@ -100,7 +107,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
               <div className="space-y-5">
                 {article.faqs.map((faq, i) => (
                   <div key={i} className="border-b border-slate-700 pb-5 last:border-0 last:pb-0">
-                    <p className="font-semibold text-white mb-2">❓ {faq.question}</p>
+                    <p className="font-semibold text-white mb-2">&#x2753; {faq.question}</p>
                     <p className="text-slate-400 text-sm leading-relaxed">{faq.answer}</p>
                   </div>
                 ))}
@@ -130,4 +137,4 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
       <ExitIntentPopup locale={locale} />
     </>
   );
-                    }
+}
