@@ -8,8 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        // Disallow EN blog article pages (they redirect to ES, but belt-and-suspenders)
-        disallow: ['/en/blog/'],
       },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,
