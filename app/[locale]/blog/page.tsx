@@ -7,12 +7,6 @@ export const revalidate = 3600;
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
-// Slugs de artículos del Mundial para destacarlos
-const MUNDIAL_SLUGS = [
-  'copa-del-mundo-2026-favoritos-analisis-apuestas',
-  'apuestas-mundial-2026-betfury',
-];
-
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -47,136 +41,204 @@ export default async function BlogPage({
   const articles = await getPublishedArticles().catch(() => []);
   const isEs = locale === 'es';
 
-  // Separar artículos del Mundial del resto
-  const mundialArticles = articles.filter((a) => MUNDIAL_SLUGS.includes(a.slug));
-  const otherArticles = articles.filter((a) => !MUNDIAL_SLUGS.includes(a.slug));
+  const mundialArticles = articles.filter((a) => a.category === 'Apuestas Deportivas');
+  const otherArticles = articles.filter((a) => a.category !== 'Apuestas Deportivas');
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-black text-white mb-2">
-        {isEs ? 'Blog CryptoLucky' : 'CryptoLucky Blog'}
-      </h1>
-      <p className="text-slate-400 mb-8">
-        {isEs
-          ? 'Guías completas, análisis y estrategias para sacar el máximo partido al casino cripto líder'
-          : 'Complete guides, analysis and strategies to get the most out of the leading crypto casino'}
-      </p>
 
-      {/* ── BLOQUE ESPECIAL MUNDIAL 2026 ── */}
+      {/* ── HEADER ── */}
+      <div className="mb-12">
+        <div className="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/20 rounded-full px-3 py-1 mb-4">
+          <span className="text-amber-400 text-xs font-bold uppercase tracking-widest">Blog</span>
+        </div>
+        <h1 className="text-4xl md:text-5xl font-black text-white mb-3 leading-tight">
+          {isEs ? 'Guías ' : 'Guides '}
+          <span className="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
+            CryptoLucky
+          </span>
+        </h1>
+        <p className="text-slate-400 text-lg max-w-2xl">
+          {isEs
+            ? 'Guías completas, análisis y estrategias para sacar el máximo partido al casino cripto líder'
+            : 'Complete guides, analysis and strategies to get the most out of the leading crypto casino'}
+        </p>
+        <div className="flex flex-wrap items-center gap-4 mt-4">
+          <span className="bg-slate-800 border border-slate-700 text-slate-400 text-xs font-semibold px-3 py-1 rounded-full">
+            {articles.length} {isEs ? 'artículos' : 'articles'}
+          </span>
+          <span className="flex items-center gap-1.5 text-green-400 text-sm font-semibold">
+            <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
+            {isEs ? 'Mundial 2026 en directo' : 'World Cup 2026 live'}
+          </span>
+        </div>
+      </div>
+
+      {/* ── MUNDIAL 2026 ── */}
       {mundialArticles.length > 0 && (
-        <section className="mb-12">
-          <div className="flex items-center gap-3 mb-4">
+        <section className="mb-16">
+          <div className="flex items-center gap-3 mb-5">
             <span className="text-2xl">🏆</span>
             <h2 className="text-xl font-black text-white">
               {isEs ? 'Copa del Mundo 2026 — En Vivo' : 'FIFA World Cup 2026 — Live'}
             </h2>
-            <span className="bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">
+            <span className="bg-green-500 text-white text-xs font-black px-2.5 py-0.5 rounded-full animate-pulse">
               LIVE
+            </span>
+            <span className="ml-auto text-slate-600 text-xs hidden sm:block">
+              {mundialArticles.length} {isEs ? 'guías' : 'guides'}
             </span>
           </div>
 
-          {/* Banner principal del Mundial */}
-          <div className="bg-gradient-to-r from-green-900/60 to-slate-900 border border-green-500/40 rounded-2xl p-6 mb-4 flex flex-col md:flex-row md:items-center gap-6">
-            <div className="flex-1">
-              <p className="text-green-400 text-sm font-bold uppercase tracking-wide mb-1">
-                {isEs ? '⚽ Apuesta en cripto · Gana en cripto' : '⚽ Bet in crypto · Win in crypto'}
-              </p>
-              <p className="text-white font-black text-xl md:text-2xl mb-2">
-                {isEs
-                  ? '104 partidos en directo. Cuotas en tiempo real. Retiros instantáneos.'
-                  : '104 live matches. Real-time odds. Instant withdrawals.'}
-              </p>
-              <p className="text-slate-400 text-sm mb-4">
-                {isEs
-                  ? 'Cada apuesta genera tokens BFG. Ponlos en staking y cobra dividendos diarios en BTC además de tus ganancias deportivas.'
-                  : 'Every bet generates BFG tokens. Stake them and earn daily dividends in BTC on top of your sports winnings.'}
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href={AFFILIATE}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                  className="bg-green-500 hover:bg-green-400 text-white font-black px-6 py-3 rounded-xl transition-colors text-sm"
-                >
-                  {isEs ? '⚽ Apostar en el Mundial →' : '⚽ Bet on the World Cup →'}
-                </a>
-                <Link
-                  href={`/${locale}/blog/copa-del-mundo-2026-favoritos-analisis-apuestas`}
-                  className="bg-slate-700 hover:bg-slate-600 text-white font-bold px-6 py-3 rounded-xl transition-colors text-sm"
-                >
-                  {isEs ? 'Ver pronósticos →' : 'See predictions →'}
-                </Link>
+          {/* Banner */}
+          <div className="relative overflow-hidden bg-gradient-to-br from-green-950/80 via-slate-900 to-slate-900 border border-green-500/25 rounded-2xl p-6 md:p-8 mb-6">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/5 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
+            <div className="relative flex flex-col md:flex-row md:items-center gap-6">
+              <div className="flex-1">
+                <p className="text-green-400 text-xs font-black uppercase tracking-widest mb-2">
+                  {isEs ? '⚽ APUESTAS EN CRIPTO · COPA DEL MUNDO 2026' : '⚽ CRYPTO BETS · FIFA WORLD CUP 2026'}
+                </p>
+                <p className="text-white font-black text-xl md:text-2xl mb-3 leading-snug">
+                  {isEs
+                    ? '104 partidos en directo. Cuotas en tiempo real. Retiros instantáneos.'
+                    : '104 live matches. Real-time odds. Instant withdrawals.'}
+                </p>
+                <p className="text-slate-400 text-sm mb-5 max-w-lg">
+                  {isEs
+                    ? 'Cada apuesta genera tokens BFG. Ponlos en staking y cobra dividendos diarios en BTC además de tus ganancias deportivas.'
+                    : 'Every bet generates BFG tokens. Stake them and earn daily dividends in BTC on top of your sports winnings.'}
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href={AFFILIATE}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-white font-black px-6 py-3 rounded-xl transition-all duration-300 text-sm shadow-lg shadow-green-500/20 hover:-translate-y-0.5"
+                  >
+                    {isEs ? '⚽ Apostar en el Mundial →' : '⚽ Bet on the World Cup →'}
+                  </a>
+                  {mundialArticles[0] && (
+                    <Link
+                      href={`/${locale}/blog/${mundialArticles[0].slug}`}
+                      className="bg-slate-700/80 hover:bg-slate-700 border border-slate-600/50 text-white font-bold px-6 py-3 rounded-xl transition-all duration-300 text-sm"
+                    >
+                      {isEs ? 'Ver guía completa →' : 'See full guide →'}
+                    </Link>
+                  )}
+                </div>
               </div>
+              <div className="text-8xl hidden md:block select-none opacity-80">🏆</div>
             </div>
-            <div className="text-6xl hidden md:block">🏆</div>
           </div>
 
-          {/* Tarjetas de artículos del Mundial */}
-          <div className="grid sm:grid-cols-2 gap-4">
+          {/* Cards */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {mundialArticles.map((article) => (
               <Link
                 key={article.id}
                 href={`/${locale}/blog/${article.slug}`}
-                className="bg-slate-800 border border-green-500/30 rounded-xl p-5 hover:border-green-400 transition-colors group flex flex-col"
+                className="group bg-slate-800/60 border border-green-500/15 rounded-2xl overflow-hidden hover:border-green-400/40 hover:-translate-y-1 transition-all duration-300 shadow-md flex flex-col"
               >
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-green-400 text-xs font-semibold uppercase tracking-wide">
-                    {article.category}
-                  </span>
-                  <span className="bg-green-500/20 text-green-400 text-xs px-2 py-0.5 rounded-full">
-                    {isEs ? 'Mundial 2026' : 'World Cup 2026'}
+                {article.image ? (
+                  <div className="relative h-40 overflow-hidden bg-slate-700 shrink-0">
+                    <img
+                      src={article.image}
+                      alt={getTitle(article, locale)}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent" />
+                    <span className="absolute top-3 left-3 bg-green-500/90 backdrop-blur-sm text-white text-xs font-black px-2.5 py-0.5 rounded-full">
+                      {isEs ? 'Mundial 2026' : 'World Cup 2026'}
+                    </span>
+                  </div>
+                ) : (
+                  <div className="h-10 bg-gradient-to-r from-green-950/60 to-slate-800 shrink-0" />
+                )}
+                <div className="p-4 flex flex-col flex-1">
+                  {!article.image && (
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-green-400 text-xs font-bold uppercase">{article.category}</span>
+                      <span className="bg-green-500/15 text-green-400 text-xs px-2 py-0.5 rounded-full">
+                        {isEs ? 'Mundial 2026' : 'World Cup 2026'}
+                      </span>
+                    </div>
+                  )}
+                  <h3 className="text-white font-bold text-sm mt-1 mb-2 group-hover:text-green-400 transition-colors line-clamp-2 flex-1">
+                    {getTitle(article, locale)}
+                  </h3>
+                  <p className="text-slate-400 text-xs line-clamp-2 mb-3">
+                    {getDescription(article, locale)}
+                  </p>
+                  <span className="text-green-400 text-xs font-semibold">
+                    {isEs ? 'Leer →' : 'Read →'}
                   </span>
                 </div>
-                <h3 className="text-white font-bold text-base mt-1 mb-2 group-hover:text-green-400 transition-colors line-clamp-2 flex-1">
-                  {getTitle(article, locale)}
-                </h3>
-                <p className="text-slate-400 text-sm line-clamp-2 mb-3">
-                  {getDescription(article, locale)}
-                </p>
-                <span className="text-green-400 text-sm font-semibold">
-                  {isEs ? 'Leer guía completa →' : 'Read full guide →'}
-                </span>
               </Link>
             ))}
           </div>
         </section>
       )}
 
-      {/* ── RESTO DE ARTÍCULOS ── */}
+      {/* ── ALL ARTICLES ── */}
       <section>
-        <h2 className="text-xl font-bold text-white mb-6">
-          {isEs ? 'Todas las guías' : 'All guides'}
-        </h2>
+        <div className="flex items-center justify-between mb-7">
+          <h2 className="text-2xl font-black text-white">
+            {isEs ? 'Todas las guías' : 'All guides'}
+          </h2>
+          <span className="text-slate-600 text-sm">
+            {otherArticles.length} {isEs ? 'artículos' : 'articles'}
+          </span>
+        </div>
+
         {otherArticles.length === 0 ? (
-          <div className="text-center py-24 text-slate-500">
-            <p className="text-2xl mb-2">🚀</p>
-            <p>{isEs ? 'Próximamente…' : 'Coming soon…'}</p>
+          <div className="text-center py-24">
+            <p className="text-4xl mb-4">🚀</p>
+            <p className="font-black text-white text-xl mb-2">{isEs ? 'Próximamente' : 'Coming soon'}</p>
+            <p className="text-slate-500 text-sm">{isEs ? 'Nuevas guías en camino' : 'New guides on the way'}</p>
           </div>
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {otherArticles.map((article) => (
               <Link
                 key={article.id}
                 href={`/${locale}/blog/${article.slug}`}
-                className="bg-slate-800 border border-slate-700 rounded-xl p-6 hover:border-amber-400 transition-colors group flex flex-col"
+                className="group bg-slate-800/60 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-amber-400/50 hover:-translate-y-1 transition-all duration-300 shadow-md flex flex-col"
               >
-                {article.category && (
-                  <span className="text-amber-400 text-xs font-semibold uppercase tracking-wide">
-                    {article.category}
-                  </span>
+                {article.image ? (
+                  <div className="relative h-44 overflow-hidden bg-slate-700 shrink-0">
+                    <img
+                      src={article.image}
+                      alt={getTitle(article, locale)}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
+                  </div>
+                ) : (
+                  <div className="h-36 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center shrink-0">
+                    <span className="text-5xl opacity-20">🍀</span>
+                  </div>
                 )}
-                <h2 className="text-white font-bold text-lg mt-2 mb-2 group-hover:text-amber-400 transition-colors line-clamp-2 flex-1">
-                  {getTitle(article, locale)}
-                </h2>
-                <p className="text-slate-400 text-sm line-clamp-3 mb-4">
-                  {getDescription(article, locale)}
-                </p>
-                <p className="text-slate-500 text-xs mt-auto">
-                  {new Date(article.publishedAt).toLocaleDateString(
-                    isEs ? 'es-ES' : 'en-US',
-                    { year: 'numeric', month: 'long', day: 'numeric' }
+                <div className="p-5 flex flex-col flex-1">
+                  {article.category && (
+                    <span className="text-amber-400 text-xs font-bold uppercase tracking-wide">
+                      {article.category}
+                    </span>
                   )}
-                </p>
+                  <h3 className="text-white font-bold text-base mt-2 mb-2 group-hover:text-amber-400 transition-colors line-clamp-2 flex-1">
+                    {getTitle(article, locale)}
+                  </h3>
+                  <p className="text-slate-400 text-sm line-clamp-2 mb-4">
+                    {getDescription(article, locale)}
+                  </p>
+                  <p className="text-slate-600 text-xs mt-auto">
+                    {new Date(article.publishedAt).toLocaleDateString(
+                      isEs ? 'es-ES' : 'en-US',
+                      { year: 'numeric', month: 'short', day: 'numeric' }
+                    )}
+                  </p>
+                </div>
               </Link>
             ))}
           </div>

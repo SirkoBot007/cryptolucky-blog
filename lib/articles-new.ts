@@ -409,7 +409,7 @@ El valor existe cuando la cuota es mayor que la probabilidad real que le asignas
 
 **Ejemplo:** Cuota 2.0 para un empate. Implica probabilidad del 50%. Si crees que hay un 55% de probabilidad de empate, hay valor.
 
-Para calcular probabilidad implícita: `1 / cuota = probabilidad`
+Para calcular probabilidad implícita: "1 / cuota = probabilidad"
 
 Una cuota de 2.5 implica 40% de probabilidad. Si tienes datos para creer que es un 48%, es valor real.
 
