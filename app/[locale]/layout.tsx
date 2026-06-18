@@ -49,10 +49,15 @@ export default async function LocaleLayout({
   ];
 
   const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptoluckyguia.com';
 
   return (
     <html lang={locale}>
       <head>
+        {/* hreflang — signals alternate language versions to search engines */}
+        <link rel="alternate" hrefLang="es" href={`${siteUrl}/es`} />
+        <link rel="alternate" hrefLang="en" href={`${siteUrl}/en`} />
+        <link rel="alternate" hrefLang="x-default" href={`${siteUrl}/es`} />
         {adsenseId && (
           <script
             async

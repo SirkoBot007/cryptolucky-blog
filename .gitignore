@@ -1,4 +1,7 @@
 /node_modules
+# GA4 Service Account — NUNCA subir a GitHub
+*service-account*.json
+*reference-hold*.json
 /.next/
 /out/
 /build

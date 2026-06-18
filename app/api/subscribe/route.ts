@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { EMAIL_SEQUENCE } from '@/lib/email-sequences';
 
 const LEADS_DATABASE_ID = process.env.NOTION_LEADS_DATABASE_ID ?? '';
 const NOTION_API_KEY = process.env.NOTION_API_KEY ?? '';
@@ -182,6 +183,34 @@ export async function POST(req: NextRequest) {
       }
     } else {
       console.warn('[subscribe] RESEND_API_KEY not set — email not sent for:', emailLower);
+    }
+
+    // -- Programar secuencia drip (emails #2-5 via Resend scheduledAt) --------
+    if (resendApiKey) {
+      const FROM = 'CryptoLucky <noreply@cryptoluckyguia.com>';
+      for (const step of EMAIL_SEQUENCE) {
+        const scheduledAt = new Date(
+          Date.now() + step.delayDays * 24 * 60 * 60 * 1000
+        ).toISOString();
+        fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${resendApiKey}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            from: FROM,
+            to: [emailLower],
+            subject: step.subject,
+            html: step.getHtml(),
+            scheduledAt,
+            tags: [
+              { name: 'sequence', value: 'drip' },
+              { name: 'source', value: source || 'inline' },
+            ],
+          }),
+        }).catch((err) => console.warn('[subscribe] drip schedule error:', err));
+      }
     }
 
     // Trigger n8n webhook (si está configurado)
