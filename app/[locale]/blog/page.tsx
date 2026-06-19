@@ -11,6 +11,31 @@ const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
 const SPORT_CATEGORIES = ['Copa del Mundo 2026', 'Sportsbook', 'Apuestas Deportivas'];
 
+// Fallback images for cards without article.image — different per slot to avoid repetition
+const MUNDIAL_FALLBACKS = [
+  '/betfury/banners/sport-300x250.gif',
+  '/betfury/banners/sport-970x250.gif',
+  '/betfury/banners/betfury-300x250.png',
+  '/betfury/banners/esport-300x250.gif',
+  '/betfury/banners/bfg-300x250.gif',
+  '/betfury/banners/cashback-300x250.gif',
+];
+
+const ARTICLE_FALLBACKS = [
+  '/betfury/banners/bfg-300x250.gif',
+  '/betfury/banners/cashback-300x250.gif',
+  '/betfury/banners/freebox-300x250.gif',
+  '/betfury/banners/esport-300x250.gif',
+  '/betfury/banners/betfury-300x250.png',
+  '/betfury/banners/sport-300x250.gif',
+  '/betfury/mascot/racoon-money.png',
+  '/betfury/banners/bfg-970x250.gif',
+  '/betfury/mascot/racoon-money2.png',
+  '/betfury/banners/cashback-970x250.gif',
+  '/betfury/banners/freebox-728x90.gif',
+  '/betfury/mascot/racoon-stop.png',
+];
+
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -195,30 +220,20 @@ export default async function BlogPage({
 
           {/* Cards */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {mundialArticles.map((article) => (
+            {mundialArticles.map((article, idx) => (
               <Link
                 key={article.id}
                 href={`/${locale}/blog/${article.slug}`}
                 className="group bg-slate-800/60 border border-green-500/15 rounded-2xl overflow-hidden hover:border-green-400/40 hover:-translate-y-1 transition-all duration-300 shadow-md flex flex-col"
               >
                 <div className="relative h-40 overflow-hidden bg-slate-800 shrink-0">
-                  {article.image ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={article.image}
-                      alt={getTitle(article, locale)}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  ) : (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src="/betfury/banners/sport-300x250.gif"
-                      alt="BetFury Sports"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  )}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={article.image ?? MUNDIAL_FALLBACKS[idx % MUNDIAL_FALLBACKS.length]}
+                    alt={getTitle(article, locale)}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
                   <span className="absolute top-3 left-3 bg-green-500/90 backdrop-blur-sm text-white text-xs font-black px-2.5 py-0.5 rounded-full">
                     {isEs ? 'Mundial 2026' : 'World Cup 2026'}
@@ -260,30 +275,20 @@ export default async function BlogPage({
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {otherArticles.map((article) => (
+            {otherArticles.map((article, idx) => (
               <Link
                 key={article.id}
                 href={`/${locale}/blog/${article.slug}`}
                 className="group bg-slate-800/60 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-amber-400/50 hover:-translate-y-1 transition-all duration-300 shadow-md flex flex-col"
               >
                 <div className="relative h-44 overflow-hidden bg-slate-800 shrink-0">
-                  {article.image ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={article.image}
-                      alt={getTitle(article, locale)}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  ) : (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src="/betfury/banners/bfg-300x250.gif"
-                      alt="BetFury Casino"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  )}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={article.image ?? ARTICLE_FALLBACKS[idx % ARTICLE_FALLBACKS.length]}
+                    alt={getTitle(article, locale)}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none" />
                   {article.category && (
                     <span className="absolute top-3 left-3 bg-black/50 backdrop-blur-sm text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">
