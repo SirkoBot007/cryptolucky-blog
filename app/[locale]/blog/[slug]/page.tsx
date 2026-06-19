@@ -137,6 +137,17 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
 
           <hr className="border-slate-700/60 mb-7" />
 
+          {/* Affiliate Disclosure */}
+          <div className="bg-slate-800/40 border border-slate-700/40 rounded-xl px-4 py-3 mb-6 flex items-start gap-2">
+            <span className="text-slate-500 flex-shrink-0 text-xs mt-0.5">&#x24D8;</span>
+            <p className="text-xs text-slate-500 leading-relaxed">
+              <span className="font-bold text-slate-400">{isEs ? 'Divulgación de afiliado:' : 'Affiliate disclosure:'}</span>{' '}
+              {isEs
+                ? 'Algunos enlaces de esta página son de afiliado. Si te registras en BetFury a través de nuestro código, podemos recibir una comisión sin coste adicional para ti. Esto no afecta nuestros análisis ni recomendaciones.'
+                : 'Some links on this page are affiliate links. Registering through our code may earn us a commission at no extra cost to you. This does not affect our reviews or recommendations.'}
+            </p>
+          </div>
+
           {/* EN notice */}
           {locale === 'en' && (
             <div className="bg-slate-800 border border-amber-500/30 rounded-lg p-4 mb-7 flex items-start gap-3">
@@ -273,6 +284,28 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
             <LeadCaptureForm locale={locale} source={`article-${slug}`} />
           </div>
 
+
+          {/* ── Author bio (E-E-A-T) ── */}
+          <div className="mt-12 bg-slate-800/60 border border-slate-700/50 rounded-2xl p-6 flex items-start gap-4">
+            <div className="w-12 h-12 rounded-full bg-amber-500/20 border border-amber-500/30 flex items-center justify-center flex-shrink-0 text-amber-400 font-black text-xl select-none">S</div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2 flex-wrap mb-1">
+                <p className="text-white font-bold text-sm">{article.author ?? 'Sirko007'}</p>
+                <span className="text-amber-400 text-xs font-semibold bg-amber-400/10 px-2 py-0.5 rounded-full">
+                  {isEs ? 'Analista de Casinos Cripto' : 'Crypto Casino Analyst'}
+                </span>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                {isEs
+                  ? 'Fundador de CryptoLucky y referencia en español para BetFury en Latinoamérica. Más de 5 años analizando casinos con criptomonedas, probando depósitos, retiros y bonos reales en cada plataforma que reseña.'
+                  : 'Founder of CryptoLucky and the leading Spanish-language authority on BetFury in Latin America. 5+ years analyzing crypto casinos, testing real deposits, withdrawals and bonuses on every platform reviewed.'}
+              </p>
+              <p className="text-slate-500 text-xs mt-2">
+                {isEs ? 'Actualizado:' : 'Updated:'}{' '}
+                {new Date(article.updatedAt ?? article.publishedAt).toLocaleDateString(isEs ? 'es-ES' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </p>
+            </div>
+          </div>
 
           {/* ── Related articles ── */}
           {related.length > 0 && (
