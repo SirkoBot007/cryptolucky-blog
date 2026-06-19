@@ -581,6 +581,34 @@ Si quieres acelerar el proceso, puedes comprar tokens BFG directamente. Están d
 
 No necesitas apostar grandes cantidades para acumular BFG. Apostar pequeñas cantidades de forma consistente es a menudo más eficiente que arriesgar grandes sumas.
 
+## stBFG: Staking Bloqueado con 2x Dividendos
+
+BetFury ofrece dos modalidades de staking:
+
+| Modalidad | Liquidez | Dividendos | Ideal para |
+|-----------|---------|-----------|------------|
+| **BFG** (flexible) | Unstaking en cualquier momento | Base ×1 | Usuarios que pueden necesitar liquidez |
+| **stBFG** (bloqueado 365 días) | Bloqueado 1 año | **Base ×2** | Holders a largo plazo, mayor rentabilidad |
+
+La modalidad **stBFG multiplica por 2 tus dividendos diarios** a cambio de bloquear los tokens durante 365 días. Si tienes convicción en el proyecto, la rentabilidad a un año es significativamente mayor.
+
+## ¿Cuánto se Puede Ganar? Ejemplo Real
+
+Los dividendos dependen de tu % del pool total de BFG. Un ejemplo orientativo:
+
+**Escenario**: Tienes 100.000 BFG en staking. El pool total del casino es 10.000.000.000 BFG. Tu participación = 0,001%.
+
+Si el casino genera en un día 0,5 BTC en dividendos totales:
+- Tu parte = 0,001% × 0,5 BTC = **0,000005 BTC** (~0,30 USD con BTC a 60k$)
+- Con stBFG ×2 = **0,000010 BTC** (~0,60 USD por día)
+
+Esto equivale a ~**10-25% APR** en los períodos de alta actividad del casino (Mundiales, torneos, eventos especiales), y a ~5-12% en periodos normales.
+
+**Nota clave**: La rentabilidad crece cuando:
+1. Aumenta la actividad global del casino (más ingresos a repartir)
+2. Sube el precio del BTC/ETH (los dividendos en cripto valen más en USD)
+3. Compras BFG adicional para aumentar tu % del pool
+
 ## ¿Cuánto se Puede Ganar?
 
 Los dividendos varían según varios factores:
@@ -588,17 +616,19 @@ Los dividendos varían según varios factores:
 - **Cantidad de BFG en staking**: Más BFG = mayor % del pool
 - **Actividad del casino**: Más actividad global = más dividendos a repartir
 - **Precio de las criptos**: El valor en USD fluctúa según el mercado
+- **stBFG vs BFG**: El staking bloqueado da el doble de dividendos
 
 Los mejores stakers con grandes cantidades de BFG pueden generar ingresos significativos. Sin embargo, como toda inversión en cripto, conlleva riesgo.
 
 ## Ventajas del Staking BFG vs Otras Opciones
 
-| Característica | BFG Staking | Staking Tradicional | Yield Farming DeFi |
-|---|---|---|---|
-| Complejidad | Baja ✅ | Media | Alta ❌ |
-| Riesgo contrato inteligente | Bajo ✅ | Medio | Alto ❌ |
-| APY aproximado | Variable | 5-15% | Variable |
-| Diversificación | Multi-cripto ✅ | Una cripto | Variable |
+| Característica | BFG Staking | stBFG (365 días) | Staking ETH | Yield Farming DeFi |
+|---|---|---|---|---|
+| Complejidad | Baja ✅ | Baja ✅ | Media | Alta ❌ |
+| Dividendos en multi-cripto | ✅ BTC/ETH/BNB/USDT | ✅ BTC/ETH/BNB/USDT (×2) | ❌ Solo ETH | Variable |
+| APR estimado | 5-12% | **10-25%** | ~4% | Variable |
+| Riesgo adicional | Solo precio BFG | Solo precio BFG | Solo precio ETH | Contrato inteligente |
+| Liquidez | Inmediata | Bloqueado 365 días | Bloqueado semanas | Variable |
 
 ## Consideraciones de Riesgo
 
@@ -621,7 +651,7 @@ El staking de BFG en BetFury es una propuesta única que transforma la experienc
     faqs: [
       {
         question: '¿Cuánto se puede ganar con el staking de BFG en BetFury?',
-        answer: 'Las ganancias dependen de la cantidad de BFG en staking y la actividad global del casino. Los dividendos se pagan diariamente en BTC, ETH, BNB y USDT. No hay un mínimo garantizado ya que dependen de los ingresos del casino.'
+        answer: 'Las ganancias dependen de tu % del pool total de BFG. En períodos de alta actividad (torneos, Mundiales) el APR estimado es del 10-25%; en períodos normales, del 5-12%. Con stBFG (bloqueado 365 días) recibes el doble de dividendos. Los dividendos se pagan en BTC, ETH, BNB y USDT diariamente.'
       },
       {
         question: '¿Cuándo se pagan los dividendos de BetFury?',
