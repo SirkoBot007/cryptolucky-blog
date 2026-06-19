@@ -167,9 +167,6 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
             </a>
           )}
 
-          {/* ── Animated banner (300x250) inline ── */}
-          <BetFuryMediumRect type={bannerType} campaign={`article-inline-${slug}`} />
-
           {/* ── ARTICLE CONTENT ── */}
           <div className="prose prose-invert prose-amber max-w-none prose-headings:text-white prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-p:text-slate-300 prose-p:leading-relaxed prose-a:text-amber-400 prose-a:no-underline hover:prose-a:underline prose-strong:text-white prose-ul:text-slate-300 prose-ol:text-slate-300 prose-li:my-1 prose-blockquote:border-amber-400 prose-blockquote:text-slate-400 prose-table:text-slate-300 prose-th:text-white prose-th:bg-slate-800 prose-td:border-slate-700 prose-th:border-slate-700 prose-code:text-amber-400 prose-code:bg-slate-800 prose-code:px-1 prose-code:rounded prose-hr:border-slate-700">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
@@ -178,35 +175,78 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
           {/* ── Social share ── */}
           <SocialShare url={articleUrl} title={title} locale={locale} />
 
-          {/* ── CTA BOX (mid-article) ── */}
-          <div className="my-10 bg-gradient-to-br from-[#1B1B2F] via-slate-900 to-slate-900 border border-[#FF6B35]/30 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-5">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/betfury/mascot/racoon1.png"
-              alt="RacoonFury"
-              width={80}
-              height={80}
-              className="object-contain flex-shrink-0 drop-shadow-lg hidden sm:block"
-              loading="lazy"
-            />
-            <div className="flex-1 text-center sm:text-left">
-              <p className="text-[#FF6B35] text-xs font-black uppercase tracking-widest mb-1">BetFury Casino</p>
-              <p className="text-white font-black text-lg leading-snug mb-1">
-                {isEs ? 'Regístrate y gana dividendos diarios' : 'Sign up and earn daily dividends'}
-              </p>
-              <p className="text-slate-400 text-sm">
-                {isEs ? 'Código exclusivo: LUCKYSIRKO007' : 'Exclusive code: LUCKYSIRKO007'}
-              </p>
-            </div>
-            <a
-              href={`${AFFILIATE}&utm_source=cryptolucky&utm_medium=cta-box&utm_campaign=${slug}`}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="flex-shrink-0 bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] hover:from-[#ff5a1f] hover:to-[#FF6B35] text-white font-black px-6 py-3 rounded-xl transition-all duration-300 text-sm shadow-lg shadow-[#FF6B35]/25 hover:-translate-y-0.5 whitespace-nowrap"
-            >
-              {isEs ? 'Jugar en BetFury →' : 'Play at BetFury →'}
-            </a>
-          </div>
+          {/* ── CTA BOX — contextual by article category ── */}
+          {(() => {
+            const cta = {
+              sport: {
+                label: isEs ? 'Copa del Mundo 2026' : 'FIFA World Cup 2026',
+                title: isEs ? 'Apuesta en cripto · Cuotas en tiempo real' : 'Bet in crypto · Real-time odds',
+                sub: isEs ? 'Retiros en minutos. Sin límite de importe.' : 'Withdrawals in minutes. No amount limit.',
+                btn: isEs ? 'Apostar en el Mundial →' : 'Bet on the World Cup →',
+                mascot: '/betfury/mascot/racoon3.png',
+              },
+              bfg: {
+                label: isEs ? 'Token BFG' : 'BFG Token',
+                title: isEs ? 'Faucet gratuito disponible ahora — sin depósito' : 'Free faucet available now — no deposit',
+                sub: isEs ? 'Haz staking de BFG y cobra dividendos en BTC cada día.' : 'Stake BFG and earn BTC dividends every day.',
+                btn: isEs ? 'Reclamar faucet gratis →' : 'Claim free faucet →',
+                mascot: '/betfury/mascot/racoon-money.png',
+              },
+              cashback: {
+                label: isEs ? 'Cashback Semanal' : 'Weekly Cashback',
+                title: isEs ? 'Recupera hasta el 25% de lo que juegas' : 'Get back up to 25% of what you play',
+                sub: isEs ? 'Sin condiciones de apuesta. Se acredita cada lunes.' : 'No wagering requirements. Credited every Monday.',
+                btn: isEs ? 'Activar cashback →' : 'Activate cashback →',
+                mascot: '/betfury/mascot/racoon-money2.png',
+              },
+              freebox: {
+                label: isEs ? 'Crypto Box Gratis' : 'Free Crypto Box',
+                title: isEs ? 'Abre Crypto Boxes cada 20 minutos · 0 depósito' : 'Open Crypto Boxes every 20 min · 0 deposit',
+                sub: isEs ? 'BTC · ETH · BNB disponibles desde el primer login.' : 'BTC · ETH · BNB available from your first login.',
+                btn: isEs ? 'Abrir mi Crypto Box →' : 'Open my Crypto Box →',
+                mascot: '/betfury/mascot/racoon2.png',
+              },
+              esport: {
+                label: isEs ? 'eSports BetFury' : 'BetFury eSports',
+                title: isEs ? 'CS2 · Dota 2 · LoL — pago instantáneo en cripto' : 'CS2 · Dota 2 · LoL — instant crypto payout',
+                sub: isEs ? 'Casino y sportsbook en un solo wallet. Sin KYC.' : 'Casino and sportsbook in one wallet. No KYC.',
+                btn: isEs ? 'Ver mercados eSports →' : 'See eSports markets →',
+                mascot: '/betfury/mascot/racoon4.png',
+              },
+              betfury: {
+                label: isEs ? 'BetFury Casino' : 'BetFury Casino',
+                title: isEs ? 'Empieza en 2 minutos · Solo tu email · Sin KYC' : 'Start in 2 minutes · Email only · No KYC',
+                sub: isEs ? '+5.000 juegos · Retiros sin límite · Casino en vivo.' : '+5,000 games · No withdrawal limits · Live casino.',
+                btn: isEs ? 'Crear cuenta gratis →' : 'Create free account →',
+                mascot: '/betfury/mascot/racoon1.png',
+              },
+            }[bannerType] ?? {
+              label: 'BetFury',
+              title: isEs ? 'Empieza en 2 minutos · Solo tu email · Sin KYC' : 'Start in 2 minutes · Email only · No KYC',
+              sub: isEs ? '+5.000 juegos · Retiros sin límite · Casino en vivo.' : '+5,000 games · No withdrawal limits · Live casino.',
+              btn: isEs ? 'Crear cuenta gratis →' : 'Create free account →',
+              mascot: '/betfury/mascot/racoon1.png',
+            };
+            return (
+              <div className="my-10 bg-gradient-to-br from-[#1B1B2F] via-slate-900 to-slate-900 border border-[#FF6B35]/30 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-5">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={cta.mascot} alt="RacoonFury" width={80} height={80} className="object-contain flex-shrink-0 drop-shadow-lg hidden sm:block" loading="lazy" />
+                <div className="flex-1 text-center sm:text-left">
+                  <p className="text-[#FF6B35] text-xs font-black uppercase tracking-widest mb-1">{cta.label}</p>
+                  <p className="text-white font-black text-lg leading-snug mb-1">{cta.title}</p>
+                  <p className="text-slate-400 text-sm">{cta.sub}</p>
+                </div>
+                <a
+                  href={`${AFFILIATE}&utm_source=cryptolucky&utm_medium=cta-box&utm_campaign=${slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer sponsored"
+                  className="flex-shrink-0 bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] hover:from-[#ff5a1f] hover:to-[#FF6B35] text-white font-black px-6 py-3 rounded-xl transition-all duration-300 text-sm shadow-lg shadow-[#FF6B35]/25 hover:-translate-y-0.5 whitespace-nowrap"
+                >
+                  {cta.btn}
+                </a>
+              </div>
+            );
+          })()}
 
           {/* ── FAQ ── */}
           {article.faqs && article.faqs.length > 0 && (
@@ -233,8 +273,6 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
             <LeadCaptureForm locale={locale} source={`article-${slug}`} />
           </div>
 
-          {/* ── Leaderboard banner (728x90 animated) ── */}
-          <BetFuryLeaderboard type={bannerType} campaign={`article-footer-${slug}`} />
 
           {/* ── Related articles ── */}
           {related.length > 0 && (
@@ -317,8 +355,6 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
               <p className="text-slate-600 text-[10px]">LUCKYSIRKO007</p>
             </div>
 
-            {/* Skyscraper animated banner */}
-            <BetFurySkyscraper type={bannerType} campaign={`sidebar-${slug}`} />
           </div>
         </aside>
       </div>
