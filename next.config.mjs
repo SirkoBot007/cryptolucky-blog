@@ -18,6 +18,23 @@ const nextConfig = {
         destination: '/es/blog/:slug*',
         permanent: true,
       },
+      // favicon.ico not present — redirect to SVG icon to avoid 404s
+      {
+        source: '/favicon.ico',
+        destination: '/icon.svg',
+        permanent: false,
+      },
+      // Common browser auto-requests that would 404
+      {
+        source: '/apple-touch-icon.png',
+        destination: '/icon.svg',
+        permanent: false,
+      },
+      {
+        source: '/apple-touch-icon-precomposed.png',
+        destination: '/icon.svg',
+        permanent: false,
+      },
     ];
   },
   async headers() {
