@@ -1,4 +1,4 @@
-export const ARTICLES_NEW = [
+﻿export const ARTICLES_NEW = [
   // ─── MUNDIAL 2026 ───────────────────────────────────────────
   {
     id: 'w001-mundial-guia-completa',
@@ -13,7 +13,7 @@ export const ARTICLES_NEW = [
     status: 'Publicado',
     tags: ['mundial', 'apuestas', 'betfury', '2026'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `El Mundial de Fútbol 2026 ya está en marcha y BetFury es la plataforma cripto perfecta para vivirlo apostando. En esta guía te explico todo lo que necesitas para empezar hoy mismo.
 
 ## Por qué BetFury para el Mundial 2026
@@ -84,7 +84,7 @@ Regístrate hoy con [código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)
     status: 'Publicado',
     tags: ['argentina', 'mundial', 'apuestas'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1556816213-354c1a0f15ac?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `Argentina llega al Mundial 2026 como defensora del título conseguido en Qatar 2022. Con Messi liderando (posiblemente su último Mundial), la Albiceleste es uno de los equipos más seguidos en América Latina. En BetFury puedes apostar todos sus partidos con cripto.
 
 ## El estado actual de Argentina en el Mundial 2026
@@ -152,7 +152,7 @@ Regístrate con [LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007) antes del p
     status: 'Publicado',
     tags: ['mexico', 'mundial', 'apuestas'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `México no solo compite en el Mundial 2026 — es uno de los países anfitriones junto a EEUU y Canadá. El Azteca, el Estadio BBVA y otros recintos mexicanos acogerán partidos históricos. Para los aficionados mexicanos, esta es la oportunidad perfecta de apostar al Tri con cripto en BetFury.
 
 ## México como anfitrión: ventaja o presión
@@ -213,7 +213,7 @@ Apuesta al Tri en [BetFury con código LUCKYSIRKO007](https://betfury.io/?r=LUCK
     status: 'Publicado',
     tags: ['colombia', 'mundial', 'apuestas'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `Colombia regresa a la cita mundialista y la afición colombiana está lista para vivirlo al máximo. BetFury es la plataforma favorita de muchos colombianos para apostar al mundial con cripto, sin complicaciones bancarias.
 
 ## El estado de Colombia en el Mundial 2026
@@ -263,7 +263,7 @@ Registrarte con [código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007) act
     status: 'Publicado',
     tags: ['live-betting', 'mundial', 'estrategia'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `Las apuestas en vivo (live betting) son donde los apostadores más avanzados encuentran el valor real. Durante el Mundial 2026, BetFury actualiza las cuotas en tiempo real partido a partido, creando oportunidades que no existen antes del partido.
 
 ## Por qué el live betting es superior para el Mundial
@@ -321,7 +321,7 @@ Esta estrategia requiere disciplina y bankroll suficiente para aguantar. Con el 
     status: 'Publicado',
     tags: ['cuotas', 'mundial', 'picks', 'octavos'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `Los octavos de final del Mundial 2026 representan la primera ronda eliminatoria real. Con el formato ampliado a 48 equipos, hay 16 partidos de octavos — el doble que en ediciones anteriores. Eso significa más oportunidades de encontrar valor en las cuotas.
 
 ## Qué cambia en los octavos del Mundial 2026
@@ -374,7 +374,7 @@ En eliminatorias, los partidos son más impredecibles. Reduce el % por apuesta a
     status: 'Publicado',
     tags: ['estrategia', 'mundial', 'bankroll'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1551958219-acbc595a3b26?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `Apostar el Mundial sin estrategia es regalar dinero. Con estrategia, el Mundial puede ser el mes más rentable del año para un apostador disciplinado. Aquí está el sistema que utilizo en BetFury.
 
 ## Los 3 errores más comunes en el Mundial
@@ -450,7 +450,7 @@ Empieza el torneo registrándote en [BetFury con LUCKYSIRKO007](https://betfury.
     status: 'Publicado',
     tags: ['principiantes', 'apuestas', 'guia'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `Si nunca has apostado con cripto y el Mundial 2026 te tiene con ganas de intentarlo, esta es tu guía. Te explico exactamente cómo funciona BetFury para nuevos usuarios, de la forma más clara posible.
 
 ## Paso 1: Entender las cuotas
@@ -533,7 +533,7 @@ En BetFury, los retiros son en cripto. Ve a Wallet → Withdraw, selecciona la c
     status: 'Publicado',
     tags: ['argentina', 'casino', 'betfury'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1589519160732-576f165b9aad?w=1200&q=80',
+    image: '/betfury/banners/bfg-300x250.gif',
     content: `BetFury es uno de los casinos cripto más usados por jugadores argentinos en 2026. Te explico todo lo que necesitas saber para empezar desde Argentina: legalidad, cómo depositar en pesos, bonos y registro.
 
 ## ¿Es legal BetFury en Argentina?
@@ -765,7 +765,7 @@ Los Free Boxes de BetFury son especialmente valorados: cada 20 minutos puedes re
     status: 'Publicado',
     tags: ['registro', 'tutorial', 'betfury'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=1200&q=80',
+    image: '/betfury/banners/betfury-300x250.png',
     content: `Crear una cuenta en BetFury toma menos de 2 minutos. Aquí está el proceso exacto, paso a paso, para que no te pierdas nada — especialmente el código de bono que muchos olvidan introducir.
 
 ## Requisitos para registrarse
@@ -1012,7 +1012,7 @@ Con el código LUCKYSIRKO007, activas el bono máximo disponible en BetFury. [Re
     status: 'Publicado',
     tags: ['educacion', 'casino-cripto', 'blockchain'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=1200&q=80',
+    image: '/betfury/banners/bfg-300x250.gif',
     content: `Los casinos cripto han pasado de ser una curiosidad tecnológica a ser una alternativa real para millones de jugadores en todo el mundo. En 2026, plataformas como BetFury combinan la experiencia de casino con las ventajas de las criptomonedas. Te explico cómo funciona todo.
 
 ## ¿Qué es exactamente un casino cripto?
@@ -1190,7 +1190,7 @@ BetFury usa Provably Fair en todos sus juegos propios porque su modelo de negoci
     status: 'Publicado',
     tags: ['mundial', 'favoritos', 'cuotas'],
     author: 'Sirko007',
-    image: 'https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=1200&q=80',
+    image: '/betfury/banners/sport-300x250.gif',
     content: `El Mundial 2026 ya está en marcha y las cuotas para el ganador del torneo se actualizan partido a partido. Te presento el análisis de los grandes favoritos con las cuotas que puedes encontrar en BetFury.
 
 ## Los grandes favoritos del Mundial 2026

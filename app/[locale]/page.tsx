@@ -2,6 +2,8 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { getPublishedArticles, getTitle, getDescription } from '@/lib/notion';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
+import { BetFuryBillboard, BetFuryMobileBanner } from '@/components/BetFuryBanners';
+import RacoonFuryCTA from '@/components/RacoonFuryCTA';
 import type { Metadata } from 'next';
 
 export const revalidate = 3600;
@@ -48,6 +50,18 @@ export default async function HomePage({ params: { locale } }: { params: { local
           <div className="absolute right-0 top-1/4 w-80 h-80 bg-orange-600/8 rounded-full blur-3xl" />
           <div className="absolute left-0 bottom-0 w-80 h-80 bg-amber-600/8 rounded-full blur-3xl" />
         </div>
+
+        {/* RacoonFury mascot — decorative, right side */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/betfury/mascot/racoon-money.png"
+          alt="RacoonFury"
+          width={180}
+          height={180}
+          className="absolute right-4 md:right-16 bottom-0 object-contain drop-shadow-2xl opacity-80 hidden lg:block pointer-events-none select-none"
+          loading="eager"
+          aria-hidden="true"
+        />
 
         <div className="relative z-10 max-w-4xl mx-auto">
           {/* Badge */}
@@ -137,6 +151,12 @@ export default async function HomePage({ params: { locale } }: { params: { local
         </div>
       </section>
 
+      {/* ── ANIMATED BILLBOARD ── */}
+      <section className="max-w-6xl mx-auto px-4 py-8">
+        <BetFuryBillboard type="bfg" campaign="homepage-billboard" />
+        <BetFuryMobileBanner type="bfg" campaign="homepage-mobile" />
+      </section>
+
       {/* ── LATEST ARTICLES ── */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <div className="flex items-end justify-between mb-8">
@@ -171,21 +191,31 @@ export default async function HomePage({ params: { locale } }: { params: { local
                 href={`/${locale}/blog/${article.slug}`}
                 className="group bg-slate-800/60 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-amber-400/50 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-amber-500/5 flex flex-col"
               >
-                {article.image ? (
-                  <div className="relative h-44 overflow-hidden bg-slate-700 shrink-0">
+                <div className="relative h-44 overflow-hidden bg-slate-800 shrink-0">
+                  {article.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                       src={article.image}
                       alt={getTitle(article, locale)}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
-                  </div>
-                ) : (
-                  <div className="h-36 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center shrink-0">
-                    <span className="text-5xl opacity-20">🍀</span>
-                  </div>
-                )}
+                  ) : (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src="/betfury/banners/bfg-300x250.gif"
+                      alt="BetFury Casino"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none" />
+                  {article.category && (
+                    <span className="absolute top-3 left-3 bg-black/50 backdrop-blur-sm text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">
+                      {article.category}
+                    </span>
+                  )}
+                </div>
                 <div className="p-5 flex flex-col flex-1">
                   {article.category && (
                     <span className="text-amber-400 text-xs font-bold uppercase tracking-wide">
@@ -229,6 +259,9 @@ export default async function HomePage({ params: { locale } }: { params: { local
       <section className="max-w-2xl mx-auto px-4 pb-16">
         <LeadCaptureForm locale={locale} source="homepage" />
       </section>
+
+      {/* RacoonFury floating CTA */}
+      <RacoonFuryCTA locale={locale} delay={20000} />
     </main>
   );
 }
