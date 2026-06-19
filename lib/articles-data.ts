@@ -1017,7 +1017,7 @@ BetFury ofrece docenas de mercados por partido. Estos son los más populares y r
 ### Mercados de Valor
 - **Hándicap Asiático** — nivelar el partido con ventajas de gol
 - **Marcador Correcto** — acertar el resultado exacto para cuotas altísimas
-- **Primer/Ãšltimo Goleador** — quién marcará primero o último
+- **Primer/Último Goleador** — quién marcará primero o último
 
 ### Live Betting (Apuestas en Vivo)
 Durante el partido, BetFury actualiza las cuotas en tiempo real. Las mejores oportunidades suelen aparecer:
@@ -1037,7 +1037,7 @@ Una de las mejores características del sportsbook de BetFury es el **Combo Boos
 | 5 selecciones | +20% |
 | 6+ selecciones | Hasta +25% |
 
-**Ejemplo práctico**: Si combinas 4 partidos del Mundial con cuotas de 1.80 cada uno, la cuota combinada sería ~10.50 Ã— 15% boost = cuota final de ~12.07.
+**Ejemplo práctico**: Si combinas 4 partidos del Mundial con cuotas de 1.80 cada uno, la cuota combinada sería ~10.50 × 15% boost = cuota final de ~12.07.
 
 ## Estrategias de Apuesta para el Mundial 2026
 
@@ -1048,7 +1048,7 @@ Los partidos de fase de grupos suelen ser más abiertos, especialmente cuando lo
 En los octavos y cuartos de final, los partidos equilibrados entre dos potencias suelen terminar con goles de ambos equipos. Combina BTTS con el favorito para mejores cuotas.
 
 ### Estrategia 3: Favorito con Hándicap Asiático
-Cuando hay un claro favorito contra un equipo menor, el hándicap asiático (-1.5 o -2 goles) ofrece cuotas más atractivas. Ãšsalo con equipos del top mundial en fase de grupos.
+Cuando hay un claro favorito contra un equipo menor, el hándicap asiático (-1.5 o -2 goles) ofrece cuotas más atractivas. Úsalo con equipos del top mundial en fase de grupos.
 
 ### Estrategia 4: Cash Out Estratégico
 Si tu apuesta va bien pero el partido se complica, usa el Cash Out de BetFury para asegurar beneficios. Si tu apuesta va mal, puedes reducir pérdidas cerrando antes del final.
@@ -1164,7 +1164,7 @@ Una vez realizado el depósito, ve a la sección **Bonuses** o **Promotions** en
 
 ### Paso 4: Reclama los Free Spins
 
-Los free spins se acreditan automáticamente o bajo demanda en la sección de bonificaciones. Ãšsalos en los slots elegibles para generar ganancias adicionales.
+Los free spins se acreditan automáticamente o bajo demanda en la sección de bonificaciones. Úsalos en los slots elegibles para generar ganancias adicionales.
 
 ### Paso 5: Activa las Crypto Boxes Diarias
 
@@ -1193,12 +1193,13 @@ Como en todos los bonos de casino, hay requisitos de wagering (apuesta mínima) 
 
 ## Comparativa: Bono BetFury vs Competidores
 
-| Casino | Bono Bienvenida | Wagering | Sin KYC | Staking |
-|--------|----------------|----------|---------|---------|
-| **BetFury** | Generoso + Free Spins | 30-50x | ✅ | ✅ BFG |
-| Stake | Sin bono fijo | — | Parcial | ❌ |
-| Rollbit | Cashback 1% | — | ✅ | ✅ RLB |
-| BC.Game | Faucet + Bonus | Variable | ✅ | ❌ |
+| Casino | Bono Bienvenida | Free Spins | Wagering | Sin KYC | Staking |
+|--------|----------------|------------|----------|---------|---------|
+| **BetFury** | **590% en 4 depósitos** | **225 FS** | 30x | ✅ | ✅ BFG + dividendos |
+| Stake | Sin bono | 0 | — | Parcial | ❌ |
+| Rollbit | Sin bono | 0 | — | ✅ | ✅ RLB (parcial) |
+| BC.Game | Hasta 270% | Variable | 40x | ✅ | ❌ |
+| Cloudbet | 100% hasta 5 BTC | 0 | 35x | Parcial | ❌ |
 
 BetFury destaca por combinar bonos de bienvenida competitivos con las ventajas únicas del sistema BFG.
 
@@ -1240,11 +1241,11 @@ El bono de bienvenida de BetFury combinado con el sistema de staking BFG hace qu
     faqs: [
       {
         question: '¿Cuál es el código de bono de BetFury para 2026?',
-        answer: 'El código de bono de BetFury para 2026 es LUCKYSIRKO007. Ãšsalo al registrarte en https://betfury.io/?r=LUCKYSIRKO007 para activar el paquete de bienvenida completo con bonus de depósito, free spins y acceso a Crypto Boxes.'
+        answer: 'El código de bono de BetFury para 2026 es LUCKYSIRKO007. Úsalo al registrarte en https://betfury.io/?r=LUCKYSIRKO007 para activar el paquete de bienvenida completo: 590% en 4 depósitos, 225 free spins y acceso a Free Boxes diarias.'
       },
       {
         question: '¿Cuánto es el bono de bienvenida de BetFury?',
-        answer: 'BetFury ofrece un paquete de bienvenida con bono sobre el primer depósito, free spins en slots seleccionadas, Crypto Boxes diarias y la Fury Wheel gratuita cada 12 horas. Los detalles exactos pueden variar según las promociones activas.'
+        answer: 'El bono de bienvenida de BetFury 2026 es 590% distribuido en los 4 primeros depósitos: +175% en el 1.°, +150% en el 2.°, +125% en el 3.° y +140% en el 4.°. Además incluye 225 free spins, Free Boxes diarias y acceso a la Fury Wheel gratuita. Usa el código LUCKYSIRKO007 al registrarte.'
       },
       {
         question: '¿Cuál es el requisito de wagering del bono de BetFury?',
@@ -2698,7 +2699,7 @@ Cada apuesta te devuelve tokens **BFG**. Ponlos en staking y cobra dividendos di
 
 ---
 
-## Conclusión: El Mundial 2026 es una Oportunidad Ãšnica
+## Conclusión: El Mundial 2026 es una Oportunidad Única
 
 Con 48 selecciones y 104 partidos, habrá cuotas atractivas en cada jornada. Argentina, Francia, Brasil y España siguen siendo los candidatos más sólidos, pero en un Mundial ampliado las sorpresas están garantizadas.
 
@@ -2879,7 +2880,7 @@ Cada apuesta deportiva que hagas en BetFury **acumula tokens BFG**. Al ponerlos 
       },
       {
         question: '¿Cuántos partidos tiene la fase de grupos del Mundial 2026?',
-        answer: 'La fase de grupos del Mundial 2026 tiene 48 partidos (4 por grupo Ã— 12 grupos). En total, el torneo tiene 104 partidos desde el 11 de junio hasta el 19 de julio de 2026.',
+        answer: 'La fase de grupos del Mundial 2026 tiene 48 partidos (4 por grupo × 12 grupos). En total, el torneo tiene 104 partidos desde el 11 de junio hasta el 19 de julio de 2026.',
       },
     ],
   },
@@ -3355,11 +3356,11 @@ Cuotas de 8.00 hasta 50.00+. **Estrategia**: busca delanteros de selecciones fin
 
 ## Value Betting: La Clave Para Ser Rentable
 
-**Fórmula de valor esperado**: Valor = (Probabilidad real Ã— Cuota) - 1
+**Fórmula de valor esperado**: Valor = (Probabilidad real × Cuota) - 1
 
 Si el resultado es positivo, apuesta. Si es negativo, pasa.
 
-**Ejemplo**: Argentina vs. México. Cuota BetFury para Argentina: 1.80. Tu análisis: 65% de probabilidad real. Valor = (0.65 Ã— 1.80) - 1 = +0.17. ¡Hay valor!
+**Ejemplo**: Argentina vs. México. Cuota BetFury para Argentina: 1.80. Tu análisis: 65% de probabilidad real. Valor = (0.65 × 1.80) - 1 = +0.17. ¡Hay valor!
 
 La disciplina de solo apostar con valor positivo separa a los apostadores rentables del 95% restante.
 
@@ -3399,7 +3400,7 @@ Con los 7 mercados analizados, gestión de bankroll disciplinada y las cuotas de
       },
       {
         question: '¿Qué es el value betting y cómo se aplica al Mundial?',
-        answer: 'Value betting es apostar solo cuando la probabilidad real supera la implícita en la cuota. Fórmula: Valor = (Probabilidad real Ã— Cuota) - 1. Si el resultado es positivo, apuesta. Es la única estrategia rentable a largo plazo demostrada estadísticamente.',
+        answer: 'Value betting es apostar solo cuando la probabilidad real supera la implícita en la cuota. Fórmula: Valor = (Probabilidad real × Cuota) - 1. Si el resultado es positivo, apuesta. Es la única estrategia rentable a largo plazo demostrada estadísticamente.',
       },
       {
         question: '¿Cuánto dinero necesito para apostar en BetFury el Mundial?',
@@ -3446,7 +3447,7 @@ Una cuota representa la probabilidad que asigna BetFury a un resultado, más el 
 
 El más extendido en España y Latinoamérica, y el formato por defecto en BetFury.
 
-**Fórmula de ganancia**: Ganancia neta = (Cuota Ã— Apuesta) - Apuesta
+**Fórmula de ganancia**: Ganancia neta = (Cuota × Apuesta) - Apuesta
 
 | Partido | Cuota BetFury | Apuesta | Retorno total | Ganancia neta |
 |---------|--------------|---------|---------------|---------------|
@@ -3455,7 +3456,7 @@ El más extendido en España y Latinoamérica, y el formato por defecto en BetFu
 | Empate Francia-Brasil | 3.40 | 30 USDT | 102 USDT | 72 USDT |
 | Marruecos gana | 4.80 | 20 USDT | 96 USDT | 76 USDT |
 
-**Cómo calcular la probabilidad implícita**: P% = (1 ÷ Cuota) Ã— 100
+**Cómo calcular la probabilidad implícita**: P% = (1 ÷ Cuota) × 100
 
 - Cuota 2.00 → 50% de probabilidad implícita
 - Cuota 3.00 → 33.3%
@@ -3512,8 +3513,8 @@ P. implícita = 1 ÷ 3.50 = 28.6%
 **Paso 2**: Estima la probabilidad real basándote en estadísticas, forma reciente, bajas, motivación y contexto.
 
 **Paso 3**: Calcula el valor esperado.
-Valor = (P. real Ã— Cuota) - 1
-Valor = (0.35 Ã— 3.50) - 1 = +0.225
+Valor = (P. real × Cuota) - 1
+Valor = (0.35 × 3.50) - 1 = +0.225
 
 Un valor positivo (+0.225) significa que por cada 1 USDT apostado, el valor esperado es +0.225 USDT a largo plazo.
 
@@ -3569,7 +3570,7 @@ Activa el código **LUCKYSIRKO007** al registrarte en BetFury y empieza a detect
       },
       {
         question: '¿Cómo sé si una cuota tiene valor en el Mundial 2026?',
-        answer: 'Calcula la probabilidad implícita de la cuota (1 ÷ cuota Ã— 100) y compárala con tu estimación real. Fórmula: Valor = (Probabilidad real Ã— Cuota) - 1. Si el resultado es positivo, la cuota tiene valor y debes apostar.',
+        answer: 'Calcula la probabilidad implícita de la cuota (1 ÷ cuota × 100) y compárala con tu estimación real. Fórmula: Valor = (Probabilidad real × Cuota) - 1. Si el resultado es positivo, la cuota tiene valor y debes apostar.',
       },
       {
         question: '¿Son las cuotas de BetFury mejores que las de Bet365?',
