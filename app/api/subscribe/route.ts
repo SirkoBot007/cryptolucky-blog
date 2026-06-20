@@ -230,7 +230,9 @@ export async function POST(req: NextRequest) {
             subject: step.subject,
             html: step.getHtml(),
             text: step.getText(),
-            scheduledAt,
+            // API REST de Resend espera snake_case; con camelCase lo ignoraba
+            // y enviaba todo el drip de golpe (5 emails a la vez = spam).
+            scheduled_at: scheduledAt,
             tags: [
               { name: 'sequence', value: 'drip' },
               { name: 'source', value: source || 'inline' },
