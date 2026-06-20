@@ -12,6 +12,14 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Raíz → /es con redirect PERMANENTE (308). Antes next-intl la redirigía
+      // con 307 temporal + Vary por idioma, y Google elegía "/" como canónica
+      // en vez de "/es" (home sin indexar). Permanente consolida el canonical.
+      {
+        source: '/',
+        destination: '/es',
+        permanent: true,
+      },
       // Blog articles only exist in Spanish — redirect EN versions to ES
       {
         source: '/en/blog/:slug*',

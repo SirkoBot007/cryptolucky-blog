@@ -4,7 +4,11 @@ export default createMiddleware({
   locales: ['es', 'en'],
   defaultLocale: 'es',
   localePrefix: 'always',
-  localeDetection: true,
+  // Desactivado: con detección por idioma, "/" redirige de forma variable
+  // (Vary por Accept-Language) y Google elegía "/" como canónica en lugar de
+  // "/es", dejando la home SIN indexar. Con detección off + redirect permanente
+  // en next.config, "/" consolida limpio hacia "/es".
+  localeDetection: false,
 });
 
 export const config = {
