@@ -229,6 +229,7 @@ export async function POST(req: NextRequest) {
             to: [emailLower],
             subject: step.subject,
             html: step.getHtml(),
+            text: step.getText(),
             scheduledAt,
             tags: [
               { name: 'sequence', value: 'drip' },
