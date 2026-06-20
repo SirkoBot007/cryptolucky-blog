@@ -81,12 +81,34 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
   const breadcrumbJsonLd = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: isEs ? 'Inicio' : 'Home', item: `${siteUrl}/${locale}` }, { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteUrl}/${locale}/blog` }, { '@type': 'ListItem', position: 3, name: title, item: `${siteUrl}/${locale}/blog/${slug}` }] };
   const faqJsonLd = article.faqs?.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) } : null;
 
+  // Review schema (editorial) en artículos de reseña → elegible para rich result con estrellas en Google.
+  // CryptoLucky (publisher) reseña BetFury (entidad de terceros) = uso editorial legítimo.
+  const isReview = article.category?.toLowerCase().includes('review') ||
+    /reseñ|opinion|seguro|legit|confiable|estafa|an[aá]lisis|vs-/i.test(slug);
+  const reviewJsonLd = isReview ? {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    name: title,
+    datePublished: article.publishedAt,
+    author: { '@type': 'Person', name: article.author ?? 'Sirko007', url: `${siteUrl}/${locale}/sobre-nosotros` },
+    publisher: { '@type': 'Organization', name: 'CryptoLucky', url: siteUrl },
+    itemReviewed: {
+      '@type': 'Organization',
+      name: 'BetFury',
+      url: 'https://betfury.io',
+      sameAs: 'https://betfury.io',
+    },
+    reviewRating: { '@type': 'Rating', ratingValue: '4.6', bestRating: '5', worstRating: '1' },
+    reviewBody: description,
+  } : null;
+
   return (
     <>
       <ReadingProgress />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
+      {reviewJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }} />}
 
       <div className="max-w-6xl mx-auto px-4 py-10 flex gap-10">
 

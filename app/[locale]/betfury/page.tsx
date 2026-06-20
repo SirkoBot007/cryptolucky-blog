@@ -36,6 +36,21 @@ export default function BetFuryPillarPage({ params: { locale } }: { params: { lo
     url: `${siteUrl}/${locale}/betfury`,
   };
 
+  // Review editorial de BetFury → elegible para rich result con estrellas en Google.
+  const reviewJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    name: isEs ? 'Opiniones y análisis de BetFury Casino 2026' : 'BetFury Casino 2026 review',
+    datePublished: '2026-01-01',
+    author: { '@type': 'Person', name: 'Carlos Mendoza', url: `${siteUrl}/${locale}/sobre-nosotros` },
+    publisher: { '@type': 'Organization', name: 'CryptoLucky', url: siteUrl },
+    itemReviewed: { '@type': 'Organization', name: 'BetFury', url: 'https://betfury.io', sameAs: 'https://betfury.io' },
+    reviewRating: { '@type': 'Rating', ratingValue: '4.6', bestRating: '5', worstRating: '1' },
+    reviewBody: isEs
+      ? 'Análisis completo de BetFury: bonos hasta 590%, staking de BFG con dividendos diarios, +5.000 juegos, retiros rápidos en cripto y registro sin KYC.'
+      : 'Full BetFury review: bonuses up to 590%, BFG staking with daily dividends, +5,000 games, fast crypto withdrawals and no-KYC signup.',
+  };
+
   const relatedArticles = [
     { slug: 'betfury-casino-review-2026', title: isEs ? 'BetFury Casino: Opiniones y Análisis Completo 2026' : 'BetFury Casino Review 2026' },
     { slug: 'betfury-bono-bienvenida-590', title: isEs ? 'BetFury Bono de Bienvenida 590%: ¿Cómo Reclamarlo?' : 'BetFury 590% Welcome Bonus: How to Claim It?' },
@@ -47,6 +62,7 @@ export default function BetFuryPillarPage({ params: { locale } }: { params: { lo
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }} />
 
       <main className="max-w-4xl mx-auto px-4 py-12">
         {/* Breadcrumb */}

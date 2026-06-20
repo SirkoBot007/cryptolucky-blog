@@ -16,15 +16,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/${locale}/sobre-nosotros`, changeFrequency: 'yearly' as const, priority: 0.5, lastModified: new Date('2026-06-09') },
     { url: `${BASE_URL}/${locale}/privacidad`, changeFrequency: 'yearly' as const, priority: 0.3, lastModified: new Date('2026-06-09') },
   ]);
-  // EN blog slugs 301-redirect to ES — include them in sitemap so Google
-  // follows the canonical signal correctly and consolidates link equity
-  const articleRoutes: MetadataRoute.Sitemap = LOCALES.flatMap((locale) =>
-    slugs.map((slug) => ({
-      url: `${BASE_URL}/${locale}/blog/${slug}`,
-      changeFrequency: 'monthly' as const,
-      priority: locale === 'es' ? 0.8 : 0.5,
-      lastModified: new Date('2026-06-10'),
-    }))
-  );
+  // Los artículos solo existen en español; las URLs /en/blog/* hacen 308 -> /es.
+  // No se incluyen las /en/blog en el sitemap (Google marca "Página con redirección,
+  // no indexada" y malgasta presupuesto de rastreo). Solo se envían las /es/blog.
+  const articleRoutes: MetadataRoute.Sitemap = slugs.map((slug) => ({
+    url: `${BASE_URL}/es/blog/${slug}`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+    lastModified: new Date('2026-06-10'),
+  }));
   return [...staticRoutes, ...articleRoutes];
 }
