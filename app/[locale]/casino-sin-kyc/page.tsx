@@ -1,11 +1,13 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/author';
+import PillarNav from '@/components/PillarNav';
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   return {
     title: locale === 'es' ? 'Casino Sin KYC 2026: Los Mejores Casinos Cripto Anónimos' : 'Casino Without KYC 2026: Best Anonymous Crypto Casinos',
     description: locale === 'es'
@@ -21,7 +23,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function CasinoSinKYCPillarPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   const isEs = locale === 'es';
 
   const jsonLd = {
@@ -156,6 +158,7 @@ export default function CasinoSinKYCPillarPage({ params: { locale } }: { params:
             {isEs ? '🎰 Jugar en BetFury → LUCKYSIRKO007' : '🎰 Play at BetFury → LUCKYSIRKO007'}
           </a>
         </div>
+        <PillarNav locale={locale} current="casino-sin-kyc" />
       </main>
     </>
   );

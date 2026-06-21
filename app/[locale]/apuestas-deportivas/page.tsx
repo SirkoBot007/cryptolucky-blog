@@ -1,11 +1,13 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/author';
+import PillarNav from '@/components/PillarNav';
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   return {
     title: locale === 'es' ? 'Apuestas Deportivas Cripto 2026: Guía Completa' : 'Crypto Sports Betting 2026: Complete Guide',
     description: locale === 'es'
@@ -21,7 +23,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function ApuestasDeportivasPillarPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   const isEs = locale === 'es';
 
   const jsonLd = {
@@ -162,6 +164,7 @@ export default function ApuestasDeportivasPillarPage({ params: { locale } }: { p
             {isEs ? '🏆 Apostar con LUCKYSIRKO007' : '🏆 Bet with LUCKYSIRKO007'}
           </a>
         </div>
+        <PillarNav locale={locale} current="apuestas-deportivas" />
       </main>
     </>
   );

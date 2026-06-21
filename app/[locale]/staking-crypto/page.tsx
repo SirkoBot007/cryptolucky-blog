@@ -1,11 +1,13 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/author';
+import PillarNav from '@/components/PillarNav';
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   return {
     title: locale === 'es' ? 'Staking Cripto 2026: Gana Dividendos Diarios con BFG' : 'Crypto Staking 2026: Earn Daily Dividends with BFG',
     description: locale === 'es'
@@ -21,7 +23,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function StakingCryptoPillarPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   const isEs = locale === 'es';
 
   const jsonLd = {
@@ -172,6 +174,7 @@ export default function StakingCryptoPillarPage({ params: { locale } }: { params
             {isEs ? '💰 Hacer Staking → LUCKYSIRKO007' : '💰 Start Staking → LUCKYSIRKO007'}
           </a>
         </div>
+        <PillarNav locale={locale} current="staking-crypto" />
       </main>
     </>
   );

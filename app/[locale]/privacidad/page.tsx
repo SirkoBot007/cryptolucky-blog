@@ -1,9 +1,10 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/author';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   return {
     title: locale === 'es' ? 'Política de Privacidad y Cookies' : 'Privacy and Cookie Policy',
     description: locale === 'es'

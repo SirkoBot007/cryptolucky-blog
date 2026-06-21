@@ -20,7 +20,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       : 'The most complete guide to BetFury Casino in Spanish: BFG staking with daily dividends, no-deposit bonus, Provably Fair games and sports betting. Code LUCKYSIRKO007.',
     alternates: {
       canonical: `${siteUrl}/${locale}`,
-      languages: { es: `${siteUrl}/es`, en: `${siteUrl}/en` },
+      languages: { es: `${siteUrl}/es`, en: `${siteUrl}/en`, 'x-default': `${siteUrl}/es` },
     },
     openGraph: {
       title: isEs ? 'CryptoLucky — Guía BetFury Casino en Español' : 'CryptoLucky — BetFury Casino Guide in Spanish',

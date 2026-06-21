@@ -12,6 +12,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
 import { AUTHOR } from '@/lib/author';
+import PillarNav from '@/components/PillarNav';
 
 interface Props { params: { locale: string; slug: string }; }
 
@@ -163,11 +164,11 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
           {/* Affiliate Disclosure */}
           <div className="bg-slate-800/40 border border-slate-700/40 rounded-xl px-4 py-3 mb-6 flex items-start gap-2">
             <span className="text-slate-500 flex-shrink-0 text-xs mt-0.5">&#x24D8;</span>
-            <p className="text-xs text-slate-500 leading-relaxed">
-              <span className="font-bold text-slate-400">{isEs ? 'Divulgación de afiliado:' : 'Affiliate disclosure:'}</span>{' '}
+            <p className="text-sm text-slate-400 leading-relaxed">
+              <span className="font-bold text-amber-400/90">{isEs ? 'Divulgación de afiliado:' : 'Affiliate disclosure:'}</span>{' '}
               {isEs
-                ? 'Algunos enlaces de esta página son de afiliado. Si te registras en BetFury a través de nuestro código, podemos recibir una comisión sin coste adicional para ti. Esto no afecta nuestros análisis ni recomendaciones.'
-                : 'Some links on this page are affiliate links. Registering through our code may earn us a commission at no extra cost to you. This does not affect our reviews or recommendations.'}
+                ? 'Esta página contiene enlaces de afiliado. Si te registras en BetFury con nuestro código, recibimos una comisión sin coste adicional para ti. Esto no afecta nuestros análisis ni recomendaciones, basadas en uso real de la plataforma. +18 · Juega con responsabilidad.'
+                : 'This page contains affiliate links. If you sign up to BetFury with our code, we receive a commission at no extra cost to you. This does not affect our reviews or recommendations, based on real use of the platform. 18+ · Gamble responsibly.'}
             </p>
           </div>
 
@@ -331,6 +332,8 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
               </p>
             </div>
           </div>
+
+          <PillarNav locale={locale} />
 
           {/* ── Related articles ── */}
           {related.length > 0 && (

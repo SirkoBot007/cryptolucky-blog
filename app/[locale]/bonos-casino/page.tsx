@@ -1,11 +1,13 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/author';
+import PillarNav from '@/components/PillarNav';
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   return {
     title: locale === 'es' ? 'Bonos Casino Cripto 2026: Los Mejores Bonos de Bienvenida' : 'Crypto Casino Bonuses 2026: Best Welcome Bonuses',
     description: locale === 'es'
@@ -21,7 +23,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function BonosCasinoPillarPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   const isEs = locale === 'es';
 
   const jsonLd = {
@@ -149,6 +151,7 @@ export default function BonosCasinoPillarPage({ params: { locale } }: { params: 
             {isEs ? '🎁 Activar Bono LUCKYSIRKO007' : '🎁 Activate Bonus LUCKYSIRKO007'}
           </a>
         </div>
+        <PillarNav locale={locale} current="bonos-casino" />
       </main>
     </>
   );

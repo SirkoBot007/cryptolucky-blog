@@ -1,11 +1,13 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL } from '@/lib/author';
+import PillarNav from '@/components/PillarNav';
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   return {
     title: locale === 'es' ? 'Ganar Criptomonedas Gratis 2026: 10 Métodos Legítimos' : 'Earn Free Cryptocurrency 2026: 10 Legitimate Methods',
     description: locale === 'es'
@@ -21,7 +23,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function GanarCriptoPillarPage({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptolucky-blog.vercel.app';
+  const siteUrl = SITE_URL;
   const isEs = locale === 'es';
 
   const jsonLd = {
@@ -148,6 +150,7 @@ export default function GanarCriptoPillarPage({ params: { locale } }: { params: 
             {isEs ? '💰 Empezar Gratis → LUCKYSIRKO007' : '💰 Start Free → LUCKYSIRKO007'}
           </a>
         </div>
+        <PillarNav locale={locale} current="ganar-criptomonedas" />
       </main>
     </>
   );

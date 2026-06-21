@@ -55,9 +55,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="alternate" hrefLang="es" href={`${siteUrl}/es`} />
-        <link rel="alternate" hrefLang="en" href={`${siteUrl}/en`} />
-        <link rel="alternate" hrefLang="x-default" href={`${siteUrl}/es`} />
+        {/* hreflang + canonical se declaran por página en cada generateMetadata (alternates),
+            apuntando a la URL real de esa página. NO poner hreflang global aquí: apuntaría
+            siempre a la home y rompería la agrupación de versiones idiomáticas en Google. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema(locale)) }}
