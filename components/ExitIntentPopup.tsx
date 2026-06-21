@@ -53,8 +53,21 @@ export default function ExitIntentPopup({ locale = 'es' }: ExitIntentPopupProps)
           </p>
         </div>
         <LeadCaptureForm locale={locale} variant="inline" source="exit-intent" />
+        <div className="text-center mt-4 pt-4 border-t border-slate-700/40">
+          <p className="text-xs text-slate-500 mb-3">
+            {isEs ? 'O regístrate directamente con nuestro código:' : 'Or sign up directly with our code:'}
+          </p>
+          <a
+            href="https://betfury.io/?r=LUCKYSIRKO007&utm_source=cryptolucky&utm_medium=exit-popup&utm_campaign=betfury"
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="inline-block bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] hover:from-[#ff5a1f] hover:to-[#FF6B35] text-white font-black text-sm px-6 py-2.5 rounded-lg transition-all"
+          >
+            {isEs ? '🎰 Ir a BetFury · LUCKYSIRKO007' : '🎰 Go to BetFury · LUCKYSIRKO007'}
+          </a>
+        </div>
         <p className="text-center text-slate-600 text-xs mt-4">
-          {isEs ? 'Sin spam. Baja cuando quieras.' : 'No spam. Unsubscribe anytime.'}
+          {isEs ? 'Sin spam. Baja cuando quieras. +18 · Juega con responsabilidad.' : 'No spam. Unsubscribe anytime. 18+ · Gamble responsibly.'}
         </p>
       </div>
     </div>

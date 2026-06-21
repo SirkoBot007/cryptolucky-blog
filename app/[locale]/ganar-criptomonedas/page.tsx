@@ -3,6 +3,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SITE_URL } from '@/lib/author';
 import PillarNav from '@/components/PillarNav';
+import PillarFaq from '@/components/PillarFaq';
+import { PILLAR_FAQS } from '@/lib/pillar-faqs';
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
@@ -150,6 +152,7 @@ export default function GanarCriptoPillarPage({ params: { locale } }: { params: 
             {isEs ? '💰 Empezar Gratis → LUCKYSIRKO007' : '💰 Start Free → LUCKYSIRKO007'}
           </a>
         </div>
+        <PillarFaq items={PILLAR_FAQS['ganar-criptomonedas']} locale={locale} />
         <PillarNav locale={locale} current="ganar-criptomonedas" />
       </main>
     </>

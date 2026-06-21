@@ -3,6 +3,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { SITE_URL } from '@/lib/author';
 import PillarNav from '@/components/PillarNav';
+import PillarFaq from '@/components/PillarFaq';
+import { PILLAR_FAQS } from '@/lib/pillar-faqs';
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
@@ -158,6 +160,7 @@ export default function CasinoSinKYCPillarPage({ params: { locale } }: { params:
             {isEs ? '🎰 Jugar en BetFury → LUCKYSIRKO007' : '🎰 Play at BetFury → LUCKYSIRKO007'}
           </a>
         </div>
+        <PillarFaq items={PILLAR_FAQS['casino-sin-kyc']} locale={locale} />
         <PillarNav locale={locale} current="casino-sin-kyc" />
       </main>
     </>

@@ -104,6 +104,11 @@ export default function RacoonFuryCTA({ locale = 'es', delay = 8000 }: Props) {
           href={buildUrl('floating-cta')}
           target="_blank"
           rel="noopener noreferrer sponsored"
+          onClick={() => {
+            if (typeof window !== 'undefined' && typeof (window as { gtag?: (...a: unknown[]) => void }).gtag === 'function') {
+              (window as { gtag: (...a: unknown[]) => void }).gtag('event', 'affiliate_click', { event_category: 'engagement', event_label: 'racoon-floating-cta' });
+            }
+          }}
           className="block w-full text-center bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] hover:from-[#ff5a1f] hover:to-[#FF6B35] text-white font-black text-sm py-2.5 rounded-xl transition-all duration-300 shadow-lg shadow-[#FF6B35]/30"
         >
           {isEs ? 'Jugar gratis →' : 'Play free →'}
