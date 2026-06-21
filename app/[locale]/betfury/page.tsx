@@ -31,7 +31,7 @@ export default function BetFuryPillarPage({ params: { locale } }: { params: { lo
     description: isEs ? 'Guía completa de BetFury Casino con análisis de bonos, staking BFG y apuestas deportivas.' : 'Complete BetFury Casino guide with bonus analysis, BFG staking and sports betting.',
     datePublished: '2026-01-01',
     dateModified: '2026-06-09',
-    author: { '@type': 'Person', name: 'Carlos Mendoza' },
+    author: { '@type': 'Person', '@id': `${siteUrl}/autor/sirko007#person`, name: 'Sirko007', url: `${siteUrl}/${locale}/autor/sirko007` },
     publisher: { '@type': 'Organization', name: 'CryptoLucky', url: siteUrl },
     url: `${siteUrl}/${locale}/betfury`,
   };
@@ -42,7 +42,7 @@ export default function BetFuryPillarPage({ params: { locale } }: { params: { lo
     '@type': 'Review',
     name: isEs ? 'Opiniones y análisis de BetFury Casino 2026' : 'BetFury Casino 2026 review',
     datePublished: '2026-01-01',
-    author: { '@type': 'Person', name: 'Carlos Mendoza', url: `${siteUrl}/${locale}/sobre-nosotros` },
+    author: { '@type': 'Person', '@id': `${siteUrl}/autor/sirko007#person`, name: 'Sirko007', url: `${siteUrl}/${locale}/autor/sirko007` },
     publisher: { '@type': 'Organization', name: 'CryptoLucky', url: siteUrl },
     itemReviewed: { '@type': 'Organization', name: 'BetFury', url: 'https://betfury.io', sameAs: 'https://betfury.io' },
     reviewRating: { '@type': 'Rating', ratingValue: '4.6', bestRating: '5', worstRating: '1' },

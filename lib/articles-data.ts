@@ -3306,7 +3306,7 @@ Si ya tienes cuenta, accede a **Promotions → Fury World Cup '26** en BetFury p
     publishedAt: '2026-06-17',
     status: 'Publicado',
     tags: ['mundial 2026', 'apuestas cripto', 'betfury', 'value betting'],
-    author: 'Carlos Mendoza',
+    author: 'Sirko007',
     readingTime: 9,
     image: '/betfury/banners/sport-300x250.gif',
     content: `# Mejores Apuestas Cripto para el Mundial 2026: Guía Experta
@@ -3478,7 +3478,7 @@ Con los 7 mercados analizados, gestión de bankroll disciplinada y las cuotas de
     publishedAt: '2026-06-17',
     status: 'Publicado',
     tags: ['cuotas', 'mundial 2026', 'betfury', 'value betting'],
-    author: 'Carlos Mendoza',
+    author: 'Sirko007',
     readingTime: 8,
     image: '/betfury/banners/sport-300x250.gif',
     content: `# Cuotas del Mundial 2026 en BetFury: Cómo Aprovecharlas
@@ -3656,7 +3656,7 @@ Activa el código **LUCKYSIRKO007** al registrarte en BetFury y empieza a detect
     publishedAt: '2026-06-17',
     status: 'Publicado',
     tags: ['código promocional', 'betfury', 'bono', 'LUCKYSIRKO007', 'registro'],
-    author: 'Carlos Mendoza',
+    author: 'Sirko007',
     readingTime: 8,
     image: '/betfury/banners/cashback-300x250.gif',
     content: `# BetFury Código Promocional 2026: LUCKYSIRKO007 — Bono Exclusivo

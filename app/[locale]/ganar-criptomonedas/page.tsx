@@ -31,7 +31,7 @@ export default function GanarCriptoPillarPage({ params: { locale } }: { params: 
     description: isEs ? 'Los 10 métodos más efectivos para ganar criptomonedas gratis en 2026.' : 'The 10 most effective methods to earn free cryptocurrency in 2026.',
     datePublished: '2026-01-01',
     dateModified: '2026-06-09',
-    author: { '@type': 'Person', name: 'Carlos Mendoza' },
+    author: { '@type': 'Person', '@id': `${siteUrl}/autor/sirko007#person`, name: 'Sirko007', url: `${siteUrl}/${locale}/autor/sirko007` },
     publisher: { '@type': 'Organization', name: 'CryptoLucky', url: siteUrl },
     url: `${siteUrl}/${locale}/ganar-criptomonedas`,
   };

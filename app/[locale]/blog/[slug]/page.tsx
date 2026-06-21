@@ -11,6 +11,7 @@ import type { Metadata } from 'next';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
+import { AUTHOR } from '@/lib/author';
 
 interface Props { params: { locale: string; slug: string }; }
 
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonicalEs = `${siteUrl}/es/blog/${params.slug}`;
   return {
     title, description, keywords: article.keywords,
-    authors: article.author ? [{ name: article.author }] : undefined,
+    authors: [{ name: AUTHOR.alias, url: `${siteUrl}/${params.locale}/autor/sirko007` }],
     ...(params.locale === 'en' && { robots: { index: false, follow: false } }),
     alternates: {
       canonical: canonicalEs,
@@ -77,7 +78,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
   const readingMinutes = Math.max(1, Math.ceil(wordCount / 220));
   const articleUrl = `${siteUrl}/${locale}/blog/${slug}`;
 
-  const articleJsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: title, description, datePublished: article.publishedAt, dateModified: article.updatedAt ?? article.publishedAt, inLanguage: locale, url: `${siteUrl}/${locale}/blog/${slug}`, image: article.image ? `${siteUrl}${article.image}` : `${siteUrl}/og-default.png`, author: { '@type': 'Person', name: article.author ?? 'Carlos Mendoza', description: 'Analista de casinos cripto y blockchain con 5 años de experiencia en iGaming.', url: `${siteUrl}/${locale}/sobre-nosotros` }, publisher: { '@type': 'Organization', name: 'CryptoLucky', url: siteUrl } };
+  const articleJsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: title, description, datePublished: article.publishedAt, dateModified: article.updatedAt ?? article.publishedAt, inLanguage: locale, mainEntityOfPage: `${siteUrl}/${locale}/blog/${slug}`, url: `${siteUrl}/${locale}/blog/${slug}`, image: article.image ? `${siteUrl}${article.image}` : `${siteUrl}/og-default.png`, author: { '@type': 'Person', '@id': `${siteUrl}/autor/sirko007#person`, name: AUTHOR.alias, url: `${siteUrl}/${locale}/autor/sirko007` }, publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'CryptoLucky', url: siteUrl, logo: { '@type': 'ImageObject', url: `${siteUrl}/CryptoLucky.png` } } };
   const breadcrumbJsonLd = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: isEs ? 'Inicio' : 'Home', item: `${siteUrl}/${locale}` }, { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteUrl}/${locale}/blog` }, { '@type': 'ListItem', position: 3, name: title, item: `${siteUrl}/${locale}/blog/${slug}` }] };
   const faqJsonLd = article.faqs?.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) } : null;
 
@@ -90,8 +91,8 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
     '@type': 'Review',
     name: title,
     datePublished: article.publishedAt,
-    author: { '@type': 'Person', name: article.author ?? 'Sirko007', url: `${siteUrl}/${locale}/sobre-nosotros` },
-    publisher: { '@type': 'Organization', name: 'CryptoLucky', url: siteUrl },
+    author: { '@type': 'Person', '@id': `${siteUrl}/autor/sirko007#person`, name: AUTHOR.alias, url: `${siteUrl}/${locale}/autor/sirko007` },
+    publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'CryptoLucky', url: siteUrl },
     itemReviewed: {
       '@type': 'Organization',
       name: 'BetFury',
@@ -139,7 +140,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
           <div className="flex flex-wrap items-center gap-4 text-slate-500 text-sm mb-6">
             <span className="flex items-center gap-1.5">
               <span className="text-slate-600">✍</span>
-              {article.author ?? 'Sirko007'}
+              <Link href={`/${locale}/autor/sirko007`} className="hover:text-amber-400 transition-colors">{AUTHOR.alias}</Link>
             </span>
             <span className="flex items-center gap-1.5">
               <span className="text-slate-600">📅</span>
@@ -312,15 +313,17 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
             <div className="w-12 h-12 rounded-full bg-amber-500/20 border border-amber-500/30 flex items-center justify-center flex-shrink-0 text-amber-400 font-black text-xl select-none">S</div>
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 flex-wrap mb-1">
-                <p className="text-white font-bold text-sm">{article.author ?? 'Sirko007'}</p>
+                <Link href={`/${locale}/autor/sirko007`} className="text-white font-bold text-sm hover:text-amber-400 transition-colors">{AUTHOR.alias}</Link>
                 <span className="text-amber-400 text-xs font-semibold bg-amber-400/10 px-2 py-0.5 rounded-full">
-                  {isEs ? 'Analista de Casinos Cripto' : 'Crypto Casino Analyst'}
+                  {isEs ? 'Autor con experiencia real en BetFury' : 'Author with real BetFury experience'}
                 </span>
               </div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 {isEs
-                  ? 'Fundador de CryptoLucky y referencia en español para BetFury en Latinoamérica. Más de 5 años analizando casinos con criptomonedas, probando depósitos, retiros y bonos reales en cada plataforma que reseña.'
-                  : 'Founder of CryptoLucky and the leading Spanish-language authority on BetFury in Latin America. 5+ years analyzing crypto casinos, testing real deposits, withdrawals and bonuses on every platform reviewed.'}
+                  ? `Autor de CryptoLucky con experiencia de primera mano en BetFury: cuenta de ${AUTHOR.betfury.antiguedadEs}, Rank ${AUTHOR.betfury.rank} y actividad real prolongada en la plataforma. Sus reseñas se basan en uso propio, no en teoría.`
+                  : `CryptoLucky author with first-hand BetFury experience: a ${AUTHOR.betfury.antiguedadEn} account, Rank ${AUTHOR.betfury.rank} and long-term real activity on the platform. Reviews are based on personal use, not theory.`}
+                {' '}
+                <Link href={`/${locale}/autor/sirko007`} className="text-amber-400 hover:text-amber-300">{isEs ? 'Ver perfil del autor →' : 'See author profile →'}</Link>
               </p>
               <p className="text-slate-500 text-xs mt-2">
                 {isEs ? 'Actualizado:' : 'Updated:'}{' '}

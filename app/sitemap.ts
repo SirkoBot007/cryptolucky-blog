@@ -13,7 +13,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/${locale}`, changeFrequency: 'weekly' as const, priority: 1.0, lastModified: SITE_LAST_BUILD },
     { url: `${BASE_URL}/${locale}/blog`, changeFrequency: 'weekly' as const, priority: 0.9, lastModified: SITE_LAST_BUILD },
     ...PILLAR_ROUTES.map((route) => ({ url: `${BASE_URL}/${locale}/${route}`, changeFrequency: 'monthly' as const, priority: 0.8, lastModified: SITE_LAST_BUILD })),
-    { url: `${BASE_URL}/${locale}/sobre-nosotros`, changeFrequency: 'yearly' as const, priority: 0.5, lastModified: new Date('2026-06-09') },
+    { url: `${BASE_URL}/${locale}/autor/sirko007`, changeFrequency: 'monthly' as const, priority: 0.6, lastModified: SITE_LAST_BUILD },
+    { url: `${BASE_URL}/${locale}/sobre-nosotros`, changeFrequency: 'yearly' as const, priority: 0.5, lastModified: SITE_LAST_BUILD },
+    { url: `${BASE_URL}/${locale}/juego-responsable`, changeFrequency: 'yearly' as const, priority: 0.4, lastModified: SITE_LAST_BUILD },
     { url: `${BASE_URL}/${locale}/privacidad`, changeFrequency: 'yearly' as const, priority: 0.3, lastModified: new Date('2026-06-09') },
   ]);
   // Los artículos solo existen en español; las URLs /en/blog/* hacen 308 -> /es.

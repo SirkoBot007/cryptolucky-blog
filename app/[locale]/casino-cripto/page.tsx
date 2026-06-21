@@ -31,7 +31,7 @@ export default function CasinoCriptoPillarPage({ params: { locale } }: { params:
     description: isEs ? 'Guía completa de los mejores casinos de criptomonedas en 2026.' : 'Complete guide to the best crypto casinos in 2026.',
     datePublished: '2026-01-01',
     dateModified: '2026-06-09',
-    author: { '@type': 'Person', name: 'Carlos Mendoza' },
+    author: { '@type': 'Person', '@id': `${siteUrl}/autor/sirko007#person`, name: 'Sirko007', url: `${siteUrl}/${locale}/autor/sirko007` },
     publisher: { '@type': 'Organization', name: 'CryptoLucky', url: siteUrl },
     url: `${siteUrl}/${locale}/casino-cripto`,
   };

@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import ConsentAnalytics from '@/components/ConsentAnalytics';
 import MobileNav from '@/components/MobileNav';
+import { organizationSchema } from '@/lib/author';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import '../globals.css';
@@ -57,6 +58,10 @@ export default async function LocaleLayout({
         <link rel="alternate" hrefLang="es" href={`${siteUrl}/es`} />
         <link rel="alternate" hrefLang="en" href={`${siteUrl}/en`} />
         <link rel="alternate" hrefLang="x-default" href={`${siteUrl}/es`} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema(locale)) }}
+        />
         {adsenseId && (
           <script
             async
@@ -171,7 +176,9 @@ export default async function LocaleLayout({
                       { href: `/${locale}/staking-crypto`, label: isEs ? 'Staking BFG' : 'BFG Staking' },
                       { href: `/${locale}/ganar-criptomonedas`, label: isEs ? 'Ganar Cripto' : 'Earn Crypto' },
                       { href: `/${locale}/casino-sin-kyc`, label: isEs ? 'Casino Sin KYC' : 'No-KYC Casino' },
+                      { href: `/${locale}/autor/sirko007`, label: isEs ? 'Autor: Sirko007' : 'Author: Sirko007' },
                       { href: `/${locale}/sobre-nosotros`, label: isEs ? 'Sobre Nosotros' : 'About Us' },
+                      { href: `/${locale}/juego-responsable`, label: isEs ? 'Juego Responsable' : 'Responsible Gambling' },
                       { href: `/${locale}/privacidad`, label: isEs ? 'Privacidad y Cookies' : 'Privacy & Cookies' },
                     ].map((link) => (
                       <li key={link.href}>
