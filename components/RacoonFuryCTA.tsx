@@ -20,9 +20,11 @@ function buildUrl(campaign: string): string {
 interface Props {
   locale?: string;
   delay?: number;
+  /** Clases extra para el contenedor fijo. Ej.: 'hidden md:block' para mostrarlo solo en escritorio. */
+  className?: string;
 }
 
-export default function RacoonFuryCTA({ locale = 'es', delay = 8000 }: Props) {
+export default function RacoonFuryCTA({ locale = 'es', delay = 8000, className = '' }: Props) {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
 
@@ -52,7 +54,7 @@ export default function RacoonFuryCTA({ locale = 'es', delay = 8000 }: Props) {
     <div
       className={`fixed bottom-5 right-5 z-50 transition-all duration-300 ${
         dismissed ? 'opacity-0 translate-y-4 pointer-events-none' : 'opacity-100 translate-y-0'
-      }`}
+      } ${className}`.trim()}
       role="complementary"
       aria-label="BetFury promotion"
     >
