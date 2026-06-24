@@ -4,6 +4,7 @@ import { getPublishedArticles, getTitle, getDescription } from '@/lib/notion';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
 import { BetFuryBillboard, BetFuryMobileBanner } from '@/components/BetFuryBanners';
 import RacoonFuryCTA from '@/components/RacoonFuryCTA';
+import ScrollReveal from '@/components/ScrollReveal';
 import type { Metadata } from 'next';
 
 export const revalidate = 3600;
@@ -124,7 +125,7 @@ export default async function HomePage({ params: { locale } }: { params: { local
       </section>
 
       {/* ── AFFILIATE BANNER ── */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-amber-950/20 to-slate-900 py-7 border-y border-amber-500/10">
+      <ScrollReveal as="section" className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-amber-950/20 to-slate-900 py-7 border-y border-amber-500/10">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(251,191,36,0.06),_transparent_70%)]" />
         </div>
@@ -149,16 +150,16 @@ export default async function HomePage({ params: { locale } }: { params: { local
             {tAffiliate('cta')} 🎰
           </a>
         </div>
-      </section>
+      </ScrollReveal>
 
       {/* ── ANIMATED BILLBOARD ── */}
-      <section className="max-w-6xl mx-auto px-4 py-8">
+      <ScrollReveal as="section" className="max-w-6xl mx-auto px-4 py-8">
         <BetFuryBillboard type="bfg" campaign="homepage-billboard" />
         <BetFuryMobileBanner type="bfg" campaign="homepage-mobile" />
-      </section>
+      </ScrollReveal>
 
       {/* ── LATEST ARTICLES ── */}
-      <section className="max-w-6xl mx-auto px-4 py-16">
+      <ScrollReveal as="section" className="max-w-6xl mx-auto px-4 py-16">
         <div className="flex items-end justify-between mb-8">
           <div>
             <h2 className="text-3xl font-black text-white">
@@ -253,12 +254,12 @@ export default async function HomePage({ params: { locale } }: { params: { local
             </Link>
           </div>
         )}
-      </section>
+      </ScrollReveal>
 
       {/* ── LEAD CAPTURE ── */}
-      <section className="max-w-2xl mx-auto px-4 pb-16">
+      <ScrollReveal as="section" className="max-w-2xl mx-auto px-4 pb-16">
         <LeadCaptureForm locale={locale} source="homepage" />
-      </section>
+      </ScrollReveal>
 
       {/* RacoonFury floating CTA */}
       <RacoonFuryCTA locale={locale} delay={20000} />
