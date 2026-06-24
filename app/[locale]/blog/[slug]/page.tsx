@@ -17,6 +17,7 @@ import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
 import { AUTHOR } from '@/lib/author';
 import PillarNav from '@/components/PillarNav';
+import ArticleThumb from '@/components/ArticleThumb';
 
 interface Props { params: { locale: string; slug: string }; }
 
@@ -87,7 +88,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt ?? article.publishedAt,
       authors: article.author ? [article.author] : undefined,
-      images: article.image ? [{ url: `https://cryptoluckyguia.com${article.image}`, width: 300, height: 250 }] : undefined,
+      // og:image lo genera opengraph-image.tsx (1200x630, único por artículo, sin banner)
     },
   };
 }
@@ -107,7 +108,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
   const readingMinutes = Math.max(1, Math.ceil(wordCount / 220));
   const articleUrl = `${siteUrl}/${locale}/blog/${slug}`;
 
-  const articleJsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: title, description, datePublished: article.publishedAt, dateModified: article.updatedAt ?? article.publishedAt, inLanguage: locale, mainEntityOfPage: `${siteUrl}/${locale}/blog/${slug}`, url: `${siteUrl}/${locale}/blog/${slug}`, image: article.image ? `${siteUrl}${article.image}` : `${siteUrl}/og-default.png`, author: { '@type': 'Person', '@id': `${siteUrl}/autor/sirko007#person`, name: AUTHOR.alias, url: `${siteUrl}/${locale}/autor/sirko007` }, publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'CryptoLucky', url: siteUrl, logo: { '@type': 'ImageObject', url: `${siteUrl}/CryptoLucky.png` } } };
+  const articleJsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: title, description, datePublished: article.publishedAt, dateModified: article.updatedAt ?? article.publishedAt, inLanguage: locale, mainEntityOfPage: `${siteUrl}/${locale}/blog/${slug}`, url: `${siteUrl}/${locale}/blog/${slug}`, image: `${siteUrl}/${locale}/blog/${slug}/opengraph-image`, author: { '@type': 'Person', '@id': `${siteUrl}/autor/sirko007#person`, name: AUTHOR.alias, url: `${siteUrl}/${locale}/autor/sirko007` }, publisher: { '@type': 'Organization', '@id': `${siteUrl}/#organization`, name: 'CryptoLucky', url: siteUrl, logo: { '@type': 'ImageObject', url: `${siteUrl}/CryptoLucky.png` } } };
   const breadcrumbJsonLd = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: isEs ? 'Inicio' : 'Home', item: `${siteUrl}/${locale}` }, { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteUrl}/${locale}/blog` }, { '@type': 'ListItem', position: 3, name: title, item: `${siteUrl}/${locale}/blog/${slug}` }] };
   const faqJsonLd = article.faqs?.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: article.faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) } : null;
 
@@ -150,6 +151,24 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
           <h2 {...props}>{children}</h2>
           {inject && intent ? <ContextualCTA intent={intent} locale={locale} slug={slug} /> : null}
         </>
+      );
+    },
+    // Enlaces inline del markdown: los externos abren en pestaña nueva; los de afiliado
+    // (betfury.io) llevan rel="sponsored" (Google) + nofollow. Evita afiliado sin marcar.
+    a({ node, href, children, ...props }) {
+      const url = href ?? '';
+      const isExternal = /^https?:\/\//i.test(url);
+      if (!isExternal) return <a href={url} {...props}>{children}</a>;
+      const isAffiliate = /betfury\.io/i.test(url);
+      return (
+        <a
+          href={url}
+          target="_blank"
+          rel={isAffiliate ? 'noopener noreferrer sponsored nofollow' : 'noopener noreferrer'}
+          {...props}
+        >
+          {children}
+        </a>
       );
     },
   };
@@ -233,27 +252,10 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
             </div>
           )}
 
-          {/* ── HERO BANNER (article image / animated GIF) ── */}
-          {article.image && (
-            <a
-              href={`${AFFILIATE}&utm_source=cryptolucky&utm_medium=hero&utm_campaign=article-hero`}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              aria-label="BetFury Casino"
-              className="block w-full mb-8 rounded-2xl overflow-hidden hover:opacity-90 transition-all duration-300 shadow-xl shadow-black/40 border border-white/5"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={article.image}
-                alt={`BetFury Casino – ${title}`}
-                width={300}
-                height={250}
-                className="w-full h-auto"
-                loading="eager"
-                fetchPriority="high"
-              />
-            </a>
-          )}
+          {/* ── HERO temático (visual del artículo en CSS/SVG, sin banner ni GIF) ── */}
+          <div className="w-full mb-8 rounded-2xl overflow-hidden shadow-xl shadow-black/40 border border-white/5">
+            <ArticleThumb slug={slug} category={article.category} title={title} className="relative h-56 sm:h-64" />
+          </div>
 
           {/* ── ARTICLE CONTENT ── */}
           <div className="prose prose-invert prose-amber max-w-none prose-headings:text-white prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-p:text-slate-300 prose-p:leading-relaxed prose-a:text-amber-400 prose-a:no-underline hover:prose-a:underline prose-strong:text-white prose-ul:text-slate-300 prose-ol:text-slate-300 prose-li:my-1 prose-blockquote:border-amber-400 prose-blockquote:text-slate-400 prose-table:text-slate-300 prose-th:text-white prose-th:bg-slate-800 prose-td:border-slate-700 prose-th:border-slate-700 prose-code:text-amber-400 prose-code:bg-slate-800 prose-code:px-1 prose-code:rounded prose-hr:border-slate-700">
@@ -404,17 +406,12 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
                     href={`/${locale}/blog/${rel.slug}`}
                     className="group bg-slate-800/60 border border-slate-700/50 rounded-xl overflow-hidden hover:border-amber-400/50 transition-all duration-300"
                   >
-                    {rel.image && (
-                      <div className="h-24 overflow-hidden bg-slate-700">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={rel.image}
-                          alt={getTitle(rel, locale)}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                          loading="lazy"
-                        />
-                      </div>
-                    )}
+                    <ArticleThumb
+                      slug={rel.slug}
+                      category={rel.category}
+                      title={getTitle(rel, locale)}
+                      className="relative h-24"
+                    />
                     <div className="p-4">
                       <p className="text-amber-400 text-xs font-semibold uppercase mb-1">{rel.category}</p>
                       <h3 className="text-white font-bold text-sm group-hover:text-amber-400 transition-colors line-clamp-2">

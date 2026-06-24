@@ -2,39 +2,14 @@ import { getPublishedArticles, getTitle, getDescription } from '@/lib/notion';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { BetFuryBillboard, BetFuryMobileBanner } from '@/components/BetFuryBanners';
 import RacoonFuryCTA from '@/components/RacoonFuryCTA';
+import ArticleThumb from '@/components/ArticleThumb';
 
 export const revalidate = 3600;
 
 const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 
 const SPORT_CATEGORIES = ['Copa del Mundo 2026', 'Sportsbook', 'Apuestas Deportivas'];
-
-// Fallback images for cards without article.image — different per slot to avoid repetition
-const MUNDIAL_FALLBACKS = [
-  '/betfury/banners/sport-300x250.gif',
-  '/betfury/banners/sport-970x250.gif',
-  '/betfury/banners/betfury-300x250.png',
-  '/betfury/banners/esport-300x250.gif',
-  '/betfury/banners/bfg-300x250.gif',
-  '/betfury/banners/cashback-300x250.gif',
-];
-
-const ARTICLE_FALLBACKS = [
-  '/betfury/banners/bfg-300x250.gif',
-  '/betfury/banners/cashback-300x250.gif',
-  '/betfury/banners/freebox-300x250.gif',
-  '/betfury/banners/esport-300x250.gif',
-  '/betfury/banners/betfury-300x250.png',
-  '/betfury/banners/sport-300x250.gif',
-  '/betfury/mascot/racoon-money.png',
-  '/betfury/banners/bfg-970x250.gif',
-  '/betfury/mascot/racoon-money2.png',
-  '/betfury/banners/cashback-970x250.gif',
-  '/betfury/banners/freebox-728x90.gif',
-  '/betfury/mascot/racoon-stop.png',
-];
 
 export async function generateMetadata({
   params: { locale },
@@ -119,10 +94,6 @@ export default async function BlogPage({
         </div>
       </div>
 
-      {/* ── ANIMATED BILLBOARD (970x250) ── */}
-      <BetFuryBillboard type="bfg" campaign="blog-billboard" className="mb-10" />
-      <BetFuryMobileBanner type="bfg" campaign="blog-mobile" className="mb-6" />
-
       {/* ── MUNDIAL 2026 ── */}
       {mundialArticles.length > 0 && (
         <section className="mb-16">
@@ -137,36 +108,6 @@ export default async function BlogPage({
             <span className="ml-auto text-slate-600 text-xs hidden sm:block">
               {mundialArticles.length} {isEs ? 'guías' : 'guides'}
             </span>
-          </div>
-
-          {/* Sport animated banner */}
-          <div className="mb-6 rounded-2xl overflow-hidden shadow-xl shadow-black/40">
-            <a
-              href={`${AFFILIATE}&utm_source=cryptolucky&utm_medium=sport-banner&utm_campaign=mundial-2026`}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              aria-label="BetFury – Apuestas Copa del Mundo 2026"
-              className="block hover:opacity-90 transition-opacity"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/betfury/banners/sport-728x90.gif"
-                alt="BetFury Sports – Copa del Mundo 2026"
-                width={728}
-                height={90}
-                className="w-full h-auto hidden md:block"
-                loading="eager"
-              />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/betfury/banners/sport-320x100.gif"
-                alt="BetFury Sports – Copa del Mundo 2026"
-                width={320}
-                height={100}
-                className="w-full h-auto block md:hidden"
-                loading="eager"
-              />
-            </a>
           </div>
 
           {/* CTA strip */}
@@ -227,14 +168,13 @@ export default async function BlogPage({
                 className="group bg-slate-800/60 border border-green-500/15 rounded-2xl overflow-hidden hover:border-green-400/40 hover:-translate-y-1 transition-all duration-300 shadow-md flex flex-col"
               >
                 <div className="relative h-40 overflow-hidden bg-slate-800 shrink-0">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={article.image ?? MUNDIAL_FALLBACKS[idx % MUNDIAL_FALLBACKS.length]}
-                    alt={getTitle(article, locale)}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
+                  <ArticleThumb
+                    slug={article.slug}
+                    category={article.category}
+                    title={getTitle(article, locale)}
+                    className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/25 to-transparent" />
                   <span className="absolute top-3 left-3 bg-green-500/90 backdrop-blur-sm text-white text-xs font-black px-2.5 py-0.5 rounded-full">
                     {isEs ? 'Mundial 2026' : 'World Cup 2026'}
                   </span>
@@ -282,14 +222,13 @@ export default async function BlogPage({
                 className="group bg-slate-800/60 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-amber-400/50 hover:-translate-y-1 transition-all duration-300 shadow-md flex flex-col"
               >
                 <div className="relative h-44 overflow-hidden bg-slate-800 shrink-0">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={article.image ?? ARTICLE_FALLBACKS[idx % ARTICLE_FALLBACKS.length]}
-                    alt={getTitle(article, locale)}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
+                  <ArticleThumb
+                    slug={article.slug}
+                    category={article.category}
+                    title={getTitle(article, locale)}
+                    className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/25 to-transparent pointer-events-none" />
                   {article.category && (
                     <span className="absolute top-3 left-3 bg-black/50 backdrop-blur-sm text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">
                       {article.category}
@@ -320,12 +259,6 @@ export default async function BlogPage({
           </div>
         )}
       </section>
-
-      {/* ── BOTTOM BILLBOARD ── */}
-      <div className="mt-16">
-        <BetFuryBillboard type="cashback" campaign="blog-bottom-billboard" />
-        <BetFuryMobileBanner type="cashback" campaign="blog-bottom-mobile" />
-      </div>
 
       {/* ── RacoonFury floating CTA ── */}
       <RacoonFuryCTA locale={locale} delay={10000} />

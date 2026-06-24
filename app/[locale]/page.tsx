@@ -4,6 +4,7 @@ import { getPublishedArticles, getTitle, getDescription } from '@/lib/notion';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
 import RacoonFuryCTA from '@/components/RacoonFuryCTA';
 import ScrollReveal from '@/components/ScrollReveal';
+import ArticleThumb from '@/components/ArticleThumb';
 import type { Metadata } from 'next';
 
 export const revalidate = 3600;
@@ -220,20 +221,13 @@ export default async function HomePage({ params: { locale } }: { params: { local
                 className="group bg-slate-800/60 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-amber-400/50 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-amber-500/5 flex flex-col"
               >
                 <div className="relative h-44 overflow-hidden bg-slate-800 shrink-0">
-                  {article.image ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={article.image}
-                      alt={getTitle(article, locale)}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-slate-800 via-slate-800 to-amber-950/30 flex items-center justify-center">
-                      <span className="text-amber-500/40 text-5xl font-black select-none" aria-hidden="true">&#x2618;</span>
-                    </div>
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none" />
+                  <ArticleThumb
+                    slug={article.slug}
+                    category={article.category}
+                    title={getTitle(article, locale)}
+                    className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/25 to-transparent pointer-events-none" />
                   {article.category && (
                     <span className="absolute top-3 left-3 bg-black/50 backdrop-blur-sm text-amber-400 text-xs font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">
                       {article.category}
