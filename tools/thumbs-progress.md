@@ -3,7 +3,23 @@
 > Prompts en `tools/thumb-prompts.json`. Tras cada lote: `python tools/gen-thumb-manifest.py` + tsc/build.
 > Lumens: 10/día (reset diario) + Modo Relax (gratis, más lento; cap diario ~20). NO crear cuentas múltiples.
 
-## ESTADO: 35/47 hechas · 12 pendientes (cupo de la cuenta nueva también agotado)
+## ESTADO: 45/47 hechas · 2 pendientes (cupo agotado) — FALTAN: retiro-minimo, bono-primer-deposito
+
+## LOTE 5 — HECHO (10) ✅
+- [x] mexico-copa-del-mundo-2026-apuestas (balón+pirámide, verde)
+- [x] colombia-mundial-2026-betfury-apuestas (balón+amarillo)
+- [x] casino-cripto-mexico-mejores (monedas+pirámide, verde/oro — REGEN, 1ª con texto en slot)
+- [x] casino-cripto-colombia-mejores (monedas+montaña tropical, amarillo)
+- [x] betfury-casino-argentina (monedas+obelisco, celeste)
+- [x] betfury-casino-chile (monedas+Andes, rojo/azul)
+- [x] betfury-casino-peru (monedas+ciudadela, rojo/oro)
+- [x] betfury-casino-espana (monedas+catedral, rojo/oro)
+- [x] betfury-casino-venezuela (monedas+cascada tropical)
+- [x] betfury-cashback-rakeback-explicado (flecha circular reembolso, púrpura/teal)
+
+## PENDIENTES (2, próximo cupo):
+- [ ] betfury-retiro-minimo-cuanto-es → pila pequeña de monedas + cartera glowing, púrpura (sin persona)
+- [ ] betfury-bono-primer-deposito-como-funciona → moneda multiplicándose en 2 pilas, bono x2, naranja
 
 ## LOTE 4 — HECHO (8, cuenta nueva) ✅
 - [x] provably-fair-que-significa-casinos-cripto (sello+check+dados+hexágonos — REGEN, 1ª tenía texto)
