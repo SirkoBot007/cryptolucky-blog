@@ -2,7 +2,6 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
 import { getPublishedArticles, getTitle, getDescription } from '@/lib/notion';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
-import { BetFuryBillboard, BetFuryMobileBanner } from '@/components/BetFuryBanners';
 import RacoonFuryCTA from '@/components/RacoonFuryCTA';
 import ScrollReveal from '@/components/ScrollReveal';
 import type { Metadata } from 'next';
@@ -152,10 +151,38 @@ export default async function HomePage({ params: { locale } }: { params: { local
         </div>
       </ScrollReveal>
 
-      {/* ── ANIMATED BILLBOARD ── */}
-      <ScrollReveal as="section" className="max-w-6xl mx-auto px-4 py-8">
-        <BetFuryBillboard type="bfg" campaign="homepage-billboard" />
-        <BetFuryMobileBanner type="bfg" campaign="homepage-mobile" />
+      {/* ── POR QUÉ CRYPTOLUCKY (confianza / E-E-A-T) ── */}
+      <ScrollReveal as="section" className="max-w-6xl mx-auto px-4 py-10">
+        <div className="grid sm:grid-cols-3 gap-5">
+          {[
+            {
+              t: isEs ? 'Autor real, no teoría' : 'Real author, not theory',
+              d: isEs
+                ? 'Escrito por Sirko007, con cuenta verificada y años de uso real en BetFury. Reseñas basadas en experiencia, no en copiar fichas.'
+                : 'Written by Sirko007, with a verified account and years of real BetFury use. Reviews based on experience, not copied sheets.',
+            },
+            {
+              t: isEs ? 'Guías paso a paso' : 'Step-by-step guides',
+              d: isEs
+                ? 'Registro, depósitos, retiros, bonos y staking de BFG explicados claro y sin tecnicismos.'
+                : 'Sign-up, deposits, withdrawals, bonuses and BFG staking explained clearly, without jargon.',
+            },
+            {
+              t: isEs ? 'Honesto y +18' : 'Honest and 18+',
+              d: isEs
+                ? 'Información transparente, con disclosure de afiliado y juego responsable. Verifica siempre la legalidad en tu jurisdicción.'
+                : 'Transparent info, with affiliate disclosure and responsible gaming. Always check legality in your jurisdiction.',
+            },
+          ].map((f, i) => (
+            <div
+              key={i}
+              className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6 hover:border-amber-400/40 transition-colors duration-300"
+            >
+              <h3 className="text-white font-bold text-lg mb-2">{f.t}</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">{f.d}</p>
+            </div>
+          ))}
+        </div>
       </ScrollReveal>
 
       {/* ── LATEST ARTICLES ── */}
@@ -202,13 +229,9 @@ export default async function HomePage({ params: { locale } }: { params: { local
                       loading="lazy"
                     />
                   ) : (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src="/betfury/banners/bfg-300x250.gif"
-                      alt="BetFury Casino"
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
+                    <div className="w-full h-full bg-gradient-to-br from-slate-800 via-slate-800 to-amber-950/30 flex items-center justify-center">
+                      <span className="text-amber-500/40 text-5xl font-black select-none" aria-hidden="true">&#x2618;</span>
+                    </div>
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent pointer-events-none" />
                   {article.category && (
