@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { EMAIL_SEQUENCE } from '@/lib/email-sequences';
+import { EMAIL_SEQUENCE, PDF_URL } from '@/lib/email-sequences';
+import { unsubUrl, unsubHeaders } from '@/lib/unsubscribe';
 
 const LEADS_DATABASE_ID = process.env.NOTION_LEADS_DATABASE_ID ?? '';
 const NOTION_API_KEY = process.env.NOTION_API_KEY ?? '';
@@ -83,60 +84,56 @@ export async function POST(req: NextRequest) {
     const resendApiKey = process.env.RESEND_API_KEY;
     if (resendApiKey) {
       const isEs = (locale || 'es') === 'es';
-
       const BASE = 'https://cryptoluckyguia.com';
-      // Email de bienvenida PROFESIONAL: valor primero (guías útiles), diseño claro
-      // y sin disparadores de spam (sin "590%/free spins/reclamar bono" destacados).
+      const unsub = unsubUrl(emailLower);
+
+      // EMAIL 1 (día 0) — Bienvenida + entrega del PDF (lead magnet). Valor primero,
+      // CTA = descarga del PDF (NO el enlace de afiliado), disclosure + baja en 1 clic.
       const welcomeHtml = `<!DOCTYPE html>
 <html lang="${isEs ? 'es' : 'en'}">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;">
-  <div style="display:none;max-height:0;overflow:hidden;color:#f4f5f7;">${isEs ? 'Bienvenido a CryptoLucky. Por dónde empezar con BetFury de forma segura.' : 'Welcome to CryptoLucky. How to get started with BetFury safely.'}</div>
+  <div style="display:none;max-height:0;overflow:hidden;color:#f4f5f7;">${isEs ? 'Tu PDF de bienvenida + por dónde empezar. Sin humo, lo prometido.' : 'Your welcome PDF + where to start.'}</div>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f5f7;padding:24px 0;">
     <tr><td align="center">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:14px;overflow:hidden;border:1px solid #e6e8ec;">
-        <tr><td style="padding:28px 32px 8px;">
+        <tr><td style="padding:28px 32px 4px;">
           <span style="font-size:20px;font-weight:800;color:#0f172a;">🍀 CryptoLucky</span>
-          <span style="font-size:13px;color:#64748b;"> · ${isEs ? 'Guía de casinos cripto' : 'Crypto casino guide'}</span>
         </td></tr>
         <tr><td style="padding:8px 32px 0;">
-          <h1 style="font-size:22px;color:#0f172a;margin:16px 0 8px;">${isEs ? '¡Bienvenido a CryptoLucky! 👋' : 'Welcome to CryptoLucky! 👋'}</h1>
-          <p style="font-size:15px;line-height:1.6;color:#334155;margin:0 0 16px;">
+          <h1 style="font-size:22px;color:#0f172a;margin:14px 0 10px;">${isEs ? 'Tu guía gratis está aquí 🍀' : 'Your free guide is here 🍀'}</h1>
+          <p style="font-size:15px;line-height:1.6;color:#334155;margin:0 0 14px;">
             ${isEs
-              ? 'Gracias por unirte. Somos la guía en español de referencia sobre BetFury y casinos cripto en Latinoamérica: analizamos las plataformas de verdad, probando depósitos, retiros y bonos para que tú no te lleves sorpresas.'
-              : 'Thanks for joining. We are the leading Spanish-language guide on BetFury and crypto casinos in Latin America: we review platforms hands-on so you do not get surprises.'}
+              ? 'Hola: soy Sirko007, el que está detrás de CryptoLucky. Gracias por apuntarte. Lo primero, lo prometido: aquí tienes tu <strong>Guía de bienvenida — “Cómo entender los bonos de BetFury sin perder dinero”</strong>. Es corta, directa y pensada para que decidas mejor, no para venderte nada.'
+              : 'Hi, I am Sirko007, the person behind CryptoLucky. Thanks for joining. First, as promised, here is your <strong>welcome guide — “How to understand BetFury bonuses without losing money”</strong>. Short, direct and made to help you decide, not to sell you anything.'}
           </p>
-          <p style="font-size:13px;font-weight:700;color:#0f172a;text-transform:uppercase;letter-spacing:.04em;margin:24px 0 10px;">${isEs ? 'Por dónde empezar' : 'Where to start'}</p>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-            <tr><td style="padding:8px 0;border-bottom:1px solid #eef0f3;">
-              <a href="${BASE}/es/blog/betfury-seguro-es-legitimo-licencia" style="color:#0f172a;text-decoration:none;font-weight:600;font-size:15px;">${isEs ? '¿Es BetFury seguro y legítimo?' : 'Is BetFury safe and legit?'}</a>
-              <div style="color:#64748b;font-size:13px;">${isEs ? 'Licencia, garantías y qué mirar antes de registrarte.' : 'License, guarantees and what to check first.'}</div>
-            </td></tr>
-            <tr><td style="padding:8px 0;border-bottom:1px solid #eef0f3;">
-              <a href="${BASE}/es/blog/betfury-bono-bienvenida-590" style="color:#0f172a;text-decoration:none;font-weight:600;font-size:15px;">${isEs ? 'Cómo aprovechar el bono de bienvenida' : 'How to use the welcome bonus'}</a>
-              <div style="color:#64748b;font-size:13px;">${isEs ? 'Paso a paso, sin letra pequeña.' : 'Step by step, no fine print.'}</div>
-            </td></tr>
-            <tr><td style="padding:8px 0;">
-              <a href="${BASE}/es/blog/betfury-staking-bfg-dividendos" style="color:#0f172a;text-decoration:none;font-weight:600;font-size:15px;">${isEs ? 'Staking de BFG: dividendos diarios' : 'BFG staking: daily dividends'}</a>
-              <div style="color:#64748b;font-size:13px;">${isEs ? 'Cómo generar ingresos pasivos en cripto.' : 'How to earn passive crypto income.'}</div>
+          <p style="margin:2px 0 18px;">
+            <a href="${PDF_URL}" style="display:inline-block;background:#ea580c;color:#ffffff;text-decoration:none;font-weight:700;font-size:15px;padding:12px 22px;border-radius:8px;">${isEs ? 'Descargar la guía (PDF) →' : 'Download the guide (PDF) →'}</a>
+          </p>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f8fafc;border:1px solid #eef0f3;border-radius:10px;margin:0 0 16px;">
+            <tr><td style="padding:14px 16px;">
+              <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#0f172a;">${isEs ? 'Dentro encontrarás' : 'Inside you will find'}</p>
+              <p style="margin:0;font-size:14px;color:#334155;line-height:1.7;">${isEs
+                ? '• Qué es un bono de verdad (y por qué no es dinero “gratis”).<br>• El <em>rollover</em> / <em>wagering</em> explicado fácil, con un ejemplo en números.<br>• Los 5 errores que más caro se pagan.<br>• Un checklist de juego responsable para antes de cada sesión.'
+                : '• What a bonus really is (and why it is not “free” money).<br>• Rollover / wagering explained simply, with a numeric example.<br>• The 5 costliest mistakes.<br>• A responsible-gambling checklist.'}</p>
             </td></tr>
           </table>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0 8px;">
-            <tr><td style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:16px 18px;">
-              <p style="margin:0 0 4px;font-size:14px;color:#9a3412;font-weight:700;">${isEs ? '¿Vas a probar BetFury?' : 'Trying BetFury?'}</p>
-              <p style="margin:0 0 12px;font-size:13px;color:#7c2d12;line-height:1.5;">${isEs ? 'Si te registras con nuestro código tu bono de bienvenida es mayor. Es totalmente opcional y sin coste para ti.' : 'Sign up with our code for a bigger welcome bonus. Fully optional and free for you.'}</p>
-              <p style="margin:0 0 12px;font-size:13px;color:#7c2d12;">${isEs ? 'Código:' : 'Code:'} <strong style="letter-spacing:.08em;">LUCKYSIRKO007</strong></p>
-              <a href="https://betfury.io/?r=LUCKYSIRKO007" style="display:inline-block;background:#ea580c;color:#ffffff;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px;">${isEs ? 'Ir a BetFury →' : 'Go to BetFury →'}</a>
-            </td></tr>
-          </table>
+          <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 14px;">
+            ${isEs
+              ? 'Algo que valoro mucho: <strong>honestidad</strong>. No te voy a prometer ganancias —nadie serio puede—; lo que sí hago es probar plataformas y contarte lo bueno y lo mejorable. Algunos enlaces son de afiliado: si te registras a través de ellos puedo llevarme una comisión sin coste extra para ti. Eso no cambia lo que te cuento.'
+              : 'Something I value: <strong>honesty</strong>. I will not promise winnings — nobody serious can. Some links are affiliate links: if you sign up through them I may earn a commission at no extra cost to you. That does not change what I tell you.'}
+          </p>
+          <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 14px;">
+            ${isEs
+              ? 'En los próximos días te mandaré un par de correos cortos y útiles. El siguiente va de lo más importante: <strong>cómo proteger tu dinero antes de jugar</strong>.'
+              : 'Over the next days I will send a couple of short, useful emails. The next one is the most important: how to protect your money before playing.'}
+          </p>
+          <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 6px;">${isEs ? 'Un abrazo,' : 'Cheers,'}<br>Sirko007 — CryptoLucky</p>
         </td></tr>
-        <tr><td style="padding:20px 32px 28px;border-top:1px solid #eef0f3;">
-          <p style="margin:0 0 6px;font-size:12px;color:#94a3b8;line-height:1.6;">
-            ${isEs ? 'Recibes este email porque te suscribiste en' : 'You receive this because you subscribed at'} <a href="${BASE}" style="color:#ea580c;text-decoration:none;">cryptoluckyguia.com</a>.
-          </p>
-          <p style="margin:0;font-size:11px;color:#b0b7c3;line-height:1.6;">
-            ${isEs ? 'Para dejar de recibir, responde con BAJA. Contenido informativo. Juega con responsabilidad. +18.' : 'To unsubscribe, reply UNSUBSCRIBE. Informational content. Gamble responsibly. 18+.'}
-          </p>
+        <tr><td style="padding:18px 32px 26px;border-top:1px solid #eef0f3;">
+          <p style="margin:0 0 6px;font-size:12px;color:#94a3b8;line-height:1.6;">${isEs ? 'Recibes este email porque te suscribiste en' : 'You receive this because you subscribed at'} <a href="${BASE}" style="color:#ea580c;text-decoration:none;">cryptoluckyguia.com</a>.</p>
+          <p style="margin:0 0 8px;font-size:12px;color:#94a3b8;line-height:1.6;"><a href="${unsub}" style="color:#94a3b8;text-decoration:underline;">${isEs ? 'Darte de baja en 1 clic' : 'Unsubscribe in 1 click'}</a></p>
+          <p style="margin:0;font-size:11px;color:#b0b7c3;line-height:1.6;">${isEs ? 'Solo +18. Juega con responsabilidad. Si el juego deja de ser diversión, busca ayuda (Coljuegos · MINCETUR).' : 'Only 18+. Gamble responsibly.'}</p>
         </td></tr>
       </table>
     </td></tr>
@@ -145,8 +142,8 @@ export async function POST(req: NextRequest) {
 </html>`;
 
       const welcomeText = (isEs
-        ? `Bienvenido a CryptoLucky\n\nGracias por unirte. Somos la guía en español de referencia sobre BetFury y casinos cripto en Latinoamérica.\n\nPor dónde empezar:\n- ¿Es BetFury seguro y legítimo? ${BASE}/es/blog/betfury-seguro-es-legitimo-licencia\n- Cómo aprovechar el bono de bienvenida: ${BASE}/es/blog/betfury-bono-bienvenida-590\n- Staking de BFG (dividendos diarios): ${BASE}/es/blog/betfury-staking-bfg-dividendos\n\n¿Vas a probar BetFury? Con el código LUCKYSIRKO007 tu bono es mayor (opcional, sin coste): https://betfury.io/?r=LUCKYSIRKO007\n\nRecibes este email porque te suscribiste en cryptoluckyguia.com. Para dejar de recibir, responde con BAJA. Juega con responsabilidad. +18.`
-        : `Welcome to CryptoLucky\n\nThanks for joining. We are the leading Spanish-language guide on BetFury and crypto casinos in Latin America.\n\nWhere to start:\n- Is BetFury safe and legit? ${BASE}/es/blog/betfury-seguro-es-legitimo-licencia\n- How to use the welcome bonus: ${BASE}/es/blog/betfury-bono-bienvenida-590\n- BFG staking (daily dividends): ${BASE}/es/blog/betfury-staking-bfg-dividendos\n\nTrying BetFury? With code LUCKYSIRKO007 your bonus is bigger (optional, free): https://betfury.io/?r=LUCKYSIRKO007\n\nYou receive this because you subscribed at cryptoluckyguia.com. To unsubscribe, reply UNSUBSCRIBE. Gamble responsibly. 18+.`);
+        ? `Tu guía gratis está aquí\n\nSoy Sirko007, detrás de CryptoLucky. Gracias por apuntarte. Lo prometido: tu Guía de bienvenida "Cómo entender los bonos de BetFury sin perder dinero".\n\nDescargar la guía (PDF): ${PDF_URL}\n\nDentro: qué es un bono de verdad, el rollover/wagering con ejemplo, los 5 errores más caros y un checklist de juego responsable.\n\nValoro la honestidad: no prometo ganancias. Algunos enlaces son de afiliado (sin coste extra para ti).\n\nEn los próximos días, un par de correos útiles. El siguiente: cómo proteger tu dinero antes de jugar.\n\nDarte de baja en 1 clic: ${unsub}\nSolo +18. Juega con responsabilidad (Coljuegos / MINCETUR).`
+        : `Your free guide is here\n\nI am Sirko007, behind CryptoLucky. As promised, your welcome guide "How to understand BetFury bonuses without losing money".\n\nDownload the guide (PDF): ${PDF_URL}\n\nInside: what a bonus really is, rollover/wagering with an example, the 5 costliest mistakes and a responsible-gambling checklist.\n\nSome links are affiliate links (no extra cost to you).\n\nUnsubscribe in 1 click: ${unsub}\nOnly 18+. Gamble responsibly.`);
 
       // Email de bienvenida al suscriptor (await + logging)
       try {
@@ -159,9 +156,10 @@ export async function POST(req: NextRequest) {
           body: JSON.stringify({
             from: 'CryptoLucky <noreply@cryptoluckyguia.com>',
             to: [emailLower],
-            subject: isEs ? 'Bienvenido a CryptoLucky 🍀 — por dónde empezar' : 'Welcome to CryptoLucky 🍀 — getting started',
+            subject: isEs ? 'Tu guía gratis está aquí 🍀 (cómo entender los bonos sin perder dinero)' : 'Your free guide is here 🍀',
             html: welcomeHtml,
             text: welcomeText,
+            headers: unsubHeaders(emailLower),
             tags: [{ name: 'source', value: source || 'inline' }],
           }),
         });
@@ -211,7 +209,7 @@ export async function POST(req: NextRequest) {
       console.warn('[subscribe] RESEND_API_KEY not set — email not sent for:', emailLower);
     }
 
-    // -- Programar secuencia drip (emails #2-5 via Resend scheduledAt) --------
+    // -- Programar secuencia drip (día 2/4/7 via Resend scheduled_at) ----------
     if (resendApiKey) {
       const FROM = 'CryptoLucky <noreply@cryptoluckyguia.com>';
       for (const step of EMAIL_SEQUENCE) {
@@ -228,10 +226,11 @@ export async function POST(req: NextRequest) {
             from: FROM,
             to: [emailLower],
             subject: step.subject,
-            html: step.getHtml(),
-            text: step.getText(),
+            html: step.getHtml(emailLower),
+            text: step.getText(emailLower),
+            headers: unsubHeaders(emailLower),
             // API REST de Resend espera snake_case; con camelCase lo ignoraba
-            // y enviaba todo el drip de golpe (5 emails a la vez = spam).
+            // y enviaba todo el drip de golpe (a la vez = spam).
             scheduled_at: scheduledAt,
             tags: [
               { name: 'sequence', value: 'drip' },

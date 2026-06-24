@@ -1,17 +1,20 @@
 // ============================================================
-// EMAIL DRIP SEQUENCE — CryptoLucky x BetFury
-// 4 emails a lo largo de 20 dias. Diseño claro y profesional
-// (consistente con el email de bienvenida), valor primero y
-// SIN disparadores de spam (sin "590%/free spins/reclamar bono"
-// destacados, sin barras de urgencia rojas). Incluye version
-// texto plano (text/plain) para mejorar la entregabilidad.
+// SECUENCIA DE EMAILS "value-first" — CryptoLucky x BetFury
+// 4 emails: día 0 (bienvenida+PDF, en subscribe), día 2 (bankroll/
+// juego responsable), día 4 (microguía wagering), día 7 (reseña honesta).
+// Diseño claro y profesional, ~80% valor / 20% venta, sin disparadores
+// de spam, versión texto plano (deliverability) y baja en 1 clic.
 // ============================================================
+
+import { unsubUrl } from './unsubscribe';
 
 const AFFILIATE_LINK = 'https://betfury.io/?r=LUCKYSIRKO007';
 const SITE_URL = 'https://cryptoluckyguia.com';
+export const PDF_URL = `${SITE_URL}/descargas/guia-bienvenida-cryptolucky.pdf`;
 
-// Wrapper claro y profesional (mismo estilo que el email de bienvenida)
-function wrap(preheader: string, inner: string): string {
+// Wrapper claro y profesional. Footer con baja en 1 clic + +18/ayuda.
+function wrap(preheader: string, inner: string, email?: string): string {
+  const unsub = email ? unsubUrl(email) : `${SITE_URL}/api/unsubscribe`;
   return `<!DOCTYPE html>
 <html lang="es">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
@@ -26,7 +29,8 @@ function wrap(preheader: string, inner: string): string {
         ${inner}
         <tr><td style="padding:20px 32px 26px;border-top:1px solid #eef0f3;">
           <p style="margin:0 0 6px;font-size:12px;color:#94a3b8;line-height:1.6;">Recibes este email porque te suscribiste en <a href="${SITE_URL}" style="color:#ea580c;text-decoration:none;">cryptoluckyguia.com</a>.</p>
-          <p style="margin:0;font-size:11px;color:#b0b7c3;line-height:1.6;">Para dejar de recibir, responde con BAJA. Contenido informativo. Juega con responsabilidad. +18.</p>
+          <p style="margin:0 0 8px;font-size:12px;color:#94a3b8;line-height:1.6;"><a href="${unsub}" style="color:#94a3b8;text-decoration:underline;">Darte de baja en 1 clic</a></p>
+          <p style="margin:0;font-size:11px;color:#b0b7c3;line-height:1.6;">Solo +18. Juega con responsabilidad. Si el juego deja de ser diversión, busca ayuda (Coljuegos · MINCETUR).</p>
         </td></tr>
       </table>
     </td></tr>
@@ -35,150 +39,121 @@ function wrap(preheader: string, inner: string): string {
 </html>`;
 }
 
-// Botón sólido discreto (sin gradientes neón)
 function btn(href: string, label: string): string {
   return `<a href="${href}" style="display:inline-block;background:#ea580c;color:#ffffff;text-decoration:none;font-weight:700;font-size:14px;padding:11px 20px;border-radius:8px;">${label}</a>`;
 }
-
-// Fila de enlace a artículo (valor)
 function linkRow(href: string, title: string, sub: string, last = false): string {
   return `<tr><td style="padding:8px 0;${last ? '' : 'border-bottom:1px solid #eef0f3;'}">
     <a href="${href}" style="color:#0f172a;text-decoration:none;font-weight:600;font-size:15px;">${title}</a>
     <div style="color:#64748b;font-size:13px;">${sub}</div>
   </td></tr>`;
 }
-
 const eyebrow = (t: string) =>
   `<p style="font-size:12px;font-weight:700;color:#ea580c;text-transform:uppercase;letter-spacing:.05em;margin:18px 0 6px;">${t}</p>`;
 const h1 = (t: string) => `<h1 style="font-size:21px;color:#0f172a;margin:6px 0 10px;line-height:1.3;">${t}</h1>`;
 const p = (t: string) => `<p style="font-size:15px;line-height:1.6;color:#334155;margin:0 0 14px;">${t}</p>`;
-
-// Caja BetFury suave y opcional (reutilizable)
+function infoBox(inner: string, bg = '#f8fafc', border = '#eef0f3'): string {
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 14px;">
+    <tr><td style="background:${bg};border:1px solid ${border};border-radius:10px;padding:14px 16px;">${inner}</td></tr></table>`;
+}
 function softBetFuryBox(campaign: string, intro: string): string {
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:22px 0 6px;">
     <tr><td style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:16px 18px;">
       <p style="margin:0 0 10px;font-size:13px;color:#7c2d12;line-height:1.5;">${intro}</p>
       <p style="margin:0 0 12px;font-size:13px;color:#7c2d12;">Código: <strong style="letter-spacing:.06em;">LUCKYSIRKO007</strong></p>
-      ${btn(`${AFFILIATE_LINK}&utm_source=email&utm_medium=drip&utm_campaign=${campaign}`, 'Ir a BetFury →')}
+      ${btn(`${AFFILIATE_LINK}&utm_source=email&utm_medium=drip&utm_campaign=${campaign}`, 'Probar BetFury con cabeza →')}
     </td></tr>
   </table>`;
 }
 
-// ── EMAIL #2 — Día 2 — Staking BFG (ingresos pasivos) ──
-export function getEmail2Html(): string {
-  return wrap('Cómo generar ingresos pasivos con BetFury: staking de BFG explicado.', `
+// ── EMAIL 2 — Día 2 — Juego responsable + bankroll (valor puro, SIN afiliado) ──
+export function getEmail2Html(email?: string): string {
+  return wrap('Presupuesto, límites y la regla del stop-loss/stop-win. Sin venta.', `
     <tr><td style="padding:4px 32px 0;">
-      ${eyebrow('Guía')}
-      ${h1('Cómo generar ingresos pasivos con BetFury')}
-      ${p('La mayoría usa BetFury solo para jugar. Hay una forma menos conocida de sacarle partido: el <strong>staking de BFG</strong>, que reparte una parte de los ingresos del casino entre quienes tienen el token.')}
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f8fafc;border:1px solid #eef0f3;border-radius:10px;padding:4px 0;margin:0 0 14px;">
-        <tr><td style="padding:12px 16px;">
-          <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#0f172a;">Cómo funciona, en 4 pasos</p>
-          <p style="margin:0;font-size:14px;color:#334155;line-height:1.7;">1. Juegas (a cualquier juego) y acumulas BFG por cada apuesta.<br>2. Haces staking de tus BFG en el pool.<br>3. Cada día recibes tu parte proporcional de los ingresos.<br>4. Los dividendos se pagan en BTC, ETH, BNB, USDT y más.</p>
-        </td></tr>
-      </table>
-      ${p('Es la diferencia entre "gastar" y "construir": mientras juegas, vas acumulando un activo que te paga.')}
-      <p style="font-size:13px;font-weight:700;color:#0f172a;text-transform:uppercase;letter-spacing:.04em;margin:22px 0 8px;">Guía completa</p>
+      ${eyebrow('Juego responsable')}
+      ${h1('La regla nº1 antes de jugar: protege tu dinero')}
+      ${p('Hoy no te traigo ningún casino ni ningún bono. Te traigo lo que de verdad marca la diferencia entre disfrutar y llevarte un disgusto: <strong>gestionar tu dinero (tu “bankroll”)</strong>.')}
+      ${infoBox(`
+        <p style="margin:0 0 6px;font-size:14px;color:#0f172a;"><strong>1. Presupuesto cerrado.</strong> Decide ANTES cuánto vas a usar, y que sea dinero que puedes permitirte perder. Nunca el alquiler, la comida ni un préstamo.</p>
+        <p style="margin:8px 0 6px;font-size:14px;color:#0f172a;"><strong>2. Límite de tiempo.</strong> Ponte un tope (por ejemplo 45 min). Cuando suena, se acabó, ganes o pierdas.</p>
+        <p style="margin:8px 0 0;font-size:14px;color:#0f172a;"><strong>3. Stop-loss y stop-win.</strong> Decide de antemano cuánto estás dispuesto a perder y, si ganas, en qué punto retiras. La trampa más cara es “ya recupero”: perseguir pérdidas vacía la cuenta.</p>`)}
+      ${p('📋 Para que sea fácil de aplicar, tu <strong>Guía de bienvenida</strong> incluye un checklist de juego responsable y un esquema de bankroll para anotar depósitos, retiros y tu límite por sesión.')}
+      <p style="margin:0 0 16px;">${btn(PDF_URL, 'Abrir el checklist (PDF)')}</p>
+      ${p('Y si alguna vez notas que el juego deja de ser diversión, pedir ayuda es de listos: en Colombia tienes a <strong>Coljuegos</strong>; en Perú, el marco de <strong>MINCETUR</strong>. Casi todos los casinos serios permiten ponerte límites de depósito o autoexcluirte.')}
+      ${p('En el próximo correo te enseño un truco práctico: <strong>leer el “wagering” de un bono en 3 minutos</strong> para saber si vale la pena.')}
+      ${p('Cuídate,<br>Sirko007 — CryptoLucky')}
+    </td></tr>`, email);
+}
+
+// ── EMAIL 3 — Día 4 — Microguía: leer un "wagering" en 3 minutos ──
+export function getEmail3Html(email?: string): string {
+  return wrap('El truco para saber en 3 minutos si un bono vale la pena.', `
+    <tr><td style="padding:4px 32px 0;">
+      ${eyebrow('Microguía')}
+      ${h1('Cómo leer el “wagering” de un bono en 3 minutos')}
+      ${p('Un bono no vale por su tamaño, sino por lo fácil que sea cumplir sus condiciones. Busca <strong>estas 5 cifras</strong> en la letra pequeña:')}
+      ${infoBox(`
+        <p style="margin:0 0 6px;font-size:14px;color:#334155;line-height:1.7;"><strong>1. Rollover (x__).</strong> Cuántas veces hay que apostar el bono antes de retirar. x20–x30 es razonable; x40 o más, piénsalo.</p>
+        <p style="margin:0 0 6px;font-size:14px;color:#334155;line-height:1.7;"><strong>2. Juegos válidos y su peso.</strong> Las tragamonedas suelen contar 100%; ruleta o blackjack, a veces 10% o 0%.</p>
+        <p style="margin:0 0 6px;font-size:14px;color:#334155;line-height:1.7;"><strong>3. Caducidad.</strong> Muchos bonos expiran en días. Si no llegas, lo pierdes.</p>
+        <p style="margin:0 0 6px;font-size:14px;color:#334155;line-height:1.7;"><strong>4. Apuesta máxima con bono activo.</strong> Suele haber un tope por giro; pasarte puede anular el bono.</p>
+        <p style="margin:0;font-size:14px;color:#334155;line-height:1.7;"><strong>5. Tope de retiro.</strong> A veces solo puedes sacar una cantidad máxima de lo ganado con el bono.</p>`)}
+      ${p('<strong>Ejemplo en números:</strong> bono de 20 USD con rollover x35 → 20 × 35 = <strong>700 USD</strong> en apuestas acumuladas antes de poder retirar. No es perder 700; es el volumen que tienes que mover. Cuanto más alto, más riesgo de que el saldo se agote por el camino.')}
+      ${p('¿Dónde practicar? En cualquier casino que mires. Por ejemplo, en <strong>BetFury</strong> —uno de los que he revisado— puedes ver sus condiciones y aplicar las 5 cifras tú mismo antes de aceptar nada. La idea es que tú decidas con criterio.')}
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-        ${linkRow(`${SITE_URL}/es/blog/betfury-staking-bfg-dividendos?utm_source=email&utm_medium=drip&utm_campaign=email2`, 'Staking de BFG: cómo ganar dividendos diarios', 'Paso a paso, con ejemplos reales.', true)}
+        ${linkRow(`${SITE_URL}/es/blog/betfury-bono-bienvenida-590?utm_source=email&utm_medium=drip&utm_campaign=email3_wagering`, 'Cómo aprovechar el bono de bienvenida', 'El ejemplo aplicado paso a paso.', true)}
       </table>
-      ${softBetFuryBox('email2_staking', 'Si quieres empezar a acumular BFG, registrarte con nuestro código suma un extra de bienvenida. Opcional y sin coste para ti.')}
-    </td></tr>`);
+      ${p('En el próximo te cuento, sin marketing, <strong>qué aprendí analizando BetFury durante meses</strong> — lo bueno y lo mejorable.')}
+      ${p('Un saludo,<br>Sirko007 — CryptoLucky')}
+    </td></tr>`, email);
 }
 
-// ── EMAIL #3 — Día 5 — Juegos con mejor RTP ──
-export function getEmail3Html(): string {
-  return wrap('Los 3 juegos con mejor RTP en BetFury y por qué importan.', `
+// ── EMAIL 4 — Día 7 — Reseña honesta + caso real ──
+export function getEmail4Html(email?: string): string {
+  return wrap('Sin humo: ventajas, peros y un caso real con bankroll de 50 USD.', `
     <tr><td style="padding:4px 32px 0;">
-      ${eyebrow('Datos')}
-      ${h1('Los 3 juegos con mejor RTP en BetFury')}
-      ${p('El RTP (Return To Player) determina cuánto devuelve un juego a largo plazo. No todos son iguales — estos tres son los más favorables:')}
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 8px;">
-        <tr><td style="padding:10px 14px;background:#f8fafc;border:1px solid #eef0f3;border-radius:10px;">
-          <p style="margin:0;font-size:15px;color:#0f172a;font-weight:700;">🎲 Dice — RTP 99%</p>
-          <p style="margin:4px 0 0;font-size:13px;color:#64748b;">Dados con uno de los mejores RTP del mercado. Ajustas riesgo y multiplicador.</p>
-        </td></tr>
-      </table>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0;">
-        <tr><td style="padding:10px 14px;background:#f8fafc;border:1px solid #eef0f3;border-radius:10px;">
-          <p style="margin:0;font-size:15px;color:#0f172a;font-weight:700;">🚀 Crash — RTP 99%</p>
-          <p style="margin:4px 0 0;font-size:13px;color:#64748b;">Retira antes de que explote el multiplicador. Con estrategia conservadora (1.2x–1.5x) es muy estable.</p>
-        </td></tr>
-      </table>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:8px 0 14px;">
-        <tr><td style="padding:10px 14px;background:#f8fafc;border:1px solid #eef0f3;border-radius:10px;">
-          <p style="margin:0;font-size:15px;color:#0f172a;font-weight:700;">💣 Mines — el más estratégico</p>
-          <p style="margin:4px 0 0;font-size:13px;color:#64748b;">Eliges cuántas minas poner. Con pocas minas y retirada temprana, el RTP sube por encima del 99%.</p>
-        </td></tr>
-      </table>
-      ${p('Dato útil: estos tres también te generan BFG con cada apuesta, así que mientras juegas vas acumulando para el staking.')}
-      ${softBetFuryBox('email3_juegos', 'Con nuestro código, el bono de bienvenida en tu primer depósito es mayor. Totalmente opcional.')}
-    </td></tr>`);
-}
-
-// ── EMAIL #4 — Día 10 — Lo que aprendimos (honesto) ──
-export function getEmail4Html(): string {
-  return wrap('Lo que aprendimos analizando BetFury durante meses: lo bueno y lo mejorable.', `
-    <tr><td style="padding:4px 32px 0;">
-      ${eyebrow('Análisis honesto')}
-      ${h1('Lo que aprendimos analizando BetFury')}
-      ${p('Llevamos meses probando BetFury de verdad (depósitos, retiros, bonos). Este es nuestro resumen honesto, sin postureo:')}
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;margin:0 0 10px;">
-        <tr><td style="padding:14px 16px;">
-          <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#166534;">Lo que más nos gustó</p>
-          <p style="margin:0;font-size:14px;color:#14532d;line-height:1.7;">• Retiros rápidos (a menudo en minutos)<br>• Sin KYC obligatorio para montos estándar<br>• Staking de BFG: ingresos pasivos reales<br>• Cajas y faucet gratis a diario</p>
-        </td></tr>
-      </table>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;margin:0 0 14px;">
-        <tr><td style="padding:14px 16px;">
-          <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#92400e;">Lo que mejoraríamos</p>
-          <p style="margin:0;font-size:14px;color:#78350f;line-height:1.7;">• El soporte en español podría ser más rápido<br>• La app es web (no nativa), aunque funciona bien</p>
-        </td></tr>
-      </table>
+      ${eyebrow('Reseña honesta')}
+      ${h1('Lo que aprendí analizando BetFury durante meses')}
+      ${p('Llevo meses probando BetFury, así que te cuento la verdad, sin adornos.')}
+      ${infoBox(`
+        <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#166534;">Lo bueno</p>
+        <p style="margin:0;font-size:14px;color:#14532d;line-height:1.7;">• Mucha variedad de juegos y catálogo amplio.<br>• Recompensas diarias (cajas, faucet) que está bien reclamar.<br>• Staking del token BFG: ingresos pasivos que explico en el blog.</p>`, '#f0fdf4', '#bbf7d0')}
+      ${infoBox(`
+        <p style="margin:0 0 8px;font-size:13px;font-weight:700;color:#92400e;">Lo mejorable</p>
+        <p style="margin:0;font-size:14px;color:#78350f;line-height:1.7;">• Como en casi todos, las condiciones de algunos bonos conviene mirarlas con lupa (aplica las 5 cifras del correo anterior).<br>• La interfaz abruma un poco al principio.</p>`, '#fffbeb', '#fde68a')}
+      ${p('<strong>Un caso real (para aprender, no para imitar):</strong> en una sesión con un bankroll de 50 USD me marqué stop-loss en 50 y stop-win en +30. Toqué el stop-win, retiré y cerré. Otro día toqué el stop-loss y también cerré. La lección no es “se gana”: es que tener los límites decididos de antemano me ahorró perseguir pérdidas. Eso es lo que de verdad protege tu dinero.')}
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-        ${linkRow(`${SITE_URL}/es/blog/betfury-seguro-es-legitimo-licencia?utm_source=email&utm_medium=drip&utm_campaign=email4`, '¿BetFury es seguro y legítimo?', 'Licencia, garantías y nuestro veredicto completo.', true)}
+        ${linkRow(`${SITE_URL}/es/blog/betfury-seguro-es-legitimo-licencia?utm_source=email&utm_medium=drip&utm_campaign=email4_review`, '¿BetFury es seguro y legítimo?', 'Licencia, garantías y veredicto completo.', true)}
       </table>
-      ${softBetFuryBox('email4_analisis', 'Si decides probarlo, con nuestro código el bono de bienvenida es mayor. Opcional y sin coste.')}
-    </td></tr>`);
-}
-
-// ── EMAIL #5 — Día 20 — Resumen comparativo (sin urgencia falsa) ──
-export function getEmail5Html(): string {
-  return wrap('Tu guía rápida de BetFury: comparativa final y por dónde seguir.', `
-    <tr><td style="padding:4px 32px 0;">
-      ${eyebrow('Resumen')}
-      ${h1('Tu guía rápida de BetFury')}
-      ${p('Han pasado unas semanas desde que te suscribiste. Para cerrar, aquí tienes la comparativa rápida que resume por qué recomendamos BetFury frente a otras opciones:')}
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #eef0f3;border-radius:10px;overflow:hidden;margin:0 0 14px;font-size:13px;">
-        <tr style="background:#f8fafc;">
-          <td style="padding:10px 14px;color:#64748b;font-weight:700;">Característica</td>
-          <td style="padding:10px 14px;text-align:center;color:#0f172a;font-weight:700;">BetFury</td>
-          <td style="padding:10px 14px;text-align:center;color:#64748b;font-weight:700;">Otros</td>
-        </tr>
-        <tr style="border-top:1px solid #eef0f3;"><td style="padding:10px 14px;color:#334155;">Dividendos diarios (staking)</td><td style="padding:10px 14px;text-align:center;color:#16a34a;">Sí</td><td style="padding:10px 14px;text-align:center;color:#94a3b8;">No</td></tr>
-        <tr style="border-top:1px solid #eef0f3;"><td style="padding:10px 14px;color:#334155;">Cajas / faucet gratis</td><td style="padding:10px 14px;text-align:center;color:#16a34a;">Sí</td><td style="padding:10px 14px;text-align:center;color:#94a3b8;">No</td></tr>
-        <tr style="border-top:1px solid #eef0f3;"><td style="padding:10px 14px;color:#334155;">Sin KYC (montos estándar)</td><td style="padding:10px 14px;text-align:center;color:#16a34a;">Sí</td><td style="padding:10px 14px;text-align:center;color:#d97706;">Parcial</td></tr>
-        <tr style="border-top:1px solid #eef0f3;"><td style="padding:10px 14px;color:#334155;">Contenido en español</td><td style="padding:10px 14px;text-align:center;color:#16a34a;">Sí</td><td style="padding:10px 14px;text-align:center;color:#d97706;">Limitado</td></tr>
-      </table>
-      ${softBetFuryBox('email5_resumen', 'Cuando quieras probarlo, registrarte con nuestro código te da un bono de bienvenida mayor. Sin prisa y sin coste para ti.')}
-    </td></tr>`);
+      ${softBetFuryBox('email4_review', 'Si después de todo esto quieres probarlo con cabeza, puedes registrarte con mi código. Hazlo con tu checklist de juego responsable delante (lo tienes en el PDF de bienvenida). Empieza pequeño.')}
+      ${p('Gracias por leerme estos días. Seguiré mandándote solo cosas útiles.<br><br>Un abrazo,<br>Sirko007 — CryptoLucky')}
+    </td></tr>`, email);
 }
 
 // ── Versiones texto plano (deliverability) ──
-function text2() { return `Cómo generar ingresos pasivos con BetFury\n\nLa mayoría usa BetFury solo para jugar. El staking de BFG reparte parte de los ingresos del casino entre quienes tienen el token.\n\nEn 4 pasos: 1) juegas y acumulas BFG, 2) haces staking, 3) cada día recibes dividendos, 4) se pagan en BTC/ETH/BNB/USDT.\n\nGuía completa: ${SITE_URL}/es/blog/betfury-staking-bfg-dividendos\n\nSi quieres empezar, con el código LUCKYSIRKO007 tienes un extra de bienvenida (opcional): ${AFFILIATE_LINK}\n\nResponde BAJA para dejar de recibir. +18.`; }
-function text3() { return `Los 3 juegos con mejor RTP en BetFury\n\n- Dice (RTP 99%): ajustas riesgo y multiplicador.\n- Crash (RTP 99%): retira antes del crash; con estrategia conservadora es estable.\n- Mines: el más estratégico; con pocas minas el RTP sube del 99%.\n\nAdemás generan BFG con cada apuesta (para el staking).\n\nCon el código LUCKYSIRKO007 el bono es mayor (opcional): ${AFFILIATE_LINK}\n\nResponde BAJA para dejar de recibir. +18.`; }
-function text4() { return `Lo que aprendimos analizando BetFury\n\nLo mejor: retiros rápidos, sin KYC para montos estándar, staking de BFG, cajas/faucet gratis.\nLo mejorable: soporte en español más rápido; app web (no nativa).\n\n¿Es seguro y legítimo? ${SITE_URL}/es/blog/betfury-seguro-es-legitimo-licencia\n\nSi lo pruebas, con LUCKYSIRKO007 el bono es mayor (opcional): ${AFFILIATE_LINK}\n\nResponde BAJA para dejar de recibir. +18.`; }
-function text5() { return `Tu guía rápida de BetFury\n\nComparativa: dividendos diarios (sí), cajas/faucet gratis (sí), sin KYC en montos estándar (sí), contenido en español (sí).\n\nCuando quieras probarlo, con LUCKYSIRKO007 tienes un bono de bienvenida mayor (sin coste): ${AFFILIATE_LINK}\n\nResponde BAJA para dejar de recibir. +18.`; }
+function unsubLine(email?: string) {
+  return email
+    ? `Darte de baja en 1 clic: ${unsubUrl(email)}`
+    : `Para darte de baja, responde con BAJA.`;
+}
+export function text2(email?: string) {
+  return `La regla nº1 antes de jugar: protege tu dinero\n\nHoy no traigo ningún casino ni bono, sino lo que marca la diferencia: gestionar tu bankroll.\n\n1) Presupuesto cerrado: solo dinero que puedas permitirte perder.\n2) Límite de tiempo: pon un tope (p. ej. 45 min) y respétalo.\n3) Stop-loss y stop-win: decide de antemano cuánto perder y cuándo retirar. Perseguir pérdidas vacía la cuenta.\n\nTu Guía de bienvenida incluye un checklist de juego responsable: ${PDF_URL}\n\nSi el juego deja de ser diversión, busca ayuda (Coljuegos / MINCETUR).\n\n${unsubLine(email)}\nSolo +18. Juega con responsabilidad.`;
+}
+export function text3(email?: string) {
+  return `Cómo leer el "wagering" de un bono en 3 minutos\n\nBusca estas 5 cifras: 1) Rollover (x20-30 razonable, x40+ piénsalo). 2) Juegos válidos y su peso. 3) Caducidad. 4) Apuesta máxima con bono activo. 5) Tope de retiro.\n\nEjemplo: bono 20 USD x35 = 700 USD en apuestas antes de retirar.\n\nAplícalo con el bono de bienvenida: ${SITE_URL}/es/blog/betfury-bono-bienvenida-590\n\n${unsubLine(email)}\nSolo +18. Juega con responsabilidad. Algún enlace puede ser de afiliado, sin coste extra para ti.`;
+}
+export function text4(email?: string) {
+  return `Lo que aprendí analizando BetFury durante meses\n\nLo bueno: variedad de juegos, recompensas diarias (cajas/faucet), staking de BFG (ingresos pasivos).\nLo mejorable: revisar con lupa las condiciones de algunos bonos; interfaz que abruma al principio.\n\nCaso real: con bankroll de 50 USD, stop-loss en 50 y stop-win en +30. Tener los límites decididos me ahorró perseguir pérdidas.\n\n¿Es seguro y legítimo? ${SITE_URL}/es/blog/betfury-seguro-es-legitimo-licencia\n\nSi quieres probarlo con cabeza, con el código LUCKYSIRKO007: ${AFFILIATE_LINK}\n\n${unsubLine(email)}\nSolo +18. Juega con responsabilidad. Enlace de afiliado: puedo recibir una comisión sin coste extra para ti.`;
+}
 
-// ── Config de la secuencia ──
+// ── Config de la secuencia drip (día 2 / 4 / 7) ──
 export const EMAIL_SEQUENCE: Array<{
   delayDays: number;
   subject: string;
-  getHtml: () => string;
-  getText: () => string;
+  getHtml: (email: string) => string;
+  getText: (email: string) => string;
 }> = [
-  { delayDays: 2, subject: 'Cómo generar ingresos pasivos con BetFury', getHtml: getEmail2Html, getText: text2 },
-  { delayDays: 5, subject: 'Los 3 juegos con mejor RTP en BetFury', getHtml: getEmail3Html, getText: text3 },
-  { delayDays: 10, subject: 'Lo que aprendimos analizando BetFury', getHtml: getEmail4Html, getText: text4 },
-  { delayDays: 20, subject: 'Tu guía rápida de BetFury — resumen', getHtml: getEmail5Html, getText: text5 },
+  { delayDays: 2, subject: 'La regla nº1 antes de jugar: protege tu dinero', getHtml: getEmail2Html, getText: text2 },
+  { delayDays: 4, subject: 'Cómo leer el “wagering” de un bono en 3 minutos', getHtml: getEmail3Html, getText: text3 },
+  { delayDays: 7, subject: 'Lo que aprendí analizando BetFury durante meses', getHtml: getEmail4Html, getText: text4 },
 ];
