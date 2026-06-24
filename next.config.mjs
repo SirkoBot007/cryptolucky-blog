@@ -29,10 +29,13 @@ const nextConfig = {
         destination: '/es',
         permanent: true,
       },
-      // Blog articles only exist in Spanish — redirect EN versions to ES
+      // Sitio monolingüe español: TODAS las rutas /en/* tienen contenido en español
+      // (no hay versión inglesa real) → redirect permanente a su equivalente /es/*.
+      // Elimina los duplicados "Duplicada sin canónica" y consolida señales en /es.
+      { source: '/en', destination: '/es', permanent: true },
       {
-        source: '/en/blog/:slug*',
-        destination: '/es/blog/:slug*',
+        source: '/en/:path*',
+        destination: '/es/:path*',
         permanent: true,
       },
       // favicon.ico not present — redirect to SVG icon to avoid 404s

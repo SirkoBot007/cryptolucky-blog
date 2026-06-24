@@ -12,7 +12,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       : 'Sirko007, CryptoLucky author. Real, verifiable BetFury experience: 5+ year account, Rank 7, millions of bets. Reviews based on first-hand use.',
     alternates: {
       canonical: `${SITE_URL}/${locale}/autor/sirko007`,
-      languages: { es: `${SITE_URL}/es/autor/sirko007`, en: `${SITE_URL}/en/autor/sirko007` },
+      languages: { es: `${SITE_URL}/es/autor/sirko007`, 'x-default': `${SITE_URL}/es/autor/sirko007` },
     },
   };
 }

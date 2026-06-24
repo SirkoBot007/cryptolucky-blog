@@ -2,7 +2,9 @@ import { MetadataRoute } from 'next';
 import { getPublishedArticles } from '@/lib/notion';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptoluckyguia.com';
-const LOCALES = ['es', 'en'];
+// Sitio monolingüe español: solo /es es indexable. Las rutas /en/* hacen redirect
+// permanente a /es/* (next.config) → NO se listan en el sitemap (evita "Duplicada sin canónica").
+const LOCALES = ['es'];
 const SITE_LAST_BUILD = new Date('2026-06-21');
 
 const PILLAR_ROUTES = ['betfury', 'casino-cripto', 'apuestas-deportivas', 'bonos-casino', 'staking-crypto', 'ganar-criptomonedas', 'casino-sin-kyc'];
@@ -10,7 +12,7 @@ const PILLAR_ROUTES = ['betfury', 'casino-cripto', 'apuestas-deportivas', 'bonos
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const articles = await getPublishedArticles().catch(() => []);
 
-  // Estáticas en ES y EN (ambas tienen contenido real bilingüe → indexables en los dos idiomas).
+  // Estáticas solo en ES (único idioma indexable; las /en/* redirigen a /es/*).
   const staticRoutes: MetadataRoute.Sitemap = LOCALES.flatMap((locale) => [
     { url: `${BASE_URL}/${locale}`, changeFrequency: 'weekly' as const, priority: 1.0, lastModified: SITE_LAST_BUILD },
     { url: `${BASE_URL}/${locale}/blog`, changeFrequency: 'daily' as const, priority: 0.9, lastModified: SITE_LAST_BUILD },
