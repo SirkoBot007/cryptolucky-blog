@@ -1,94 +1,15 @@
-// ArticleThumb — miniatura temática por artículo en CSS/SVG puro.
-// 0 KB de imagen, cero CLS, sin GIFs de banner. El tema (gradiente + icono + color)
-// se deriva del slug/categoría (lib/article-visuals.ts). Server Component.
+// ArticleThumb — miniatura "slot tile" vibrante por artículo, en CSS + emoji (0 KB de imagen,
+// cero CLS). Gradiente vivo + brillo glossy + glow + destellos + bisel. El tema (paleta + emoji)
+// viene de lib/article-visuals.ts. Server Component. Escala con container queries (cqh).
 
-import { getArticleVisual, type IconKey } from '@/lib/article-visuals';
-
-const ICONS: Record<IconKey, React.ReactNode> = {
-  trophy: (
-    <>
-      <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
-      <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
-      <path d="M4 22h16" />
-      <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
-      <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
-      <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
-    </>
-  ),
-  target: (
-    <>
-      <circle cx="12" cy="12" r="10" />
-      <circle cx="12" cy="12" r="6" />
-      <circle cx="12" cy="12" r="2" />
-    </>
-  ),
-  dice: (
-    <>
-      <rect width="18" height="18" x="3" y="3" rx="3" />
-      <path d="M8 8h.01" />
-      <path d="M16 8h.01" />
-      <path d="M12 12h.01" />
-      <path d="M8 16h.01" />
-      <path d="M16 16h.01" />
-    </>
-  ),
-  gamepad: (
-    <>
-      <line x1="6" x2="10" y1="12" y2="12" />
-      <line x1="8" x2="8" y1="10" y2="14" />
-      <line x1="15" x2="15.01" y1="13" y2="13" />
-      <line x1="18" x2="18.01" y1="11" y2="11" />
-      <rect width="20" height="12" x="2" y="6" rx="6" />
-    </>
-  ),
-  coins: (
-    <>
-      <circle cx="8" cy="8" r="6" />
-      <path d="M18.09 10.37A6 6 0 1 1 10.34 18" />
-      <path d="M7 6h1v4" />
-      <path d="m16.71 13.88.7.71-2.82 2.82" />
-    </>
-  ),
-  gift: (
-    <>
-      <rect x="3" y="8" width="18" height="4" rx="1" />
-      <path d="M12 8v13" />
-      <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
-      <path d="M7.5 8a2.5 2.5 0 0 1 0-5C9 3 12 5 12 8c0-3 3-5 4.5-5a2.5 2.5 0 0 1 0 5" />
-    </>
-  ),
-  shield: (
-    <>
-      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-      <path d="m9 12 2 2 4-4" />
-    </>
-  ),
-  star: (
-    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-  ),
-  book: (
-    <>
-      <path d="M12 7v14" />
-      <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
-    </>
-  ),
-  clover: (
-    <>
-      <circle cx="9" cy="9" r="3.2" />
-      <circle cx="15" cy="9" r="3.2" />
-      <circle cx="9" cy="15" r="3.2" />
-      <circle cx="15" cy="15" r="3.2" />
-      <path d="M12 12v8" />
-    </>
-  ),
-};
+import { getArticleVisual } from '@/lib/article-visuals';
 
 interface Props {
   slug: string;
   category?: string;
-  /** Título del artículo → usado como alt/aria-label (único por artículo). */
+  /** Título del artículo → alt/aria-label (único por artículo). */
   title: string;
-  /** Clases de tamaño/posición del contenedor (ej. 'h-44', 'h-full absolute inset-0'). */
+  /** Clases de tamaño/posición del contenedor (ej. 'absolute inset-0', 'relative h-56'). */
   className?: string;
 }
 
@@ -99,44 +20,45 @@ export default function ArticleThumb({ slug, category = '', title, className = '
     <div
       role="img"
       aria-label={`${v.label}: ${title}`}
-      className={`overflow-hidden ${v.gradient} ${className}`}
+      className={`overflow-hidden ${className}`}
+      style={{
+        containerType: 'size',
+        background: `linear-gradient(135deg, ${v.c1} 0%, ${v.c2} 52%, ${v.c3} 100%)`,
+      }}
     >
-      {/* Brillo radial */}
+      {/* Glow / foco detrás del símbolo */}
       <div
         aria-hidden="true"
         className="absolute inset-0"
-        style={{ background: 'radial-gradient(circle at 72% 28%, rgba(255,255,255,0.22), transparent 58%)' }}
+        style={{ background: `radial-gradient(circle at 50% 44%, ${v.glow}cc, transparent 47%)` }}
       />
-      {/* Icono temático grande, marca de agua */}
-      <svg
+      {/* Brillo glossy superior */}
+      <div
         aria-hidden="true"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.3"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="absolute -right-5 -bottom-5 w-32 h-32 text-white opacity-20"
-      >
-        {ICONS[v.icon]}
-      </svg>
-      {/* Icono temático principal, centrado */}
-      <svg
+        className="absolute inset-0"
+        style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.06) 30%, transparent 46%)' }}
+      />
+      {/* Destellos */}
+      <span aria-hidden="true" className="absolute" style={{ top: '13%', left: '15%', fontSize: '9cqh', color: '#ffffff', opacity: 0.9, textShadow: '0 0 8px #fff' }}>✦</span>
+      <span aria-hidden="true" className="absolute" style={{ top: '60%', left: '23%', fontSize: '6cqh', color: v.glow, opacity: 0.85 }}>✦</span>
+      <span aria-hidden="true" className="absolute" style={{ top: '22%', right: '13%', fontSize: '7cqh', color: '#fde68a', opacity: 0.95 }}>✦</span>
+      <span aria-hidden="true" className="absolute" style={{ top: '70%', right: '17%', fontSize: '5cqh', color: '#ffffff', opacity: 0.7 }}>✦</span>
+      {/* Símbolo (emoji) con glow */}
+      <div aria-hidden="true" className="absolute inset-0 flex items-center justify-center">
+        <span style={{ fontSize: '47cqh', lineHeight: 1, filter: `drop-shadow(0 3px 8px rgba(0,0,0,0.45)) drop-shadow(0 0 14px ${v.glow})` }}>
+          {v.emoji}
+        </span>
+      </div>
+      {/* Bisel: brillo arriba + sombra abajo para profundidad */}
+      <div
         aria-hidden="true"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="absolute inset-0 m-auto w-20 h-20 text-white opacity-95 drop-shadow-lg"
-      >
-        {ICONS[v.icon]}
-      </svg>
+        className="absolute inset-0"
+        style={{ boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -30px 42px rgba(0,0,0,0.30)' }}
+      />
       {/* Marca CryptoLucky */}
-      <div aria-hidden="true" className="absolute bottom-2.5 left-3 flex items-center gap-1.5">
+      <div aria-hidden="true" className="absolute bottom-2 left-3 flex items-center gap-1.5" style={{ textShadow: '0 1px 3px rgba(0,0,0,0.55)' }}>
         <span className="text-white text-sm leading-none">&#x2618;</span>
-        <span className="text-white/90 text-[10px] font-bold tracking-wide drop-shadow">CryptoLucky</span>
+        <span className="text-white/95 text-[10px] font-bold tracking-wide">CryptoLucky</span>
       </div>
     </div>
   );
