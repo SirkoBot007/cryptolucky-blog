@@ -2,13 +2,15 @@ import { notFound } from 'next/navigation';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { getArticleBySlug, getAllSlugs, getRelatedArticles, getTitle, getDescription } from '@/lib/notion';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
+import ContextualCTA, { type CTAIntent } from '@/components/ContextualCTA';
+import AffiliateClickTracker from '@/components/AffiliateClickTracker';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
 import ExitIntentPopup from '@/components/ExitIntentPopup';
 import RacoonFuryCTA from '@/components/RacoonFuryCTA';
 import ReadingProgress from '@/components/ReadingProgress';
 import SocialShare from '@/components/SocialShare';
 import type { Metadata } from 'next';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown, { type Components } from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Link from 'next/link';
 import { AUTHOR } from '@/lib/author';
@@ -30,6 +32,30 @@ function getBannerType(category: string): BannerType {
   if (c.includes('esport')) return 'esport';
   if (c.includes('review') || c.includes('seguro') || c.includes('legit') || c.includes('vip')) return 'betfury';
   return 'bfg';
+}
+
+// ── Fase B: clasificación de H2 de alta intención para inyectar ContextualCTA ──
+const INTENT_PATTERNS: { intent: CTAIntent; re: RegExp }[] = [
+  { intent: 'bono', re: /bono|bonus|promoci|free ?spin|giros gratis/i },
+  { intent: 'registro', re: /regist|regíst|crear cuenta|c[oó]mo empezar|sign ?up|create account/i },
+  { intent: 'pago', re: /dep[oó]sit|deposita|ingresar|payment/i },
+  { intent: 'retiro', re: /retir|withdraw|cobr/i },
+];
+
+function classifyIntent(text: string): CTAIntent | null {
+  for (const { intent, re } of INTENT_PATTERNS) {
+    if (re.test(text)) return intent;
+  }
+  return null;
+}
+
+// Texto plano de un nodo hast (encabezado que pasa react-markdown a components.h2).
+function hastText(node: unknown): string {
+  const n = node as { type?: string; value?: string; children?: unknown[] } | null;
+  if (!n) return '';
+  if (n.type === 'text' && typeof n.value === 'string') return n.value;
+  if (Array.isArray(n.children)) return n.children.map(hastText).join('');
+  return '';
 }
 
 export async function generateStaticParams() {
@@ -103,6 +129,28 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
     reviewRating: { '@type': 'Rating', ratingValue: '4.6', bestRating: '5', worstRating: '1' },
     reviewBody: description,
   } : null;
+
+  // Fase B: contador por render (SSR) para inyectar máx. 2 CTAs in-content, intenciones distintas.
+  let ctaCount = 0;
+  const usedIntents = new Set<CTAIntent>();
+  const MAX_CONTEXTUAL_CTAS = 2;
+  const markdownComponents: Components = {
+    h2({ node, children, ...props }) {
+      const intent = classifyIntent(hastText(node));
+      let inject = false;
+      if (intent && ctaCount < MAX_CONTEXTUAL_CTAS && !usedIntents.has(intent)) {
+        inject = true;
+        ctaCount += 1;
+        usedIntents.add(intent);
+      }
+      return (
+        <>
+          <h2 {...props}>{children}</h2>
+          {inject && intent ? <ContextualCTA intent={intent} locale={locale} slug={slug} /> : null}
+        </>
+      );
+    },
+  };
 
   return (
     <>
@@ -207,7 +255,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
 
           {/* ── ARTICLE CONTENT ── */}
           <div className="prose prose-invert prose-amber max-w-none prose-headings:text-white prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-p:text-slate-300 prose-p:leading-relaxed prose-a:text-amber-400 prose-a:no-underline hover:prose-a:underline prose-strong:text-white prose-ul:text-slate-300 prose-ol:text-slate-300 prose-li:my-1 prose-blockquote:border-amber-400 prose-blockquote:text-slate-400 prose-table:text-slate-300 prose-th:text-white prose-th:bg-slate-800 prose-td:border-slate-700 prose-th:border-slate-700 prose-code:text-amber-400 prose-code:bg-slate-800 prose-code:px-1 prose-code:rounded prose-hr:border-slate-700">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>{markdown}</ReactMarkdown>
           </div>
 
           {/* ── Social share ── */}
@@ -428,6 +476,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
       {/* Barra de afiliado sticky — solo móvil */}
       <StickyMobileCTA locale={locale} slug={slug} />
       <ExitIntentPopup locale={locale} />
+      <AffiliateClickTracker />
     </>
   );
 }
