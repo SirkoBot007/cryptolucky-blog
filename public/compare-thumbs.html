@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Comparación de miniaturas · CryptoLucky</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0f172a; color: #e2e8f0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 28px 16px 64px; }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  .sub { color: #94a3b8; font-size: 14px; margin: 0 0 8px; line-height: 1.5; }
+  .note { background: #7f1d1d33; border: 1px solid #ef444455; color: #fca5a5;
+    padding: 10px 14px; border-radius: 10px; font-size: 13px; margin: 14px 0 26px; }
+  .heads { display: grid; grid-template-columns: 110px 1fr 1fr; gap: 14px; align-items: end; margin-bottom: 10px; }
+  .heads .h { font-weight: 800; font-size: 15px; }
+  .pl { color: #fbbf24; } .sx { color: #a78bfa; }
+  .row { display: grid; grid-template-columns: 110px 1fr 1fr; gap: 14px; align-items: center;
+    padding: 12px 0; border-top: 1px solid #1e293b; }
+  .tema { font-weight: 700; color: #cbd5e1; font-size: 14px; }
+  .row img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px;
+    border: 1px solid #1e293b; display: block; background:#020617; }
+  .meta { font-size: 11px; color: #64748b; margin-top: 4px; }
+  @media (max-width: 720px) {
+    .heads, .row { grid-template-columns: 1fr; }
+    .heads { display: none; }
+    .row { border-top: 1px solid #1e293b; }
+    .lbl { font-size: 11px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin:6px 0 2px; }
+  }
+  .lbl { display: none; }
+  @media (max-width:720px){ .lbl{ display:block; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Comparación de miniaturas (muestras)</h1>
+  <p class="sub">Mismos 3 temas (Casino · Mundial · Bonos), estética vibrante tipo "tile de slot", originales (sin marcas). Elige el ganador.</p>
+  <div class="note">⚠️ Gemini 2.5 Flash Image (AI Studio): no disponible ahora — devuelve "An internal error has occurred" en todos los prompts (incluido uno neutro de prueba), error de servicio/cuenta, no de contenido. Comparativa con las dos opciones que SÍ funcionan: <b>PicLumen</b> vs <b>SDXL</b> (FLUX está "gated" y exige token; SDXL es ungated y comercial, ejecutado en Colab GPU gratis).</div>
+
+  <div class="heads">
+    <div></div>
+    <div class="h pl">PicLumen <span style="color:#64748b;font-weight:400">· 10/día gratis</span></div>
+    <div class="h sx">SDXL · Colab GPU <span style="color:#64748b;font-weight:400">· ilimitado gratis</span></div>
+  </div>
+
+  <div class="row">
+    <div class="tema">Casino<br><span class="meta">slot / 777</span></div>
+    <div><div class="lbl">PicLumen</div><img src="/images/thumbs/sample-casino.webp" alt="Casino PicLumen"><div class="meta">PicLumen · WebP ~200 KB</div></div>
+    <div><div class="lbl">SDXL</div><img src="/images/thumbs/sample-casino-sdxl.png" alt="Casino SDXL"><div class="meta">SDXL · PNG (se optimizaría a WebP)</div></div>
+  </div>
+  <div class="row">
+    <div class="tema">Mundial<br><span class="meta">trofeo + balón</span></div>
+    <div><div class="lbl">PicLumen</div><img src="/images/thumbs/sample-mundial.webp" alt="Mundial PicLumen"><div class="meta">PicLumen</div></div>
+    <div><div class="lbl">SDXL</div><img src="/images/thumbs/sample-mundial-sdxl.png" alt="Mundial SDXL"><div class="meta">SDXL</div></div>
+  </div>
+  <div class="row">
+    <div class="tema">Bonos<br><span class="meta">regalo + monedas</span></div>
+    <div><div class="lbl">PicLumen</div><img src="/images/thumbs/sample-bonos.webp" alt="Bonos PicLumen"><div class="meta">PicLumen</div></div>
+    <div><div class="lbl">SDXL</div><img src="/images/thumbs/sample-bonos-sdxl.png" alt="Bonos SDXL"><div class="meta">SDXL</div></div>
+  </div>
+
+  <p class="sub" style="margin-top:26px">Las dos son 0€, originales y de uso comercial. PicLumen: web fácil pero 10 imágenes/día. SDXL en Colab: ilimitado y gratis, requiere lanzar el notebook. Dime cuál prefieres y genero las 47 con la ganadora.</p>
+</div>
+</body>
+</html>
