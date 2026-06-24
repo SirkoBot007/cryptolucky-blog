@@ -3,7 +3,21 @@
 > Prompts en `tools/thumb-prompts.json`. Tras cada lote: `python tools/gen-thumb-manifest.py` + tsc/build.
 > Lumens: 10/día (reset diario) + Modo Relax (gratis, más lento; cap diario ~20). NO crear cuentas múltiples.
 
-## ESTADO: 19/47 hechas · 28 pendientes
+## ESTADO: 27/47 hechas · 20 pendientes (cupo diario gratis agotado 2026-06-24)
+
+## LOTE 3 — PARCIAL (8 de 10, cupo agotado) ✅
+- [x] copa-del-mundo-2026-favoritos-analisis-apuestas (trofeo en estadio+focos)
+- [x] mejores-goleadores-mundial-2026-apuestas (bota dorada+portería)
+- [x] betfury-apuestas-en-vivo-mundial-como-funciona (estadio nocturno+balón)
+- [x] cuotas-mundial-2026-betfury (pantalla holográfica de cuotas+balón)
+- [x] betfury-codigo-promocional-luckysirko007 (ticket dorado+estrella)
+- [x] betfury-como-registrarse-paso-a-paso (entrada casino neón+camino)
+- [x] betfury-jugar-desde-movil-android-ios (smartphone+slot+monedas)
+- [x] que-es-casino-cripto-como-funciona (bitcoin+slot, púrpura)
+- [ ] provably-fair-que-significa-casinos-cripto (PENDIENTE — cupo agotado): dados+escudo verificado+hexágonos cripto, teal
+- [ ] casino-cripto-legal-en-latinoamerica (PENDIENTE — cupo agotado): balanza justicia+bitcoin, teal
+
+## PENDIENTES MAÑANA (20): provably-fair, legal-latam + 18 (Mundial país, casino-país, guías) — ver lista abajo.
 
 ## LOTE 2 — HECHO (9 nuevas + regen) ✅
 - [x] ganar-criptomonedas-gratis-2026  (REGENERADA limpia: gran bitcoin, sin slot/número)
