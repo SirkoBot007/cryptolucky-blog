@@ -9,13 +9,11 @@ export async function POST(request: NextRequest) {
   }
 
   try {
+    // Solo /es: las rutas /en hacen 308 -> /es (no hay páginas /en que revalidar).
     revalidatePath('/');
     revalidatePath('/es');
-    revalidatePath('/en');
     revalidatePath('/es/blog');
-    revalidatePath('/en/blog');
     revalidatePath('/es/blog/[slug]', 'page');
-    revalidatePath('/en/blog/[slug]', 'page');
 
     return NextResponse.json({ revalidated: true, timestamp: Date.now() });
   } catch (err) {

@@ -100,7 +100,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
   const { article, markdown } = data;
   const title = getTitle(article, locale);
   const description = getDescription(article, locale);
-  const related = await getRelatedArticles(slug, article.category, 3).catch(() => []);
+  const related = await getRelatedArticles(slug, article.category, 6).catch(() => []);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptoluckyguia.com';
   const isEs = locale === 'es';
   const bannerType = getBannerType(article.category);
