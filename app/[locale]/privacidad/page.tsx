@@ -12,7 +12,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       : 'CryptoLucky privacy and cookie policy: what data we process, Google Analytics usage, affiliate transparency and your rights.',
     alternates: {
       canonical: `${siteUrl}/${locale}/privacidad`,
-      languages: { es: `${siteUrl}/es/privacidad`, en: `${siteUrl}/en/privacidad` },
+      languages: { es: `${siteUrl}/es/privacidad`, 'x-default': `${siteUrl}/es/privacidad` },
     },
   };
 }

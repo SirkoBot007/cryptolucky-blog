@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: 'bono casino cripto, bono bienvenida bitcoin, bono betfury, casino bono sin deposito cripto',
     alternates: {
       canonical: `${siteUrl}/${locale}/bonos-casino`,
-      languages: { es: `${siteUrl}/es/bonos-casino`, en: `${siteUrl}/en/bonos-casino` },
+      languages: { es: `${siteUrl}/es/bonos-casino`, 'x-default': `${siteUrl}/es/bonos-casino` },
     },
   };
 }

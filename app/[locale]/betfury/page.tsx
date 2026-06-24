@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: 'betfury, betfury casino, betfury opiniones, betfury bono, betfury staking',
     alternates: {
       canonical: `${siteUrl}/${locale}/betfury`,
-      languages: { es: `${siteUrl}/es/betfury`, en: `${siteUrl}/en/betfury` },
+      languages: { es: `${siteUrl}/es/betfury`, 'x-default': `${siteUrl}/es/betfury` },
     },
   };
 }

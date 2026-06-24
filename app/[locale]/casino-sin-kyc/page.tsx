@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: 'casino sin kyc, casino bitcoin anonimo, casino sin verificacion, casino cripto sin documentos',
     alternates: {
       canonical: `${siteUrl}/${locale}/casino-sin-kyc`,
-      languages: { es: `${siteUrl}/es/casino-sin-kyc`, en: `${siteUrl}/en/casino-sin-kyc` },
+      languages: { es: `${siteUrl}/es/casino-sin-kyc`, 'x-default': `${siteUrl}/es/casino-sin-kyc` },
     },
   };
 }
