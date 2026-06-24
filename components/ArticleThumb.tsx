@@ -2,7 +2,9 @@
 // cero CLS). Gradiente vivo + brillo glossy + glow + destellos + bisel. El tema (paleta + emoji)
 // viene de lib/article-visuals.ts. Server Component. Escala con container queries (cqh).
 
+import Image from 'next/image';
 import { getArticleVisual } from '@/lib/article-visuals';
+import { hasThumb, thumbSrc } from '@/lib/thumb-manifest';
 
 interface Props {
   slug: string;
@@ -11,9 +13,28 @@ interface Props {
   title: string;
   /** Clases de tamaño/posición del contenedor (ej. 'absolute inset-0', 'relative h-56'). */
   className?: string;
+  /** true en la imagen LCP (hero) para no diferir su carga. */
+  priority?: boolean;
 }
 
-export default function ArticleThumb({ slug, category = '', title, className = '' }: Props) {
+export default function ArticleThumb({ slug, category = '', title, className = '', priority = false }: Props) {
+  // Si el artículo ya tiene miniatura real (PicLumen), usar next/image (WebP, object-cover,
+  // sin CLS porque el contenedor ya está dimensionado por className). Si no, tile CSS temático.
+  if (hasThumb(slug)) {
+    return (
+      <div className={`overflow-hidden ${className}`}>
+        <Image
+          src={thumbSrc(slug)}
+          alt={title}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+          className="object-cover"
+          priority={priority}
+        />
+      </div>
+    );
+  }
+
   const v = getArticleVisual(slug, category);
 
   return (
