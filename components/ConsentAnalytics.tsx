@@ -8,7 +8,8 @@
 // - Cero impacto en LCP: nada se carga antes del consentimiento
 // ============================================================
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const CONSENT_KEY = 'cl_consent';
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -52,6 +53,25 @@ function trackAffiliateClicks() {
 export default function ConsentAnalytics({ locale }: { locale: string }) {
   const [visible, setVisible] = useState(false);
   const isEs = locale === 'es';
+  const pathname = usePathname();
+  const firstPv = useRef(true);
+
+  // GA4 + App Router: las navegaciones cliente (<Link>) NO recargan la página, así que
+  // gtag('config') solo envía page_view en la carga inicial. Enviamos page_view en cada
+  // cambio de ruta (saltando la primera, ya cubierta por loadGA) → mide el 100% de las vistas.
+  useEffect(() => {
+    if (firstPv.current) {
+      firstPv.current = false;
+      return;
+    }
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', {
+        page_path: pathname,
+        page_location: window.location.href,
+        page_title: document.title,
+      });
+    }
+  }, [pathname]);
 
   useEffect(() => {
     const consent = localStorage.getItem(CONSENT_KEY);

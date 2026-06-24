@@ -107,12 +107,6 @@ export default async function LocaleLayout({
                 >
                   🎰 BetFury
                 </a>
-                <a
-                  href={locale === 'es' ? '/en' : '/es'}
-                  className="text-slate-500 hover:text-slate-300 text-xs transition-colors border border-slate-700 hover:border-slate-500 px-2.5 py-1 rounded-md"
-                >
-                  {locale === 'es' ? '🌐 EN' : '🌐 ES'}
-                </a>
               </nav>
 
               <MobileNav
