@@ -12,7 +12,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       : 'Gambling is entertainment, not a source of income. Responsible gambling rules, warning signs and help resources. 18+ only.',
     alternates: {
       canonical: `${SITE_URL}/${locale}/juego-responsable`,
-      languages: { es: `${SITE_URL}/es/juego-responsable`, en: `${SITE_URL}/en/juego-responsable` },
+      languages: { es: `${SITE_URL}/es/juego-responsable`, 'x-default': `${SITE_URL}/es/juego-responsable` },
     },
   };
 }

@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: 'staking cripto, staking BFG, dividendos bitcoin, staking betfury, ganar cripto staking',
     alternates: {
       canonical: `${siteUrl}/${locale}/staking-crypto`,
-      languages: { es: `${siteUrl}/es/staking-crypto`, en: `${siteUrl}/en/staking-crypto` },
+      languages: { es: `${siteUrl}/es/staking-crypto`, 'x-default': `${siteUrl}/es/staking-crypto` },
     },
   };
 }

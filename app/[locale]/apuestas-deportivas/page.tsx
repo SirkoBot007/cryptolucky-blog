@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: 'apuestas deportivas cripto, apuestas bitcoin, sportsbook crypto, apuestas mundial 2026',
     alternates: {
       canonical: `${siteUrl}/${locale}/apuestas-deportivas`,
-      languages: { es: `${siteUrl}/es/apuestas-deportivas`, en: `${siteUrl}/en/apuestas-deportivas` },
+      languages: { es: `${siteUrl}/es/apuestas-deportivas`, 'x-default': `${siteUrl}/es/apuestas-deportivas` },
     },
   };
 }

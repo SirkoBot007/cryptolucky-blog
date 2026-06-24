@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: 'casino cripto, casino bitcoin, casino criptomonedas, mejores casinos crypto 2026',
     alternates: {
       canonical: `${siteUrl}/${locale}/casino-cripto`,
-      languages: { es: `${siteUrl}/es/casino-cripto`, en: `${siteUrl}/en/casino-cripto` },
+      languages: { es: `${siteUrl}/es/casino-cripto`, 'x-default': `${siteUrl}/es/casino-cripto` },
     },
   };
 }

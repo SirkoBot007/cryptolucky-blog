@@ -11,7 +11,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       : 'Meet Sirko007, the author behind CryptoLucky: real, verifiable BetFury experience (5+ year account, Rank 7). Transparent editorial methodology and affiliate disclosure.',
     alternates: {
       canonical: `${SITE_URL}/${locale}/sobre-nosotros`,
-      languages: { es: `${SITE_URL}/es/sobre-nosotros`, en: `${SITE_URL}/en/sobre-nosotros` },
+      languages: { es: `${SITE_URL}/es/sobre-nosotros`, 'x-default': `${SITE_URL}/es/sobre-nosotros` },
     },
   };
 }

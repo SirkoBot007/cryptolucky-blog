@@ -18,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     keywords: 'ganar criptomonedas gratis, earn free crypto, faucet bitcoin, play to earn 2026',
     alternates: {
       canonical: `${siteUrl}/${locale}/ganar-criptomonedas`,
-      languages: { es: `${siteUrl}/es/ganar-criptomonedas`, en: `${siteUrl}/en/ganar-criptomonedas` },
+      languages: { es: `${siteUrl}/es/ganar-criptomonedas`, 'x-default': `${siteUrl}/es/ganar-criptomonedas` },
     },
   };
 }
