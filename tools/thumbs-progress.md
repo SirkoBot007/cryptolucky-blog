@@ -3,7 +3,20 @@
 > Prompts en `tools/thumb-prompts.json`. Tras cada lote: `python tools/gen-thumb-manifest.py` + tsc/build.
 > Lumens: 10/día (reset diario) + Modo Relax (gratis, más lento; cap diario ~20). NO crear cuentas múltiples.
 
-## ESTADO: 10/47 hechas · 37 pendientes
+## ESTADO: 19/47 hechas · 28 pendientes
+
+## LOTE 2 — HECHO (9 nuevas + regen) ✅
+- [x] ganar-criptomonedas-gratis-2026  (REGENERADA limpia: gran bitcoin, sin slot/número)
+- [x] betfury-seguro-es-legitimo-licencia (escudo+check verde+candado, esmeralda)
+- [x] betfury-bono-sin-deposito-free-spins (caja regalo+monedas, naranja)
+- [x] token-bfg-que-es-tokenomics-precio (mano+moneda+curva, ámbar)
+- [x] betfury-retiros-cuanto-tarda (flujo monedas→cartera, púrpura)
+- [x] betfury-free-boxes-bitcoin-gratis (cofre azul/oro+bitcoins)
+- [x] betfury-vs-stake-comparativa-2026 (2 emblemas+rayo versus)
+- [x] betfury-dice-estrategia-probabilidades (dados rojos+pips, fucsia)
+- [x] betfury-mines-estrategia-guia (cuadrícula gemas, fucsia)
+- [x] betfury-programa-vip-rank-beneficios (corona+fichas, púrpura)
+
 
 ## LOTE 1 — HECHO (10) ✅
 - [x] mejores-casinos-criptomonedas-2026  (muestra PicLumen mapeada — slot 777)
