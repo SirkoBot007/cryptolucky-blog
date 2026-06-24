@@ -3,7 +3,23 @@
 > Prompts en `tools/thumb-prompts.json`. Tras cada lote: `python tools/gen-thumb-manifest.py` + tsc/build.
 > Lumens: 10/día (reset diario) + Modo Relax (gratis, más lento; cap diario ~20). NO crear cuentas múltiples.
 
-## ESTADO: 27/47 hechas · 20 pendientes (cupo diario gratis agotado 2026-06-24)
+## ESTADO: 35/47 hechas · 12 pendientes (cupo de la cuenta nueva también agotado)
+
+## LOTE 4 — HECHO (8, cuenta nueva) ✅
+- [x] provably-fair-que-significa-casinos-cripto (sello+check+dados+hexágonos — REGEN, 1ª tenía texto)
+- [x] casino-cripto-legal-en-latinoamerica (balanza justicia+bitcoin)
+- [x] copa-del-mundo-2026-grupos-resultados-apuestas (balones en rejilla dorada)
+- [x] apostar-copa-del-mundo-2026-criptomonedas-betfury-guia (balón+bitcoins)
+- [x] fury-world-cup-2026-betfury-promo-600000 (trofeo gigante+fuente monedas — REGEN, 1ª "MEGA")
+- [x] mejores-apuestas-cripto-mundial-2026 (balón+monedas+flecha)
+- [x] betfury-cuotas-octavos-final-mundial-2026 (trofeo+cuadro eliminatorio)
+- [x] argentina-mundial-2026-apuestas-betfury (balón+celeste+obelisco)
+
+## PENDIENTES (12, para próximo cupo):
+mexico-copa-del-mundo-2026-apuestas, colombia-mundial-2026-betfury-apuestas, casino-cripto-mexico-mejores,
+casino-cripto-colombia-mejores, betfury-casino-argentina, betfury-casino-chile, betfury-casino-peru,
+betfury-casino-espana, betfury-casino-venezuela, betfury-cashback-rakeback-explicado,
+betfury-retiro-minimo-cuanto-es, betfury-bono-primer-deposito-como-funciona
 
 ## LOTE 3 — PARCIAL (8 de 10, cupo agotado) ✅
 - [x] copa-del-mundo-2026-favoritos-analisis-apuestas (trofeo en estadio+focos)
