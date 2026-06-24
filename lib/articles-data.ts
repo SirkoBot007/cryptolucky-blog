@@ -1,7 +1,10 @@
 // ============================================================
-// STATIC ARTICLES DATA — no Notion API needed
-// Source: Notion MCP export (Estado=Publicado)
-// To add/update articles: edit this file and redeploy
+// ARTÍCULOS DEL BLOG — FUENTE DE VERDAD (contenido estático en código).
+// Los artículos publicados del sitio viven AQUÍ (+ lib/articles-new.ts), NO en Notion.
+// La base de Notion "📰 Artículos del Blog" (NOTION_DATABASE_ID) es solo planificación
+// manual + health-check; editarla NO cambia la web.
+// Para añadir/editar un artículo: edita este archivo (método quirúrgico seguro, ver
+// .claude/rules/convenciones.md), verifica tsc + build y haz deploy.
 // ============================================================
 
 import { ARTICLES_NEW } from './articles-new';

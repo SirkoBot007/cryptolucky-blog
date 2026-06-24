@@ -12,7 +12,9 @@ Blog bilingual SEO (ES/EN) sobre criptomonedas, monetizado con el programa de af
 |---|---|
 | Framework | Next.js 14 (App Router, SSG/ISR) |
 | i18n | next-intl (ES por defecto, EN) |
-| CMS | Notion (headless via API) |
+| Contenido | **Estático en código** (`lib/articles-data.ts`) — NO headless Notion |
+| Leads / CRM | Notion (base 📋 *CryptoLucky Leads*) vía `/api/subscribe` |
+| Email | Resend (welcome + secuencia drip) |
 | Hosting | Vercel (free tier) |
 | Repo | GitHub @SirkoBot007 |
 | Estilos | Tailwind CSS |
@@ -24,32 +26,40 @@ Blog bilingual SEO (ES/EN) sobre criptomonedas, monetizado con el programa de af
 Copia `.env.example` a `.env.local` y rellena los valores:
 
 ```
-NOTION_API_KEY=             # Integration secret de tu workspace Notion
-NOTION_DATABASE_ID=f909b580-4099-4b53-8e75-d663dfa68223
+NOTION_API_KEY=             # Integration secret del workspace Notion
+NOTION_LEADS_DATABASE_ID=   # 📋 CryptoLucky Leads — ALIMENTA EL CRM de suscriptores (/api/subscribe)
+NOTION_DATABASE_ID=f909b580-4099-4b53-8e75-d663dfa68223  # 📰 Solo PLANIFICACIÓN/health-check. NO es la fuente de los artículos
+RESEND_API_KEY=             # Envío de emails (welcome + drip) desde /api/subscribe
+ADMIN_NOTIFICATION_EMAIL=   # A quién avisar de cada nuevo lead
 NEXT_PUBLIC_BETFURY_AFFILIATE=https://betfury.io/?r=LUCKYSIRKO007
 NEXT_PUBLIC_SITE_URL=https://cryptolucky.vercel.app
-REVALIDATE_SECRET=          # Secreto para el webhook de revalidación ISR
+REVALIDATION_SECRET=        # Secreto para el webhook de revalidación ISR
 ```
+
+> 🔑 **Dos bases de Notion distintas — no confundirlas:**
+> - **`NOTION_LEADS_DATABASE_ID`** → base **📋 CryptoLucky Leads** = el CRM de suscriptores. `/api/subscribe` crea aquí cada email del formulario. **Imprescindible** para la captación.
+> - **`NOTION_DATABASE_ID`** → base **📰 Artículos del Blog** = solo planificación manual + health-check. **NO** alimenta el sitio.
 
 > ⚠️ NUNCA subas `.env.local` a Git. Ya está en `.gitignore`.
 
 ---
 
-## Estructura de artículos en Notion
+## Artículos del blog — ¿dónde viven?
 
-La base de datos (`NOTION_DATABASE_ID`) debe tener las siguientes propiedades:
+> ⚠️ **Los artículos publicados son contenido ESTÁTICO en código: viven en `lib/articles-data.ts`** (y los nuevos en `lib/articles-new.ts`). **NO** se sirven desde Notion. Para añadir/editar un artículo del sitio, edita ese archivo (ver la norma de edición segura en `.claude/rules/convenciones.md`) y haz deploy.
+
+La base de Notion **📰 Artículos del Blog** (`NOTION_DATABASE_ID`) es **solo planificación manual** del CEO + el health-check de `/api/notion-health`. Editarla **no cambia la web**. Esquema orientativo de esa base de planificación:
 
 | Propiedad | Tipo | Notas |
 |---|---|---|
 | Titulo ES | Title | Título principal en español |
-| Titulo EN | Rich Text | Título en inglés |
 | Slug | Rich Text | URL-friendly, único |
-| Meta ES | Rich Text | Meta description ES (≤160 chars) |
-| Meta EN | Rich Text | Meta description EN |
-| Categoria | Select | Ej: Bitcoin, DeFi, NFT, Casino Crypto |
-| Keywords | Rich Text | Palabras clave separadas por comas |
-| Estado | Select | **Publicado** = visible en el blog |
-| Fecha Publicacion | Date | Fecha de publicación |
+| Categoria | Select | Ej: Casinos Cripto, Apuestas Deportivas, Mundial 2026 |
+| Estado | Select | Estado de planificación (no afecta al sitio) |
+
+### Leads / suscriptores (CRM)
+
+La captación de emails sí usa Notion en vivo: el formulario → `/api/subscribe` crea un lead en la base **📋 CryptoLucky Leads** (`NOTION_LEADS_DATABASE_ID`) con `Email`, `País`, `Fuente`, `Estado`, `Fecha`, y dispara el welcome + la secuencia drip vía Resend.
 
 ---
 
