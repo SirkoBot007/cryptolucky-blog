@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { getArticleBySlug, getAllSlugs, getRelatedArticles, getTitle, getDescription } from '@/lib/notion';
-import { BetFuryLeaderboard, BetFuryMediumRect, BetFurySkyscraper } from '@/components/BetFuryBanners';
+import StickyMobileCTA from '@/components/StickyMobileCTA';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
 import ExitIntentPopup from '@/components/ExitIntentPopup';
 import RacoonFuryCTA from '@/components/RacoonFuryCTA';
@@ -196,8 +196,11 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
               <img
                 src={article.image}
                 alt={`BetFury Casino – ${title}`}
+                width={300}
+                height={250}
                 className="w-full h-auto"
                 loading="eager"
+                fetchPriority="high"
               />
             </a>
           )}
@@ -420,8 +423,10 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
         </aside>
       </div>
 
-      {/* Floating CTA with RacoonFury */}
-      <RacoonFuryCTA locale={locale} delay={12000} />
+      {/* CTA flotante (solo escritorio) — en móvil lo sustituye la barra sticky inferior (anti-apilado) */}
+      <RacoonFuryCTA locale={locale} delay={12000} className="hidden md:block" />
+      {/* Barra de afiliado sticky — solo móvil */}
+      <StickyMobileCTA locale={locale} slug={slug} />
       <ExitIntentPopup locale={locale} />
     </>
   );
