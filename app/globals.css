@@ -28,3 +28,28 @@
   .prose code { @apply bg-slate-800 text-amber-300 px-1 rounded text-sm; }
   .prose pre  { @apply bg-slate-800 p-4 rounded-lg overflow-x-auto mb-4; }
 }
+
+/* ── ScrollReveal (Fase C) — aparición al entrar en viewport.
+   Progressive enhancement: con scripting:none (sin JS) el contenido se ve normal.
+   Solo opacity + translateY (<=16px) con el espacio ya reservado → cero CLS.
+   El JS añade .reveal--in vía IntersectionObserver. Respeta prefers-reduced-motion. */
+@media (scripting: enabled) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+  .reveal.reveal--in {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { getArticleBySlug, getAllSlugs, getRelatedArticles, getTitle, getDescription } from '@/lib/notion';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
+import ScrollReveal from '@/components/ScrollReveal';
+import CountryAvailabilityNote from '@/components/CountryAvailabilityNote';
 import ContextualCTA, { type CTAIntent } from '@/components/ContextualCTA';
 import AffiliateClickTracker from '@/components/AffiliateClickTracker';
 import LeadCaptureForm from '@/components/LeadCaptureForm';
@@ -334,9 +336,12 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
             );
           })()}
 
+          {/* ── Nota de disponibilidad / juego responsable (Fase C) ── */}
+          <CountryAvailabilityNote locale={locale} />
+
           {/* ── FAQ ── */}
           {article.faqs && article.faqs.length > 0 && (
-            <section className="mt-12 bg-slate-800/60 border border-slate-700/50 rounded-2xl p-6">
+            <ScrollReveal as="section" className="mt-12 bg-slate-800/60 border border-slate-700/50 rounded-2xl p-6">
               <h2 className="text-2xl font-bold text-white mb-6">
                 {isEs ? 'Preguntas Frecuentes' : 'Frequently Asked Questions'}
               </h2>
@@ -351,7 +356,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
                   </div>
                 ))}
               </div>
-            </section>
+            </ScrollReveal>
           )}
 
           {/* ── Lead capture ── */}
@@ -388,7 +393,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
 
           {/* ── Related articles ── */}
           {related.length > 0 && (
-            <section className="mt-12">
+            <ScrollReveal as="section" className="mt-12">
               <h2 className="text-xl font-black text-white mb-5">
                 {isEs ? 'Artículos Relacionados' : 'Related Articles'}
               </h2>
@@ -419,7 +424,7 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
                   </Link>
                 ))}
               </div>
-            </section>
+            </ScrollReveal>
           )}
         </article>
 
