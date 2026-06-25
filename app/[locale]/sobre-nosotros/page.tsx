@@ -47,9 +47,22 @@ export default function AboutPage({ params: { locale } }: { params: { locale: st
         <div className="prose prose-invert max-w-none prose-p:text-slate-300 prose-headings:text-white prose-a:text-amber-400">
           <p>
             {isEs
-              ? 'CryptoLucky nació con un objetivo claro: ser la referencia en español sobre BetFury y los casinos de criptomonedas para LATAM. Analizamos cada bono, juego y mecánica de staking con experiencia real antes de escribir una sola línea.'
-              : 'CryptoLucky was born with a clear goal: to be the Spanish-language reference on BetFury and crypto casinos for LATAM. We test every bonus, game and staking mechanic with real experience before writing a single line.'}
+              ? 'CryptoLucky es un blog independiente en español dedicado a explicar, de forma clara y honesta, el mundo de los casinos y las apuestas con criptomonedas en Latinoamérica.'
+              : 'CryptoLucky is an independent Spanish-language blog dedicated to explaining, clearly and honestly, the world of crypto casinos and betting in Latin America.'}
           </p>
+          <p>
+            {isEs
+              ? 'Nació con una idea sencilla: la mayoría de la información sobre casinos cripto está en inglés, llena de tecnicismos o escrita solo para vender. Nosotros queremos lo contrario: guías fáciles de entender, paso a paso, pensadas para usuarios de Colombia, Perú y el resto de LATAM que se acercan por primera vez a plataformas como BetFury.'
+              : 'It started with a simple idea: most information about crypto casinos is in English, full of jargon or written only to sell. We want the opposite: easy-to-follow, step-by-step guides for users in Colombia, Peru and the rest of LATAM approaching platforms like BetFury for the first time.'}
+          </p>
+
+          <h2>{isEs ? 'Qué encontrarás aquí' : 'What you will find here'}</h2>
+          <ul>
+            <li>{isEs ? 'Guías prácticas de registro, depósitos y retiros con criptomonedas.' : 'Practical guides on sign-up, deposits and withdrawals with crypto.'}</li>
+            <li>{isEs ? 'Explicaciones honestas de bonos, requisitos y “letra pequeña”.' : 'Honest explanations of bonuses, requirements and the fine print.'}</li>
+            <li>{isEs ? 'Cómo funciona la verificación KYC y cómo proteger tu cuenta.' : 'How KYC verification works and how to protect your account.'}</li>
+            <li>{isEs ? 'Consejos de juego responsable.' : 'Responsible gambling advice.'}</li>
+          </ul>
 
           <h2>{isEs ? 'Quién publica' : 'Who publishes'}</h2>
           <div className="not-prose bg-slate-800 border border-slate-700 rounded-xl p-6 my-6">

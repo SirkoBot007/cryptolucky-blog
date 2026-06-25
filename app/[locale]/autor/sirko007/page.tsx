@@ -51,8 +51,8 @@ export default function AuthorPage({ params: { locale } }: { params: { locale: s
             <p className="text-amber-400 font-medium mb-3">{isEs ? AUTHOR.jobTitleEs : AUTHOR.jobTitleEn}</p>
             <p className="text-slate-300 leading-relaxed">
               {isEs
-                ? `${AUTHOR.alias} firma los contenidos de experiencia práctica de CryptoLucky sobre BetFury y juego con criptomonedas. Su perfil público en BetFury muestra una cuenta de ${b.antiguedadEs}, Rank ${b.rank} y una actividad real prolongada en la plataforma.`
-                : `${AUTHOR.alias} signs CryptoLucky hands-on content about BetFury and crypto gambling. The public BetFury profile shows a ${b.antiguedadEn} account, Rank ${b.rank} and long-term real activity on the platform.`}
+                ? `Soy ${AUTHOR.alias}, creador de CryptoLucky. Llevo tiempo usando y analizando plataformas de casino y apuestas con criptomonedas, especialmente BetFury, y escribo las guías que a mí me habría gustado encontrar cuando empecé: claras, honestas y en español. Mi objetivo es que cualquier persona en Latinoamérica entienda cómo funcionan estos sitios sin caer en promesas falsas, jugando siempre con cabeza, solo si eres mayor de 18 años. Mi perfil público en BetFury (cuenta de ${b.antiguedadEs}, Rank ${b.rank}) respalda esa experiencia de primera mano.`
+                : `I am ${AUTHOR.alias}, creator of CryptoLucky. I have spent time using and analysing crypto casino and betting platforms, especially BetFury, and I write the guides I wish I had found when I started: clear, honest and in Spanish. My goal is that anyone in Latin America understands how these sites work without falling for false promises, always playing sensibly and only if you are over 18. My public BetFury profile (${b.antiguedadEn} account, Rank ${b.rank}) backs up that first-hand experience.`}
             </p>
           </div>
         </header>
@@ -89,7 +89,9 @@ export default function AuthorPage({ params: { locale } }: { params: { locale: s
 
           <h2>{isEs ? 'Contacto' : 'Contact'}</h2>
           <p>
-            {isEs ? 'Para consultas o correcciones, escribe a ' : 'For questions or corrections, write to '}
+            {isEs ? 'Para consultas o correcciones, escríbeme desde la ' : 'For questions or corrections, reach me via the '}
+            <Link href={`/${locale}/contacto`}>{isEs ? 'página de Contacto' : 'Contact page'}</Link>
+            {isEs ? ' o en ' : ' or at '}
             <a href={`mailto:${AUTHOR.email}`}>{AUTHOR.email}</a>.
           </p>
         </div>

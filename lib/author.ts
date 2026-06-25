@@ -11,9 +11,9 @@ export const AUTHOR = {
   jobTitleEs: 'Autor y revisor editorial de CryptoLucky',
   jobTitleEn: 'CryptoLucky author and editorial reviewer',
 
-  // Contacto público (el CEO eligió "solo email"). Cambiar aquí si se quiere
-  // una dirección dedicada en vez del email de marca.
-  email: 'sirkokoloko007@gmail.com',
+  // Contacto público de marca (email dedicado del dominio). El admin/notificaciones
+  // internas usan ADMIN_NOTIFICATION_EMAIL (gmail), que es independiente de este.
+  email: 'contacto@cryptoluckyguia.com',
 
   // Perfiles para sameAs (señal de entidad). Rellenar X con la URL exacta.
   githubUrl: 'https://github.com/SirkoBot007',

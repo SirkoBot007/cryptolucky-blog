@@ -20,6 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...PILLAR_ROUTES.map((route) => ({ url: `${BASE_URL}/${locale}/${route}`, changeFrequency: 'weekly' as const, priority: 0.9, lastModified: SITE_LAST_BUILD })),
     { url: `${BASE_URL}/${locale}/autor/sirko007`, changeFrequency: 'monthly' as const, priority: 0.6, lastModified: SITE_LAST_BUILD },
     { url: `${BASE_URL}/${locale}/sobre-nosotros`, changeFrequency: 'yearly' as const, priority: 0.5, lastModified: SITE_LAST_BUILD },
+    { url: `${BASE_URL}/${locale}/contacto`, changeFrequency: 'yearly' as const, priority: 0.4, lastModified: SITE_LAST_BUILD },
     { url: `${BASE_URL}/${locale}/juego-responsable`, changeFrequency: 'yearly' as const, priority: 0.4, lastModified: SITE_LAST_BUILD },
     { url: `${BASE_URL}/${locale}/privacidad`, changeFrequency: 'yearly' as const, priority: 0.3, lastModified: new Date('2026-06-09') },
   ]);

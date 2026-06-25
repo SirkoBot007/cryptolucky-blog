@@ -34,7 +34,7 @@ export default function PrivacyPage({ params: { locale } }: { params: { locale: 
         <p className="text-slate-500 text-sm mb-8">Last updated: {updated}</p>
         <div className="prose prose-invert max-w-none prose-p:text-slate-300 prose-headings:text-white prose-a:text-amber-400 prose-li:text-slate-300">
           <h2>Who we are</h2>
-          <p>CryptoLucky is an informational blog about crypto casinos and cryptocurrencies. Contact: sirkokoloko007@gmail.com.</p>
+          <p>CryptoLucky is an informational blog about crypto casinos and cryptocurrencies. Contact: contacto@cryptoluckyguia.com.</p>
           <h2>What data we process</h2>
           <p>We do not require registration and do not collect personal data directly. If you accept analytics cookies, we use <strong>Google Analytics 4</strong> with IP anonymization to measure visits, pages viewed and clicks on outbound links. This data is aggregated and does not identify you personally.</p>
           <h2>Cookies</h2>
@@ -68,7 +68,7 @@ export default function PrivacyPage({ params: { locale } }: { params: { locale: 
       <p className="text-slate-500 text-sm mb-8">Última actualización: {updated}</p>
       <div className="prose prose-invert max-w-none prose-p:text-slate-300 prose-headings:text-white prose-a:text-amber-400 prose-li:text-slate-300">
         <h2>Quiénes somos</h2>
-        <p>CryptoLucky es un blog informativo sobre casinos cripto y criptomonedas. Contacto: sirkokoloko007@gmail.com.</p>
+        <p>CryptoLucky es un blog informativo sobre casinos cripto y criptomonedas. Contacto: contacto@cryptoluckyguia.com.</p>
         <h2>Qué datos tratamos</h2>
         <p>No requerimos registro ni recogemos datos personales directamente. Si aceptas las cookies analíticas, usamos <strong>Google Analytics 4</strong> con anonimización de IP para medir visitas, páginas vistas y clics en enlaces salientes. Estos datos son agregados y no te identifican personalmente.</p>
         <h2>Cookies</h2>

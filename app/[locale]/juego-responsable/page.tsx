@@ -72,6 +72,7 @@ export default function ResponsibleGamblingPage({ params: { locale } }: { params
             <li>{isEs ? 'No intentes recuperar pérdidas con apuestas más altas.' : 'Do not chase losses with bigger bets.'}</li>
             <li>{isEs ? 'Evita jugar cansado, con ansiedad o tras consumir alcohol.' : 'Avoid playing when tired, anxious or after drinking alcohol.'}</li>
             <li>{isEs ? 'Haz pausas y establece límites de tiempo y dinero.' : 'Take breaks and set time and money limits.'}</li>
+            <li>{isEs ? 'Usa las herramientas de autoexclusión y límites de depósito que ofrecen las plataformas serias; úsalas sin miedo.' : 'Use the self-exclusion and deposit-limit tools that serious platforms offer; use them without hesitation.'}</li>
             <li>{isEs ? 'Si deja de ser diversión y afecta tu vida, detente.' : 'If it stops being fun and affects your life, stop.'}</li>
           </ul>
 

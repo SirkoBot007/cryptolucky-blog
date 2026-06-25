@@ -172,6 +172,7 @@ export default async function LocaleLayout({
                       { href: `/${locale}/casino-sin-kyc`, label: isEs ? 'Casino Sin KYC' : 'No-KYC Casino' },
                       { href: `/${locale}/autor/sirko007`, label: isEs ? 'Autor: Sirko007' : 'Author: Sirko007' },
                       { href: `/${locale}/sobre-nosotros`, label: isEs ? 'Sobre Nosotros' : 'About Us' },
+                      { href: `/${locale}/contacto`, label: isEs ? 'Contacto' : 'Contact' },
                       { href: `/${locale}/juego-responsable`, label: isEs ? 'Juego Responsable' : 'Responsible Gambling' },
                       { href: `/${locale}/privacidad`, label: isEs ? 'Privacidad y Cookies' : 'Privacy & Cookies' },
                     ].map((link) => (
