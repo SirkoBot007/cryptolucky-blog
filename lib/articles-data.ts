@@ -2355,40 +2355,80 @@ En BetFury, el Dice tiene un uso que no existe en otros casinos: es la herramien
     image: '/betfury/banners/bfg-300x250.gif',
     tags: ['betfury', 'plinko', 'juegos', 'originals'],
     author: 'Sirko007',
-    content: `El Plinko es el juego más hipnótico de los BetFury Originals: una bola cae rebotando entre pines hasta aterrizar en un multiplicador. Detrás de su apariencia simple hay matemática pura que conviene entender antes de jugar.
+    content: `Plinko es uno de los juegos Originals más adictivos de BetFury: dejas caer una bola por un tablero lleno de clavos y, según el camino que tome, cae en una casilla con un multiplicador. Es simple, visualmente hipnótico y **Provably Fair** (verificable). En esta guía te explico cómo se juega, cómo funcionan el riesgo y las probabilidades, qué tiene sentido como estrategia de gestión y los errores que conviene evitar. *Recuerda: el resultado es aleatorio; esto es entretenimiento, no una forma de ganar dinero seguro.*
 
-## Cómo Funciona el Plinko
+## Qué es Plinko y cómo se juega
 
-Sueltas una bola desde la parte superior de una pirámide de pines. En cada pin, la bola rebota a izquierda o derecha al 50%. Abajo esperan los multiplicadores: **bajos en el centro** (donde la bola cae más a menudo) y **altos en los extremos** (donde casi nunca llega).
+Plinko se inspira en el clásico juego del tablero de clavos. La mecánica no puede ser más sencilla:
 
-Tú controlas dos parámetros:
+1. Eliges el **nivel de riesgo** (bajo, medio o alto) y el **número de filas** del tablero.
+2. Haces tu **apuesta** y sueltas la bola desde arriba.
+3. La bola rebota entre los clavos y cae en una de las casillas de abajo, cada una con un **multiplicador**.
+4. Tu ganancia es la apuesta multiplicada por la casilla donde aterriza.
 
-| Parámetro | Efecto |
-|-----------|--------|
-| Número de filas (8-16) | Más filas = más dispersión = extremos más altos y raros |
-| Nivel de riesgo (Bajo/Medio/Alto) | Reparte el valor entre centro y extremos |
+Las casillas de los extremos pagan multiplicadores altos (pero la bola cae ahí rara vez), y las del centro pagan poco o nada (es donde cae con más frecuencia).
 
-## La Matemática del Plinko
+## Riesgo, filas y probabilidades
 
-La distribución de caídas sigue una campana binomial: con 16 filas, la casilla central recibe la bola con mucha más frecuencia que los extremos. Los multiplicadores compensan esa probabilidad: el extremo puede pagar cientos de veces tu apuesta precisamente porque es estadísticamente raro alcanzarlo.
+Plinko te deja ajustar dos variables que cambian por completo el perfil del juego:
 
-### Configuraciones según objetivo
+- **Nivel de riesgo**: en riesgo bajo, los multiplicadores son moderados y más frecuentes; en riesgo alto, los extremos pagan muchísimo, pero caer ahí es muy improbable.
+- **Número de filas**: más filas significan más casillas y multiplicadores extremos más altos, con probabilidades aún más concentradas en el centro.
 
-- **Riesgo bajo + pocas filas**: sesiones largas, varianza mínima. Ideal para wagering y minar BFG.
-- **Riesgo medio + 12-14 filas**: equilibrio entretenimiento/varianza.
-- **Riesgo alto + 16 filas**: lotería pura. Multiplicadores enormes posibles, pero la mayoría de bolas caen en multiplicadores que no recuperan la apuesta. Solo con presupuesto de entretenimiento.
+La distribución de dónde cae la bola sigue una forma de campana: la mayoría de las veces aterriza cerca del centro. Por eso, los multiplicadores enormes de los bordes son tentadores pero raros. No hay forma de dirigir la bola: cada caída es independiente y aleatoria.
 
-## Provably Fair
+## Provably Fair: transparencia verificable
 
-Como todos los Originals de BetFury, cada caída del Plinko es verificable criptográficamente: el recorrido de la bola deriva de seeds publicados antes de la jugada. RTP de los Originals: hasta 99,28%.
+Plinko, como el resto de Originals de BetFury, es **Provably Fair**: el recorrido de la bola se determina con un sistema criptográfico que puedes **verificar después** de la jugada, comprobando que no hubo manipulación. Es la transparencia que explicamos en [qué significa Provably Fair](/es/blog/provably-fair-que-significa-casinos-cripto), y que el casino tradicional no ofrece.
 
-## Plinko y el Ecosistema BetFury
+## Estrategias de gestión (no de "ganar seguro")
 
-El Plinko a riesgo bajo es de las formas más relajadas de generar wagering constante, que mina tokens BFG automáticamente. Ese BFG en staking produce [dividendos diarios](/es/blog/betfury-staking-bfg-dividendos). Si vas a jugar de todos modos, este enfoque convierte parte del coste del juego en un activo.
+Seamos claros: **no existe estrategia que garantice ganar** en Plinko, porque cada caída es aleatoria. Lo que sí puedes hacer es gestionar el riesgo con sensatez:
 
-[Prueba el Plinko en BetFury con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007) con apuestas mínimas.
+- **Elige el riesgo según tu objetivo**: riesgo bajo o medio para sesiones largas y estables; riesgo alto solo para apuestas puntuales asumiendo que casi siempre perderás.
+- **Gestiona tu bankroll**: apuesta una fracción pequeña de tu saldo por bola (1-2%), para aguantar la varianza sin quedarte fuera.
+- **Define cuándo parar**: fija un objetivo de ganancia y un límite de pérdida, y respétalos.
+- **No persigas pérdidas**: subir la apuesta para "recuperar" es el error más caro del casino.
 
-**Juega con responsabilidad.** El ritmo rápido del Plinko puede hacerte perder la noción del gasto: fija límites antes de empezar.`,
+## Errores comunes en Plinko
+
+- **Jugar siempre a riesgo alto** buscando el multiplicador máximo: caer en los extremos es muy improbable y el saldo se agota rápido.
+- **Apostar fuerte por bola**: la varianza te puede dejar sin saldo en pocas tiradas.
+- **Creer en rachas o patrones**: cada bola es independiente; no hay "memoria".
+- **No fijar límites**: la simplicidad y velocidad de Plinko invitan a encadenar tiradas sin control.
+
+## Cómo empezar a jugar Plinko en BetFury
+
+1. Consigue cripto (USDT es lo más cómodo) y **[regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)**.
+2. Deposita por red TRC20 y, si quieres, activa el [bono de bienvenida](/es/blog/betfury-bono-bienvenida-590).
+3. Busca **Plinko** en la sección de Originals.
+4. Empieza con riesgo bajo o medio y apuestas pequeñas para entender la dinámica.
+
+Cada apuesta también te genera token BFG, que puedes poner en [staking para recibir dividendos diarios](/es/blog/betfury-staking-bfg-dividendos).
+
+## Juego responsable
+
+La sencillez y el ritmo rápido de Plinko hacen que sea fácil encadenar tiradas sin darte cuenta. Fija un presupuesto que puedas permitirte perder, pon un límite de tiempo, define cuándo parar y no juegues para recuperar. El juego es entretenimiento, **nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
+
+## Niveles de riesgo en Plinko: qué esperar de cada uno
+
+Plinko te deja elegir el nivel de riesgo, y entender qué implica cada uno es clave para no llevarte sorpresas:
+
+- **Riesgo bajo**: los multiplicadores están más repartidos y son moderados; la bola cae a menudo en casillas que devuelven una parte o un poco más de tu apuesta. Pierdes despacio y ganas poco: ideal para sesiones largas y estables donde priorizas el entretenimiento sobre el premio gordo.
+- **Riesgo medio**: un equilibrio entre estabilidad y emoción, con algunos multiplicadores atractivos sin que los extremos sean tan inalcanzables.
+- **Riesgo alto**: las casillas de los bordes pagan cantidades enormes, pero la bola cae allí en muy contadas ocasiones; lo más frecuente es perder o recuperar poco. Es para apuestas puntuales asumiendo que casi siempre saldrá mal.
+
+A más filas, más casillas y multiplicadores extremos, pero también más concentración de resultados en el centro. No hay forma de dirigir la bola: la elección de riesgo y filas solo cambia la distribución de premios, no tu capacidad de "acertar".
+
+## Un ejemplo de gestión sensata
+
+Imagina una sesión de ocio con un saldo modesto. Una estrategia con cabeza sería: elegir **riesgo bajo o medio**, apostar un **1-2% del saldo por bola**, y fijar de antemano dos límites: uno de ganancia ("si llego a tal cifra, paro y retiro") y uno de pérdida ("si bajo a tal cifra, lo dejo por hoy"). Con apuestas pequeñas, la varianza no te deja fuera en cuatro tiradas; con límites claros, ni la avaricia ni la frustración toman las decisiones por ti. Así, Plinko cumple su función —ser un juego rápido y entretenido— sin convertirse en un agujero para tu bankroll. La gestión no cambia las probabilidades, que son fijas y aleatorias, pero sí cambia por completo tu experiencia: jugar más tiempo, con menos estrés y sin perseguir pérdidas.
+
+## Conclusión
+
+Plinko es un Original simple, transparente (Provably Fair) y muy entretenido por su mecánica de riesgo ajustable. No hay manera de garantizar ganancias —cada bola es aleatoria— pero sí de jugar con cabeza: elige el riesgo según tu objetivo, gestiona tu bankroll y fija límites claros. Así disfrutarás del juego sin que se convierta en un problema.
+
+> *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
       {
         question: '¿Cuál es la mejor configuración del Plinko?',
@@ -2427,45 +2467,76 @@ El Plinko a riesgo bajo es de las formas más relajadas de generar wagering cons
     image: '/betfury/banners/bfg-300x250.gif',
     tags: ['betfury', 'mines', 'juegos', 'originals'],
     author: 'Sirko007',
-    content: `Mines es el buscaminas de casino: un tablero de 5x5 con minas ocultas donde cada casilla segura multiplica tu apuesta y una mina te lo quita todo. Es el Original donde la decisión de **cuándo parar** lo es todo.
+    content: `Mines es uno de los juegos Originals más populares de BetFury: un tablero estilo buscaminas donde destapas casillas para acumular multiplicadores, evitando las minas ocultas. Es sencillo de entender, **Provably Fair** (verificable) y permite retirar tu ganancia cuando quieras antes de pisar una mina. En esta guía te explico cómo se juega, cómo funcionan las probabilidades, qué estrategias de gestión tienen sentido y los errores que debes evitar. *Recuerda: ningún juego de casino es predecible; esto es entretenimiento, no una fuente de ingresos.*
 
-## Cómo Funciona
+## Qué es Mines y cómo se juega
 
-1. Eliges cuántas minas hay en el tablero (1 a 24)
-2. Destapas casillas: cada casilla segura aumenta el multiplicador
-3. En cualquier momento puedes **retirar** y asegurar la ganancia
-4. Si tocas una mina, pierdes la apuesta
+Mines presenta un tablero (normalmente de 5x5, 25 casillas) en el que se esconden un número de **minas** que tú eliges antes de empezar. El resto de casillas son seguras (gemas). La mecánica es simple:
 
-## Las Probabilidades Reales
+1. Eliges cuántas **minas** habrá en el tablero (a más minas, más riesgo y mayor multiplicador por acierto).
+2. Haces tu **apuesta** y empiezas a destapar casillas.
+3. Cada casilla segura que destapas **aumenta tu multiplicador**.
+4. Puedes **retirar (cash out)** tu ganancia en cualquier momento antes de destapar una mina.
+5. Si destapas una mina, pierdes la apuesta de esa ronda.
 
-La probabilidad de cada clic depende de las minas elegidas y las casillas ya destapadas. Ejemplos con el primer clic:
+La tensión está en decidir cuándo plantarte: seguir destapando sube el multiplicador, pero también la probabilidad de tocar una mina.
 
-| Minas | Probabilidad 1er clic seguro | Perfil |
-|-------|------------------------------|--------|
-| 1 | 96% (24/25) | Multiplicadores lentos, sesiones largas |
-| 3 | 88% (22/25) | Equilibrado, el más popular |
-| 5 | 80% (20/25) | Agresivo |
-| 10+ | ≤60% | Lotería: multiplicadores enormes, ruina rápida |
+## Cómo funcionan las probabilidades
 
-**Dato clave:** cada clic adicional es más peligroso que el anterior (quedan menos casillas seguras sobre el total restante). El tercer clic con 3 minas no es 88%: es 19/22 ≈ 86%, y sigue bajando.
+Cuantas más minas configures, **mayor es el multiplicador por cada acierto**, pero menor es la probabilidad de seguir acertando. Es un equilibrio puro entre riesgo y recompensa: 3 minas dan multiplicadores modestos pero aciertos más probables; 15 minas dan multiplicadores enormes pero la probabilidad de avanzar cae rápido. No existe un patrón oculto: cada partida es independiente.
 
-## Estrategia: el Arte de Retirar
+## Provably Fair: por qué puedes confiar en el resultado
 
-Mines es psicológicamente traicionero: tras 4-5 casillas seguras el multiplicador tienta a "una más". La matemática es fría: la esperanza de cada clic extra es ligeramente negativa (ventaja de la casa), así que el único control real es **decidir el número de clics ANTES de empezar** y retirar mecánicamente al alcanzarlo.
+Mines, como los demás Originals de BetFury, es **Provably Fair**. Esto significa que la posición de las minas se determina con un sistema criptográfico que puedes **verificar matemáticamente** después de la partida: el casino se compromete a un resultado antes de que juegues y tú puedes comprobar que no se manipuló. Es la transparencia que explicamos en [qué significa Provably Fair](/es/blog/provably-fair-que-significa-casinos-cripto).
 
-Patrones razonables:
+## Estrategias de gestión (no de "ganar seguro")
 
-- **3 minas, retirar a los 3-4 clics**: progresión moderada y sostenible
-- **1 mina, destapar muchas**: varianza mínima, ideal para wagering/mining BFG
-- Evita perseguir pérdidas subiendo minas: es la ruta clásica a la ruina
+Que quede claro: **no hay estrategia que garantice ganar** en Mines, porque cada casilla es aleatoria e independiente. Lo que sí puedes hacer es **gestionar el riesgo** de forma inteligente:
 
-## Provably Fair
+- **Define un objetivo de multiplicador y plántate**: decide de antemano a cuántos aciertos vas a retirar y respétalo. La disciplina vence a la avaricia.
+- **Ajusta el número de minas a tu tolerancia al riesgo**: pocas minas para sesiones largas y conservadoras; muchas minas solo para apuestas puntuales de alto riesgo.
+- **Gestiona tu bankroll**: apuesta una fracción pequeña de tu saldo por ronda (por ejemplo, 1-2%), para aguantar la varianza.
+- **No persigas pérdidas**: subir la apuesta para "recuperar" es el error más caro.
 
-La posición de las minas se fija criptográficamente antes de tu primer clic (seed hasheado público). Ni BetFury puede mover las minas después. Verificable jugada a jugada.
+## Errores comunes en Mines
 
-[Juega a Mines en BetFury con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007).
+- **No plantarse nunca**: la avaricia hace que multiplicadores buenos se conviertan en cero.
+- **Configurar demasiadas minas por impulso**: el multiplicador atrae, pero la probabilidad de avanzar se desploma.
+- **Apostar una parte grande del saldo por ronda**: una mala racha te deja fuera enseguida.
+- **Creer en "patrones"**: cada partida es independiente; no hay casillas "calientes".
 
-**Juego responsable:** Mines explota el sesgo de "una más". Define clics objetivo y límite de pérdida antes de tu primera partida. Mayores de 18.`,
+## Cómo empezar a jugar Mines en BetFury
+
+1. Consigue cripto (USDT es lo más cómodo) y **[regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)**.
+2. Deposita por red TRC20 y, si quieres, activa el [bono de bienvenida](/es/blog/betfury-bono-bienvenida-590).
+3. Busca **Mines** en la sección de Originals.
+4. Empieza con apuestas pequeñas y un número moderado de minas hasta dominar el ritmo.
+
+Recuerda que cada apuesta también te genera token BFG, que puedes poner en [staking para recibir dividendos](/es/blog/betfury-staking-bfg-dividendos).
+
+## Juego responsable
+
+Mines es divertido precisamente por su tensión, pero esa misma tensión puede llevar a decisiones impulsivas. Fija un presupuesto que puedas permitirte perder, establece un límite de tiempo, plántate cuando alcances tu objetivo y no juegues para recuperar. El juego es entretenimiento, **nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
+
+## Configuraciones de minas: cómo cambia el riesgo
+
+Elegir cuántas minas pones en el tablero es la decisión más importante de cada ronda, porque define todo el perfil de riesgo y recompensa. A modo orientativo:
+
+- **Pocas minas (1-3)**: los aciertos son muy probables, así que puedes encadenar varias casillas seguras, pero el multiplicador sube despacio. Es la opción para sesiones largas y conservadoras, donde priorizas durar y no la ganancia explosiva.
+- **Minas intermedias (4-8)**: el equilibrio clásico. Multiplicadores decentes con una probabilidad razonable de avanzar unos cuantos pasos. Es donde muchos jugadores se sienten cómodos.
+- **Muchas minas (10+)**: los multiplicadores se disparan con cada acierto, pero la probabilidad de avanzar cae en picado. Es apuesta de alto riesgo: emocionante para tiradas puntuales, ruinosa si la conviertes en tu modo habitual.
+
+No hay una configuración "ganadora": solo perfiles distintos de riesgo. Lo inteligente es elegir según tu objetivo de la sesión y tu tolerancia, no según la emoción del momento.
+
+## Un ejemplo de gestión de bankroll
+
+Supón que entras con un saldo modesto para una sesión de ocio. Una gestión sensata sería apostar solo un **1-2% de ese saldo por ronda**, elegir un número moderado de minas (por ejemplo, 3-5) y fijarte de antemano un objetivo: "me planto al alcanzar tal multiplicador". Si lo consigues, retiras y, si quieres seguir, vuelves a empezar con la misma disciplina. Con apuestas pequeñas aguantas las rachas malas sin quedarte fuera, y plantándote con criterio conviertes los buenos momentos en ganancias reales en lugar de devolverlas al tablero por avaricia. Esa disciplina —apuesta pequeña, objetivo claro, plantarse— es lo único que separa una sesión divertida de una frustrante. Recuerda que el resultado siempre es aleatorio: la gestión no garantiza ganar, pero sí te permite jugar más tiempo y con la cabeza fría.
+
+## Conclusión
+
+Mines es un Original sencillo, transparente (Provably Fair) y adictivo por su mecánica de riesgo-recompensa. No hay forma de garantizar ganancias, pero sí de jugar con cabeza: gestiona tu bankroll, define cuándo plantarte y ajusta las minas a tu tolerancia al riesgo. Con disciplina, es un juego de casino entretenido; sin ella, se vuelve caro.
+
+> *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
       {
         question: '¿Cuántas minas conviene elegir en Mines?',
