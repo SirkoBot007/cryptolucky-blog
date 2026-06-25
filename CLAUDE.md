@@ -35,7 +35,7 @@
 - **ORGANIZACIÓN CONTINUA** (en cada avance: ordenar, archivar lo obsoleto a `_ARCHIVO` —nunca borrar—, actualizar el índice `.claude/memory/MEMORY.md`; enganchada al handoff): `.claude/rules/organizacion-continua.md`.
 - TypeScript; no romper el build de SWC.
 - **NORMA DE EDICIÓN de `articles-data.ts` (única y vigente; deroga «siempre Python»):** método más seguro por caso (1-pocos = edición nativa exacta por `id`/`slug`; cambio masivo = script Python quirúrgico in-place; refactor de campos = AST `ts-morph`). Verificación OBLIGATORIA: `git diff` → `npx tsc --noEmit` → `next build` → commit. Detalle en `.claude/rules/lecciones-aprendidas.md` y `convenciones.md`. Misma norma en el `CLAUDE.md` raíz.
-- Cada artículo sigue la estructura GEO (ver skill `cryptolucky-articulos`).
+- **CALIDAD SEO DE ARTÍCULOS (norma activa permanente):** TODO artículo (manual o n8n) cumple el método obligatorio de `.claude/rules/calidad-seo-articulos.md` — investigar keyword/long-tails/intención en Perplexity ANTES de escribir, estructura GEO, profundidad ≥1.200 palabras útiles (no thin), FAQ+schema, enlazado interno, E-E-A-T, compliance +18. Los thin no se indexan. Estructura GEO detallada en skill `cryptolucky-articulos`.
 - Commits limpios (uno por cambio lógico); verificar UTF-8.
 
 ---

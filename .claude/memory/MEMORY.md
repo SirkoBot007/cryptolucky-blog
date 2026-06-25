@@ -25,6 +25,7 @@
 | `norma-perplexity-y-objetivo.md` + `perplexity-playbook.md` | Ante duda/fallo/decisión: investigar en Perplexity Pro antes de actuar. |
 | `convenciones.md` | Editar `articles-data.ts`, naming, commits, UTF-8. |
 | `lecciones-aprendidas.md` | Error parecido o decisión delicada (registro de lecciones). |
+| `calidad-seo-articulos.md` | **Antes de escribir/editar CUALQUIER artículo** (norma activa): investigar→estructura GEO→profundidad≥1.200→FAQ→enlazado→E-E-A-T→compliance. Evita thin content. |
 | `seo.md` · `seo-buenas-practicas-ceo.md` · `indexacion-y-medicion.md` | Tareas SEO/medición. |
 | `afiliacion.md` · `geo-targeting-y-compliance.md` | Enlaces afiliado, disclosures, compliance LATAM. |
 | `proyecto-datos.md` | Notion schema, env vars, componentes. |
