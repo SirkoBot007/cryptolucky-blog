@@ -36,12 +36,12 @@ export const ARTICLES: StaticArticle[] = [
   {
     id: '37af3f0c-090c-811e-af54-c2c110c82c45',
     slug: 'betfury-casino-review-2026',
-    titleEs: 'BetFury Casino: Opiniones y Análisis Completo 2026',
-    titleEn: 'BetFury Casino Review 2026: Complete Analysis',
+    titleEs: 'BetFury Casino Reseña 2026: Opiniones Reales, Pagos y Análisis Completo',
+    titleEn: 'BetFury Casino Review 2026: Real Opinions, Payments & Full Analysis',
     descriptionEs:
-      'BetFury Casino 2026: análisis completo de staking BFG, +5000 juegos, bonos y retiros rápidos. Regístrate con código LUCKYSIRKO007 y obtén tu bono de bienvenida.',
+      'Reseña honesta de BetFury 2026 basada en experiencia directa. Analizamos staking BFG, +5.000 juegos, velocidad de pagos, KYC y seguridad. ¿Vale la pena? Veredicto claro aquí.',
     descriptionEn:
-      'Complete BetFury Casino review 2026: games, bonuses, BFG staking, payments and withdrawals. Sign up with code LUCKYSIRKO007 and claim your welcome bonus.',
+      'Honest BetFury 2026 review based on direct experience. We analyze BFG staking, +5,000 games, payment speed, KYC and security. Is it worth it? Clear verdict here.',
     category: 'Reviews',
     keywords: 'betfury casino review 2026, betfury opiniones 2026, betfury es seguro, betfury es confiable, betfury como funciona, betfury casino paga, betfury bono bienvenida, betfury reseña honesta, betfury casino pros y contras, betfury legit o estafa',
     publishedAt: '2026-06-09',
@@ -1301,12 +1301,12 @@ El bono de bienvenida de BetFury combinado con el sistema de staking BFG hace qu
   {
     id: 'new-article-003',
     slug: 'betfury-seguro-es-legitimo-licencia',
-    titleEs: 'BetFury Opiniones 2026: ¿Es Seguro, Legítimo o una Estafa?',
-    titleEn: 'BetFury Review 2026: Is It Safe, Legit or a Scam?',
+    titleEs: 'BetFury: ¿Estafa o Casino Fiable? Opiniones, Licencia y Pagos 2026',
+    titleEn: 'BetFury: Scam or Legit Casino? Reviews, License & Payments 2026',
     descriptionEs:
-      'Opiniones honestas de BetFury 2026: analizamos licencia Curaçao, historial de pagos reales, seguridad técnica y veredicto definitivo. ¿Casino legítimo o estafa? Respuesta clara aquí.',
+      'Analizamos si BetFury es una estafa o un casino seguro: licencia Curaçao verificada, historial de pagos reales desde 2019, señales de confianza y riesgos. Veredicto definitivo con pruebas.',
     descriptionEn:
-      'Honest BetFury review 2026: we analyze its Curaçao license, real payment history, technical security and give a definitive verdict. Legit casino or scam? Clear answer here.',
+      'We analyze whether BetFury is a scam or a safe casino: verified Curaçao license, real payment history since 2019, trust signals and risks. Definitive verdict with evidence.',
     category: 'Reviews',
     keywords: 'betfury seguro 2026, betfury estafa o legítimo, betfury es confiable, betfury licencia curaçao, betfury paga de verdad, betfury es una estafa, betfury opiniones reales, betfury historial pagos, betfury provably fair, betfury safety index casino',
     publishedAt: '2026-06-07',
@@ -3804,5 +3804,3 @@ El **código promocional BetFury LUCKYSIRKO007** activa el bono máximo disponib
   },
   ...ARTICLES_NEW,
 ] as StaticArticle[];
-
-

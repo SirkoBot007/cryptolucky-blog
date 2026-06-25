@@ -11,10 +11,10 @@ const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const siteUrl = SITE_URL;
   return {
-    title: locale === 'es' ? 'BetFury Casino 2026: Todo lo que Necesitas Saber' : 'BetFury Casino 2026: Everything You Need to Know',
+    title: locale === 'es' ? 'BetFury Casino 2026: Opiniones, Análisis y Bono Exclusivo +590%' : 'BetFury Casino 2026: Reviews, Analysis & Exclusive +590% Bonus',
     description: locale === 'es'
-      ? 'Guía completa de BetFury Casino: bonos, staking BFG, juegos, apuestas deportivas y retiros. Código exclusivo LUCKYSIRKO007 para bono de bienvenida.'
-      : 'Complete BetFury Casino guide: bonuses, BFG staking, games, sports betting and withdrawals. Exclusive code LUCKYSIRKO007 for welcome bonus.',
+      ? 'Guía completa de BetFury con opiniones reales: staking BFG con dividendos diarios, bono hasta +590%, +5.000 juegos, retiros instantáneos y licencia verificada. Código LUCKYSIRKO007.'
+      : 'Complete BetFury guide with real reviews: BFG staking with daily dividends, bonus up to +590%, +5,000 games, instant withdrawals and verified license. Code LUCKYSIRKO007.',
     keywords: 'betfury, betfury casino, betfury opiniones, betfury bono, betfury staking',
     alternates: {
       canonical: `${siteUrl}/${locale}/betfury`,

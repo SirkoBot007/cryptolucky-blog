@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch *)",
+      "Bash(gh pr *)",
+      "Bash(gh api *)",
+      "Bash(cd \"C:/Users/Alberto/Desktop/PROYECTOS CLAUDE/01-WEBS-Y-BLOG/BLOG-BETFURY/cryptolucky-blog\" && echo \"=== <title> del post ===\" && grep -oE '<title>[^<]*</title>' /tmp/post.html | head -1 && echo \"\" && echo \"=== H1 visible ===\" && grep -oE '<h1[^>]*>[^<]*</h1>' /tmp/post.html | head -2 && echo \"\" && echo \"=== Contexto de 'could not be found' \\(¿está en script RSC/flight?\\) ===\" && grep -oE '.{40}could not be found.{20}' /tmp/post.html | head -2 && echo \"\" && echo \"=== ¿status 404 marcado? \\(esperado: 200 ya confirmado\\) === Article schema presente?\" && grep -oE '\"@type\":\"\\(BlogPosting|Article|NewsArticle\\)\"' /tmp/post.html | head -1)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(git push *)",
+      "Bash(git reset *)",
+      "Bash(git ls-remote *)",
+      "Bash(awk '{print $2}')",
+      "Bash(unset VERCEL_TOKEN)",
+      "Bash(npx --no-install vercel ls cryptolucky-blog --prod)",
+      "Bash(npx --no-install vercel inspect cryptoluckyguia.com)",
+      "Bash(npx --no-install vercel inspect https://cryptolucky-blog-438prh1a9-sirkokoloko007-2959s-projects.vercel.app)",
+      "Bash(npx --no-install vercel env ls)",
+      "Bash(npx --no-install vercel domains ls)",
+      "Read(//\" lib/articles-new.ts | wc -l\\)\" && echo \"articles-data.ts slugs: $\\(grep -oE /**)",
+      "Bash(echo \"articles-new.ts slugs: $\\(grep -oE \\\\\"slug: '\\\\\" lib/articles-new.ts | wc -l\\)\" && echo \"articles-data.ts slugs: $\\(grep -oE \\\\\"slug: '\\\\\" lib/articles-data.ts)",
+      "Bash(status: \\\\\\\\\\\\\"Archivado\\\\\\\\\\\\\")",
+      "Bash(Archivado\\\\\" lib/articles-new.ts lib/articles-data.ts)",
+      "Bash(copa)",
+      "Bash(pais)",
+      "Bash(mexico)",
+      "Bash(argentina)",
+      "Bash(chile)",
+      "Bash(peru)",
+      "Bash(colombia)",
+      "Bash(bolivia)",
+      "Bash(panama)",
+      "Bash(ecuador' | head -30)",
+      "Bash(python -)"
+    ]
+  }
+}
