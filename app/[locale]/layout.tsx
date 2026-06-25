@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
@@ -25,6 +26,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(
         process.env.NEXT_PUBLIC_SITE_URL ?? 'https://cryptoluckyguia.com'
   ),
+  openGraph: {
+    type: 'website',
+    siteName: 'CryptoLucky',
+    images: ['/og-default.png'],
+  },
+  twitter: { card: 'summary_large_image', images: ['/og-default.png'] },
   verification: process.env.NEXT_PUBLIC_GSC_VERIFICATION
     ? { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION }
     : undefined,
@@ -79,9 +86,14 @@ export default async function LocaleLayout({
 
               {/* Logo */}
               <a href={`/${locale}`} className="flex items-center gap-2 group">
-                <span className="text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 inline-block">
-                  🍀
-                </span>
+                <Image
+                  src="/cryptolucky-logo.png"
+                  alt="CryptoLucky"
+                  width={36}
+                  height={36}
+                  priority
+                  className="rounded-lg transition-transform duration-300 group-hover:scale-110"
+                />
                 <span className="font-black text-xl bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent tracking-tight">
                   CryptoLucky
                 </span>

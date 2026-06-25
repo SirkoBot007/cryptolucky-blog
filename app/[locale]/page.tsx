@@ -6,7 +6,6 @@ import RacoonFuryCTA from '@/components/RacoonFuryCTA';
 import ScrollReveal from '@/components/ScrollReveal';
 import ArticleThumb from '@/components/ArticleThumb';
 import type { Metadata } from 'next';
-import { SITE_URL } from '@/lib/author';
 
 export const revalidate = 3600;
 
@@ -41,23 +40,8 @@ export default async function HomePage({ params: { locale } }: { params: { local
   const AFFILIATE = process.env.NEXT_PUBLIC_BETFURY_AFFILIATE || 'https://betfury.io/?r=LUCKYSIRKO007';
   const isEs = locale === 'es';
 
-  // WebSite schema — establece entidad raíz del sitio para Google (sin SearchAction: no hay buscador interno).
-  const websiteJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    '@id': `${SITE_URL}/#website`,
-    name: 'CryptoLucky',
-    url: `${SITE_URL}/`,
-    description: isEs
-      ? 'La guía más completa en español sobre BetFury Casino: opiniones reales, staking BFG, bonos y casinos crypto'
-      : 'The most complete guide to BetFury Casino in Spanish: real reviews, BFG staking, bonuses and crypto casinos',
-    inLanguage: locale === 'es' ? 'es-ES' : 'en-US',
-    publisher: { '@id': `${SITE_URL}/#organization` },
-  };
-
   return (
     <main className="overflow-x-hidden">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
 
       {/* ── HERO ── */}
       <section className="relative bg-slate-950 pt-20 pb-16 text-center px-4">
@@ -287,7 +271,6 @@ export default async function HomePage({ params: { locale } }: { params: { local
             </Link>
           </div>
         )}
-
       </ScrollReveal>
 
       {/* ── LEAD CAPTURE ── */}
