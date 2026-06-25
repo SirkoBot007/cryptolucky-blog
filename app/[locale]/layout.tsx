@@ -87,12 +87,12 @@ export default async function LocaleLayout({
               {/* Logo */}
               <a href={`/${locale}`} className="flex items-center gap-2 group">
                 <Image
-                  src="/cryptolucky-logo.png"
+                  src="/cryptolucky-logo-transparent.png"
                   alt="CryptoLucky"
                   width={36}
                   height={36}
                   priority
-                  className="rounded-lg transition-transform duration-300 group-hover:scale-110"
+                  className="transition-transform duration-300 group-hover:scale-110"
                 />
                 <span className="font-black text-xl bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent tracking-tight">
                   CryptoLucky
