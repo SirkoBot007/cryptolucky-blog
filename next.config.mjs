@@ -38,21 +38,16 @@ const nextConfig = {
         destination: '/es/:path*',
         permanent: true,
       },
-      // favicon.ico not present — redirect to SVG icon to avoid 404s
-      {
-        source: '/favicon.ico',
-        destination: '/icon.svg',
-        permanent: false,
-      },
-      // Common browser auto-requests that would 404
+      // /favicon.ico ahora SÍ existe (app/favicon.ico) -> sin redirect, se sirve directo.
+      // Peticiones legacy de apple-touch -> al apple-icon real (evita 404 sin romper).
       {
         source: '/apple-touch-icon.png',
-        destination: '/icon.svg',
+        destination: '/apple-icon.png',
         permanent: false,
       },
       {
         source: '/apple-touch-icon-precomposed.png',
-        destination: '/icon.svg',
+        destination: '/apple-icon.png',
         permanent: false,
       },
     ];
