@@ -29,6 +29,7 @@ Antes de escribir una sola línea, en un chat nuevo de Perplexity Pro (ver `perp
 ## 3 · Compliance (no negociable)
 - **+18** y mensaje de **juego responsable** visible.
 - **Mercados D16/permitidos** (LATAM): BetFury restringe España → enfoque y disclaimers según `geo-targeting-y-compliance.md`.
+- **Mercados RESTRINGIDOS (p.ej. España, DGOJ):** la página es **informativa/legal honesta, SIN enlace de afiliado ni CTA de registro** (promocionar operadores sin licencia DGOJ es infracción grave, Ley 13/2011, incluye afiliados). Disclaimer de geo-restricción + orientación a la vía legal (operadores con licencia). Mantener indexada si aporta valor; nunca inducir registro a usuarios geo-bloqueados.
 - Nada de promesas de ganancias; tono honesto (ver `afiliacion.md`).
 
 ## 4 · Edición segura + verificación
