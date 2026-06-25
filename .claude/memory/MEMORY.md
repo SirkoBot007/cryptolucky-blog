@@ -38,7 +38,7 @@
 - `sesiones/AAAA-MM-DD.md` — resumen por sesión (handoff). Solo el último es relevante.
 
 ## 🔑 Ficheros clave del repo (fuente de verdad)
-- **Artículos:** `lib/articles-data.ts` (+ `lib/articles-new.ts`) — contenido estático. NO en Notion.
+- **Artículos (NO duplicados — complementarios):** `lib/articles-data.ts` es la fuente principal y **importa** `ARTICLES_NEW` de `lib/articles-new.ts` (lote nuevo); el sitio los combina. **Ambos son fuente de verdad y se usan juntos — NO archivar ninguno** (rompería el build). Contenido estático, NO en Notion.
 - **Autor/marca:** `lib/author.ts` · logo `public/cryptolucky-logo.png` (con fondo) y `public/cryptolucky-logo-transparent.png` (sin fondo).
 - **SEO:** `app/sitemap.ts`, `app/robots.ts`, `public/og-default.png`, favicon en `app/`.
 - **Leads:** `app/api/subscribe/route.ts` → Notion + Resend. Secuencia: `lib/email-sequences.ts`.
