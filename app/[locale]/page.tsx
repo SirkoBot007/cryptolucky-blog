@@ -273,6 +273,29 @@ export default async function HomePage({ params: { locale } }: { params: { local
         )}
       </ScrollReveal>
 
+      {/* ── GUÍAS PRINCIPALES (enlazado interno a páginas pilar) ── */}
+      <ScrollReveal as="section" className="max-w-5xl mx-auto px-4 pb-16">
+        <h2 className="text-2xl font-bold text-white mb-6 text-center">
+          {isEs ? 'Guías principales de CryptoLucky' : 'CryptoLucky main guides'}
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {[
+            { href: `/${locale}/betfury`, label: 'BetFury Casino' },
+            { href: `/${locale}/casino-cripto`, label: isEs ? 'Casinos Cripto' : 'Crypto Casinos' },
+            { href: `/${locale}/bonos-casino`, label: isEs ? 'Bonos de Casino' : 'Casino Bonuses' },
+            { href: `/${locale}/apuestas-deportivas`, label: isEs ? 'Apuestas Deportivas' : 'Sports Betting' },
+            { href: `/${locale}/staking-crypto`, label: isEs ? 'Staking BFG' : 'BFG Staking' },
+            { href: `/${locale}/ganar-criptomonedas`, label: isEs ? 'Ganar Cripto' : 'Earn Crypto' },
+            { href: `/${locale}/casino-sin-kyc`, label: isEs ? 'Casino sin KYC' : 'No-KYC Casino' },
+            { href: `/${locale}/blog`, label: 'Blog' },
+          ].map((p) => (
+            <Link key={p.href} href={p.href} className="bg-slate-800 border border-slate-700 hover:border-amber-400/50 text-slate-200 hover:text-amber-400 font-semibold text-sm text-center px-4 py-3 rounded-xl transition-colors">
+              {p.label}
+            </Link>
+          ))}
+        </div>
+      </ScrollReveal>
+
       {/* ── LEAD CAPTURE ── */}
       <ScrollReveal as="section" className="max-w-2xl mx-auto px-4 pb-16">
         <LeadCaptureForm locale={locale} source="homepage" />
