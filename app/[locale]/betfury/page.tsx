@@ -11,11 +11,11 @@ const AFFILIATE = 'https://betfury.io/?r=LUCKYSIRKO007';
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const siteUrl = SITE_URL;
   return {
-    title: locale === 'es' ? 'BetFury Casino 2026: Todo lo que Necesitas Saber' : 'BetFury Casino 2026: Everything You Need to Know',
+    title: locale === 'es' ? 'BetFury Casino 2026: Guía Completa, Bonos y Staking BFG' : 'BetFury Casino 2026: Complete Guide, Bonuses & BFG Staking',
     description: locale === 'es'
       ? 'Guía completa de BetFury Casino: bonos, staking BFG, juegos, apuestas deportivas y retiros. Código exclusivo LUCKYSIRKO007 para bono de bienvenida.'
       : 'Complete BetFury Casino guide: bonuses, BFG staking, games, sports betting and withdrawals. Exclusive code LUCKYSIRKO007 for welcome bonus.',
-    keywords: 'betfury, betfury casino, betfury opiniones, betfury bono, betfury staking',
+    keywords: 'betfury, betfury casino, casino betfury, betfury cripto, betfury latam',
     alternates: {
       canonical: `${siteUrl}/${locale}/betfury`,
       languages: { es: `${siteUrl}/es/betfury`, 'x-default': `${siteUrl}/es/betfury` },
@@ -31,7 +31,7 @@ export default function BetFuryPillarPage({ params: { locale } }: { params: { lo
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: isEs ? 'BetFury Casino 2026: Todo lo que Necesitas Saber' : 'BetFury Casino 2026: Everything You Need to Know',
+    headline: isEs ? 'BetFury Casino 2026: Guía Completa, Bonos y Staking BFG' : 'BetFury Casino 2026: Complete Guide, Bonuses & BFG Staking',
     description: isEs ? 'Guía completa de BetFury Casino con análisis de bonos, staking BFG y apuestas deportivas.' : 'Complete BetFury Casino guide with bonus analysis, BFG staking and sports betting.',
     datePublished: '2026-01-01',
     dateModified: '2026-06-09',
