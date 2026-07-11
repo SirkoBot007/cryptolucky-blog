@@ -36,10 +36,10 @@ export const ARTICLES: StaticArticle[] = [
   {
     id: '37af3f0c-090c-811e-af54-c2c110c82c45',
     slug: 'betfury-casino-review-2026',
-    titleEs: 'BetFury Casino Reseña 2026: Opiniones Reales, Pagos y Análisis Completo',
+    titleEs: 'BetFury Casino Reseña 2026: Opiniones, Pagos y Seguridad',
     titleEn: 'BetFury Casino Review 2026: Real Opinions, Payments & Full Analysis',
     descriptionEs:
-      'Reseña honesta de BetFury 2026 basada en experiencia directa. Analizamos staking BFG, +5.000 juegos, velocidad de pagos, KYC y seguridad. ¿Vale la pena? Veredicto claro aquí.',
+      'Reseña honesta de BetFury 2026: staking BFG, +5.000 juegos, velocidad de pagos, KYC y seguridad. ¿Vale la pena? Veredicto claro con código LUCKYSIRKO007.',
     descriptionEn:
       'Honest BetFury 2026 review based on direct experience. We analyze BFG staking, +5,000 games, payment speed, KYC and security. Is it worth it? Clear verdict here.',
     category: 'Reviews',
@@ -949,7 +949,7 @@ Ganar criptomonedas gratis en 2026 es posible con los métodos correctos. El sta
     titleEs: 'Apuestas Copa del Mundo 2026 en BetFury: Guía Completa',
     titleEn: 'FIFA World Cup 2026 Betting at BetFury: Complete Guide',
     descriptionEs:
-      'Guía completa para apostar en la Copa del Mundo 2026 con BetFury. Los mejores mercados, cuotas en cripto, estrategias ganadoras y cómo reclamar tu bono con código LUCKYSIRKO007.',
+      'Cómo apostar en la Copa del Mundo 2026 con BetFury: mejores mercados, cuotas en cripto, estrategias ganadoras y tu bono con el código LUCKYSIRKO007.',
     descriptionEn:
       'Complete guide to betting on the 2026 FIFA World Cup with BetFury. Best markets, crypto odds, winning strategies and how to claim your bonus with code LUCKYSIRKO007.',
     category: 'Sportsbook',
@@ -1253,10 +1253,10 @@ El bono de bienvenida de BetFury combinado con el sistema de staking BFG hace qu
   {
     id: 'new-article-003',
     slug: 'betfury-seguro-es-legitimo-licencia',
-    titleEs: 'BetFury: ¿Es Seguro o Estafa? Licencia, Pagos y Garantías 2026',
+    titleEs: 'BetFury ¿Es Seguro o Estafa? Licencia y Pagos 2026',
     titleEn: 'BetFury: Safe or Scam? License, Payments & Guarantees 2026',
     descriptionEs:
-      'Analizamos si BetFury es una estafa o un casino seguro: licencia Curaçao verificada, historial de pagos reales desde 2019, señales de confianza y riesgos. Veredicto definitivo con pruebas.',
+      '¿BetFury es estafa o casino seguro? Licencia Curaçao verificada, pagos reales desde 2019, señales de confianza y riesgos. Veredicto definitivo con pruebas.',
     descriptionEn:
       'We analyze whether BetFury is a scam or a safe casino: verified Curaçao license, real payment history since 2019, trust signals and risks. Definitive verdict with evidence.',
     category: 'Reviews',
@@ -2938,7 +2938,7 @@ Para el jugador colombiano que prioriza retiros rápidos, privacidad y aprovecha
     slug: 'copa-del-mundo-2026-favoritos-analisis-apuestas',
     titleEs: 'Copa del Mundo 2026: Favoritos y Mejores Apuestas Cripto',
     titleEn: 'World Cup 2026: Favorites and Best Crypto Bets at BetFury',
-    descriptionEs: 'Argentina, Francia, Brasil o España: ¿quién ganará la Copa del Mundo 2026? Analizamos los favoritos con cuotas reales de BetFury y te enseñamos paso a paso cómo apostar en cripto al mayor torneo de fútbol de la historia.',
+    descriptionEs: '¿Quién ganará la Copa del Mundo 2026? Analizamos los favoritos (Argentina, Francia, Brasil, España) con cuotas reales de BetFury y cómo apostar en cripto.',
     descriptionEn: 'Argentina, France, Brazil or Spain: who will win the 2026 World Cup? We analyze the favorites with real BetFury odds and show you step by step how to bet in crypto on the biggest football tournament in history.',
     category: 'Sportsbook',
     keywords: 'copa del mundo 2026 favoritos apuestas, análisis mundial 2026, apuestas mundial futbol 2026, favoritos copa del mundo, cuotas mundial 2026, apuestas cripto mundial, betfury mundial favoritos, apostar brasil mundial 2026, apostar argentina mundial, mundial 2026 quien gana',
@@ -3406,9 +3406,9 @@ El Mundial 2026 empezó el **11 de junio de 2026**. La fase de grupos se juega h
   {
     id: 'fury-world-cup-26-betfury-600000-promo',
     slug: 'fury-world-cup-2026-betfury-promo-600000',
-    titleEs: 'Fury World Cup \'26 en BetFury: Cómo Ganar tu Parte de los $600,000',
+    titleEs: 'Fury World Cup \'26 BetFury: Gana Parte de los $600.000',
     titleEn: 'Fury World Cup \'26 at BetFury: How to Win Your Share of $600,000',
-    descriptionEs: 'BetFury lanza la promo Fury World Cup \'26 con $600,000 en premios repartidos entre 5 eventos paralelos durante el Mundial 2026. Te explicamos cómo participar en cada uno y maximizar tus ganancias hasta el 27 de julio.',
+    descriptionEs: 'BetFury reparte $600.000 en la promo Fury World Cup \'26 durante el Mundial 2026: 5 eventos paralelos. Cómo participar y ganar más hasta el 27 de julio.',
     descriptionEn: 'BetFury launches the Fury World Cup \'26 promo with $600,000 in prizes across 5 parallel events during the 2026 World Cup. We explain how to participate and maximize your winnings until July 27.',
     category: 'Copa del Mundo 2026',
     keywords: 'betfury world cup 2026 promoción, betfury mundial 600000, betfury promo copa del mundo, betfury torneo mundial, betfury promo mundial 2026, promoción mundial casino cripto, betfury world cup bonus, betfury mundial premio, torneo casino cripto mundial, betfury 600k promo',
@@ -3566,7 +3566,7 @@ Si ya tienes cuenta, accede a **Promotions → Fury World Cup '26** en BetFury p
     slug: 'mejores-apuestas-cripto-mundial-2026',
     titleEs: 'Mejores Apuestas Cripto para el Mundial 2026: Guía Experta',
     titleEn: 'Best Crypto Bets for the 2026 World Cup: Expert Guide',
-    descriptionEs: 'Guía completa de las mejores apuestas cripto para el Mundial 2026: tipos de mercados, estrategias de value betting, gestión de bankroll y cómo apostar en BetFury con LUCKYSIRKO007.',
+    descriptionEs: 'Las mejores apuestas cripto para el Mundial 2026: tipos de mercados, value betting, gestión de bankroll y cómo apostar en BetFury con LUCKYSIRKO007.',
     descriptionEn: 'Complete guide to the best crypto bets for the 2026 World Cup: market types, value betting strategies, bankroll management and how to bet on BetFury.',
     category: 'Copa del Mundo 2026',
     keywords: 'mejores apuestas cripto mundial 2026, apostar mundial 2026 criptomonedas, betfury mundial 2026 apuestas, value betting mundial cripto, apuestas deportivas mundial 2026, mercados apuestas copa del mundo',
@@ -3914,9 +3914,9 @@ Activa el código **LUCKYSIRKO007** al registrarte en BetFury y empieza a detect
   {
     id: 'betfury-codigo-promocional-luckysirko007-2026',
     slug: 'betfury-codigo-promocional-luckysirko007',
-    titleEs: 'BetFury Código Promocional 2026: LUCKYSIRKO007 — Bono Exclusivo',
+    titleEs: 'Código Promocional BetFury 2026: LUCKYSIRKO007 (+590%)',
     titleEn: 'BetFury Promo Code 2026: LUCKYSIRKO007 — Exclusive Bonus',
-    descriptionEs: 'Código promocional BetFury 2026: usa LUCKYSIRKO007 al registrarte y activa hasta un 590% de bono de bienvenida. Guía paso a paso, requisitos y todas las ventajas explicadas.',
+    descriptionEs: 'Código promocional BetFury 2026: usa LUCKYSIRKO007 al registrarte y activa hasta 590% de bono de bienvenida. Guía paso a paso, requisitos y ventajas.',
     descriptionEn: 'BetFury promo code 2026: use LUCKYSIRKO007 when signing up and activate up to 590% welcome bonus. Step-by-step guide, requirements and all benefits explained.',
     category: 'betfury',
     keywords: 'betfury código promocional 2026, betfury codigo bono, código betfury 2026, betfury referral code luckysirko007, codigo luckysirko007, betfury promo code español, betfury codigo registro',

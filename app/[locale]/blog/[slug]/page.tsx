@@ -63,7 +63,8 @@ function hastText(node: unknown): string {
 
 export async function generateStaticParams() {
   const slugs = await getAllSlugs().catch(() => []);
-  return ['es', 'en'].flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
+  // Solo español (LATAM): /en se redirige con 308 → /es (next.config). No hace falta construir /en.
+  return slugs.map((slug) => ({ locale: 'es', slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -78,7 +79,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title, description, keywords: article.keywords,
     authors: [{ name: AUTHOR.alias, url: `${siteUrl}/${params.locale}/autor/sirko007` }],
-    ...(params.locale === 'en' && { robots: { index: false, follow: false } }),
     alternates: {
       canonical: canonicalEs,
       languages: { es: canonicalEs, 'x-default': canonicalEs },
@@ -240,17 +240,6 @@ export default async function ArticlePage({ params: { locale, slug } }: Props) {
                 : 'This page contains affiliate links. If you sign up to BetFury with our code, we receive a commission at no extra cost to you. This does not affect our reviews or recommendations, based on real use of the platform. 18+ · Gamble responsibly.'}
             </p>
           </div>
-
-          {/* EN notice */}
-          {locale === 'en' && (
-            <div className="bg-slate-800 border border-amber-500/30 rounded-lg p-4 mb-7 flex items-start gap-3">
-              <span className="text-amber-400 text-lg">&#x1F310;</span>
-              <p className="text-slate-300 text-sm">
-                <strong className="text-amber-400">Note:</strong> This article is written in Spanish.{' '}
-                <a href={`/es/blog/${slug}`} className="text-amber-400 hover:underline">Read in Spanish</a>
-              </p>
-            </div>
-          )}
 
           {/* ── HERO temático (visual del artículo en CSS/SVG, sin banner ni GIF) ── */}
           <div className="w-full mb-8 rounded-2xl overflow-hidden shadow-xl shadow-black/40 border border-white/5">

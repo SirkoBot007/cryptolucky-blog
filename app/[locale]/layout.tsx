@@ -13,13 +13,16 @@ import '../globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export function generateStaticParams() {
-  return [{ locale: 'es' }, { locale: 'en' }];
+  // Solo español (LATAM): /en se redirige con 308 → /es (next.config). No hace falta construir /en.
+  return [{ locale: 'es' }];
 }
 
 export const metadata: Metadata = {
   title: {
     default: 'CryptoLucky',
-    template: '%s | CryptoLucky',
+    // La marca NO se añade automáticamente: los títulos de artículo ya usan sus 60
+    // caracteres en keyword + gancho. Home y pilares llevan la marca escrita a mano.
+    template: '%s',
   },
   description:
     'Guía de casinos cripto, apuestas deportivas y criptomonedas. BetFury análisis, bonos, staking BFG y más.',

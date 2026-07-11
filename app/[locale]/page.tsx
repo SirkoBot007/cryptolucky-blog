@@ -14,8 +14,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const isEs = locale === 'es';
   return {
     title: isEs
-      ? 'CryptoLucky — Guía BetFury Casino en Español | Staking BFG y Bonos 2026'
-      : 'CryptoLucky — BetFury Casino Guide | BFG Staking & Bonuses 2026',
+      ? 'BetFury Casino en Español: Bonos y Staking | CryptoLucky'
+      : 'BetFury Casino Guide in Spanish: Bonuses | CryptoLucky',
     description: isEs
       ? 'La guía más completa en español sobre BetFury Casino: staking BFG con dividendos diarios, bono sin depósito, juegos Provably Fair y apuestas deportivas. Código LUCKYSIRKO007.'
       : 'The most complete guide to BetFury Casino in Spanish: BFG staking with daily dividends, no-deposit bonus, Provably Fair games and sports betting. Code LUCKYSIRKO007.',
