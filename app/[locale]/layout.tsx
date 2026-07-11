@@ -143,7 +143,7 @@ export default async function LocaleLayout({
                 {/* Brand */}
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-2xl">🍀</span>
+                    <Image src="/cryptolucky-logo-transparent.png" alt="CryptoLucky" width={28} height={28} />
                     <span className="font-black text-lg bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
                       CryptoLucky
                     </span>
