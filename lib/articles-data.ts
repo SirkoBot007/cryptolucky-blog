@@ -1574,10 +1574,10 @@ BetFury es una de las mejores opciones para quien quiere **probar un casino crip
   {
     id: '37af3f0c-090c-8202-af54-c2c110c82d02',
     slug: 'betfury-crash-juego-guia-completa',
-    titleEs: 'BetFury Crash: Cómo Jugar y Estrategias Explicadas 2026',
+    titleEs: 'BetFury Crash: Cómo Jugar, Cash Out y Estrategias 2026',
     titleEn: 'BetFury Crash: How to Play and Strategies Explained 2026',
     descriptionEs:
-      'Guía completa del juego Crash en BetFury: cómo funciona el multiplicador, verificación Provably Fair, estrategias de gestión de banca y errores a evitar.',
+      'Cómo jugar al Crash de BetFury: multiplicador, cash out automático, Provably Fair y estrategias de gestión de banca para jugar con cabeza (sin promesas).',
     descriptionEn:
       'Complete guide to Crash on BetFury: how the multiplier works, Provably Fair verification, bankroll strategies and mistakes to avoid.',
     category: 'Juegos',
@@ -1587,36 +1587,84 @@ BetFury es una de las mejores opciones para quien quiere **probar un casino crip
     image: '/betfury/banners/bfg-300x250.gif',
     tags: ['betfury', 'crash', 'juegos', 'originals'],
     author: 'Sirko007',
-    content: `Crash es uno de los juegos Originals más adictivos de BetFury: una curva (un multiplicador) que **sube cada vez más rápido hasta que "explota" en un momento impredecible**. Tu objetivo es retirar tu apuesta (cash out) antes de que la curva explote, llevándote la apuesta multiplicada por el valor en el que saliste. Cuanto más esperas, mayor el multiplicador, pero también el riesgo de quedarte sin nada. Es simple, **Provably Fair** (verificable) y pura tensión. En esta guía te explico cómo se juega, cómo gestionar el riesgo y los errores que evitar. *El resultado es aleatorio; esto es entretenimiento, no una forma de ganar seguro.*
+    content: `Crash es uno de los juegos Originals más adictivos de BetFury: una curva (un multiplicador) que **sube cada vez más rápido hasta que "explota" en un momento impredecible**. Tu objetivo es retirar tu apuesta (hacer *cash out*) antes de que la curva reviente, llevándote la apuesta multiplicada por el valor en el que saliste. Cuanto más esperas, mayor el multiplicador, pero también el riesgo de quedarte sin nada. Es simple, **Provably Fair** (verificable) y pura tensión. En esta guía te explico cómo se juega en BetFury, cómo funciona el multiplicador y el cash out, qué estrategias de gestión tienen sentido y los errores que evitar. *El resultado es aleatorio; esto es entretenimiento, no una forma de ganar seguro.*
 
-## Qué es Crash y cómo se juega
+## Qué es el Crash y cómo se juega en BetFury
 
-La mecánica es muy sencilla, y ahí está su atractivo:
+Crash es un juego de multiplicador creciente. Cada ronda arranca en 1.00x y ese número empieza a subir en pantalla; en un instante totalmente impredecible, la curva se detiene de golpe: eso es el *crash*. La mecánica no puede ser más sencilla, y ahí está su gancho:
 
 1. Haces tu **apuesta** antes de que empiece la ronda.
 2. Comienza a subir un **multiplicador** desde 1.00x, cada vez más rápido.
 3. En cualquier momento puedes hacer **cash out** y llevarte tu apuesta multiplicada por el valor actual.
 4. Pero la curva **explota** en un punto impredecible: si no has retirado antes, pierdes la apuesta de esa ronda.
 
-Toda la decisión está en una pregunta: ¿cuándo retiro? Salir pronto es seguro pero paga poco; esperar paga más pero arriesgas perderlo todo.
+Toda la decisión está en una sola pregunta: ¿cuándo retiro? Salir pronto es seguro pero paga poco; esperar paga más pero arriesgas perderlo todo. Encontrarás Crash dentro de la sección **Originals** de BetFury, junto a otros títulos propios de la casa como el [Plinko, que también explicamos paso a paso](/es/blog/betfury-plinko-como-jugar-ganar) y el [Dice y sus probabilidades](/es/blog/betfury-dice-estrategia-probabilidades).
+
+## Cómo funciona el multiplicador y el cash out
+
+El **multiplicador** es el corazón del juego. Representa por cuánto se multiplica tu apuesta en ese instante: si apostaste 10 USDT y haces cash out en 2.00x, recibes 20 USDT (10 de tu apuesta + 10 de ganancia). El **cash out** es la única acción que te da beneficio: retirar antes de que la curva reviente. Si la ronda explota en 1.80x y tú saliste en 1.50x, ganaste; si esperabas a 2.00x, perdiste la apuesta entera de esa ronda.
+
+Ese es el dilema constante de Crash: el mismo botón que te da la ganancia te la puede quitar por esperar medio segundo de más. Por eso conviene decidir tu objetivo **antes** de que empiece la ronda, no en caliente mientras la curva sube y la adrenalina nubla el juicio.
 
 ## Cómo funcionan las probabilidades
 
-El punto de explosión de cada ronda es **aleatorio e independiente** de las anteriores: no hay rachas ni patrones que predecir. Estadísticamente, los multiplicadores bajos salen con mucha más frecuencia que los altos. Esto significa que apuntar siempre a multiplicadores enormes es tentador pero poco realista: la mayoría de las veces la curva explota antes. La ventaja de la casa está incorporada en esa distribución, como en cualquier juego de casino.
+El punto de explosión de cada ronda es **aleatorio e independiente** de las anteriores: no hay rachas ni patrones que predecir. Estadísticamente, los multiplicadores bajos salen con mucha más frecuencia que los altos: un cash out en 1.5x se alcanza muchísimo más a menudo que uno en 10x, y uno en 100x es rarísimo. Esto significa que apuntar siempre a multiplicadores enormes es tentador pero poco realista: la mayoría de las veces la curva explota antes.
 
-## Provably Fair: por qué puedes confiar
+La **ventaja de la casa** está incorporada en esa distribución, igual que en cualquier juego de casino. Ninguna táctica de apuestas, de cash out ni de "leer patrones" cambia el valor esperado de cada ronda, porque cada resultado es matemáticamente independiente. Aceptar esto es el primer paso para jugar con cabeza.
 
-Crash, como los demás Originals de BetFury, es **Provably Fair**: el punto de explosión se determina con un sistema criptográfico que puedes **verificar después** de la ronda, comprobando que no se manipuló. Es la transparencia que explicamos en [qué significa Provably Fair](/es/blog/provably-fair-que-significa-casinos-cripto).
+## Auto cash out: tu mejor aliado
+
+BetFury permite configurar un **cash out automático**: fijas un multiplicador objetivo (por ejemplo 1.50x) y el sistema retira tu apuesta solo cuando la curva llega a ese valor, sin que tengas que pulsar nada. Es la herramienta más útil del juego por tres motivos:
+
+- **Elimina la decisión emocional**: no dependes de tu reflejo ni de los nervios; la regla la fijaste en frío.
+- **Evita el error humano** de pulsar tarde por dudar medio segundo.
+- **Hace tu juego consistente**: puedes seguir una regla de gestión sin desviarte ronda a ronda.
+
+Muchos jugadores fijan el auto cash out en un multiplicador moderado (1.20x–2.00x). Ojo: el auto cash out **no cambia las probabilidades ni la ventaja de la casa**; solo te ayuda a ser disciplinado con la estrategia que ya elegiste. No es un truco para ganar, es una herramienta para no perder por impulso.
 
 ## Estrategias de gestión (no de "ganar seguro")
 
-Que quede claro: **ninguna estrategia garantiza ganar** en Crash, porque cada ronda es aleatoria. Lo que sí puedes hacer es gestionar el riesgo con sensatez:
+Que quede claro: **ninguna estrategia garantiza ganar** en Crash, porque cada ronda es aleatoria y el valor esperado es negativo. Lo que sí puedes hacer es gestionar el riesgo con sensatez para que la sesión dure más y sea más entretenida:
 
 - **Define tu objetivo de cash out antes de empezar**: por ejemplo, "retiro siempre en 1.5x o 2x". La disciplina vence al impulso.
-- **El cash out automático es tu aliado**: configurarlo en un multiplicador fijo te quita la decisión emocional de las manos.
-- **Gestiona tu bankroll**: apuesta una fracción pequeña de tu saldo por ronda (1-2%) para aguantar la varianza.
-- **No persigas pérdidas**: subir la apuesta para "recuperar" tras una mala racha es el error más caro.
+- **Usa el cash out automático** para cumplir esa regla sin depender de tus nervios.
+- **Gestiona tu bankroll**: apuesta una fracción pequeña de tu saldo por ronda (1-2%) para aguantar la varianza sin quedarte fuera en cuatro rondas.
+- **No persigas pérdidas**: subir la apuesta para "recuperar" tras una mala racha es el error más caro del casino.
 - **Sé realista con los multiplicadores altos**: salen poco; basar tu juego en ellos vacía el saldo rápido.
+- **Fija límites de sesión**: uno de ganancia ("si llego a X, paro y retiro") y uno de pérdida ("si bajo a Y, lo dejo por hoy").
+
+### El objetivo de cash out según tu perfil
+
+No hay un número mágico, pero sí un intercambio claro entre frecuencia y premio. Esta tabla orientativa te ayuda a entenderlo (los porcentajes son aproximados e ilustrativos, no una promesa):
+
+| Objetivo de cash out | Frecuencia con que se alcanza | Perfil de juego |
+| --- | --- | --- |
+| 1.2x – 1.5x | Alta | Conservador: ganancias pequeñas y frecuentes, sesiones largas |
+| 2x | Media | Equilibrado: el clásico "doblar", riesgo moderado |
+| 5x – 10x | Baja | Agresivo: pierdes casi siempre, buscas el pelotazo puntual |
+| +20x | Muy baja | Lotería: para apuestas mínimas asumiendo que casi nunca sale |
+
+La idea es sencilla: cuanto más alto pongas el objetivo, más rara vez lo alcanzarás. Elige según cuánto tiempo quieras jugar y cuánta varianza aguantas, no según lo que "te gustaría" que saliera.
+
+### La estrategia de la doble apuesta
+
+Una variante que a algunos jugadores les da control es dividir la apuesta en dos partes con **dos objetivos de cash out**: una mitad retira pronto (por ejemplo 1.5x) para asegurar parte del importe, y la otra deja correr a un multiplicador más alto (por ejemplo 3x) buscando algo más. Recupera parte de la apuesta rápido y arriesga solo una porción a multiplicadores mayores. No mejora las probabilidades globales —el valor esperado sigue siendo el mismo— pero suaviza la varianza y te da sensación de control, lo que ayuda a jugar más tranquilo.
+
+## Provably Fair: por qué puedes confiar y cómo verificarlo
+
+Crash, como los demás Originals de BetFury, es **Provably Fair**: el punto de explosión se determina con un sistema criptográfico que puedes **verificar después** de la ronda, comprobando que no se manipuló. En la práctica funciona con *seeds* (semillas): el casino publica un hash del resultado antes de la ronda, y al terminar puedes revelar las semillas y recalcular el punto de crash tú mismo. Si coincide, la ronda fue limpia.
+
+Es la transparencia que explicamos a fondo en [qué significa Provably Fair en los casinos cripto](/es/blog/provably-fair-que-significa-casinos-cripto), y que un casino tradicional no ofrece: aquí no tienes que "confiar", puedes **comprobarlo**. Que el sistema sea verificable no elimina la ventaja de la casa —esa está en la distribución de multiplicadores—, pero sí garantiza que el resultado no se toca una vez iniciada la ronda.
+
+## La letra pequeña y los riesgos que debes conocer
+
+Antes de jugar, ten claro esto:
+
+- **El valor esperado es negativo**: a largo plazo la casa gana; ninguna estrategia lo revierte.
+- **El ritmo es rápido**: una ronda de Crash dura segundos, lo que invita a encadenar apuestas sin control. Es de los juegos donde más fácil se pierde la noción del tiempo y del gasto.
+- **Los multiplicadores altos son un espejismo estadístico**: verlos salir de vez en cuando no significa que "ya toque"; cada ronda parte de cero.
+- **Depósitos en cripto**: juegas con USDT u otras criptos; asegúrate de usar la red correcta (TRC20 es lo más barato) para no perder fondos en comisiones o direcciones equivocadas.
+- **Disponibilidad por país**: BetFury restringe el acceso en algunos territorios. Si tienes dudas sobre la legitimidad y licencia de la plataforma, lee [si BetFury es seguro y legítimo](/es/blog/betfury-seguro-es-legitimo-licencia).
 
 ## Errores comunes en Crash
 
@@ -1624,15 +1672,20 @@ Que quede claro: **ninguna estrategia garantiza ganar** en Crash, porque cada ro
 - **Apostar fuerte por ronda**: la varianza te deja fuera en pocas rondas.
 - **Creer en patrones**: cada ronda es independiente; no hay "ya toca un x10".
 - **Jugar sin límites**: el ritmo rápido de Crash invita a encadenar rondas sin control.
+- **Perseguir pérdidas**: doblar la apuesta tras perder para "recuperar" acelera el desastre.
 
 ## Cómo empezar a jugar Crash en BetFury
 
 1. Consigue cripto (USDT es lo más cómodo) y **[regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)**.
 2. Deposita por red TRC20 y, si quieres, activa el [bono de bienvenida](/es/blog/betfury-bono-bienvenida-590).
 3. Busca **Crash** en la sección de Originals.
-4. Empieza con apuestas pequeñas y un objetivo de cash out conservador (1.3x-1.5x) para dominar el ritmo.
+4. Configura un **auto cash out conservador** (1.3x–1.5x) y empieza con apuestas pequeñas para dominar el ritmo antes de subir nada.
 
-Cada apuesta también te genera [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio) para staking.
+Cada apuesta también te genera [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio) para staking, un extra que solo tiene sentido si juegas con presupuesto de ocio. Si quieres una visión completa de la plataforma antes de empezar, echa un vistazo a nuestra [review de BetFury 2026](/es/blog/betfury-casino-review-2026).
+
+## Crash frente a otros Originals de BetFury
+
+Si Crash te resulta demasiado rápido o tenso, tienes alternativas con perfiles distintos dentro de los mismos Originals. El [Plinko](/es/blog/betfury-plinko-como-jugar-ganar) es más visual y te deja ajustar el riesgo con niveles y filas; el [Mines](/es/blog/betfury-mines-estrategia-guia) premia la decisión de cuándo plantarse, parecido al dilema del cash out; y el [Dice](/es/blog/betfury-dice-estrategia-probabilidades) es el más transparente en cuanto a probabilidades. Todos comparten lo importante: son Provably Fair y verificables. Elegir uno u otro es cuestión de qué tipo de tensión disfrutas, no de dónde "se gana más" (en todos la casa mantiene su ventaja).
 
 ## Juego responsable
 
@@ -1640,7 +1693,7 @@ La tensión de Crash es precisamente lo que lo hace adictivo, y ahí está el ri
 
 ## Conclusión
 
-Crash es un Original simple, transparente (Provably Fair) y trepidante por su mecánica de "retira antes de que explote". No hay forma de garantizar ganancias —cada ronda es aleatoria— pero sí de jugar con cabeza: define tu cash out de antemano, usa el modo automático, gestiona tu bankroll y no persigas pérdidas. Con disciplina, es un juego entretenido; sin ella, se vuelve caro muy rápido.
+Crash es un Original simple, transparente (Provably Fair) y trepidante por su mecánica de "retira antes de que explote". No hay forma de garantizar ganancias —cada ronda es aleatoria y el valor esperado es negativo— pero sí de jugar con cabeza: define tu cash out de antemano, usa el modo automático, gestiona tu bankroll y no persigas pérdidas. Con disciplina, es un juego entretenido; sin ella, se vuelve caro muy rápido.
 
 > *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
@@ -1659,6 +1712,10 @@ Crash es un Original simple, transparente (Provably Fair) y trepidante por su me
       {
         question: '¿Jugar al Crash genera tokens BFG?',
         answer: 'Sí. Cada apuesta en Crash mina tokens BFG automáticamente, que puedes poner en staking para recibir dividendos diarios en BTC, ETH, BNB y otras criptomonedas.'
+      },
+      {
+        question: '¿Se puede predecir cuándo va a explotar el Crash?',
+        answer: 'No. Cada ronda es independiente y su punto de crash se genera de forma aleatoria y verificable (Provably Fair). No existen rachas ni patrones: ver muchos multiplicadores bajos no significa que "ya toque" uno alto. Cualquier sistema que prometa predecirlo es falso.'
       }
     ],
   },
@@ -1782,10 +1839,10 @@ El token BFG es lo que convierte a BetFury en algo más que un casino: un modelo
   {
     id: '37af3f0c-090c-8204-af54-c2c110c82d04',
     slug: 'betfury-retiros-cuanto-tarda',
-    titleEs: 'BetFury Retiros 2026: Cuánto Tardan y Guía Completa',
+    titleEs: 'BetFury Retiros: ¿Cuánto Tarda en Pagar? Guía 2026',
     titleEn: 'BetFury Withdrawals 2026: How Long They Take & Guide',
     descriptionEs:
-      'Cuánto tardan los retiros en BetFury, qué comisiones aplican por red, mínimos de retiro y cómo retirar tu cripto paso a paso sin errores. Guía 2026.',
+      '¿Cuánto tarda BetFury en pagar? Tiempos de retiro por cripto y red, comisiones, mínimos y cómo retirar paso a paso sin errores. Guía honesta 2026.',
     descriptionEn:
       'How long BetFury withdrawals take, network fees, withdrawal minimums and how to withdraw your crypto step by step. 2026 guide.',
     category: 'Guías',
@@ -1795,66 +1852,122 @@ El token BFG es lo que convierte a BetFury en algo más que un casino: un modelo
     image: '/betfury/banners/betfury-300x250.png',
     tags: ['betfury', 'retiros', 'bitcoin', 'guia'],
     author: 'Sirko007',
-    content: `¿Cuánto tardan los retiros en BetFury? En la mayoría de los casos, **entre 1 y 10 minutos**: los retiros son on-chain (directos a tu wallet de criptomonedas), así que no dependen de horarios bancarios ni de días de procesamiento. Es una de las grandes ventajas del casino cripto frente al tradicional, donde un retiro puede tardar días. En esta guía te explico de qué depende el tiempo, cómo retirar paso a paso y qué hacer si tu retiro tarda más de lo normal.
+    content: `¿Cuánto tarda BetFury en pagar? En condiciones normales, **entre 1 y 10 minutos**. El procesamiento interno de BetFury es prácticamente instantáneo y el resto del tiempo lo marca la **red blockchain** que elijas: como el pago sale on-chain (directo a tu wallet de criptomonedas), no depende de horarios bancarios ni de días de espera. Es la gran ventaja del casino cripto frente al tradicional, donde una retirada puede tardar de 3 a 7 días. En esta guía, escrita desde el uso real de la plataforma con el código LUCKYSIRKO007, te explico los tiempos por método, de qué depende la espera, la letra pequeña que casi nadie cuenta (el requisito de apuesta antes de retirar) y cómo sacar tu dinero paso a paso sin errores.
 
-## Por qué los retiros cripto son tan rápidos
+## Respuesta rápida: tiempos de retiro en BetFury
 
-En un casino tradicional, una retirada pasa por el procesamiento del operador, a veces una verificación de identidad y, finalmente, los tiempos del banco: el resultado son días de espera. En BetFury, el dinero sale en **criptomoneda directamente a tu wallet** a través de la blockchain. No hay intermediarios que aprueben el pago: una vez la plataforma envía la transacción, esta se confirma en la red en cuestión de minutos. Por eso lo habitual es tener tu dinero en pocos minutos.
+- **Procesamiento interno de BetFury:** casi instantáneo (segundos a pocos minutos).
+- **Tiempo total hasta tu wallet:** normalmente **1-10 minutos**, según la red.
+- **Redes más rápidas:** TRON (TRC20), BNB Chain (BEP20) y Solana — segundos a 3 minutos.
+- **Red más lenta:** Bitcoin, por sus confirmaciones (10-60 min si hay congestión).
+- **Requisito previo:** haber **apostado tu depósito** al menos una vez (política AML) y tener el **2FA activado**.
+- **Comisiones de BetFury:** cero. Solo pagas el *gas fee* de la red.
+
+## Por qué los retiros cripto de BetFury son tan rápidos
+
+En un casino tradicional, una retirada pasa por el visto bueno del operador, a veces una verificación de identidad y, al final, los tiempos del banco: el resultado son días. En BetFury el dinero sale en **criptomoneda directamente a tu wallet** a través de la blockchain. No hay un banco ni un departamento que apruebe el pago de forma manual: la plataforma firma la transacción y la red se encarga de confirmarla. Por eso lo habitual es tener el dinero en minutos, cualquier día del año y a cualquier hora. Si quieres el análisis completo de la plataforma, lo tienes en la [reseña completa de BetFury](/es/blog/betfury-casino-review-2026).
+
+## Tiempos de retiro por criptomoneda y red
+
+El "cuánto tarda" real depende sobre todo de la red que uses. Esta es una referencia orientativa de tiempos típicos y del retiro mínimo aproximado (BetFury muestra el mínimo y la comisión exactos en la propia ventana de retiro antes de confirmar):
+
+| Criptomoneda | Red | Retiro mín. aprox. | Tiempo típico | Comisión de red |
+|-------------|-----|--------------------|---------------|-----------------|
+| USDT | TRC20 (TRON) | 1-2 USDT | 1-3 min | Muy baja (céntimos) |
+| USDT | BEP20 (BNB Chain) | 1-2 USDT | 1-3 min | Baja |
+| TRX | Tron | 5-10 TRX | < 2 min | Muy baja |
+| BNB | BEP20 | 0,02 BNB | 1-3 min | Baja |
+| SOL | Solana | 0,02 SOL | < 3 min | Muy baja |
+| ETH | Ethereum | 0,005 ETH | 3-5 min | Alta si hay congestión |
+| Bitcoin (BTC) | Bitcoin | 0,0002 BTC | 10-60 min | Variable (mempool) |
+| LTC | Litecoin | 0,02 LTC | 2-10 min | Baja |
+| DOGE | Dogecoin | 2 DOGE | 3-5 min | Baja |
+
+**Conclusión de la tabla:** si tu prioridad es velocidad y comisiones mínimas, retira en **USDT por red TRC20** o en TRX. Deja Bitcoin y Ethereum para cuando el importe justifique esperar un poco más o pagar algo más de *gas*.
 
 ## De qué depende el tiempo exacto
 
-Aunque lo normal son minutos, el tiempo concreto depende de un par de factores:
+Aunque lo normal son minutos, cuatro factores marcan la diferencia:
 
-- **La red que uses**: la red **TRON (TRC20)** para USDT es rápida y barata; otras redes pueden tardar algo más según su congestión.
-- **La congestión de la blockchain**: si la red está muy cargada en ese momento, las confirmaciones tardan un poco más.
-- **Comprobaciones de seguridad puntuales**: en retiros muy altos o ante señales de uso indebido, la plataforma puede hacer una verificación adicional. Es excepcional y razonable.
+- **La red elegida:** una transacción en TRON o BNB Chain se confirma en segundos; una en Bitcoin necesita varios bloques y puede tardar de 10 a 60 minutos.
+- **La congestión de la blockchain:** si la red está saturada en ese momento (por ejemplo, Ethereum en horas punta), las confirmaciones y el *gas fee* suben.
+- **La política AML y el requisito de apuesta:** BetFury exige haber jugado tu depósito antes de retirar (lo detallo abajo). Si no lo has cumplido, el retiro no se habilita todavía.
+- **Comprobaciones de seguridad puntuales:** en importes muy altos o ante señales de uso indebido, la plataforma puede pedir una verificación adicional (KYC). Es excepcional y estándar en el sector; puedes ver cómo funciona esto en la guía de [casino sin KYC](/es/blog/casino-bitcoin-sin-kyc-2026).
 
-En condiciones normales, ninguno de estos factores convierte un retiro en algo lento: hablamos de minutos, no de días.
+## La letra pequeña: el requisito de apuesta antes de retirar
 
-## Cómo retirar paso a paso
+Este es el punto que más sorprende a los nuevos y que casi ninguna guía menciona. Por su **política antiblanqueo (AML)**, BetFury pide que **apuestes tu depósito** antes de poder retirarlo, para evitar que la plataforma se use como simple pasarela de cripto. De forma orientativa, el requisito ronda:
+
+- **x1** el depósito si lo juegas en el **casino** (slots, originals, etc.).
+- **x3** si lo destinas a **apuestas deportivas**.
+- **x10** en **futuros/cripto trading**.
+
+Es decir: si depositas 100 USDT y quieres retirarlos, primero tienes que haber apostado ese saldo (al menos una vez en el casino). No es un truco para retener tu dinero —es una medida estándar—, pero conviene conocerla para no llevarte una sorpresa. Y si activaste un **bono**, ojo con su *wagering* propio: revisa siempre las condiciones del [bono de bienvenida](/es/blog/betfury-bono-bienvenida-590) antes de reclamarlo, porque el saldo de bonus tiene su propio rollover. El [cashback y el rakeback](/es/blog/betfury-cashback-rakeback-explicado), en cambio, se acreditan como dinero real sin requisitos de apuesta.
+
+## Comisiones: ¿cuánto cobra BetFury por retirar?
+
+BetFury **no cobra comisión propia** por retirar: lo único que pagas es el *gas fee* de la red blockchain, que la plataforma te muestra antes de confirmar. Por eso la red importa tanto: retirar 20 USDT por Ethereum en un mal momento puede comerse varios dólares en *gas*, mientras que por TRC20 pagas céntimos. Regla práctica: **para importes pequeños, usa siempre una red barata** (TRON o BNB Chain).
+
+## Cómo retirar de BetFury paso a paso
 
 1. Ve a **Wallet → Withdraw** (Retirar).
-2. Elige la **criptomoneda** y la **red** (TRC20 para USDT = comisiones mínimas y rapidez).
-3. Pega la **dirección de tu wallet** con cuidado (las transacciones cripto son irreversibles).
-4. Introduce la **cantidad** (respetando el mínimo que indica la plataforma; ver [retiro mínimo](/es/blog/betfury-retiro-minimo-cuanto-es)).
-5. Confirma, idealmente con **2FA** activado.
-6. En pocos minutos la cripto llega a tu wallet.
+2. Elige la **criptomoneda** y la **red** (TRC20 para USDT = rapidez y comisiones mínimas).
+3. Pega la **dirección de tu wallet** con cuidado; las transacciones cripto son **irreversibles**.
+4. Introduce la **cantidad**, respetando el mínimo que indica la ventana.
+5. Introduce tu **código 2FA**: BetFury exige el 2FA activo para autorizar cualquier retiro.
+6. Confirma. En pocos minutos la cripto llega a tu wallet junto a un identificador de transacción (TXID).
 
-Desde tu wallet, si quieres pasar a tu moneda local, vendes el USDT en Binance P2P o un exchange local.
+Desde tu wallet, si quieres pasar a tu moneda local, vendes el USDT en Binance P2P o en un exchange de tu país.
 
 ## Qué hacer si tu retiro tarda más de lo normal
 
-Si un retiro tarda más de lo habitual, mantén la calma y comprueba lo siguiente:
+Si un retiro tarda más de lo habitual, mantén la calma y comprueba esto por orden:
 
-- **Estado de la red**: si la blockchain está congestionada, las confirmaciones se retrasan. Puedes verlo en un explorador de bloques.
-- **El hash de la transacción (TXID)**: si BetFury ya envió el retiro, te da un identificador que puedes rastrear en el explorador para ver el estado de las confirmaciones. Si el TXID existe, el dinero está en camino.
-- **Red y dirección correctas**: confirma que usaste la red adecuada; un error de red es la causa más común de problemas.
-- **Verificación puntual**: en importes altos, una comprobación de seguridad puede añadir algo de tiempo.
+- **¿Cumpliste el requisito de apuesta?** Si aún no has jugado tu depósito, el retiro no se habilita.
+- **El TXID en el explorador:** si BetFury ya envió el pago, te da un identificador que puedes rastrear en un explorador de bloques (Tronscan, Etherscan, etc.). Si el TXID existe y está confirmándose, **el dinero está en camino**.
+- **Estado de la red:** si la blockchain está congestionada, las confirmaciones se retrasan; no depende de BetFury.
+- **Red y dirección correctas:** confirma que tu wallet de destino soporta la red elegida. Un error de red es la causa nº 1 de problemas.
+- **Verificación puntual:** en importes altos, una comprobación de seguridad puede añadir algo de tiempo. El chat en vivo 24/7 resuelve estos casos.
 
-En la inmensa mayoría de los casos, los fondos aparecen enseguida. Tener el 2FA activado y la dirección bien copiada evita casi todos los sustos.
+## Ventajas e inconvenientes de los retiros en BetFury
+
+**A favor:**
+- Retiros on-chain en minutos, cualquier día y a cualquier hora.
+- Sin comisión del casino (solo el *gas* de la red).
+- Sin límite máximo de retiro: puedes sacar todo tu saldo de una vez.
+- Sin KYC en condiciones normales.
+
+**En contra:**
+- Debes cumplir el requisito de apuesta (AML) antes de retirar tu depósito.
+- Bitcoin y Ethereum pueden ser lentos o caros según la congestión.
+- Las transacciones son irreversibles: un error de dirección o red no tiene marcha atrás.
+- El 2FA es obligatorio (bien entendido, es una ventaja de seguridad).
+
+Para ver cómo se compara esta velocidad con la competencia, tienes la [comparativa BetFury vs Stake](/es/blog/betfury-vs-stake-comparativa-2026), y si dudas de la fiabilidad general, la guía sobre si [BetFury es seguro y legítimo](/es/blog/betfury-seguro-es-legitimo-licencia).
 
 ## Consejos para retiros sin fricciones
 
 - **Usa siempre TRC20** para USDT: rápido y con comisiones de céntimos.
-- **Haz una prueba pequeña** la primera vez para verificar todo el flujo.
+- **Haz una prueba pequeña** la primera vez para verificar todo el flujo de principio a fin.
+- **Activa el 2FA desde el registro:** es obligatorio para retirar, mejor tenerlo listo.
 - **No retires con un bono sin cumplir** su requisito de apuesta.
-- **Revisa dos veces la dirección**: las transacciones son irreversibles.
+- **Revisa dos veces la dirección y la red:** las transacciones son irreversibles.
 
 ## Cómo empezar
 
-1. **[Regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email, sin KYC en condiciones normales (ver [casino sin KYC](/es/blog/casino-bitcoin-sin-kyc-2026)).
-2. Deposita y juega.
+1. **[Regístrate con el código promocional LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email, sin KYC en condiciones normales. Más detalles en la guía del [código promocional LUCKYSIRKO007](/es/blog/betfury-codigo-promocional-luckysirko007).
+2. Deposita, activa el 2FA y juega tu saldo (recuerda el requisito de apuesta).
 3. Cuando quieras retirar, sigue los pasos de arriba y recibe tu cripto en minutos.
 
 ## Juego responsable
 
-La rapidez de los retiros es cómoda, pero no cambia la naturaleza del juego: sigue siendo **entretenimiento, nunca una fuente de ingresos**. Fija un presupuesto, ponte límites y juega con responsabilidad. Solo para **mayores de 18 años**.
+La rapidez de los retiros es cómoda, pero no cambia la naturaleza del juego: sigue siendo **entretenimiento, nunca una fuente de ingresos**. Fija un presupuesto que puedas permitirte perder, ponte límites de tiempo y depósito, y no juegues para "recuperar". Solo para **mayores de 18 años**.
 
 ## Conclusión
 
-Los retiros de BetFury son rápidos —normalmente de 1 a 10 minutos— porque son on-chain y no dependen de bancos. Usando la red TRC20, con la dirección correcta y el 2FA activado, sacar tus ganancias es cuestión de minutos. Si alguna vez tarda más, casi siempre es por la congestión de la red, y el TXID te confirma que el dinero está en camino.
+Los retiros de BetFury son rápidos —normalmente de 1 a 10 minutos— porque son on-chain y no dependen de bancos. Usando la red TRC20, con la dirección correcta, el 2FA activado y el requisito de apuesta ya cumplido, sacar tus ganancias es cuestión de minutos. Si alguna vez tarda más, casi siempre es por la congestión de la red o por el propio requisito AML, y el TXID te confirma que el dinero está en camino.
 
-> *Información orientativa; los tiempos exactos dependen de la red. Contiene enlaces de afiliado (código LUCKYSIRKO007).* **Mayores de 18 años. Juega con responsabilidad.**`,
+> *Divulgación: este artículo contiene enlaces de afiliado. Si te registras con el código LUCKYSIRKO007 podemos recibir una comisión sin coste adicional para ti; esto no cambia nuestra valoración ni los tiempos reales de retiro, que dependen de la red.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
       {
         question: '¿Cuánto tarda un retiro de Bitcoin en BetFury?',
@@ -1871,6 +1984,14 @@ Los retiros de BetFury son rápidos —normalmente de 1 a 10 minutos— porque s
       {
         question: '¿Qué pasa si envío el retiro a una red equivocada?',
         answer: 'Puedes perder los fondos de forma irreversible. Verifica siempre que tu wallet de destino soporta la red elegida y haz un retiro pequeño de prueba si tienes dudas.'
+      },
+      {
+        question: '¿Por qué no me deja retirar mi depósito en BetFury?',
+        answer: 'Casi siempre es por el requisito de apuesta (política AML): BetFury pide que juegues tu depósito antes de poder retirarlo (de forma orientativa, x1 en casino, x3 en deportes y x10 en futuros). Comprueba también que tienes el 2FA activado, ya que es obligatorio para autorizar cualquier retiro.'
+      },
+      {
+        question: '¿Cuál es la forma más rápida y barata de retirar de BetFury?',
+        answer: 'Retirar USDT por la red TRON (TRC20): las confirmaciones tardan segundos o pocos minutos y la comisión de red es de céntimos. TRX, BNB Chain (BEP20) y Solana también son muy rápidas y baratas. Evita Ethereum para importes pequeños porque el gas puede ser caro en momentos de congestión.'
       }
     ],
   },
@@ -2294,10 +2415,10 @@ BetFury y Stake son dos de los mejores casinos cripto de 2026. La diferencia dec
   {
     id: '37af3f0c-090c-8209-af54-c2c110c82d09',
     slug: 'betfury-dice-estrategia-probabilidades',
-    titleEs: 'BetFury Dice 2026: Estrategias y Probabilidades Reales',
+    titleEs: 'BetFury Dice 2026: Probabilidades y Estrategias Reales',
     titleEn: 'BetFury Dice: Odds, Strategies and How to Play in 2026',
     descriptionEs:
-      'Guía técnica del Dice de BetFury: cómo funcionan las probabilidades y el payout, estrategias con números reales, gestión de banca y verificación Provably Fair.',
+      'Guía del Dice de BetFury: cómo funcionan probabilidad y multiplicador, la fórmula real del payout, la ventaja de la casa, estrategias de banca y Provably Fair.',
     descriptionEn:
       'Technical guide to BetFury Dice: how odds and payouts work, strategies with real numbers, bankroll management and Provably Fair verification.',
     category: 'Juegos',
@@ -2307,74 +2428,122 @@ BetFury y Stake son dos de los mejores casinos cripto de 2026. La diferencia dec
     image: '/betfury/banners/bfg-300x250.gif',
     tags: ['betfury', 'dice', 'juegos', 'estrategia'],
     author: 'Sirko007',
-    content: `Dice (dados) es uno de los juegos Originals más clásicos y transparentes de BetFury: eliges una probabilidad de ganar, el juego genera un número aleatorio y ganas si cae dentro de tu rango. Su gran atractivo es que **tú controlas el equilibrio entre riesgo y recompensa**: a mayor probabilidad de ganar, menor el pago; a menor probabilidad, mayor el multiplicador. Es **Provably Fair** (verificable) y muy fácil de entender. En esta guía te explico cómo se juega, cómo funcionan las probabilidades y qué estrategias de gestión tienen sentido. *El resultado es aleatorio; esto es entretenimiento, no una forma de ganar seguro.*
+    content: `El **Dice (dados) de BetFury** es un juego Originals donde eliges tu probabilidad de ganar con un deslizador, el sistema genera un número aleatorio entre 0.00 y 99.99, y ganas si cae dentro del rango que elegiste. Tú decides el equilibrio entre riesgo y recompensa: **a mayor probabilidad de ganar, menor el multiplicador; a menor probabilidad, mayor el pago**. Es **Provably Fair** (verificable), rápido y de los juegos más transparentes del casino, porque puedes calcular el pago con una fórmula sencilla. En esta guía te explico cómo se juega, cómo funcionan la probabilidad y el multiplicador, cuál es la ventaja real de la casa, qué estrategias de gestión tienen sentido y cómo verificar cada tirada. *El resultado es aleatorio; esto es entretenimiento, no una forma de ganar seguro.*
 
-## Qué es Dice y cómo se juega
+## Qué es el Dice y cómo se juega en BetFury
 
-El funcionamiento es directo:
+Dice es uno de los juegos propios (Originals) más clásicos del casino cripto. La mecánica es directa y en una sola pantalla:
 
-1. Ajustas tu **probabilidad de ganar** (por ejemplo, 50%) con un deslizador. El juego te muestra el **multiplicador** correspondiente.
-2. Eliges si apuestas a que el número saldrá por encima o por debajo de un valor.
-3. Haces tu **apuesta** y el juego genera un número aleatorio.
-4. Si el resultado cae en tu rango, ganas tu apuesta por el multiplicador; si no, pierdes esa ronda.
+1. Ajustas tu **probabilidad de ganar** (win chance) con un deslizador; por ejemplo, 50%. El juego te muestra al instante el **multiplicador** que te correspondería.
+2. Eliges la dirección: **roll under** (ganas si el número sale por debajo de tu objetivo) o **roll over** (ganas si sale por encima).
+3. Fijas tu **apuesta** y lanzas. El sistema genera un número aleatorio de 0.00 a 99.99.
+4. Si el resultado cae en tu rango, cobras tu apuesta multiplicada por el multiplicador; si no, pierdes lo apostado en esa tirada.
 
-Lo interesante es que el deslizador te deja diseñar tu propio perfil de riesgo: desde apuestas conservadoras (alta probabilidad, pago bajo) hasta apuestas arriesgadas (baja probabilidad, pago alto).
+Lo interesante es que el deslizador te deja diseñar tu propio perfil de riesgo: desde apuestas conservadoras (alta probabilidad, pago pequeño) hasta apuestas de lotería (baja probabilidad, pago enorme pero rarísimo). Encontrarás el Dice en la sección **Originals**, junto a otros títulos de la casa como el [Crash y su mecánica de cash out](/es/blog/betfury-crash-juego-guia-completa) o el [Plinko paso a paso](/es/blog/betfury-plinko-como-jugar-ganar).
 
-## Cómo funcionan las probabilidades
+## Cómo funcionan la probabilidad y el multiplicador
 
-En Dice, **la probabilidad y el multiplicador están directamente relacionados**: si eliges un 50% de probabilidad de ganar, el pago será cercano a 2x; si eliges un 10%, el pago será mucho mayor, pero ganarás muchas menos veces. La ventaja de la casa está incorporada en esos multiplicadores (por eso no son exactamente el inverso matemático de la probabilidad). Cada tirada es **independiente y aleatoria**: no hay rachas ni números "calientes" que predecir.
+Aquí está la clave que hace al Dice tan transparente: **el multiplicador se calcula con una fórmula pública**, no es un número arbitrario. La fórmula del pago es:
 
-## Provably Fair: transparencia verificable
+> **Multiplicador = (100 − ventaja de la casa) ÷ probabilidad de ganar**
 
-Dice, como los demás Originals de BetFury, es **Provably Fair**: el número generado se determina con un sistema criptográfico que puedes **verificar después** de la tirada, comprobando que no se manipuló. Es la transparencia que explicamos en [qué significa Provably Fair](/es/blog/provably-fair-que-significa-casinos-cripto), y una de las grandes ventajas del casino cripto.
+Con una ventaja de la casa del 1% (RTP del 99%, el estándar en el dice cripto), el numerador es 99. Así, si eliges un 50% de probabilidad, el pago es 99 ÷ 50 = **1,98x** (no 2x exacto: esa diferencia de 0,02 es, precisamente, la ventaja de la casa). Cada tirada es **independiente y aleatoria**: no hay rachas, ni números "calientes", ni patrones que predecir. Que el sistema sea verificable no cambia esto; solo garantiza que el número no se manipula.
+
+### Tabla: probabilidad de ganar ↔ multiplicador
+
+Esta tabla orientativa (calculada con la fórmula anterior y un 1% de ventaja de la casa) te ayuda a ver el intercambio real entre ganar a menudo y ganar mucho. Los valores son aproximados e ilustrativos, no una promesa de resultados:
+
+| Probabilidad de ganar | Multiplicador aprox. | Perfil de la apuesta |
+| --- | --- | --- |
+| 95% | 1,04x | Muy conservador: ganas casi siempre, muy poco premio |
+| 75% | 1,32x | Conservador: sesiones largas y estables |
+| 50% | 1,98x | Equilibrado: el clásico "cara o cruz" |
+| 25% | 3,96x | Arriesgado: pierdes 3 de cada 4 veces |
+| 10% | 9,9x | Agresivo: pelotazo puntual, casi siempre pierdes |
+| 2% | 49,5x | Lotería: sale una vez cada 50 tiradas de media |
+| 1% | 99x | Máximo riesgo: para apuestas mínimas de "a ver si suena" |
+
+La idea es simple: cuanto más alto el multiplicador, más rara vez lo alcanzarás. Elige según cuánto tiempo quieras jugar y cuánta varianza aguantas, no según lo que "te gustaría" que saliera.
+
+## La ventaja de la casa (house edge) real
+
+Sé honesto contigo mismo antes de jugar: **la casa siempre tiene ventaja**. En el Dice esa ventaja está incorporada en la fórmula del pago (ese 100 − 1). Los BetFury Originals ofrecen un RTP de hasta el **99,28%**, de los más altos del sector y muy por encima de las slots tradicionales (que rondan el 94-96%). Aun así, RTP + ventaja de la casa = 100% **siempre**: con un RTP del 99%, a largo plazo esperarías recuperar 99 de cada 100 unidades apostadas, y la casa se queda el resto. El RTP alto significa que el desgaste es lento, no que sea nulo. Ninguna probabilidad que elijas en el deslizador cambia ese valor esperado negativo: solo cambia la varianza (cómo de brusco es el camino hasta ahí).
 
 ## Estrategias de gestión (no de "ganar seguro")
 
-Seamos claros: **ninguna estrategia garantiza ganar** en Dice, porque cada tirada es aleatoria e independiente. Lo que sí puedes hacer es gestionar el riesgo:
+Seamos claros: **ninguna estrategia garantiza ganar** en Dice, porque cada tirada es aleatoria e independiente y el valor esperado es negativo. Lo que sí puedes hacer es gestionar el riesgo para que la sesión dure más y sea más entretenida:
 
-- **Elige tu probabilidad según tu objetivo**: alta probabilidad (60-70%) para sesiones largas y estables; baja probabilidad solo para apuestas puntuales de alto riesgo.
-- **Gestiona tu bankroll**: apuesta una fracción pequeña por tirada (1-2%) para aguantar la varianza.
-- **Cuidado con los sistemas de progresión**: estrategias como doblar tras cada pérdida (martingala) parecen funcionar, pero una mala racha puede agotar tu saldo rápidamente. No vencen a la ventaja de la casa.
-- **Define límites de ganancia y pérdida** y respétalos.
-- **No persigas pérdidas**: es el error más caro del casino.
+- **Elige tu probabilidad según tu objetivo**: alta probabilidad (60-90%) para sesiones largas y estables; baja probabilidad solo para apuestas puntuales de alto riesgo con dinero que puedas perder entero.
+- **Gestiona tu bankroll**: apuesta una fracción pequeña de tu saldo por tirada (1-2%) para aguantar la varianza sin quedarte fuera en cuatro rondas.
+- **Define límites de ganancia y de pérdida** antes de empezar y respétalos ("si llego a X, retiro; si bajo a Y, lo dejo por hoy").
+- **No persigas pérdidas**: subir la apuesta para "recuperar" tras una mala racha es el error más caro del casino.
+
+### La Martingala y por qué es peligrosa
+
+La estrategia más famosa del Dice es la **Martingala**: doblar la apuesta tras cada pérdida para que, al ganar, recuperes todo lo perdido más una unidad. Sobre el papel parece infalible… hasta que llega la racha mala, que es **inevitable**. Al 50%, perder 10 veces seguidas ocurre de media una vez cada ~1.000 series, y para seguir doblando necesitarías apostar 1.024 unidades solo para recuperar 1. Cualquier banca finita —o el límite de apuesta de la mesa— se agota antes de que la Martingala compense la ventaja de la casa. Parece que funciona hasta que no funciona, y entonces es carísima. Trátala como lo que es: una forma de acelerar la varianza, no de vencer al casino.
+
+### Auto-bet: disciplina, no truco
+
+BetFury permite configurar el **auto-bet** (apuesta automática): fijas la probabilidad, el importe, cuántas tiradas y reglas de "qué hacer al ganar o perder", y el sistema tira solo. Es útil porque **elimina la decisión emocional** y te obliga a seguir en frío la regla que definiste, además de agilizar el minado de [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio). Ojo: el auto-bet **no cambia las probabilidades ni la ventaja de la casa**; solo ejecuta tu plan sin que intervengan los nervios. No es un truco para ganar, es una herramienta para no perder por impulso (y, mal usado con progresiones agresivas, puede vaciar el saldo más rápido).
+
+## Provably Fair: cómo verificar cada tirada
+
+Dice, como los demás Originals de BetFury, es **Provably Fair**: el número de cada tirada se determina con criptografía y puedes **comprobarlo tú mismo después**. Funciona con un sistema de sobre sellado: antes de jugar, el casino te muestra el **hash** (SHA-256) de su semilla secreta (server seed); tú aportas tu propia semilla (client seed) y cada apuesta avanza un contador (nonce). Al terminar, se revela la semilla del casino y cualquiera puede recalcular el resultado y confirmar que no se cambió a mitad. Es la transparencia que explicamos a fondo en [qué significa Provably Fair en los casinos cripto](/es/blog/provably-fair-que-significa-casinos-cripto): aquí no tienes que "confiar", puedes **verificar**. Eso sí, ser verificable no elimina la ventaja de la casa —esa vive en la fórmula del pago—, solo garantiza que el número es limpio.
+
+## La letra pequeña y los riesgos
+
+Antes de tirar, ten claro esto:
+
+- **El valor esperado es negativo**: a largo plazo la casa gana; ninguna estrategia lo revierte.
+- **El ritmo es muy rápido**: una tirada de Dice dura un segundo, lo que invita a encadenar apuestas sin control y perder la noción del gasto.
+- **Los multiplicadores altos son un espejismo estadístico**: verlos salir de vez en cuando no significa que "ya toque"; cada tirada parte de cero.
+- **Depósitos en cripto**: juegas con USDT u otras criptos; usa la red correcta (TRC20 es lo más barato) para no perder fondos por comisiones o direcciones equivocadas.
+- **Disponibilidad por país**: BetFury restringe el acceso en algunos territorios. Si dudas de la legitimidad y licencia de la plataforma, lee [si BetFury es seguro y legítimo](/es/blog/betfury-seguro-es-legitimo-licencia).
 
 ## Errores comunes en Dice
 
-- **Confiar en la martingala**: doblar tras cada pérdida funciona hasta que no funciona, y entonces es muy caro.
+- **Confiar en la Martingala**: doblar tras cada pérdida funciona hasta que no funciona, y entonces arruina la banca.
 - **Buscar siempre multiplicadores altos**: baja probabilidad significa perder la mayoría de las veces.
 - **Apostar fuerte por tirada**: la varianza te deja fuera enseguida.
-- **Creer en patrones**: cada tirada es independiente.
+- **Creer en patrones**: cada tirada es independiente; no existe "número caliente".
+- **Jugar sin límites**: el ritmo rápido invita a encadenar tiradas sin control.
 
 ## Cómo empezar a jugar Dice en BetFury
 
 1. Consigue cripto (USDT es lo más cómodo) y **[regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)**.
 2. Deposita por red TRC20 y, si quieres, activa el [bono de bienvenida](/es/blog/betfury-bono-bienvenida-590).
 3. Busca **Dice** en la sección de Originals.
-4. Empieza con una probabilidad alta (apuestas conservadoras) y apuestas pequeñas para entender el ritmo.
+4. Empieza con una probabilidad alta (apuestas conservadoras) y apuestas pequeñas para entender el ritmo antes de tocar nada. Si quieres una visión completa de la plataforma, mira nuestra [review de BetFury 2026](/es/blog/betfury-casino-review-2026).
 
-Cada apuesta también te genera [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio) para staking.
+## Dice frente a otros Originals de BetFury
+
+Si el Dice te sabe a poco o buscas otra clase de tensión, tienes alternativas con perfiles distintos dentro de los mismos Originals. El [Crash](/es/blog/betfury-crash-juego-guia-completa) añade el dilema de "retirar antes de que explote"; el [Mines](/es/blog/betfury-mines-estrategia-guia) premia la decisión de cuándo plantarse; y el [Plinko](/es/blog/betfury-plinko-como-jugar-ganar) es el más visual, con niveles de riesgo y filas ajustables. Todos comparten lo importante: son Provably Fair y verificables, y en todos la casa mantiene su ventaja. Elegir uno u otro es cuestión de qué tipo de emoción disfrutas, no de dónde "se gana más".
 
 ## Juego responsable
 
-La sencillez y rapidez de Dice hacen que sea fácil encadenar tiradas sin control. Fija un presupuesto que puedas permitirte perder, ponte un límite de tiempo, evita los sistemas de progresión agresivos y no juegues para recuperar. El juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
+La sencillez y rapidez del Dice hacen que sea fácil encadenar tiradas sin control. Fija un presupuesto que puedas permitirte perder, ponte un límite de tiempo, evita los sistemas de progresión agresivos (Martingala incluida) y no juegues para recuperar. El juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
 
 ## Conclusión
 
-Dice es un Original clásico, transparente (Provably Fair) y muy flexible, porque te deja diseñar tu propio equilibrio entre riesgo y recompensa con el deslizador de probabilidad. No hay forma de garantizar ganancias —cada tirada es aleatoria— pero sí de jugar con cabeza: elige tu probabilidad según tu objetivo, gestiona tu bankroll, desconfía de los sistemas "infalibles" y fija límites claros. Con disciplina, es entretenido; sin ella, caro.
+El Dice es un Original clásico, transparente (Provably Fair) y muy flexible: te deja diseñar tu propio equilibrio entre riesgo y recompensa con el deslizador, y hasta calcular el pago tú mismo con la fórmula (100 − ventaja) ÷ probabilidad. No hay forma de garantizar ganancias —cada tirada es aleatoria y la casa siempre tiene ventaja— pero sí de jugar con cabeza: elige tu probabilidad según tu objetivo, gestiona tu bankroll, desconfía de los sistemas "infalibles" y fija límites claros. Con disciplina, es entretenido; sin ella, caro.
 
 > *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
       {
         question: '¿Existe una estrategia ganadora para el Dice?',
-        answer: 'No. La ventaja de la casa (~1%) hace que ninguna estrategia tenga esperanza matemática positiva a largo plazo. Las estrategias útiles son de gestión de riesgo: apuesta fija porcentual, stop-loss y sesiones cortas.'
+        answer: 'No. La ventaja de la casa (~1%) hace que ninguna estrategia tenga esperanza matemática positiva a largo plazo. Las estrategias útiles son de gestión de riesgo: apuesta fija porcentual, stop-loss y sesiones cortas. Ninguna cambia el valor esperado, que es negativo.'
+      },
+      {
+        question: '¿Cómo se calcula el multiplicador en el Dice?',
+        answer: 'Con la fórmula multiplicador = (100 − ventaja de la casa) ÷ probabilidad de ganar. Con un 1% de ventaja (RTP 99%), elegir 50% de probabilidad paga 99÷50 = 1,98x; un 10% paga 9,9x; un 2%, unos 49,5x. Cuanto menor la probabilidad, mayor el pago pero más rara vez ganas.'
       },
       {
         question: '¿Cómo sé que el Dice de BetFury no está trucado?',
-        answer: 'Por el sistema Provably Fair: el server seed se publica hasheado antes de cada tirada y puedes verificar criptográficamente cada resultado después. Es imposible manipular el resultado sin romper el hash.'
+        answer: 'Por el sistema Provably Fair: el server seed se publica hasheado (SHA-256) antes de cada tirada y puedes verificar criptográficamente cada resultado después con tu client seed y el nonce. Es imposible manipular el número sin romper el hash.'
       },
       {
         question: '¿Por qué la Martingala no funciona en el Dice?',
-        answer: 'Porque las rachas largas de pérdidas son inevitables: al 50%, perder 10 veces seguidas ocurre una vez cada ~1.000 series y exige apostar 1.024 unidades para recuperar 1. Toda banca finita acaba quebrando antes de compensar la ventaja de la casa.'
+        answer: 'Porque las rachas largas de pérdidas son inevitables: al 50%, perder 10 veces seguidas ocurre una vez cada ~1.000 series y exige apostar 1.024 unidades para recuperar 1. Toda banca finita (o el límite de apuesta) quiebra antes de compensar la ventaja de la casa.'
       },
       {
         question: '¿Qué probabilidad conviene elegir en el Dice?',
