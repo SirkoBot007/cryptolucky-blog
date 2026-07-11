@@ -1253,9 +1253,9 @@ Registrarse en BetFury es de lo más sencillo del sector: solo un email, sin KYC
   {
     id: 'c002-retiro-minimo',
     slug: 'betfury-retiro-minimo-cuanto-es',
-    titleEs: 'BetFury: Mínimo de Retiro y Cómo Retirar tu Dinero (2026)',
+    titleEs: 'BetFury: Retiro Mínimo y Comisiones por Cripto (2026)',
     titleEn: 'BetFury: Minimum Withdrawal and How to Withdraw Your Money (2026)',
-    descriptionEs: 'Cuánto es el mínimo para retirar en BetFury, cuánto tarda y paso a paso para hacer tu primer retiro. Todo explicado para 2026.',
+    descriptionEs: '¿Cuál es el retiro mínimo en BetFury? Mínimos y comisiones por cripto y red (USDT TRC20, BTC…), por qué existen y cómo pagar menos al retirar en 2026.',
     descriptionEn: 'How much is the minimum withdrawal at BetFury, how long it takes and step by step to make your first withdrawal. Everything explained for 2026.',
     category: 'Guías BetFury',
     keywords: 'betfury retiro minimo, cuanto tarda retiro betfury, como retirar betfury, betfury withdrawal, betfury pago',
@@ -1263,84 +1263,103 @@ Registrarse en BetFury es de lo más sencillo del sector: solo un email, sin KYC
     status: 'Publicado',
     tags: ['retiros', 'betfury', 'pagos'],
     author: 'Sirko007',
-    content: `¿Cuál es el retiro mínimo en BetFury? En la práctica, el mínimo para retirar es **bajo y depende de la criptomoneda** que uses: en stablecoins como USDT suele situarse en torno a unos pocos dólares, mientras que en monedas como Bitcoin el mínimo se mide en una pequeña fracción de la moneda. Lo importante es que BetFury permite retirar cantidades modestas y de forma rápida, on-chain, en minutos. En esta guía te explico cómo retirar paso a paso, los tiempos, las comisiones y cómo evitar errores.
+    content: `¿Cuál es el retiro mínimo en BetFury? La respuesta corta: **es bajo y depende de la criptomoneda y la red** que elijas. En stablecoins como USDT por la red TRC20 puedes retirar desde apenas **1-2 USDT**, mientras que en Bitcoin el mínimo se expresa en una fracción (del orden de **0,0002-0,0005 BTC**). BetFury muestra el mínimo exacto en la propia ventana de retiro antes de confirmar. Y una buena noticia: **BetFury no cobra comisión propia** por retirar la mayoría de criptos — solo pagas el coste de red (*gas fee*). En esta guía me centro en el **importe mínimo y las comisiones** por moneda. Si lo que buscas son los **tiempos**, los tienes en la guía hermana [cuánto tarda BetFury en pagar](/es/blog/betfury-retiros-cuanto-tarda).
 
-## Cómo funcionan los retiros en BetFury
+## ¿Qué es el retiro mínimo y por qué existe?
 
-En un casino cripto, los retiros no van a tu cuenta bancaria, sino a tu **wallet de criptomonedas**. Tú indicas la dirección de tu wallet, eliges la red y la cantidad, y la cripto sale de la plataforma hacia ti directamente en la blockchain. Por eso son tan rápidos comparados con la banca tradicional. Si quieres el contexto general, lo explicamos en [qué es un casino cripto](/es/blog/que-es-casino-cripto-como-funciona).
+El retiro mínimo es la **cantidad más pequeña que la plataforma te deja sacar** en cada cripto. No es un capricho: existe por dos motivos técnicos. Primero, cada transacción en una blockchain tiene un **coste de red** (el *gas fee*) que alguien debe pagar; si el casino permitiera retirar céntimos, la comisión de red se comería el envío entero y no tendría sentido. Segundo, las redes manejan el concepto de *dust* ("polvo"): importes tan pequeños que la propia red considera antieconómico mover. Por eso cada moneda tiene un umbral por debajo del cual el retiro no se habilita. Entender esto evita frustraciones: cuando la plataforma no te deja sacar una cantidad mínima, no es que te retenga el dinero, es que ese importe no cubre el coste de moverlo.
 
-## Retiro mínimo según la criptomoneda
+## Retiro mínimo y comisión por criptomoneda (tabla)
 
-El mínimo varía según la moneda y la red, y la propia plataforma lo muestra al iniciar el retiro. Como referencia orientativa:
+Estos son valores **orientativos** para 2026 (BetFury muestra el mínimo y la comisión exactos en la ventana de retiro, porque varían con la red y su congestión):
 
-- **USDT (stablecoin)**: mínimos bajos, de unos pocos dólares, ideal para retirar cantidades pequeñas sin perder valor por volatilidad.
-- **Bitcoin (BTC)**: el mínimo se expresa en una fracción de BTC; conviene retirar cantidades algo mayores para que las comisiones de red no se coman el retiro.
-- **TRON (TRX), BNB y otras**: mínimos y comisiones que dependen de cada red.
+| Cripto | Red | Mínimo aprox. | Comisión de red | ¿Bueno para importes pequeños? |
+|--------|-----|---------------|-----------------|-------------------------------|
+| USDT | TRC20 (TRON) | 1-2 USDT | Céntimos | ✅ La mejor opción |
+| USDT | BEP20 (BNB Chain) | 1-2 USDT | Baja | ✅ Buena |
+| USDT | ERC20 (Ethereum) | ~10-20 USDT | Alta ($) | ❌ Evítala si sacas poco |
+| TRX | TRON | 5-10 TRX | Muy baja | ✅ Buena |
+| BNB | BEP20 | ~0,02 BNB | Baja | ✅ Buena |
+| BTC | Bitcoin | ~0,0002-0,0005 BTC | Variable (mempool) | ⚠️ Solo importes mayores |
+| ETH | Ethereum | ~0,005 ETH | Alta si hay congestión | ⚠️ Solo importes mayores |
+| LTC | Litecoin | ~0,02 LTC | Baja | ✅ Aceptable |
 
-Consejo práctico: para retirar importes pequeños con comisiones mínimas, usa **USDT por la red TRC20 (TRON)**. Es casi siempre la combinación más eficiente.
+**Lectura rápida:** para retirar cantidades pequeñas, **USDT por TRC20** gana casi siempre — mínimo bajo y comisión de céntimos. Deja Bitcoin y Ethereum para retiros grandes, donde el mínimo y el *gas* pesan menos en proporción.
 
-## Cómo retirar paso a paso
+## Comisiones de retiro: qué cobra BetFury y qué cobra la red
 
-1. Ve a **Wallet → Withdraw** (Retirar).
-2. Selecciona la **criptomoneda** y la **red** (TRC20 para USDT = comisiones de céntimos).
-3. Pega la **dirección de tu wallet** (Binance, Trust Wallet, MetaMask…). Revísala con cuidado: las transacciones cripto son irreversibles.
-4. Introduce la **cantidad** (respetando el mínimo que indica la plataforma).
-5. Confirma (con 2FA si lo tienes activado, muy recomendable).
-6. En pocos minutos la cripto llega a tu wallet.
+Aquí conviene separar dos cosas que mucha gente mezcla:
 
-Desde tu wallet, si quieres pasar a tu moneda local, puedes vender el USDT en Binance P2P o en un exchange local.
+- **Comisión del casino:** BetFury **no cobra comisión propia** por retirar la mayoría de criptomonedas (USDT, TRX, BTT y otras salen sin cargo de plataforma). Es un punto a su favor frente a casas que sí aplican tarifas de *cashout*.
+- **Comisión de red (*gas fee*):** es inevitable y **no la cobra el casino, sino la blockchain**. Es lo que pagas a los validadores por procesar tu transacción, y varía según la red y su congestión en ese momento.
 
-## Cuánto tardan los retiros
+Es decir: lo que "cuesta" retirar en BetFury es básicamente el *gas* de la red que elijas. Y eso lo controlas tú.
 
-Los retiros on-chain de BetFury suelen tardar **de 1 a 10 minutos**, según la congestión de la red. Es una de las grandes ventajas frente al casino tradicional, donde un retiro puede tardar días. Lo detallamos en [cuánto tardan los retiros de BetFury](/es/blog/betfury-retiros-cuanto-tarda).
+## Cómo pagar menos: elige bien la red
 
-## Comisiones: cómo pagar lo mínimo
+La palanca más potente para reducir comisiones es **la red por la que retiras**, no el casino. La misma moneda (USDT) puede costarte céntimos o varios dólares según por dónde la envíes:
 
-La comisión depende de la **red**, no del casino. Por eso la elección de red importa tanto:
+- **TRC20 (TRON):** comisiones de céntimos. La opción recomendada para USDT y para importes pequeños.
+- **BEP20 (BNB Chain):** también barata; buena alternativa si tu wallet la soporta.
+- **ERC20 (Ethereum):** puede costar varios dólares en horas punta. Solo tiene sentido para importes grandes o si el destino únicamente acepta esa red.
+- **Bitcoin nativo:** comisión variable según el *mempool*; reserva BTC para cuando el importe justifique la espera y el coste.
 
-- **TRC20 (TRON)**: comisiones de céntimos. La opción recomendada para USDT.
-- **ERC20 (Ethereum)**: puede costar varios dólares; evítala para importes pequeños.
-- **BTC**: comisión variable según la congestión de la red.
+Regla de oro: **la red de origen (BetFury) y la de destino (tu wallet o exchange) deben coincidir.** Si envías USDT-TRC20 a una dirección que solo acepta ERC20, puedes perder los fondos.
 
-## ¿Necesito KYC para retirar?
+## Ejemplo práctico: cuánto recibes de verdad
 
-En condiciones normales, **no**: puedes retirar sin enviar documentos. Solo en casos puntuales (importes muy altos o señales de uso indebido) puede solicitarse verificación, algo habitual y razonable. Más detalle en [casino bitcoin sin KYC](/es/blog/casino-bitcoin-sin-kyc-2026).
+Imagina que quieres retirar 20 USDT. Por **TRC20**, la comisión de red es de céntimos, así que a tu wallet llegan casi los 20 USDT íntegros. Por **ERC20** en un momento de congestión, la comisión podría ser de varios dólares: retirarías 20 y recibirías bastante menos. Mismo casino, misma moneda, mismo importe — la única diferencia es la red. Por eso insisto tanto: **elegir la red correcta es lo que más dinero te ahorra al retirar.**
 
-## Errores comunes al retirar (y cómo evitarlos)
+## Mínimo de retiro y KYC: ¿piden documentos?
 
-- **Equivocar la red**: enviar USDT por una red que tu wallet no soporta puede hacer que pierdas los fondos. Confirma que la red coincide en origen y destino.
-- **Copiar mal la dirección**: revisa siempre la dirección completa; las transacciones son irreversibles.
-- **Intentar retirar con un bono sin cumplir**: si tienes un bono activo, primero hay que cumplir el rollover.
-- **No activar 2FA**: protege tus retiros con verificación en dos pasos.
-- **Retirar por ERC20 importes pequeños**: la comisión se come la ganancia. Usa TRC20.
+En condiciones normales, **no necesitas KYC para retirar** en BetFury, ni siquiera respetando el mínimo. Puedes registrarte, jugar y sacar sin enviar documentos. Solo en casos puntuales —importes muy elevados o señales de uso indebido— la plataforma puede pedir una verificación, algo estándar y razonable en el sector. El detalle de cómo funciona esto lo desarrollo en [casino Bitcoin sin KYC](/es/blog/casino-bitcoin-sin-kyc-2026). Y para saber si la plataforma es de fiar antes de meter dinero, tienes la [reseña completa de BetFury](/es/blog/betfury-casino-review-2026) y el análisis de [si BetFury es seguro y legítimo](/es/blog/betfury-seguro-es-legitimo-licencia).
 
-## Consejo final: prueba con un retiro pequeño
+## Mínimo vs. tiempo: no confundas los dos
 
-Si es tu primera vez, haz un **retiro pequeño de prueba** para comprobar que todo el flujo funciona (dirección, red, tiempos) antes de mover cantidades mayores. Es una buena costumbre en cripto que te dará tranquilidad y confianza con la plataforma.
+Mucha gente busca "retiro mínimo" cuando en realidad quiere saber "cuánto tarda". Son cosas distintas: el **mínimo** es el importe más pequeño que puedes sacar (lo que cubre este artículo), y el **tiempo** es lo que tarda en llegar a tu wallet, que depende de la red. Los retiros on-chain de BetFury suelen ser cuestión de minutos, pero el desglose por red y los factores que lo alargan los tienes en la guía hermana de [cuánto tardan los retiros de BetFury](/es/blog/betfury-retiros-cuanto-tarda), para no repetirlo aquí.
 
-## Retiros cripto vs banca tradicional: la diferencia real
+## Pros y contras del sistema de mínimos de BetFury
 
-Para entender por qué tanta gente prefiere el casino cripto, basta comparar el proceso de retiro con el de un casino tradicional. En un casino con métodos bancarios, una retirada suele pasar por un periodo de "procesamiento" del operador (a veces 24-72 horas), luego por la verificación KYC si no la hiciste antes, y finalmente por los tiempos del banco, que pueden sumar varios días hábiles. En un casino cripto como BetFury, el retiro es **on-chain y directo**: indicas tu wallet, confirmas y la cripto sale en minutos, sin intermediarios que aprueben o retrasen el pago. Esa es la ventaja estructural: el dinero es tuyo y se mueve a la velocidad de la blockchain, no a la del horario bancario.
+**A favor:**
 
-## Qué hacer si tu retiro tarda más de lo normal
+- Mínimos **bajos** en stablecoins: puedes sacar importes modestos.
+- **Sin comisión de casino** en la mayoría de criptos.
+- Tú eliges la red y, con ella, cuánto pagas de *gas*.
 
-Aunque lo habitual son minutos, a veces un retiro puede tardar algo más. Antes de preocuparte, comprueba lo siguiente con calma:
+**En contra / a tener en cuenta:**
 
-- **Estado de la red**: si la blockchain (TRON, Ethereum, Bitcoin) está congestionada, las confirmaciones tardan más. Puedes consultar el estado en un explorador de bloques.
-- **Hash de la transacción**: si el casino ya envió el retiro, te dará un identificador (TXID) que puedes rastrear en el explorador para ver si está confirmándose.
-- **Verificación puntual**: en importes muy altos, la plataforma puede pedir una comprobación de seguridad. Es algo excepcional y razonable.
-- **Dirección y red correctas**: confirma que enviaste a la red adecuada; un error de red es la causa más común de problemas.
+- El mínimo en BTC/ETH es más alto en valor y la comisión pesa más en importes pequeños.
+- Debes conocer qué red soporta tu wallet de destino (pequeña curva de aprendizaje inicial).
+- Si usaste bono, antes de retirar hay que cumplir el requisito de apuesta.
 
-Si todo está correcto y la red no está congestionada, los fondos suelen aparecer enseguida. Mantener el 2FA activado y la dirección bien copiada evita la mayoría de los sustos.
+## Cómo hacer tu primer retiro respetando el mínimo (pasos)
+
+1. Si aún no tienes cuenta, [regístrate en BetFury con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007) — solo necesitas un email. La guía completa está en [cómo registrarse paso a paso](/es/blog/betfury-como-registrarse-paso-a-paso).
+2. Ve a **Wallet → Withdraw** (Retirar).
+3. Elige la **criptomoneda** y la **red**. Para importes pequeños, **USDT + TRC20**.
+4. Comprueba el **mínimo y la comisión** que muestra la ventana antes de confirmar.
+5. Pega la **dirección de tu wallet** (cópiala, nunca la escribas a mano) y confirma que la red coincide en origen y destino.
+6. Introduce la **cantidad** respetando el mínimo y confirma con **2FA**.
+7. En minutos la cripto llega a tu wallet. Si es tu primera vez, haz una **prueba pequeña** por encima del mínimo para verificar todo el flujo.
+
+## Errores comunes con el mínimo (y cómo evitarlos)
+
+- **Intentar retirar por debajo del mínimo:** la plataforma no lo permitirá; sube el importe o acumula un poco más de saldo.
+- **Retirar importes pequeños por ERC20:** la comisión se come la ganancia. Usa TRC20.
+- **No hacer coincidir las redes:** el error más caro; origen y destino deben usar la misma red.
+- **Olvidar el requisito de apuesta del bono:** si tienes un bono activo, primero cúmplelo.
 
 ## Conclusión
 
-El retiro mínimo en BetFury es bajo y depende de la cripto, siendo USDT por TRC20 la opción más eficiente para sacar cantidades pequeñas con comisiones mínimas y en minutos. Revisa siempre la red y la dirección, activa el 2FA y haz una prueba pequeña la primera vez. Así, retirar tus ganancias será rápido y sin sustos.
+El retiro mínimo en BetFury es **bajo y depende de la cripto**, con **USDT por TRC20** como la mejor combinación para sacar poco pagando céntimos. El casino no cobra comisión propia en la mayoría de monedas: lo único que pagas es el *gas* de la red, y eso lo decides tú al elegir por dónde retirar. Respeta el mínimo, haz coincidir las redes, activa el 2FA y prueba con un importe pequeño la primera vez.
 
-> *Información orientativa; los mínimos exactos los muestra la plataforma. Contiene enlaces de afiliado (código LUCKYSIRKO007).* **Mayores de 18 años. Juega con responsabilidad.**`,
+> *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti. Información orientativa; los mínimos y comisiones exactos los muestra la plataforma.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
-      { question: '¿Puedo retirar en BetFury sin verificar mi identidad (KYC)?', answer: 'BetFury no requiere KYC para la mayoría de retiros estándar. Para montos muy elevados o en casos de sospecha de fraude puede solicitarse verificación. La mayoría de usuarios nunca necesitan hacerlo.' },
-      { question: '¿Qué pasa si introduzco una dirección de retiro incorrecta?', answer: 'Las transacciones cripto son irreversibles. Si introduces una dirección incorrecta, el dinero se pierde. Siempre copia la dirección directamente desde tu wallet — nunca la escribas manualmente.' },
+      { question: '¿Cuál es el retiro mínimo en BetFury?', answer: 'Depende de la cripto y la red. En USDT por TRC20 es muy bajo (del orden de 1-2 USDT), mientras que en Bitcoin ronda una fracción (aprox. 0,0002-0,0005 BTC). El mínimo exacto lo muestra la propia ventana de retiro antes de confirmar.' },
+      { question: '¿BetFury cobra comisión por retirar?', answer: 'BetFury no cobra comisión propia por retirar la mayoría de criptomonedas (USDT, TRX, BTT y otras). Lo único que pagas es la comisión de red (gas fee), que va a la blockchain, no al casino, y varía según la red que elijas.' },
+      { question: '¿Por qué red conviene retirar para pagar menos comisiones?', answer: 'Para USDT e importes pequeños, la mejor opción es TRC20 (TRON): comisiones de céntimos. BEP20 también es barata. Evita ERC20 (Ethereum) para importes pequeños, porque el gas puede costar varios dólares.' },
+      { question: '¿Puedo retirar respetando el mínimo sin hacer KYC?', answer: 'Sí, en condiciones normales no necesitas KYC para retirar. Solo en importes muy elevados o ante señales de uso indebido la plataforma puede pedir verificación, algo excepcional y estándar en el sector.' },
+      { question: '¿Qué pasa si intento retirar por debajo del mínimo?', answer: 'La plataforma simplemente no habilitará el retiro: tendrás que subir el importe o acumular un poco más de saldo. El mínimo existe porque por debajo de él la comisión de red se comería el envío entero.' },
     ],
   },
   {

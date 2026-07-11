@@ -2004,7 +2004,7 @@ Los retiros de BetFury son rápidos —normalmente de 1 a 10 minutos— porque s
     titleEs: 'BetFury Fury Wheel 2026: Giros Gratis y Premio 1 BTC',
     titleEn: 'BetFury Fury Wheel 2026: Free Spins & Prizes up to 1 BTC',
     descriptionEs:
-      'Cómo funciona la Fury Wheel de BetFury: cómo conseguir giros gratuitos, qué premios reparte, y trucos para no perderte ningún giro. Guía completa 2026.',
+      'Fury Wheel de BetFury 2026: gira gratis 2 veces al día, gana cripto hasta 1 BTC y descubre cómo conseguir más giros. Guía completa sin depositar.',
     descriptionEn:
       'How BetFury Fury Wheel works: how to get free spins, what prizes it pays, and tips to never miss a spin. Complete 2026 guide.',
     category: 'Guías',
@@ -2014,73 +2014,145 @@ Los retiros de BetFury son rápidos —normalmente de 1 a 10 minutos— porque s
     image: '/betfury/banners/freebox-300x250.gif',
     tags: ['betfury', 'fury wheel', 'gratis', 'bitcoin'],
     author: 'Sirko007',
-    content: `La Fury Wheel es una de las mecánicas gratuitas más populares de BetFury: una **rueda que puedes girar gratis cada día** para ganar premios en cripto, que llegan hasta 1 BTC en los sectores mayores. No necesitas depositar para girarla: es una forma de obtener valor solo por estar activo en la plataforma. En esta guía te explico qué es, cómo funciona, qué premios ofrece y cómo aprovecharla junto al resto de recompensas gratuitas.
+    content: `La Fury Wheel es una de las mecánicas gratuitas más populares de BetFury: una **rueda que puedes girar gratis 2 veces al día** (una cada 12 horas) para ganar cripto real, con un premio máximo que llega hasta **1 BTC**. No necesitas depositar ni apostar dinero propio: es una forma de obtener valor solo por tener cuenta y estar activo en la plataforma. En esta guía te explico qué es, cómo funciona paso a paso, en qué se diferencia según tu rango, qué premios reparte, cómo conseguir más giros y qué letra pequeña conviene tener clara antes de girar.
 
 ## Qué es la Fury Wheel
 
-La Fury Wheel ("rueda de la fortuna" de BetFury) es una ruleta de premios dividida en sectores, cada uno con una recompensa distinta: cantidades de cripto, tokens BFG, giros u otros premios. Giras la rueda y ganas lo que toque en el sector donde se detiene. Su gran atractivo es que el **giro diario es gratuito**, así que cada día tienes una oportunidad de sumar saldo sin gastar nada.
+La Fury Wheel ("rueda de la furia" de BetFury) es una **ruleta de premios gratuita** dividida en sectores, cada uno con una recompensa distinta: cantidades de criptomoneda, tokens u otros premios. Giras la rueda y ganas lo que toque en el sector donde se detiene. Según la documentación de BetFury, **cada giro tiene la misma probabilidad de premiar**, y su gran atractivo es que el giro es **100% gratuito**: no arriesgas saldo, solo sumas.
 
-## Cómo funciona
+Es la filosofía "free-to-play" de la casa: en lugar de limitarse a un bono de bienvenida, BetFury reparte cripto gratis de forma recurrente para que conozcas la plataforma sin gastar nada. La Fury Wheel es, junto a las Free Boxes, la pieza central de ese modelo.
 
-El funcionamiento es muy sencillo:
+## Cómo funciona la Fury Wheel paso a paso
 
-1. Entras en la sección de la Fury Wheel en BetFury.
-2. Usas tu **giro gratuito diario** (la plataforma te indica cuándo está disponible).
-3. La rueda gira y te detiene en un sector con un premio.
-4. El premio se acredita en tu cuenta al momento.
+El funcionamiento no puede ser más sencillo:
 
-Algunos sectores ofrecen premios pequeños y frecuentes, y otros premios mucho mayores (hasta 1 BTC) que, lógicamente, salen en muy contadas ocasiones. Es la mecánica clásica de riesgo-recompensa de una ruleta de premios: la mayoría de las veces ganarás algo modesto, pero siempre con la posibilidad de un golpe de suerte.
+1. Entras en la sección de la **Fury Wheel** dentro de BetFury.
+2. Usas uno de tus **2 giros gratuitos diarios** (se recarga uno cada 12 horas).
+3. La rueda gira y se detiene en un sector con un premio.
+4. La recompensa se **acredita al instante** en tu wallet interna de BetFury.
+5. Esperas a que el temporizador de 12 horas se reinicie para volver a girar.
 
-## Qué premios ofrece
+Como en cualquier ruleta de premios, los sectores con recompensas pequeñas salen con mucha más frecuencia que los sectores grandes. El premio de 1 BTC existe, pero es rarísimo: la mayoría de las veces te llevarás una cantidad modesta. Aun así, sumando dos giros al día sin coste, esas pequeñas cantidades se van acumulando con el tiempo.
 
-Los premios de la Fury Wheel suelen incluir:
+## Fury Wheel gratis vs. Special Fury Wheel: qué cambia según tu rango
 
-- **Cripto directa** (BTC, USDT y otras), en cantidades variables según el sector.
-- **Token BFG**, que puedes acumular y poner en [staking para dividendos diarios](/es/blog/betfury-staking-bfg-dividendos).
-- **Premios mayores** en los sectores más raros, de hasta 1 BTC.
+Aquí está el detalle que casi nadie explica bien: **lo que ganas depende de tu rango** en el [programa VIP de BetFury](/es/blog/betfury-programa-vip-rank-beneficios).
 
-Además, girar más a menudo o tener un [rango VIP](/es/blog/betfury-programa-vip-rank-beneficios) más alto puede mejorar tus oportunidades o desbloquear giros adicionales.
+- **Rank 1 (rueda básica):** repartes premios pequeños de cripto y **tokens FunFury**, la moneda de juego gratuita de la casa (más abajo te explico para qué sirven).
+- **Rank 2 a Rank 16 (Special Fury Wheel):** desbloqueas la versión "especial", donde **todos los premios son cripto real, sin tokens**. En esta rueda pueden salir BTC, USDT, ETH, BNB, TRX, BFG, BSW y otras monedas.
 
-## Cómo conseguir más giros
+Por eso el primer objetivo práctico de cualquier jugador nuevo es **llegar al Rank 2**: es el punto en el que la rueda pasa de repartir tokens a repartir cripto de verdad. Subir de rango se consigue con actividad en la plataforma, y desbloquea de paso otras ventajas como mejores [Free Boxes](/es/blog/betfury-free-boxes-bitcoin-gratis).
 
-El giro diario es gratis, pero hay formas de obtener más oportunidades: mantenerte activo en la plataforma, subir de rango VIP, participar en promociones puntuales y aprovechar los eventos especiales que BetFury organiza. La idea de fondo es que **la actividad se premia**: cuanto más participas (sin necesidad de gastar de más), más oportunidades acumulas.
+## Qué premios reparte la Fury Wheel
+
+Los premios de la Fury Wheel se agrupan, a grandes rasgos, así:
+
+| Tipo de premio | Qué incluye | Frecuencia |
+| --- | --- | --- |
+| Cripto pequeña | BTC, USDT, ETH, BNB, TRX y otras en cantidades bajas | Alta |
+| Token BFG | El token propio de BetFury, apto para staking | Media |
+| Tokens FunFury | Solo en la rueda de Rank 1 (moneda de juego, no retirable) | Media |
+| Premio mayor | Cantidades grandes de cripto en los sectores raros | Baja |
+| Jackpot | Hasta **1 BTC** en el sector superior | Muy baja |
+
+El **token BFG** que puedas ganar tiene un valor extra: puedes acumularlo y ponerlo en [staking para cobrar dividendos diarios](/es/blog/betfury-staking-bfg-dividendos), convirtiendo un premio puntual en un pequeño ingreso pasivo. Es una de las razones por las que merece la pena girar aunque el premio sea modesto.
+
+## Los tokens FunFury: para qué sirven
+
+Si giras en Rank 1, muchos premios llegarán en **FunFury**, la moneda de juego gratuita de BetFury. Conviene entender bien qué es para no llevarse una decepción:
+
+- Sirve para **jugar gratis** a los juegos Originals y participar en las FunFury Battles (competiciones cada 12 horas con premios en cripto real repartidos por ranking).
+- La apuesta mínima con FunFury en los Originals es de **10 tokens**.
+- **No es cripto retirable**: las apuestas en FunFury no cuentan para el minado, el staking, el wager total, el cashback, el rakeback ni los bonos de referidos.
+
+En resumen: FunFury es para divertirte gratis y, con suerte, convertir esa diversión en cripto real a través de las battles; pero no es dinero que puedas retirar directamente. La cripto de verdad llega con la **Special Fury Wheel** a partir de Rank 2.
+
+## Cómo conseguir más giros gratis
+
+El giro base son 2 al día, pero hay formas de exprimir más valor del sistema:
+
+- **Sube de rango VIP:** más actividad significa mejor rueda (Rank 2+ = cripto real) y mejores recompensas en general.
+- **Conecta el bot de Telegram de BetFury:** desbloqueas la **Telegram Fury Wheel**, una versión donde los premios máximos suben **hasta 5 BTC**.
+- **Aprovecha promociones y eventos:** BetFury lanza eventos puntuales que a veces incluyen giros extra o ruedas especiales.
+- **Sé constante:** el valor no está en un giro suelto, sino en no perderte tus 2 giros diarios día tras día.
+
+La idea de fondo es que **la actividad se premia**: cuanto más participas (sin gastar de más), más oportunidades acumulas.
+
+## La Fury Wheel de Telegram: premios hasta 5 BTC
+
+Además de la rueda de la web, BetFury ofrece una **Fury Wheel dentro de su bot de Telegram**. Al vincular tu cuenta con el bot desbloqueas esta versión, cuyos premios máximos son aún mayores: **hasta 5 BTC** en el sector superior. Funciona con la misma lógica gratuita (giras sin coste), pero con un techo de premio más alto. Es un extra opcional que solo tiene sentido si ya usas Telegram y quieres una oportunidad más cada día.
+
+## Requisitos y letra pequeña
+
+Antes de girar, ten claro esto:
+
+- **Necesitas cuenta en BetFury** (registro solo con email; sin KYC en condiciones normales).
+- **El premio de 1 BTC es marketing estadístico:** existe, pero la probabilidad de que salga es mínima. No cuentes con él.
+- **En Rank 1 ganarás sobre todo FunFury**, que no es cripto retirable. Para cripto real necesitas llegar a **Rank 2**.
+- **Mínimos de retirada:** para sacar tus premios en cripto tendrás que cumplir el importe mínimo de retirada de cada moneda.
+- **Disponibilidad por país:** BetFury restringe el acceso en algunos territorios. Si tienes dudas sobre la plataforma en conjunto, lee nuestra [review de BetFury 2026](/es/blog/betfury-casino-review-2026).
+
+## Pros y contras
+
+**A favor:**
+
+- Es **gratis de verdad**: no arriesgas saldo propio.
+- **2 giros diarios** que se acumulan con el tiempo.
+- Premios en **cripto real** desde Rank 2, con BFG apto para staking.
+- Techo de premio muy alto (1 BTC en web, hasta 5 BTC en Telegram).
+
+**En contra:**
+
+- Las probabilidades de premio grande son **bajísimas**.
+- En Rank 1 ganas sobre todo **FunFury** (no retirable).
+- Requiere **constancia** para que valga la pena.
+- Como todo casino, invita a jugar más: úsalo con cabeza.
 
 ## La Fury Wheel dentro del ecosistema gratuito de BetFury
 
-La Fury Wheel no está sola: forma parte de un conjunto de **recompensas gratuitas** que hacen de BetFury una de las plataformas más generosas del sector. Junto a ella están las [Free Boxes](/es/blog/betfury-free-boxes-bitcoin-gratis) (cajas de cripto gratis cada pocas horas) y la posibilidad de [empezar sin depósito](/es/blog/betfury-bono-sin-deposito-free-spins). Combinando todas estas mecánicas, puedes ir generando saldo poco a poco **sin invertir nada**, y conocer la plataforma antes de decidir si depositas.
+La Fury Wheel no está sola: forma parte de un conjunto de **recompensas gratuitas** que hacen de BetFury una de las plataformas más generosas del sector. Junto a ella están las [Free Boxes](/es/blog/betfury-free-boxes-bitcoin-gratis) (cajas de cripto gratis cada 60 minutos desde Rank 2) y la posibilidad de [empezar sin depósito con free spins](/es/blog/betfury-bono-sin-deposito-free-spins). Combinando todas estas mecánicas puedes ir generando saldo poco a poco **sin invertir nada** y conocer la plataforma antes de decidir si depositas. Y si al final decides dar el paso, el [bono de bienvenida de hasta 590%](/es/blog/betfury-bono-bienvenida-590) es el complemento natural.
 
 ## Cómo empezar a girar gratis
 
-1. **[Regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email, sin KYC en condiciones normales.
-2. Entra en la sección de la Fury Wheel.
-3. Usa tu giro gratuito diario y reclama tu premio.
-4. Combínalo con las Free Boxes y acumula BFG para hacer staking.
+1. **[Regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email, sin KYC en condiciones normales. Puedes ver todas las ventajas del [código promocional aquí](/es/blog/betfury-codigo-promocional-luckysirko007).
+2. Entra en la sección de la **Fury Wheel** y usa tu giro gratuito.
+3. Mantén actividad para **llegar a Rank 2** y desbloquear la Special Fury Wheel (cripto real).
+4. Combínalo con las **Free Boxes** y acumula **BFG** para hacer staking.
+5. Vuelve cada 12 horas para no perder ninguno de tus 2 giros diarios.
 
 ## Juego responsable
 
-Aunque la Fury Wheel sea gratis y divertida, forma parte de un casino: úsala como entretenimiento y no como una estrategia para "ganar dinero seguro". Si decides depositar y jugar de verdad, fija un presupuesto, ponte límites y recuerda que el juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
+Aunque la Fury Wheel sea gratis y divertida, forma parte de un casino: úsala como entretenimiento y no como una estrategia para "ganar dinero seguro". El premio de 1 BTC es un reclamo, no un objetivo realista. Si decides depositar y jugar de verdad, fija un presupuesto, ponte límites y recuerda que el juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
 
 ## Conclusión
 
-La Fury Wheel es una de las razones por las que BetFury destaca en valor gratuito: un giro diario sin coste con premios que llegan hasta 1 BTC, integrado en un ecosistema de recompensas (Free Boxes, BFG, staking) pensado para devolver valor al jugador. Aprovéchala cada día, combínala con las demás mecánicas y juega siempre con responsabilidad.
+La Fury Wheel es una de las razones por las que BetFury destaca en valor gratuito: **2 giros diarios sin coste** con premios que van desde pequeñas cantidades hasta 1 BTC, integrados en un ecosistema de recompensas (Free Boxes, BFG, staking) pensado para devolver valor al jugador. La clave está en dos cosas: **llegar a Rank 2** para ganar cripto real en la Special Fury Wheel, y ser **constante** sin perder de vista que sigue siendo un juego de azar. Aprovéchala cada día, combínala con las demás mecánicas gratuitas y juega siempre con responsabilidad.
 
 > *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
       {
         question: '¿Cada cuánto puedo girar la Fury Wheel?',
-        answer: 'Los giros gratuitos se desbloquean periódicamente en función de tu actividad de juego reciente. La condición exacta de wagering aparece en la sección Fury Wheel de la plataforma. Jugadores habituales pueden conseguir giros prácticamente a diario.'
+        answer: 'Puedes girar gratis 2 veces al día: se recarga un giro cada 12 horas. No pagas nada por girar y el premio se acredita al instante en tu wallet interna de BetFury.'
       },
       {
         question: '¿De verdad se puede ganar 1 BTC en la Fury Wheel?',
-        answer: 'Sí, el premio máximo de la ruleta es 1 Bitcoin, aunque como en toda ruleta de premios la probabilidad es muy baja. La mayoría de giros reparten cantidades pequeñas de cripto o tokens BFG.'
+        answer: 'Sí, el premio máximo de la rueda web es 1 Bitcoin, y en la versión de Telegram sube hasta 5 BTC. Como en toda ruleta de premios, la probabilidad es mínima: la mayoría de giros reparten cantidades pequeñas de cripto o tokens.'
       },
       {
-        question: '¿La Fury Wheel es gratis?',
-        answer: 'El giro en sí es gratuito: no se paga por girar. Se desbloquea cumpliendo una condición de actividad de juego en la plataforma.'
+        question: '¿Qué diferencia hay entre la Fury Wheel de Rank 1 y la Special Fury Wheel?',
+        answer: 'En Rank 1 la rueda reparte sobre todo tokens FunFury (moneda de juego no retirable) y pequeñas cantidades de cripto. Desde Rank 2 hasta Rank 16 desbloqueas la Special Fury Wheel, donde todos los premios son cripto real: BTC, USDT, ETH, BNB, TRX, BFG y más.'
+      },
+      {
+        question: '¿Los tokens FunFury son dinero de verdad?',
+        answer: 'No. FunFury es la moneda de juego gratuita de BetFury: sirve para jugar a los Originals y competir en las FunFury Battles por cripto real, pero no es retirable ni cuenta para staking, cashback, rakeback ni referidos. Para ganar cripto retirable necesitas llegar a Rank 2.'
+      },
+      {
+        question: '¿Cómo consigo más giros o premios mayores?',
+        answer: 'Subiendo de rango VIP (Rank 2+ da cripto real) y conectando tu cuenta al bot de Telegram de BetFury, que desbloquea la Telegram Fury Wheel con premios de hasta 5 BTC. También ayuda ser constante y no perder tus 2 giros diarios.'
       },
       {
         question: '¿Dónde se abonan los premios de la Fury Wheel?',
-        answer: 'Directamente en tu wallet interna de BetFury, en la criptomoneda o token correspondiente al premio. Desde ahí puedes jugarlos, hacer staking si es BFG, o retirarlos cumpliendo los mínimos.'
+        answer: 'Directamente en tu wallet interna de BetFury, en la criptomoneda o token correspondiente al premio. Desde ahí puedes jugarlos, hacer staking si es BFG, o retirarlos cumpliendo el importe mínimo de cada moneda.'
       }
     ],
   },
@@ -2093,7 +2165,7 @@ La Fury Wheel es una de las razones por las que BetFury destaca en valor gratuit
     titleEs: 'BetFury Free Boxes 2026: Bitcoin Gratis Cada Día',
     titleEn: 'BetFury Free Boxes 2026: Get Free Bitcoin Every Day',
     descriptionEs:
-      'Las Free Crypto Boxes de BetFury reparten cripto gratis a diario, con Bitcoin desde Rank 2. Cómo desbloquearlas, qué contienen y cómo multiplicar su valor.',
+      'Free Boxes de BetFury: abre cajas de cripto gratis cada hora sin depositar, con Bitcoin real desde Rank 2. Qué contienen y cómo multiplicar su premio.',
     descriptionEn:
       'BetFury Free Crypto Boxes give away free crypto daily, with Bitcoin from Rank 2. How to unlock them, what they contain and how to multiply their value.',
     category: 'Guías',
@@ -2103,76 +2175,140 @@ La Fury Wheel es una de las razones por las que BetFury destaca en valor gratuit
     image: '/betfury/banners/freebox-300x250.gif',
     tags: ['betfury', 'free boxes', 'bitcoin gratis', 'faucet'],
     author: 'Sirko007',
-    content: `Las Free Boxes de BetFury son **cajas de criptomonedas gratis** que puedes abrir cada pocas horas, sin necesidad de depositar nada. Cada caja contiene una cantidad de cripto (BTC, USDT, BFG y otras) y, cuanto más activo seas en la plataforma, mejores recompensas obtienes. Son una de las formas más populares de empezar a acumular saldo en BetFury sin gastar un euro. En esta guía te explico qué son, cómo funcionan, qué contienen y cómo sacarles el máximo partido.
+    content: `Las Free Boxes de BetFury son **cajas de cripto gratis** que puedes abrir **cada hora** sin depositar nada. Hoy hay dos activas: la **FunFury Box** (moneda de juego, desde Rank 1) y la **Free BTC Box**, que reparte **Bitcoin real** a partir de Rank 2. Para reclamar solo pulsas el botón "Withdraw" una vez cada 60 minutos y el premio se acredita al instante en tu wallet interna. En esta guía te explico —desde el uso real de la plataforma— qué son, cómo abrirlas gratis, qué contiene cada una, cuánto reparten al día, cómo mejorar el premio por rango y qué letra pequeña conviene tener clara antes de empezar.
 
-## Qué son las Free Boxes
+## Qué son las Free Boxes de BetFury
 
-Una Free Box es, literalmente, una **caja gratuita de cripto** que la plataforma te regala por estar activo. No es un único regalo de bienvenida: puedes abrir cajas de forma **recurrente** (cada cierto número de horas), lo que convierte la mecánica en una fuente constante de pequeñas recompensas. Es la filosofía de BetFury de **devolver valor al jugador** de manera continua, no solo en el primer depósito.
+Una Free Box es, literalmente, una **caja gratuita de cripto** que la plataforma te regala por tener cuenta y estar activo. No es un regalo único de bienvenida: se **recarga cada 60 minutos**, así que puedes reclamarla una y otra vez a lo largo del día. Es la filosofía "free-to-play" de la casa —la misma de la [Fury Wheel](/es/blog/betfury-fury-wheel-giros-gratis)—: en lugar de limitarse a un bono inicial, BetFury reparte cripto gratis de forma **recurrente** para que conozcas la plataforma sin gastar nada.
 
-## Cómo funcionan
+Un detalle que da tranquilidad: si te olvidas de reclamar, **el premio no se pierde**. Se queda esperando en la caja hasta que pulses "Withdraw", aunque no se acumula por encima del **límite diario** de cada caja. Es decir, no hace falta estar pegado al reloj cada hora, pero sí conviene pasar a diario para no dejar valor sobre la mesa.
 
-El funcionamiento es muy sencillo:
+## Cómo funcionan paso a paso
 
-1. Entras en la sección de **Free Boxes** en BetFury.
-2. Si el temporizador lo permite, abres tu caja gratuita.
-3. Recibes la cripto que contiene, acreditada al momento en tu cuenta.
-4. Esperas a que el temporizador se reinicie para volver a abrir otra.
+El funcionamiento no puede ser más sencillo:
 
-El nivel de las recompensas suele mejorar con tu actividad y tu [rango VIP](/es/blog/betfury-programa-vip-rank-beneficios): cuanto más participas, mejores cajas desbloqueas. Algunas cajas dan cantidades pequeñas y frecuentes; otras, premios mayores.
+1. Entras en la sección de **Free Boxes** (Boxes) dentro de BetFury.
+2. Si el temporizador de 60 minutos lo permite, pulsas **"Withdraw"** en la caja.
+3. La cripto se **acredita al instante** en tu wallet interna de BetFury.
+4. Esperas a que el temporizador se reinicie (una hora) para volver a reclamar.
+5. Repites cada día: el valor está en la **constancia**, no en una sola apertura.
 
-## Qué contienen las cajas
+No hay apuesta previa ni depósito: basta con tener la cuenta creada y el rango necesario para cada caja.
 
-Las Free Boxes pueden contener:
+## Las dos Free Boxes: FunFury Box vs Free BTC Box
 
-- **Criptomonedas** como BTC, USDT y otras, en cantidades variables.
-- **Token BFG**, que puedes acumular y poner en [staking para dividendos diarios](/es/blog/betfury-staking-bfg-dividendos).
-- Ocasionalmente, **premios mayores** o recompensas especiales en eventos.
+Aquí está lo que casi nadie explica bien: **hay dos cajas gratuitas distintas** y solo una de ellas da cripto retirable.
 
-La clave es la constancia: abrir tus cajas a diario hace que esas pequeñas cantidades se vayan sumando con el tiempo.
+| Caja gratuita | Rango mínimo | Reparte hasta/día | ¿Es cripto real? |
+| --- | --- | --- | --- |
+| **FunFury Box** | Rank 1 | 7.200 FunFury | No (moneda de juego) |
+| **Free BTC Box** | Rank 2 | 0.00001012 BTC | Sí (Bitcoin retirable) |
 
-## Cómo aprovecharlas al máximo
+- La **FunFury Box** reparte **FunFury**, la moneda de juego gratuita de la casa. Sirve para jugar gratis a los **Originals** (Plinko, Mines, etc.), pero **no es cripto retirable**: no cuenta para el minado, el staking ni los retiros. Entiéndela como fichas para divertirte, no como dinero.
+- La **Free BTC Box** es la interesante: reparte **Bitcoin real** que sí puedes acumular, convertir o retirar. La pega es que necesitas ser **Rank 2 o superior** para desbloquearla.
 
-- **Sé constante**: vuelve a abrir tu caja cada vez que el temporizador lo permita. El valor está en la acumulación diaria, no en una sola apertura.
-- **Sube de rango**: a mayor nivel VIP, mejores recompensas en las cajas.
-- **Combínalas con otras mecánicas gratuitas**: la [Fury Wheel](/es/blog/betfury-fury-wheel-giros-gratis) y la posibilidad de [empezar sin depósito](/es/blog/betfury-bono-sin-deposito-free-spins) se suman a las Free Boxes.
-- **Acumula BFG**: el token que recibes puede generarte ingresos pasivos vía staking.
+Por eso el primer objetivo práctico de cualquier jugador nuevo es **llegar al Rank 2**: es el punto en el que las cajas pasan de repartir moneda de juego a repartir Bitcoin de verdad. (Antes existían cajas separadas de BFG, BNB y BTC; BetFury las **unificó** y subió el tiempo de recarga a 60 minutos.)
 
-## Las Free Boxes dentro del ecosistema de BetFury
+## Qué es FunFury y por qué no es lo mismo que Bitcoin
 
-Lo que hace especiales a las Free Boxes no es solo que sean gratis, sino que forman parte de un **ecosistema de valor** más amplio. Muchos casinos ofrecen un bono único y poco más; BetFury reparte cripto gratis de forma recurrente (Free Boxes, Fury Wheel) y te deja convertir tu actividad en un activo (BFG) que paga dividendos. Esa combinación es lo que diferencia a la plataforma y la convierte en una de las más generosas del sector. Si quieres ver el conjunto, lee la [review de BetFury](/es/blog/betfury-casino-review-2026).
+Si acabas de registrarte estarás en Rank 1, así que tu caja gratuita será la de **FunFury**. Conviene entenderlo para no llevarse una decepción:
+
+- Sirve para **jugar gratis** a los juegos propios de BetFury y participar en promociones internas.
+- **No se puede retirar** ni cambiar por cripto directamente; solo se juega dentro de la plataforma.
+- No cuenta para el **wager**, el cashback, el rakeback ni los bonos de referidos.
+
+La cripto de verdad —el Bitcoin de la Free BTC Box— llega **a partir de Rank 2**. Si quieres entender cómo se sube de nivel, lo tienes detallado en la guía del [programa VIP y los rangos de BetFury](/es/blog/betfury-programa-vip-rank-beneficios).
+
+## Cómo mejorar el premio: rango, staking y constancia
+
+Las cantidades por caja son pequeñas por diseño (son un flujo constante sin riesgo, no un sueldo). Estas son las palancas reales para exprimirlas:
+
+- **Sube de rango VIP.** Subir de Rank 1 a Rank 2 desbloquea la Free BTC Box; los rangos superiores mejoran el resto de recompensas de la plataforma. El rango sube jugando y liquidando apuestas, no pagando.
+- **Reclama a diario.** El valor está en la acumulación: pequeñas cantidades cada día suman más que una apertura suelta. Como el premio no caduca, pasar una vez al día es suficiente.
+- **Acumula BFG y haz staking.** El [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio) que vayas juntando puedes ponerlo en [staking para cobrar dividendos diarios](/es/blog/betfury-staking-bfg-dividendos), convirtiendo saldo puntual en un pequeño ingreso pasivo.
+- **Invita amigos.** BetFury paga una **comisión del 20%** sobre lo que retiren de sus cajas tus referidos, sin que a ellos les descuenten nada. Es una forma de multiplicar el valor de las Free Boxes sin depositar.
+
+## Free Boxes gratis vs. Deposit/Boost Boxes de pago
+
+Además de las cajas gratuitas, BetFury ofrece **Deposit Boxes** (o Boost Boxes): cajas de **pago** que compras para recibir un flujo de cripto mayor durante un periodo. No son lo mismo que las Free Boxes:
+
+- Las **Free Boxes** son **100% gratis** y sin riesgo: solo sumas.
+- Las **Deposit/Boost Boxes** implican **poner dinero** con la expectativa de recuperar más con el tiempo; como todo producto de este tipo, tienen riesgo y **no garantizan** rentabilidad.
+
+Para empezar sin gastar, quédate con las Free Boxes. Las de pago son una decisión aparte que solo deberías valorar si ya conoces bien la plataforma y asumes el riesgo.
+
+## Requisitos y letra pequeña
+
+Antes de reclamar, ten claro esto:
+
+- **Necesitas cuenta en BetFury** (registro solo con email; sin KYC en condiciones normales).
+- **En Rank 1 solo obtienes FunFury**, que no es cripto retirable. Para Bitcoin real necesitas **Rank 2**.
+- **Hay un tope diario** por caja (p. ej. ~0.00001012 BTC/día): el premio acumulado no crece por encima de ese límite.
+- **Cantidades pequeñas.** La Free BTC Box es un goteo, no un ingreso. Su gracia es la constancia y combinarla con el resto de mecánicas.
+- **Mínimos de retirada.** Para sacar tu Bitcoin tendrás que alcanzar el importe mínimo de retirada de la moneda.
+- **Disponibilidad por país.** BetFury restringe el acceso en algunos territorios y las cajas disponibles pueden variar según tu ubicación. Si tienes dudas sobre la plataforma en conjunto, lee nuestra [review de BetFury 2026](/es/blog/betfury-casino-review-2026).
+
+## Pros y contras
+
+**A favor:**
+
+- Son **gratis de verdad**: no arriesgas saldo propio.
+- Se **recargan cada hora** y el premio **no caduca** si no lo reclamas a tiempo.
+- **Bitcoin real** desde Rank 2, con BFG apto para staking.
+- Los referidos pagan un **20%** extra sobre las cajas.
+
+**En contra:**
+
+- Las cantidades son **pequeñas**: hace falta constancia para notarlo.
+- En Rank 1 solo ganas **FunFury** (no retirable).
+- Hay un **tope diario** por caja.
+- Como todo casino, invita a jugar más: úsalo con cabeza.
+
+## Las Free Boxes dentro del ecosistema gratuito de BetFury
+
+Las Free Boxes no están solas: forman parte de un conjunto de **recompensas gratuitas** que hacen de BetFury una de las plataformas más generosas del sector. Junto a ellas están la [Fury Wheel](/es/blog/betfury-fury-wheel-giros-gratis) (2 giros gratis al día con premios hasta 1 BTC) y la posibilidad de [empezar sin depósito con free spins](/es/blog/betfury-bono-sin-deposito-free-spins). Combinando todas estas mecánicas puedes ir generando saldo poco a poco **sin invertir nada** y conocer la plataforma antes de decidir si depositas. Y si al final das el paso, el [bono de bienvenida de hasta 590%](/es/blog/betfury-bono-bienvenida-590) es el complemento natural.
 
 ## Cómo empezar a abrir Free Boxes gratis
 
-1. **[Regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email, sin KYC en condiciones normales.
-2. Entra en la sección de Free Boxes.
-3. Abre tu primera caja gratuita y repite cada vez que el temporizador lo permita.
-4. Combina las cajas con la Fury Wheel y acumula BFG para hacer staking.
+1. **[Regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email, sin KYC en condiciones normales. Puedes ver todas las ventajas del [código promocional aquí](/es/blog/betfury-codigo-promocional-luckysirko007).
+2. Entra en la sección de **Boxes** y reclama tu FunFury Box.
+3. Mantén actividad para **llegar a Rank 2** y desbloquear la **Free BTC Box** (Bitcoin real).
+4. Reclama cada hora (o al menos una vez al día) y combina las cajas con la Fury Wheel.
+5. Acumula **BFG** para hacer staking y multiplicar el valor de lo que ganas.
 
 ## Juego responsable
 
-Las Free Boxes son gratis y divertidas, pero forman parte de un casino: úsalas como entretenimiento, no como una estrategia para "ganar dinero seguro". Si decides depositar y jugar de verdad, fija un presupuesto, ponte límites y recuerda que el juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
+Las Free Boxes son gratis y divertidas, pero forman parte de un casino: úsalas como entretenimiento, no como una estrategia para "ganar dinero seguro". Las cantidades son pequeñas y el objetivo es conocer la plataforma sin gastar. Si decides depositar y jugar de verdad, fija un presupuesto, ponte límites y recuerda que el juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
 
 ## Conclusión
 
-Las Free Boxes son una de las razones por las que BetFury destaca en valor gratuito: cajas de cripto que puedes abrir cada pocas horas sin depositar, integradas en un ecosistema de recompensas pensado para devolver valor al jugador. Ábrelas a diario, combínalas con el resto de mecánicas gratuitas y juega siempre con responsabilidad.
+Las Free Boxes son una de las razones por las que BetFury destaca en valor gratuito: **cajas de cripto que se recargan cada hora** sin depositar, con Bitcoin real desde Rank 2 e integradas en un ecosistema (Fury Wheel, BFG, staking) pensado para devolver valor al jugador. La clave está en dos cosas: **llegar a Rank 2** para pasar de FunFury a Bitcoin, y ser **constante** sin perder de vista que sigue siendo un casino. Reclámalas a diario, combínalas con el resto de mecánicas gratuitas y juega siempre con responsabilidad.
 
 > *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
       {
+        question: '¿Cada cuánto se abren las Free Boxes de BetFury?',
+        answer: 'Se recargan cada 60 minutos (una hora). Reclamas pulsando "Withdraw" y el premio se acredita al instante en tu wallet interna. Si no lo reclamas a tiempo no se pierde: espera en la caja hasta que pulses, aunque sin superar el tope diario de esa caja.'
+      },
+      {
         question: '¿Las Free Boxes de BetFury son realmente gratis?',
-        answer: 'Sí. Solo necesitas una cuenta registrada y abrirlas cada día. No requieren depósito ni apuesta previa. El contenido se abona directamente en tu wallet interna de BetFury.'
+        answer: 'Sí. Solo necesitas una cuenta registrada y reclamarlas; no hay depósito ni apuesta previa. Aparte existen las Deposit/Boost Boxes, que son de pago y con riesgo: no son lo mismo que las cajas gratuitas.'
       },
       {
         question: '¿Cuándo incluyen Bitcoin las Free Boxes?',
-        answer: 'A partir del Rank 2 del programa VIP de BetFury las cajas incluyen Bitcoin. Subir de rank depende de tu actividad acumulada en la plataforma.'
+        answer: 'A partir del Rank 2. En Rank 1 solo tienes la FunFury Box (moneda de juego, no retirable). Al llegar a Rank 2 desbloqueas la Free BTC Box, que reparte Bitcoin real. Se sube de rango jugando y liquidando apuestas, no pagando.'
       },
       {
-        question: '¿Cuánto Bitcoin dan las Free Boxes?',
-        answer: 'Cantidades pequeñas por caja: son un flujo constante sin riesgo, no un sueldo. Su valor real está en la constancia diaria y en combinarlas con el mining y staking de BFG para generar dividendos.'
+        question: '¿Cuánto Bitcoin dan las Free Boxes al día?',
+        answer: 'La Free BTC Box reparte hasta unos 0.00001012 BTC al día como tope. Son cantidades pequeñas: un goteo constante sin riesgo, no un sueldo. Su valor real está en la constancia y en combinarlas con la Fury Wheel y el staking de BFG.'
       },
       {
-        question: '¿Puedo retirar directamente lo que gano en las Free Boxes?',
-        answer: 'El contenido va a tu wallet interna. Para retirarlo necesitas alcanzar el mínimo de retiro de esa criptomoneda; mientras tanto puedes jugarlo, convertirlo o acumularlo.'
+        question: '¿Los tokens FunFury son dinero de verdad?',
+        answer: 'No. FunFury es la moneda de juego gratuita de BetFury: sirve para jugar a los Originals (Plinko, Mines…), pero no se puede retirar ni cuenta para staking, cashback ni referidos. La cripto retirable llega con la Free BTC Box desde Rank 2.'
+      },
+      {
+        question: '¿Puedo ganar más con las Free Boxes invitando a amigos?',
+        answer: 'Sí. BetFury paga una comisión del 20% sobre lo que retiren de sus cajas los referidos que invites, sin descontarles nada a ellos. Es una forma de multiplicar el valor de las Free Boxes sin depositar.'
       }
     ],
   },
@@ -2780,7 +2916,7 @@ Mines es un Original sencillo, transparente (Provably Fair) y adictivo por su me
     titleEs: 'BetFury Programa VIP 2026: Ranks y Beneficios Explicados',
     titleEn: 'BetFury VIP Program 2026: Ranks and Benefits Explained',
     descriptionEs:
-      'El sistema de Ranks de BetFury explicado: qué beneficios desbloquea cada nivel, cashback, Free Boxes mejoradas, y cómo funciona el VIP Transfer desde otros casinos.',
+      'Programa VIP de BetFury 2026: 20 ranks explicados, cashback del 5% al 25%, rakeback, Free Boxes con BTC desde Rank 2 y cómo subir de nivel gratis.',
     descriptionEn:
       'BetFury Rank system explained: benefits per level, cashback, improved Free Boxes, and how VIP Transfer from other casinos works.',
     category: 'BetFury',
@@ -2790,47 +2926,126 @@ Mines es un Original sencillo, transparente (Provably Fair) y adictivo por su me
     image: '/betfury/banners/betfury-300x250.png',
     tags: ['betfury', 'vip', 'rank', 'cashback'],
     author: 'Sirko007',
-    content: `El programa VIP de BetFury premia tu actividad con un sistema de **rangos** que sube automáticamente conforme juegas: a más actividad, mayor rango y mejores beneficios (cashback más alto, rakeback, regalos, giros y ventajas exclusivas). No hay que pagar para entrar: tu propio juego te hace subir. En esta guía te explico cómo funcionan los rangos, qué beneficios desbloqueas en cada nivel, cómo subir más rápido y cómo sacarle el máximo partido sin gastar de más.
+    content: `El programa VIP de BetFury es un sistema de **20 rangos (Ranks)** que sube automáticamente conforme apuestas: empiezas como **Newcomer con un 5% de cashback** y puedes escalar hasta **BF Legend con un 25%**. No se paga para entrar ni hace falta invitación; tu propio volumen de juego (el **wager acumulado**) te hace ascender, y cada salto mejora cashback, rakeback, regalos, Free Boxes y ventajas exclusivas. En esta guía te explico —desde el uso real de la plataforma— la tabla completa de rangos, qué desbloquea cada nivel, cómo se sube, la letra pequeña y cómo exprimirlo sin gastar de más.
 
 ## Qué es el programa VIP de BetFury
 
-Es un sistema de fidelización por **niveles o rangos**. Cada apuesta que haces suma puntos de experiencia que te hacen ascender de rango. A diferencia de muchos casinos donde el VIP es opaco o "por invitación", en BetFury el progreso es **transparente y automático**: ves tu rango actual y cuánto te falta para el siguiente. Cuanto más alto tu rango, más valor te devuelve la plataforma por jugar lo mismo.
+Es el sistema de fidelización por **niveles o rangos** de la casa. Cada apuesta que liquidas suma a tu **wager total histórico**, y ese acumulado te hace subir de Rank. A diferencia de muchos casinos donde el VIP es opaco o "por invitación", en BetFury el progreso es **transparente y automático**: en tu perfil ves tu rango actual, tu cashback y cuánto wager te falta para el siguiente nivel. Cuanto más alto el rango, más valor te devuelve la plataforma por jugar exactamente lo mismo.
 
-## Cómo funcionan los rangos
+Un matiz importante: el wager **no se resetea nunca** y **no importa si tus apuestas fueron ganadoras o perdedoras**. Solo cuenta el volumen liquidado. Por eso el programa premia la **fidelidad**, no la suerte ni el tamaño de una apuesta puntual.
 
-Los rangos van escalando desde los niveles iniciales hasta los más altos, y cada salto desbloquea mejores condiciones. El progreso se basa en tu **volumen de actividad** (apuestas realizadas), no en cuánto ganas o pierdes. Esto significa que jugar de forma constante, aunque sea con apuestas modestas, te va subiendo de nivel con el tiempo. El sistema está pensado para recompensar la fidelidad, no para forzarte a apostar fuerte.
+## Cómo funcionan los rangos: el wager acumulado
 
-## Qué beneficios desbloqueas
+Al registrarte obtienes el **Rank 1 (Newcomer)** con un cashback fijo del **5%**. A partir de ahí, cada dólar apostado (en casino, Originals o deportes) engorda tu wager total en USD. Cuando cruzas el umbral del siguiente rango, asciendes de forma permanente y desbloqueas mejores condiciones para **todos** los bonos a la vez. No hay que reclamar el ascenso: es automático.
+
+Dos hitos marcan el programa. El **Rank 2** es el primero rentable de verdad para un jugador nuevo: desbloquea la **Free BTC Box**, la caja gratuita que reparte **Bitcoin real** (lo explico en la guía de [Free Boxes con Bitcoin gratis](/es/blog/betfury-free-boxes-bitcoin-gratis)). Y el **Rank 10** es la puerta del **VIP Club**, donde entran las ventajas premium (mánager personal, límites mejores, eventos privados).
+
+## Tabla de los 20 rangos de BetFury
+
+Estos son los rangos, su cashback y el wager total aproximado necesario para alcanzarlos, más el bono en USDT que la plataforma acredita al ascender:
+
+| Rank | Nombre | Cashback | Wager total (USDT) | Bono de rango |
+| --- | --- | --- | --- | --- |
+| 1 | Newcomer | 5% | 0 | — |
+| 2 | Gambler I | 5% | 3.000 | 3 |
+| 3 | Gambler II | 5% | 10.000 | 5 |
+| 4 | Gambler III | 5% | 25.000 | 10 |
+| 5 | Bet maker I | 5% | 50.000 | 15 |
+| 6 | Bet maker II | 6% | 100.000 | 25 |
+| 7 | Bet maker III | 7% | 200.000 | 50 |
+| 8 | Game master I | 8% | 400.000 | 75 |
+| 9 | Game master II | 9% | 650.000 | 100 |
+| 10 | Game master III | 10% | 1.000.000 | 150 |
+| 11 | High Roller I | 12% | 2.500.000 | 500 |
+| 12 | High Roller II | 14% | 5.000.000 | 1.000 |
+| 13 | High Roller III | 16% | 10.000.000 | 2.000 |
+| 14 | Betfurian Pro I | 18% | 25.000.000 | 3.000 |
+| 15 | Betfurian Pro II | 20% | 50.000.000 | 4.500 |
+| 16 | Betfurian Pro III | 21% | 100.000.000 | 6.000 |
+| 17 | BF Hero I | 22% | 200.000.000 | 7.500 |
+| 18 | BF Hero II | 23% | 400.000.000 | 10.000 |
+| 19 | BF Hero III | 24% | 650.000.000 | 15.000 |
+| 20 | BF Legend | 25% | 1.000.000.000 | 30.000 |
+
+Léelo con perspectiva: los umbrales altos (millones de dólares de wager) están pensados para jugadores de altísimo volumen. Para la mayoría de la gente, **el recorrido realista y rentable está entre el Rank 2 y el Rank 10**, donde el cashback pasa del 5% al 10% y ya has desbloqueado Free Boxes con BTC y el VIP Club.
+
+## Qué beneficios desbloqueas en cada nivel
 
 Subir de rango mejora varias palancas de valor a la vez:
 
-- **Cashback más alto**: un porcentaje de tus pérdidas vuelve a ti, y ese porcentaje crece con el rango. Lo explicamos a fondo en [cashback y rakeback](/es/blog/betfury-cashback-rakeback-explicado).
-- **Rakeback**: parte de la comisión de la casa se te devuelve por jugar.
-- **Regalos y bonificaciones**: ascensos premiados con cripto, giros o cajas.
-- **Mejores recompensas gratuitas**: las Free Boxes y otras mecánicas mejoran con el rango.
-- **Ventajas exclusivas** en los niveles altos: límites mejores, atención prioritaria y promociones especiales.
+- **Cashback creciente (5% → 25%)**: un porcentaje de tu pérdida neta vuelve a ti, y crece con el rango (6% en Rank 6, 10% en Rank 10, 25% en Rank 20). Lo detallo en la guía de [cashback y rakeback de BetFury](/es/blog/betfury-cashback-rakeback-explicado).
+- **Rakeback fijo del 10%**: parte de la comisión de la casa vuelve a ti en cada apuesta, tengas el rango que tengas (más abajo explico cómo se reparte).
+- **Bono de rango al ascender**: cada salto acredita cripto (de 3 USDT en Rank 2 hasta 30.000 en BF Legend).
+- **Mejores recompensas gratuitas**: la **Free BTC Box** se activa en Rank 2 y el resto de mecánicas mejoran con el nivel.
+- **Ventajas VIP en niveles altos**: desde Rank 10, límites de apuesta y retiro mejores, retiros prioritarios, bonos de cumpleaños/semanales y mánager personal.
 
-A esto se suma que cada apuesta también genera [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio), que puedes poner en [staking para recibir dividendos diarios](/es/blog/betfury-staking-bfg-dividendos): el VIP y el staking se complementan.
+A esto se suma que cada apuesta también mina [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio), que puedes poner en [staking para recibir dividendos diarios](/es/blog/betfury-staking-bfg-dividendos): el VIP y el staking se complementan y multiplican el valor que te devuelve la plataforma.
 
-## Cómo subir de rango más rápido (con cabeza)
+## Cómo funciona el rakeback
 
-La forma de subir es jugar, pero "más rápido" nunca debe significar arriesgar más de la cuenta. Consejos sensatos:
+El rakeback es un reembolso que reciben **todos** los usuarios, sin importar el rango, y se calcula con la fórmula **wager × ventaja de la casa × 10%**. La diferencia está en cómo se reparte:
 
-- **Constancia sobre intensidad**: sesiones regulares con apuestas que puedas permitirte suman más, a largo plazo, que apostar fuerte una vez.
-- **Aprovecha lo gratis**: las mecánicas sin depósito (Free Boxes, Fury Wheel) también te mantienen activo.
+- **Ranks 1 a 10**: el **50%** va directo a tu balance y el otro **50%** se libera en el calendario a lo largo de **3 días**.
+- **Usuarios VIP (Rank 10+)**: reparto más favorable, **70%** al balance y **30%** al calendario en **2 días**.
+
+Se puede retirar **cada 20 minutos** y existe un **Rakeback Boost** que **duplica** el bono durante un rato al activarlo (los Super VIP pueden activarlo una vez al día a discreción). El rakeback cuenta para casino, Originals y deportes (apuestas liquidadas con cuota 1.1 o superior); el casino en vivo suma a partir de Rank 10.
+
+## El VIP Club (Rank 10) y Super VIP
+
+Al llegar al **Rank 10** entras en el **VIP Club** y tu host personal te envía la invitación. Ahí se abren las ventajas premium: **mánager personal**, **prioridad de retiro**, mejores límites de **max bet / max payout**, bonos de bienvenida VIP, de cumpleaños y semanales, acceso a la **VIP Lounge**, batallas y chat privado de la comunidad. Al alcanzar el **Rank 15 (Super VIP)** se añaden perks extra, como controlar tú mismo el Rakeback Boost diario.
+
+## VIP Transfer: traer tu estatus de otro casino
+
+Si ya eres VIP en otra plataforma (Stake, BC.Game, etc.), el **VIP Transfer** te permite no empezar de cero. Se solicita en la página del VIP Club ("Become VIP") aportando tu email y **capturas de tu nivel en el otro casino** o un depósito que confirme una wallet con al menos **5.000 USD**. A cambio accedes de golpe a los beneficios del VIP Club durante una primera semana (bonos diarios, free spins, apuestas sin riesgo). Ojo con la letra pequeña: hay un objetivo de **200.000 USD de wager en 30 días** (con hitos en 75.000 y 150.000); si no lo cumples, el rango se ajusta a tu wager real y dejas de recibir bonos VIP hasta volver a Rank 10, aunque conservas el cashback ya acumulado.
+
+## Cómo subir de rango (con cabeza)
+
+La única forma de subir es jugar, pero "subir rápido" **nunca** debe significar arriesgar más de la cuenta. Consejos sensatos:
+
+- **Constancia sobre intensidad**: sesiones regulares con apuestas que puedas permitirte suman más wager, a largo plazo, que apostar fuerte una vez.
+- **Aprovecha lo gratis**: mecánicas sin depósito como las [Free Boxes](/es/blog/betfury-free-boxes-bitcoin-gratis) o la [Fury Wheel](/es/blog/betfury-fury-wheel-giros-gratis) te mantienen activo sin gastar.
 - **Concentra tu actividad en BetFury** si ya ibas a jugar, para que ese volumen cuente a tu favor.
-- **No juegues para "subir de rango"**: el rango es una consecuencia de jugar, no un objetivo que justifique gastar de más.
+- **No juegues para "subir de rango"**: el rango es una **consecuencia** de jugar, no un objetivo que justifique gastar de más. La ventaja de la casa en el wagering extra casi siempre supera el valor de los beneficios que desbloqueas.
+
+## Cómo aprovecharlo al máximo
+
+La jugada inteligente no es apostar más, sino **exprimir cada mecánica del ecosistema** por el juego que ya ibas a hacer: cobra tu **cashback** semanal, retira el **rakeback** con su boost cuando toque, reclama el **bono de rango** al ascender, abre tus **Free Boxes** a diario y acumula **BFG** para hacer staking. Combinadas, esas vías devuelven bastante más valor que fijarse solo en el cashback. Si quieres ver el ecosistema completo, tienes la [review de BetFury 2026](/es/blog/betfury-casino-review-2026).
+
+## Requisitos y letra pequeña
+
+- **Cuenta en BetFury** (registro solo con email; sin KYC en condiciones normales).
+- El rango depende del **wager acumulado en USD**, no de ganancias ni depósitos.
+- El **cashback** se calcula sobre la pérdida neta, con condiciones que mejoran por rango; no es "dinero gratis".
+- Los umbrales altos (Rank 11+) exigen **millones de dólares** de wager: irreales para el jugador medio.
+- El **VIP Transfer** conlleva objetivos de wager exigentes en plazo limitado; léelos antes de aceptarlo.
+- **Disponibilidad por país**: BetFury restringe el acceso en algunos territorios y las ventajas pueden variar según tu ubicación.
+
+## Pros y contras
+
+**A favor:**
+
+- Progreso **transparente y automático**: ves tu rango y lo que falta.
+- Cashback que escala del **5% al 25%** y **rakeback del 10%** para todos.
+- **Bono en cripto** en cada ascenso y Free BTC Box desde Rank 2.
+- Se combina con el **staking de BFG** para sumar dividendos.
+
+**En contra:**
+
+- Los rangos altos exigen **volúmenes enormes** de apuesta.
+- Premia jugar más: mal usado, empuja a gastar de más.
+- El cashback y el rakeback **reducen** el coste de jugar, pero no lo convierten en rentable.
 
 ## VIP de BetFury frente a otros casinos
 
-Muchos casinos cripto tienen programas VIP, pero el de BetFury destaca por dos cosas: la **transparencia** (ves tu progreso) y que **combina el VIP con el reparto de ingresos** vía staking de BFG. En la mayoría de plataformas, el VIP solo te da cashback o regalos; en BetFury, además, acumulas un activo que genera dividendos. Esa doble vía de valor —beneficios por rango + dividendos por staking— es difícil de igualar. Si quieres comparar el ecosistema completo, mira la [review de BetFury](/es/blog/betfury-casino-review-2026).
+Muchos casinos cripto tienen programa VIP, pero el de BetFury destaca por dos cosas: la **transparencia** (ves tu progreso y los umbrales exactos) y que **combina el VIP con el reparto de ingresos** vía staking de BFG. En la mayoría de plataformas el VIP solo da cashback o regalos; aquí, además, acumulas un activo que genera dividendos. Esa doble vía —beneficios por rango + dividendos por staking— es difícil de igualar.
 
 ## Cómo empezar a aprovechar el VIP
 
 1. **[Regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email.
-2. Empieza a jugar (o a reclamar recompensas gratuitas): tu rango sube automáticamente.
-3. Revisa tu nivel y los beneficios desbloqueados en tu perfil.
-4. Combina el cashback de tu rango con el staking de BFG para maximizar el valor.
+2. Empieza a jugar (o a reclamar recompensas gratuitas): tu rango sube automáticamente con el wager.
+3. Apunta a **Rank 2** para desbloquear la Free BTC Box (Bitcoin real).
+4. Revisa tu nivel, tu cashback y los beneficios en tu perfil.
+5. Combina el cashback de tu rango con el rakeback y el staking de BFG para maximizar el valor.
 
 ## Juego responsable
 
@@ -2838,7 +3053,7 @@ El VIP es atractivo precisamente porque premia jugar más, y ahí está el riesg
 
 ## Conclusión
 
-El programa VIP de BetFury convierte tu actividad habitual en beneficios crecientes —cashback, rakeback, regalos y ventajas— de forma transparente y automática, y se complementa con el staking de BFG para devolverte aún más valor. La clave es jugar con constancia y cabeza: deja que el rango llegue como consecuencia de divertirte con responsabilidad, no al revés.
+El programa VIP de BetFury convierte tu actividad habitual en beneficios crecientes —cashback del 5% al 25%, rakeback del 10%, bonos de rango, Free Boxes y ventajas VIP— de forma transparente y automática, y se complementa con el staking de BFG. Para la mayoría, el recorrido rentable está entre el Rank 2 y el Rank 10; a partir de ahí los umbrales se disparan. La clave es jugar con constancia y cabeza: deja que el rango llegue como consecuencia de divertirte con responsabilidad, no al revés.
 
 > *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
@@ -2855,6 +3070,14 @@ El programa VIP de BetFury convierte tu actividad habitual en beneficios crecien
         answer: 'Rank 2: a partir de ese nivel las Free Boxes diarias incluyen Bitcoin. Es uno de los saltos más rentables del programa y alcanzable con volumen de juego modesto.'
       },
       {
+        question: '¿Cuánto cashback se puede llegar a tener en BetFury?',
+        answer: 'Del 5% en Rank 1 (Newcomer) hasta el 25% en Rank 20 (BF Legend). Sube al 6% en Rank 6, al 10% en Rank 10 (entrada al VIP Club) y va creciendo por tramos. Para la mayoría de jugadores, el recorrido realista está entre Rank 2 y Rank 10.'
+      },
+      {
+        question: '¿El rakeback depende del rank?',
+        answer: 'El porcentaje base es del 10% para todos los usuarios, con cualquier rango. Lo que cambia es el reparto: en Ranks 1-10 el 50% va a tu balance y el 50% al calendario (3 días); siendo VIP (Rank 10+) es 70% al balance y 30% al calendario en 2 días. Se retira cada 20 minutos.'
+      },
+      {
         question: '¿Merece la pena jugar más para subir de rank?',
         answer: 'No. La ventaja de la casa en el volumen extra supera el valor de los beneficios desbloqueados. El programa VIP premia el juego que ya haces de forma natural; trátalo como un subproducto, no como un objetivo.'
       }
@@ -2866,10 +3089,10 @@ El programa VIP de BetFury convierte tu actividad habitual en beneficios crecien
   {
     id: '37af3f0c-090c-820d-af54-c2c110c82d0d',
     slug: 'betfury-cashback-rakeback-explicado',
-    titleEs: 'BetFury Cashback y Rakeback 2026: Guía Completa',
+    titleEs: 'Cashback y Rakeback en BetFury 2026: Cómo Funcionan',
     titleEn: 'BetFury Cashback and Rakeback 2026: Complete Guide',
     descriptionEs:
-      'Diferencias entre cashback y rakeback en BetFury, cómo se calculan, cuándo se cobran y cómo combinarlos con el mining BFG para minimizar el coste de juego.',
+      'Cashback vs rakeback en BetFury: qué son, cómo se calculan, cuándo se cobran (martes y viernes) y cómo maximizarlos con el rango VIP y el staking de BFG.',
     descriptionEn:
       'Differences between cashback and rakeback at BetFury, how they are calculated, when they are paid and how to combine them with BFG mining.',
     category: 'BetFury',
@@ -2879,56 +3102,109 @@ El programa VIP de BetFury convierte tu actividad habitual en beneficios crecien
     image: '/betfury/banners/cashback-300x250.gif',
     tags: ['betfury', 'cashback', 'rakeback', 'beneficios'],
     author: 'Sirko007',
-    content: `Cashback y rakeback son dos formas en que BetFury **te devuelve dinero por jugar**, y entender la diferencia te ayuda a aprovecharlas. En pocas palabras: el **cashback** te devuelve un porcentaje de tus **pérdidas** netas, mientras que el **rakeback** te devuelve parte de la **comisión** que la casa gana con tu actividad (juegues lo que juegues, ganes o pierdas). Las dos reducen el coste real de jugar. En esta guía te explico cómo funcionan, en qué se diferencian y cómo sacarles partido.
+    content: `Cashback y rakeback son las dos formas en que BetFury **te devuelve dinero por jugar**, y confundirlas te hace dejar valor sobre la mesa. En una frase: el **cashback** te reembolsa un porcentaje de tus **pérdidas netas** (solo lo cobras si el periodo cierra en negativo), mientras que el **rakeback** te devuelve una parte de la **comisión de la casa** por cada apuesta, ganes o pierdas. En esta guía —escrita desde el uso real de la plataforma— verás qué es cada uno, cómo se calcula con números, cuándo se cobra, la letra pequeña y cómo exprimir ambos sin gastar de más. Es el complemento práctico a la [guía del programa VIP y sus rangos](/es/blog/betfury-programa-vip-rank-beneficios): allí está la tabla de niveles; aquí, la mecánica.
 
-## Qué es el cashback
+## Qué es el cashback en BetFury
 
-El cashback es un **reembolso de un porcentaje de tus pérdidas** durante un periodo (por ejemplo, semanal). Si en una semana tu balance es negativo, BetFury te devuelve una parte de esa pérdida en cripto. Es una red de seguridad: no convierte una mala racha en ganancia, pero **suaviza el golpe** y te da algo de saldo para seguir jugando. El porcentaje suele crecer con tu rango VIP, así que cuanto más alto tu nivel, mayor el cashback.
+El cashback es un **reembolso de un porcentaje de tus pérdidas netas** de un periodo. BetFury lo calcula **dos veces por semana, los martes y los viernes**, sobre los fondos que perdiste entre un cierre y el siguiente. Si en ese tramo tu balance quedó en positivo, no hay cashback; si quedó en negativo, recuperas una fracción en cripto. El porcentaje **crece con tu rango VIP**: arranca en el **5%** (Newcomer) y escala hasta el **25%** en el rango máximo, pasando por hitos como el 6% en Rank 6 o el 10% en Rank 10.
 
-## Qué es el rakeback
+Piensa en el cashback como una **red de seguridad**, no como una ganancia: no transforma una mala racha en beneficio, pero **suaviza el golpe** y te devuelve saldo para seguir jugando. Aplica a apuestas de casino y de deportes (estas últimas con cuota **1.2 o superior**).
 
-El rakeback es algo distinto: te devuelve una parte del **"rake"**, es decir, de la comisión o ventaja que la casa obtiene por cada apuesta que haces. A diferencia del cashback (que mira tus pérdidas), el rakeback se basa en tu **volumen de juego**: cuanto más juegas, más rake generas y más se te devuelve, **independientemente de si ganas o pierdes**. Es una recompensa por actividad, no por resultado.
+## Qué es el rakeback en BetFury
+
+El rakeback es distinto: te devuelve una parte del **"rake"**, la comisión o ventaja matemática que la casa se lleva en cada apuesta. No mira si ganas o pierdes, sino tu **volumen de juego**: cuanto más apuestas, más rake generas y más se te reembolsa. Es una recompensa por **actividad**, no por resultado, y la reciben **todos los usuarios** desde el primer día, sea cual sea su rango.
+
+Cuenta el rakeback en **casino** (slots y BetFury Originals) y en **deportes** (apuestas liquidadas con cuota **1.1 o superior**). El **casino en vivo** (Evolution, Pragmatic Play, Ezugi) empieza a sumar a partir del **Rank 10**.
 
 ## Cashback vs rakeback: la diferencia clave
 
 | | Cashback | Rakeback |
 |--|----------|----------|
 | Se basa en | Tus pérdidas netas | Tu volumen de apuestas |
-| Cuándo cobras | Si pierdes en el periodo | Siempre que juegas |
+| Cuándo lo cobras | Si pierdes en el periodo | Siempre que juegas |
 | Depende del resultado | Sí | No |
-| Crece con | El rango VIP | El volumen y el rango |
+| Frecuencia | Martes y viernes | Retirable cada 20 min |
+| Caducidad | Sí, si no lo reclamas | Nunca caduca |
 
-En la práctica, **se complementan**: el rakeback te recompensa por jugar y el cashback te protege cuando la racha es mala. Juntos, reducen el coste efectivo de tu entretenimiento.
+En la práctica **se complementan**: el rakeback te premia por jugar y el cashback te protege cuando la racha viene mala. Juntos reducen el **coste efectivo** de tu entretenimiento.
 
-## Cómo funcionan en BetFury
+## Cómo se calcula el rakeback (con fórmula)
 
-BetFury integra ambos en su ecosistema de recompensas, ligados a tu actividad y a tu [rango VIP](/es/blog/betfury-programa-vip-rank-beneficios). El cashback se calcula sobre tus pérdidas del periodo y se acredita en cripto; el rakeback se acumula conforme apuestas. A esto se suma que cada apuesta genera [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio), que puedes poner en [staking para recibir dividendos diarios](/es/blog/betfury-staking-bfg-dividendos). Es decir, jugar te devuelve valor por tres vías a la vez: cashback, rakeback y dividendos.
+El rakeback usa una fórmula transparente:
 
-## Cómo aprovecharlos de forma inteligente
+**Rakeback = Wager × Ventaja de la casa (%) × 10%**
 
-- **Sube de rango con constancia**: a mayor nivel VIP, mejores porcentajes de cashback y rakeback.
-- **No juegues de más para "generar rakeback"**: el rakeback es un descuento sobre lo que ya ibas a jugar, no una razón para apostar por encima de tus posibilidades.
-- **Cuenta el cashback como lo que es**: una red de seguridad, no una ganancia garantizada.
-- **Combínalos con el staking de BFG** para maximizar el valor que te devuelve cada apuesta.
+Es decir, te devuelven el **10% del rake** que generas. La "ventaja de la casa" cambia según el juego (una slot no tiene el mismo margen que una mesa de blackjack), por eso el importe varía por categoría.
 
-## Por qué importa: el coste real de jugar
+**Ejemplo práctico:** apuestas un volumen (*wager*) de **1.000 USDT** en slots con una ventaja de la casa del **4%**. El rake que genera la casa es 1.000 × 4% = **40 USDT**, y tu rakeback es el 10% de eso: **4 USDT**. Ese reembolso llega **juegues bien o mal**, solo por haber movido ese volumen.
 
-Todo casino tiene una ventaja matemática (la "casa siempre gana" a largo plazo). El cashback y el rakeback **reducen esa ventaja efectiva** para el jugador, devolviéndote una parte. No eliminan el margen de la casa —ningún sistema lo hace— pero sí hacen que tu dinero rinda más tiempo y que el coste de tu entretenimiento sea menor que en un casino que no devuelve nada. Es una de las razones por las que el modelo de BetFury resulta atractivo frente a operadores tradicionales.
+## Cómo se calcula y cuándo se cobra el cashback
 
-## Cómo empezar
+El cashback se calcula sobre la **pérdida neta del periodo** multiplicada por tu porcentaje de rango. **Ejemplo:** si entre el martes y el viernes cierras con **200 USDT de pérdida neta** y estás en **Rank 6 (6%)**, tu cashback es 200 × 6% = **12 USDT**. Ese mismo escenario en **Rank 10 (10%)** te devolvería **20 USDT**. Cuanto más alto tu rango, mayor la fracción que recuperas por la misma pérdida.
 
-1. **[Regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email.
-2. Juega con normalidad: el rakeback se acumula y el cashback se calcula sobre tu periodo.
-3. Revisa tu rango VIP para ver tus porcentajes y súbelo con constancia.
-4. Reinvierte o retira las recompensas a tu wallet.
+Aquí está el matiz que casi nadie explica: **cómo se reparte** lo que reclamas entre tu saldo y el "calendario de bonos" (que libera el resto poco a poco):
+
+| Rango | Al balance | Al calendario |
+|-------|-----------|---------------|
+| Ranks 1-5 | 50% | 50% en 3 días |
+| Ranks 6-10 | 75% | 25% en 3 días |
+| VIP (Rank 10+) | 100% | — |
+
+O sea, cuanto más subes, **antes tienes el dinero disponible**. El rakeback se reparte igual (50%/50% en 3 días para Ranks 1-10; **70%/30% en 2 días** para VIP).
+
+## Cuándo y cómo se reclama cada uno
+
+- **Rakeback:** se acumula conforme apuestas y puedes **retirarlo cada 20 minutos** desde tu panel de recompensas. **Nunca caduca**.
+- **Cashback:** se acredita en los cierres de **martes y viernes** y se reclama desde la plataforma. **Ojo: caduca si no lo retiras antes del siguiente cierre**, así que conviene reclamarlo puntualmente.
+- Hay un **mínimo de reparto al calendario de 0,003 USD/día**; por debajo de esa cifra, el importe va entero a tu balance.
+
+## Cómo maximizarlos (Rakeback Boost incluido)
+
+- **Activa el Rakeback Boost**: **duplica** tu rakeback. Los jugadores estándar lo activan al reclamar cashback, bono semanal, bono mensual o fondos del calendario; los **Super VIP (Rank 15+)** pueden dispararlo una vez al día cuando quieran.
+- **Sube de rango con constancia**: a mayor nivel, mejor porcentaje de cashback y reparto más favorable (antes cobras el 100% al balance).
+- **Concentra el juego que ya ibas a hacer en BetFury** para que ese volumen cuente a tu favor, en lugar de repartirlo entre varias casas.
+- **Reclama el cashback antes de que caduque** cada martes y viernes; el rakeback, cuando el boost esté activo.
+- **Combínalo con el ecosistema BFG**: cada apuesta también mina [token BFG](/es/blog/token-bfg-que-es-tokenomics-precio), que puedes poner en [staking para cobrar dividendos diarios](/es/blog/betfury-staking-bfg-dividendos). Así, una misma apuesta te devuelve valor por **tres vías**: cashback, rakeback y dividendos. Puedes ver el ecosistema completo en la [review de BetFury 2026](/es/blog/betfury-casino-review-2026).
+
+## Letra pequeña y límites
+
+- El cashback **solo** existe si el periodo cierra en **pérdida neta**; en positivo, no hay reembolso.
+- **Cuota mínima**: 1.2 para que una apuesta deportiva sume a cashback; 1.1 para rakeback.
+- El cashback en deportes admite **combinadas y sistemas** en Ranks 1-12 y **todos los tipos** de apuesta en Ranks 13-20.
+- BetFury puede **detener la acumulación** si detecta abuso de bonos.
+- Los **porcentajes exactos** dependen de tu rango y la plataforma los ajusta; confirma siempre la cifra vigente en tu panel de recompensas.
+- **Disponibilidad por país**: BetFury restringe el acceso en algunos territorios y las condiciones pueden variar según tu ubicación.
+
+## Pros y contras
+
+**A favor:**
+
+- Dos reembolsos que **reducen el coste real** de jugar, uno por perder y otro por jugar.
+- Rakeback con **fórmula transparente** y retirable cada 20 minutos, sin caducidad.
+- El **Rakeback Boost** duplica el reembolso; el reparto mejora al subir de rango.
+- Se combinan con el **staking de BFG** para sumar dividendos.
+
+**En contra:**
+
+- El cashback **caduca** si no lo reclamas a tiempo (martes/viernes).
+- Reducen el coste, pero **no convierten el juego en rentable**: la esperanza matemática sigue siendo negativa.
+- Mal entendidos, empujan a **jugar de más** para "generar recompensa".
+
+## Cómo empezar (pasos)
+
+1. **[Regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)** — solo email, sin KYC en condiciones normales.
+2. Juega con normalidad: el **rakeback** se acumula desde la primera apuesta y el **cashback** se calcula sobre tu periodo.
+3. Reclama el **rakeback cada 20 minutos** con el Boost activo y el **cashback** en cada cierre de martes y viernes.
+4. Sube de rango con constancia y consulta tu [programa VIP](/es/blog/betfury-programa-vip-rank-beneficios) para ver tus porcentajes.
+5. Reinvierte o retira las recompensas a tu wallet, y aprovecha también las [Free Boxes con Bitcoin gratis](/es/blog/betfury-free-boxes-bitcoin-gratis).
 
 ## Juego responsable
 
-Cashback y rakeback reducen el coste de jugar, pero **no convierten el juego en una inversión**. Siguen siendo recompensas dentro de una actividad de azar. Fija un presupuesto, ponte límites y recuerda que el juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
+Cashback y rakeback abaratan el juego, pero **no lo convierten en una inversión**. Siguen siendo recompensas dentro de una actividad de azar. Fija un presupuesto que puedas permitirte perder, ponte límites y recuerda que el juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**.
 
 ## Conclusión
 
-El cashback te protege de las pérdidas y el rakeback te premia por jugar: dos mecanismos complementarios que, junto al staking de BFG, hacen que BetFury devuelva más valor al jugador que un casino tradicional. Entiéndelos, aprovéchalos subiendo de rango con constancia y, sobre todo, juega siempre con responsabilidad.
+El cashback te protege cuando pierdes y el rakeback te premia por jugar: dos mecanismos complementarios con reglas claras —cashback los martes y viernes, rakeback cada 20 minutos con fórmula pública— que, junto al staking de BFG, hacen que BetFury devuelva más valor al jugador que un casino tradicional. Entiéndelos, reclámalos a tiempo, sube de rango con cabeza y juega siempre con responsabilidad.
 
 > *Divulgación: contiene enlaces de afiliado (código LUCKYSIRKO007); podemos recibir una comisión sin coste adicional para ti.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
@@ -2937,16 +3213,24 @@ El cashback te protege de las pérdidas y el rakeback te premia por jugar: dos m
         answer: 'El cashback devuelve un porcentaje de tus pérdidas netas de un periodo (solo beneficia si pierdes). El rakeback devuelve parte de la ventaja de la casa sobre tu volumen apostado (beneficia siempre que juegas, ganes o pierdas).'
       },
       {
-        question: '¿Cuánto cashback da BetFury?',
-        answer: 'Los porcentajes dependen de tu rank VIP y BetFury los ajusta periódicamente, así que la cifra vigente se consulta en la sección de recompensas de tu cuenta. La regla general: a mayor rank, mayor devolución.'
+        question: '¿Cómo se calcula el rakeback en BetFury?',
+        answer: 'Con la fórmula Wager × Ventaja de la casa % × 10%: te devuelven el 10% del rake que generas. Ejemplo: 1.000 USDT apostados en una slot con 4% de ventaja generan 40 USDT de rake, así que tu rakeback es 4 USDT, ganes o pierdas.'
       },
       {
-        question: '¿El cashback hace rentable jugar?',
-        answer: 'No. Devuelve una fracción de las pérdidas, no las elimina: la esperanza matemática sigue siendo negativa. Su valor es suavizar la varianza y alargar el presupuesto de entretenimiento.'
+        question: '¿Cuándo se cobra el cashback en BetFury?',
+        answer: 'Se calcula dos veces por semana, los martes y los viernes, sobre tus pérdidas netas del periodo. Se reclama desde la plataforma y caduca si no lo retiras antes del siguiente cierre, así que conviene reclamarlo puntualmente.'
       },
       {
-        question: '¿Cómo se cobra el cashback en BetFury?',
-        answer: 'Se acumula automáticamente sobre tus pérdidas netas del periodo y se reclama desde la plataforma. Conviene reclamarlo puntualmente porque algunos beneficios tienen caducidad.'
+        question: '¿Cuánto cashback y rakeback da BetFury?',
+        answer: 'El cashback escala con tu rango del 5% (Newcomer) al 25% (rango máximo); el rakeback es el 10% del rake para todos. Los porcentajes exactos dependen del rango y BetFury los ajusta, así que confirma la cifra vigente en tu panel de recompensas.'
+      },
+      {
+        question: '¿Qué es el Rakeback Boost?',
+        answer: 'Una función que duplica tu rakeback. Los jugadores estándar lo activan al reclamar cashback, bono semanal o mensual o fondos del calendario; los Super VIP (Rank 15+) pueden dispararlo una vez al día cuando quieran.'
+      },
+      {
+        question: '¿El cashback o el rakeback hacen rentable jugar?',
+        answer: 'No. Devuelven una fracción de lo perdido o del rake, pero no eliminan la ventaja de la casa: la esperanza matemática sigue siendo negativa. Su valor es reducir el coste y alargar tu presupuesto de entretenimiento, no generar ingresos.'
       }
     ],
   },
