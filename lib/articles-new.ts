@@ -191,7 +191,7 @@ Traducido a apuestas: la cuota de México en sus partidos de grupo tenderá a se
 
 ## Legalidad orientativa: apostar desde México
 
-En México, los juegos con apuestas están regulados por la **Secretaría de Gobernación (SEGOB)** bajo la Ley Federal de Juegos y Sorteos. Las plataformas cripto internacionales como BetFury operan con **licencia extranjera** (Curaçao, OGL/2024/1494/0942) y no cuentan con permiso local mexicano; muchos usuarios en México las utilizan, pero es una zona sin regulación específica para el jugador. Esto es **información orientativa, no asesoría legal**: comprueba siempre la situación en tu estado y juega solo lo que puedas permitirte. BetFury restringe el acceso desde ciertos países (España, entre otros); México no está en esa lista de exclusión.
+En México, los juegos con apuestas están regulados por la **Secretaría de Gobernación (SEGOB)** bajo la Ley Federal de Juegos y Sorteos. Las plataformas cripto internacionales como BetFury operan con **licencia extranjera** (Curaçao) y no cuentan con permiso local mexicano; muchos usuarios en México las utilizan, pero es una zona sin regulación específica para el jugador. Esto es **información orientativa, no asesoría legal**: comprueba siempre la situación en tu estado y juega solo lo que puedas permitirte. BetFury restringe el acceso desde ciertos países (España, entre otros); México no está en esa lista de exclusión.
 
 ## Cómo depositar desde México, paso a paso
 
@@ -246,7 +246,7 @@ La ilusión de un Mundial en casa puede llevar a apostar de más: se estima que 
 
 El Mundial 2026 en casa es una cita histórica para México, y apostar al Tri desde México es hoy sencillo y rápido con criptomonedas: pesos a USDT por SPEI, depósito en BetFury por TRC20 y a jugar. La localía inclina las cuotas hacia el favorito, así que el valor suele estar en los mercados alternativos y en tu conocimiento del equipo. Busca precio, no ilusión, usa el directo con cabeza y juega siempre con responsabilidad.
 
-> *Información orientativa; no es asesoría legal ni financiera y no garantiza resultados. Contiene enlaces de afiliado (código LUCKYSIRKO007). BetFury opera con licencia de Curaçao (OGL/2024/1494/0942); comprueba la disponibilidad y legalidad del juego en tu jurisdicción.* **Mayores de 18 años. Juega con responsabilidad.**`,
+> *Información orientativa; no es asesoría legal ni financiera y no garantiza resultados. Contiene enlaces de afiliado (código LUCKYSIRKO007). BetFury opera con licencia de Curaçao; comprueba la disponibilidad y legalidad del juego en tu jurisdicción.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
       { question: '¿Cómo apuesto al Mundial 2026 desde México con criptomonedas?', answer: 'Compra USDT con pesos en un exchange mexicano como Bitso (vía SPEI o efectivo/OXXO), regístrate en BetFury con el código LUCKYSIRKO007, deposita el USDT por red TRC20 y apuesta a México o a cualquier partido en el sportsbook. Todo el proceso tarda pocos minutos.' },
       { question: '¿Es legal apostar el Mundial desde México en BetFury?', answer: 'Los juegos con apuestas en México los regula la SEGOB (Ley Federal de Juegos y Sorteos). BetFury opera con licencia internacional de Curaçao, sin permiso local mexicano, en una zona sin regulación específica para el jugador. Es información orientativa, no asesoría legal: verifica la situación en tu estado antes de jugar.' },
@@ -260,7 +260,7 @@ El Mundial 2026 en casa es una cita histórica para México, y apostar al Tri de
     slug: 'colombia-mundial-2026-betfury-apuestas',
     titleEs: 'Colombia en el Mundial 2026: Apuestas Cripto en BetFury',
     titleEn: 'Colombia World Cup 2026: Crypto Betting at BetFury',
-    descriptionEs: 'Colombia vuelve a un Mundial después de varios años. Análisis, cuotas y cómo apostar a Los Cafeteros con criptomonedas en BetFury. Código LUCKYSIRKO007.',
+    descriptionEs: 'Cómo apostar a Colombia y al Mundial con criptomonedas en BetFury desde Colombia: depósito con Nequi o PSE, mercados, value betting y juego responsable.',
     descriptionEn: 'Colombia returns to a World Cup. Analysis, odds and how to bet on Los Cafeteros with crypto at BetFury. Code LUCKYSIRKO007.',
     category: 'Apuestas Deportivas',
     keywords: 'colombia mundial 2026, apostar colombia copa del mundo, betfury colombia, los cafeteros mundial, cuotas colombia 2026',
@@ -269,113 +269,116 @@ El Mundial 2026 en casa es una cita histórica para México, y apostar al Tri de
     tags: ['colombia', 'mundial', 'apuestas'],
     author: 'Sirko007',
     image: '/betfury/banners/sport-300x250.gif',
-    content: `Colombia brilla en el Mundial FIFA 2026 como uno de los equipos más sólidos de CONMEBOL. Los Cafeteros llegaron al torneo con una de sus mejores clasificaciones históricas, y BetFury es la plataforma cripto que permite a los colombianos apostar sin complicaciones bancarias ni retenciones fiscales. Aquí está la guía completa.
+    content: `Colombia es una de las selecciones más queridas y competitivas de Sudamérica, y seguir a Los Cafeteros en un Mundial es una experiencia que millones de colombianos viven con pasión. Si quieres acompañar ese viaje con una apuesta, las criptomonedas te permiten hacerlo desde Colombia de forma rápida y sin fricción bancaria. En esta guía atemporal te explico, paso a paso, cómo apostar a Colombia y al Mundial con cripto en BetFury: cómo llevar tus pesos a USDT, qué mercados existen, cómo buscar valor de verdad, qué dice la ley colombiana en términos generales y —lo más importante— cómo hacerlo con cabeza y sin arriesgar más de lo que puedes permitirte.
 
-## Colombia en el Mundial FIFA 2026: datos clave
+## Colombia: una selección competitiva de tradición
 
-Los Cafeteros se clasificaron al Mundial 2026 con una campaña sólida en las Eliminatorias Sudamericanas de la Conmebol:
+Colombia tiene una identidad futbolística reconocible: técnica, verticalidad y una afición que empuja como pocas. A lo largo de su historia ha producido estrellas que han marcado época en el fútbol mundial, y en cada generación aparecen jugadores que compiten en las mejores ligas de Europa. Nombres como Luis Díaz encabezan hoy a una selección con talento repartido por el campo, pero la fortaleza de Colombia es más profunda: un estilo colectivo, jóvenes que empujan desde abajo y una mentalidad competitiva que la convierte en un rival incómodo para cualquiera.
 
-- **3er puesto en la tabla** con 28 puntos en 18 jornadas — uno de los mejores registros históricos de Colombia en eliminatorias
-- **Ranking FIFA enero 2026**: posición 14 del mundo — Colombia llega como una de las selecciones más fuertes de CONMEBOL
-- **Bombo 2 en el sorteo del Mundial**: Colombia evitó cruzarse en fase de grupos con las grandes cabezas de serie, lo que le da un perfil competitivo favorable
+Para apostar bien no necesitas datos que caducan de un día para otro. Necesitas entender el perfil del equipo: cuándo juega mejor, qué mercados encajan con su estilo y cómo se comporta bajo presión. Eso es lo que da valor a largo plazo, no un ranking concreto de un mes concreto.
 
-Con jugadores como Luis Díaz (Liverpool), Jhon Córdoba y otros referentes en las mejores ligas europeas, Colombia llega con ambición real de ir lejos en el torneo.
+## Cómo apostar a Colombia y al Mundial con cripto desde Colombia
 
-**Fortalezas del equipo:**
-- Jugadores consolidados en Premier League, Bundesliga y otras ligas top
-- Selección con hambre de protagonismo y buen momento colectivo
-- Historial competitivo en torneos CONMEBOL en años recientes
+La gran ventaja de las criptomonedas es que separan tu banco del casino: mueves pesos a USDT una sola vez y a partir de ahí operas en minutos. Este es el flujo que usan la mayoría de colombianos.
 
-## Mercados para apostar a Colombia en BetFury
+### Paso 1: Deposita tus pesos (Nequi, Daviplata, PSE o Bancolombia)
 
-### Colombia pasa la fase de grupos
-Con Bombo 2 y el nivel mostrado en eliminatorias, Colombia tiene buenas posibilidades de pasar la fase de grupos. Analiza el sorteo final para confirmar el grupo y evaluar la cuota.
+Casi todos los exchanges que operan en Colombia aceptan pesos colombianos a través de los medios que ya usas a diario:
 
-### Colombia llega a cuartos de final
-Con el formato ampliado a 48 equipos del Mundial 2026, más selecciones llegan a rondas avanzadas. Una cuota interesante si el grupo no es extraordinariamente difícil.
+- **Nequi y Daviplata**: transferencia instantánea desde el móvil, ideal para importes pequeños y medianos.
+- **PSE**: débito directo desde tu cuenta bancaria, muy extendido y cómodo.
+- **Bancolombia y otros bancos**: transferencia bancaria tradicional o el botón de pago del exchange.
 
-### Goleador colombiano (Luis Díaz / delantero principal)
-Luis Díaz llega al Mundial con experiencia en Champions League y buen nivel consolidado. La cuota para máximo goleador colombiano puede tener valor si está en buena forma al inicio del torneo.
+La opción más popular es el **P2P** (persona a persona) de un exchange grande: eliges un vendedor que acepte Nequi, Daviplata, PSE o Bancolombia, le transfieres los pesos y él libera tu cripto.
 
-### Combinadas con Colombia
-Combinar la clasificación de Colombia con resultados de otros grupos puede generar cuotas atractivas en la fase de grupos sin grandes riesgos individuales.
+### Paso 2: Compra USDT en un exchange
 
-## BetFury vs. Coljuegos: lo que los colombianos necesitan saber
+Una vez con saldo, compra **USDT** (la stablecoin ligada al dólar). El USDT no sufre la volatilidad de bitcoin, así que sabes exactamente cuánto vale tu saldo en todo momento. Compra solo la cantidad que has presupuestado para jugar, ni un peso más. Si es tu primera vez, conviene entender antes cómo funciona todo el ecosistema: te ayudará leer [qué es un casino cripto y cómo funciona](/es/blog/que-es-casino-cripto-como-funciona).
 
-Colombia tiene uno de los mercados de apuestas deportivas más regulados de LATAM (Coljuegos), pero también uno de los más gravados fiscalmente en 2026:
+### Paso 3: Envía tu USDT a BetFury por red TRC20
 
-- **20% de impuesto sobre premios** en operadores con licencia Coljuegos
-- **IVA del 19%** en juegos de suerte y azar operados por internet bajo Coljuegos
-- **Retención automática**: el impuesto sobre premios se retiene cuando supera las 48 UVT (equivalente a $2.513.952 COP en 2026, con UVT de $52.374)
+En BetFury, ve a depositar, elige **USDT** y selecciona la red **TRC20** (la de comisiones más baratas, normalmente por debajo de 1 USDT). Copia la dirección que te da BetFury, pégala en el retiro de tu exchange, **confirma que la red coincide** y envía. En pocos minutos tendrás el saldo disponible. Si nunca has creado la cuenta, sigue la [guía para registrarte en BetFury paso a paso](/es/blog/betfury-como-registrarse-paso-a-paso).
 
-BetFury, como plataforma cripto internacional, opera fuera del ecosistema fiscal colombiano. Esto significa sin retención automática de impuestos, sin IVA aplicado en plataforma y sin restricciones bancarias — todo vía cripto directamente.
+> [!warning] Verifica siempre que la red de envío (TRC20) y la de recepción coinciden. Enviar por una red equivocada puede hacer que pierdas los fondos.
 
-**Nota legal**: Los jugadores colombianos son responsables de declarar sus ganancias ante la DIAN según la normativa vigente. Esta información es orientativa, no es asesoría fiscal.
+### Paso 4: Apuesta a Colombia o a cualquier partido
 
-## BetFury vs. Wplay: comparativa para apostadores colombianos
+Con saldo en BetFury, entra al sportsbook, busca la sección del Mundial o el partido que quieras y coloca tu apuesta. Para una visión completa del torneo tienes la [guía para apostar la Copa del Mundo con criptomonedas en BetFury](/es/blog/apostar-copa-del-mundo-2026-criptomonedas-betfury-guia).
 
-| Característica | BetFury | Wplay (regulado Coljuegos) |
-|----------------|---------|---------------------------|
-| Depósito | Cripto (USDT, BTC, etc.) | COP via PSE, tarjeta |
-| Retiro | Cripto en minutos | COP en 1-3 días hábiles |
-| Impuesto premios | Sin retención automática | 20% retenido |
-| IVA en plataforma | No aplica | 19% incluido |
-| KYC requerido | No habitualmente | Siempre |
-| Bono bienvenida | +590% con LUCKYSIRKO007 | Bonos más restrictivos |
-| Licencia | Curaçao (internacional) | Coljuegos (colombiana) |
-| Protección usuario | Menor que Coljuegos | Mayor protección regulatoria |
+## Mercados para apostar a Colombia y al Mundial
 
-Si valoras la máxima protección regulatoria local, Wplay o Betfair (licencia Coljuegos) son más seguros. Si valoras la rapidez cripto, sin retenciones y las ventajas de BetFury, esta es tu plataforma.
+BetFury ofrece los mercados principales de cualquier partido de selecciones. Estos son los que más se usan y qué predice cada uno:
 
-## Cómo depositar desde Colombia en BetFury
+- **Resultado (1X2)**: ganador del partido en el tiempo reglamentario (o empate).
+- **Total de goles (over/under)**: si habrá más o menos goles que una línea determinada.
+- **Ambos equipos marcan (BTTS)**: si las dos selecciones anotan al menos un gol.
+- **Primer goleador / goleador del partido**: cuotas altas con potencial de buena rentabilidad si aciertas.
+- **Hándicap asiático**: da o quita goles de ventaja a un equipo y elimina el empate de la ecuación.
+- **Fase alcanzada**: si una selección pasa de grupos, llega a cuartos, semifinales, etc.
+- **Apuestas combinadas (parlay)**: unes varios resultados para multiplicar la cuota (y también el riesgo).
 
-### Binance P2P con COP (la opción más usada)
-1. Crea cuenta en Binance con cédula colombiana
-2. Ve a Comercio P2P → Comprar → USDT → Filtra por COP
-3. Elige vendedor con transferencia bancaria (Bancolombia, Davivienda, Nequi, Daviplata)
-4. Transfiere los COP y confirma para recibir el USDT
-5. Envía a BetFury via red TRC20 (comisiones menores a 1 USDT)
+Con un formato de torneo amplio, muchas selecciones tienen recorrido, así que los mercados de "fase alcanzada" y las combinadas moderadas suelen ofrecer valor si conoces bien a los equipos. Para comparar precios entre casas y entender cómo leerlos, revisa la [guía de cuotas del Mundial 2026 en BetFury](/es/blog/cuotas-mundial-2026-betfury).
 
-### Bitget con COP
-Alternativa a Binance, con P2P disponible para Colombia y buenas cuotas.
+## Value betting: busca precio, no ilusión
 
-## Los mercados de BetFury para el Mundial 2026
+El error más común del aficionado es apostar con el corazón. Value betting es lo contrario: apostar solo cuando la cuota paga **más** de lo que la probabilidad real justifica.
 
-BetFury ofrece todos los mercados principales para el torneo:
-- **Resultado (1X2)**: ganador del partido en 90 minutos
-- **Total goles (over/under)**: más o menos de X goles en el partido
-- **Ambos equipos marcan (BTTS)**: si las dos selecciones marcan al menos un gol
-- **Primer goleador**: cuotas altas con potencial de gran rentabilidad
-- **Hándicap asiático**: elimina el empate de la ecuación
-- **Apuestas combinadas (parlay)**: une varios resultados para cuotas multiplicadas
-- **Live betting**: apuestas en tiempo real con cuotas actualizadas partido a partido
+Recuerda que una cuota decimal es una probabilidad implícita: **probabilidad = 1 ÷ cuota**. Una cuota de 2.00 implica un 50%; una de 4.00, un 25%. Si tú crees que la probabilidad real es mayor que la que refleja el precio, ahí hay valor. Con una selección popular como Colombia, mucha gente apuesta emocionalmente a que gane, lo que **infla la demanda y baja la cuota** del resultado directo. Por eso el valor suele aparecer en mercados alternativos (hándicap, goles, goleador) más que en el "gana Colombia" evidente.
 
-## Apostar en vivo los partidos de Colombia
+Una comparación de fondo de la plataforma te ayuda a decidir dónde jugar: aquí tienes la [review completa de BetFury](/es/blog/betfury-casino-review-2026) y una selección de los [mejores casinos cripto para Colombia](/es/blog/casino-cripto-colombia-mejores).
 
-El live betting es especialmente emocionante con Los Cafeteros. BetFury actualiza cuotas en tiempo real durante el partido:
-- Si Colombia va perdiendo y crees que puede remontar → la cuota para que gane habrá subido
-- Mercados de córners, tarjetas y sustituciones disponibles en vivo
-- Cash out disponible para cerrar la apuesta antes del pitido final
+## Apuestas en vivo: seguir a Colombia minuto a minuto
+
+El **live betting** te deja apostar con el partido en marcha y cuotas que se recalculan en tiempo real:
+
+- Si Colombia va por detrás pero domina, la cuota para que gane o empate sube: puede haber valor si crees en la remontada.
+- Hay mercados de córners, tarjetas y próximo gol disponibles durante el juego.
+- El **cash out** te permite cerrar la apuesta antes del pitido final para asegurar ganancia o limitar la pérdida.
+
+Consejo: en directo, la televisión suele ir varios segundos por detrás del dato real, así que no apuestes fiándote solo de la imagen. Y evita la impulsividad: el live invita a apostar de más.
+
+## Legalidad en Colombia: información orientativa
+
+Colombia cuenta con uno de los mercados de apuestas más regulados de la región a través de **Coljuegos**, la entidad que autoriza a los operadores con licencia local. BetFury es una plataforma cripto internacional que opera con **licencia de Curaçao**, fuera del sistema de licencias colombiano.
+
+En la práctica esto significa que, si priorizas la máxima protección regulatoria local (mecanismos de reclamación, garantías del operador), un operador con licencia Coljuegos te ofrece ese marco. Si priorizas la rapidez de la cripto y operar directamente en dólares digitales, BetFury es una alternativa. **Esto es información orientativa, no asesoría legal**: la normativa puede cambiar y su aplicación depende de tu situación, así que consulta las fuentes oficiales (Coljuegos, DIAN) antes de decidir.
+
+## Impuestos: orientación general, no asesoría fiscal
+
+Los operadores con licencia local en Colombia aplican **retenciones e impuestos sobre los premios** según la normativa vigente, con umbrales que se calculan en UVT y se actualizan cada año. Como las cifras exactas (porcentajes, valor de la UVT, umbrales) **cambian con el tiempo**, no las tomes de este artículo: consúltalas en la fuente oficial (DIAN y Coljuegos) para el año en curso.
+
+Al operar con cripto en una plataforma internacional, no hay retención automática en plataforma, pero **eso no te exime de tus obligaciones**: cada persona es responsable de declarar sus ganancias ante la DIAN según la ley vigente. Ante la duda, habla con un contador. Esta sección es orientativa y no constituye asesoría fiscal.
+
+## Gestión de banca: la diferencia entre durar y quemarte
+
+Ningún pronóstico sirve si gestionas mal el dinero. Reglas sencillas que funcionan:
+
+- Define una **banca** (dinero que puedes permitirte perder) separada de tus gastos.
+- Apuesta una fracción pequeña por jugada, típicamente entre el **1% y el 3%** de la banca. Nunca lo pongas todo a una sola apuesta.
+- No persigas pérdidas: subir el importe para "recuperar" es la vía rápida a la ruina.
+- Lleva un registro de tus apuestas para saber si de verdad ganas a largo plazo.
+- Retira ganancias de vez en cuando; no dejes crecer todo el saldo dentro de la casa.
+
+## Juego responsable
+
+Un Mundial dispara la emoción, y con ella el riesgo de apostar de más. Fija un presupuesto que puedas permitirte perder, ponte **límites de depósito y de tiempo**, y no apuestes para recuperar. El juego es **entretenimiento, nunca una fuente de ingresos**. Solo para **mayores de 18 años**. Si sientes que pierdes el control, para y busca ayuda profesional.
 
 ## Bono de bienvenida con código LUCKYSIRKO007
 
-Al [registrarte en BetFury con código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007):
+Al [registrarte en BetFury con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007) accedes al paquete de bienvenida de la plataforma, que suele incluir bono sobre tus primeros depósitos, giros gratis y ventajas recurrentes como cajas gratuitas de cripto, giro diario y cashback. Las condiciones exactas (porcentajes y requisitos de apuesta) pueden variar, así que revísalas siempre en la propia web antes de depositar. Usar el código [LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007) es lo que activa estas ventajas para seguir a Los Cafeteros durante todo el torneo.
 
-- **+590% en bono de bienvenida** en los primeros 4 depósitos
-- **225 Free Spins** en slots seleccionados
-- **Free Boxes**: cripto gratis cada 20 minutos (sin depósito requerido)
-- **Fury Wheel**: giro diario con premios de hasta 1 BTC
-- **Cashback semanal**: hasta 25% de pérdidas sin wagering adicional
-- **Staking BFG**: dividendos diarios por mantener tokens del casino
+## Conclusión
 
-Registrarte con [LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007) te da el capital máximo para seguir a Los Cafeteros durante todo el torneo.
+Apostar a Colombia y al Mundial con cripto desde Colombia es hoy sencillo: llevas tus pesos a USDT con Nequi, Daviplata, PSE o Bancolombia, lo envías a BetFury por TRC20 y juegas en minutos. Pero la clave no es la rapidez, sino la disciplina: busca precio en vez de ilusión, gestiona tu banca y juega siempre con responsabilidad.
 
-**Juega con responsabilidad.** Solo mayores de 18 años.`,
+> *Información orientativa; no es asesoría legal ni financiera y no garantiza resultados. Contiene enlaces de afiliado (código LUCKYSIRKO007). BetFury opera con licencia de Curaçao; comprueba la disponibilidad y legalidad del juego en tu jurisdicción y las obligaciones fiscales ante la DIAN.* **Mayores de 18 años. Juega con responsabilidad.**`,
     faqs: [
-      { question: '¿Es seguro apostar en BetFury desde Colombia?', answer: 'BetFury opera con licencia de Curaçao y miles de colombianos la usan. Al operar con cripto, no hay restricciones bancarias. Los retiros son en BTC, USDT u otras criptos en menos de 10 minutos.' },
-      { question: '¿Cómo compro cripto para apostar desde Colombia?', answer: 'Binance P2P con COP es la opción más popular: usa transferencia bancaria (Bancolombia, Davivienda) o Nequi/Daviplata para comprar USDT. Una vez con USDT, el depósito en BetFury via TRC20 es inmediato.' },
-      { question: '¿Colombia clasificó al Mundial 2026?', answer: 'Sí. Colombia se clasificó al Mundial FIFA 2026 terminando 3ª en las Eliminatorias Sudamericanas con 28 puntos. Entró en el Bombo 2 para el sorteo, con un perfil competitivo favorable para pasar la fase de grupos.' },
-      { question: '¿BetFury tiene ventajas frente a Wplay para colombianos?', answer: 'BetFury no retiene el 20% de impuesto sobre premios que aplican los operadores Coljuegos en Colombia. Tampoco hay IVA del 19% en la plataforma. Los retiros son en cripto en minutos (vs. COP en 1-3 días). La contrapartida es menor protección regulatoria local.' },
+      { question: '¿Cómo apuesto a Colombia con criptomonedas desde Colombia?', answer: 'Lleva tus pesos a USDT en un exchange usando Nequi, Daviplata, PSE o Bancolombia (normalmente por P2P), regístrate en BetFury con el código LUCKYSIRKO007, envía el USDT por red TRC20 y apuesta a Colombia o a cualquier partido en el sportsbook. Todo el proceso tarda pocos minutos.' },
+      { question: '¿Qué método de depósito me conviene como colombiano?', answer: 'Los más usados son Nequi y Daviplata (transferencia instantánea desde el móvil), PSE (débito desde tu cuenta) y Bancolombia. Con cualquiera compras USDT en el exchange y luego lo envías a BetFury por TRC20, la red más barata.' },
+      { question: '¿Es legal apostar en BetFury desde Colombia?', answer: 'Colombia regula las apuestas a través de Coljuegos, que autoriza a operadores con licencia local. BetFury opera con licencia internacional de Curaçao, fuera de ese sistema. Es información orientativa, no asesoría legal: consulta las fuentes oficiales (Coljuegos, DIAN) antes de jugar.' },
+      { question: '¿Tengo que pagar impuestos por lo que gane?', answer: 'La normativa fiscal colombiana puede aplicar impuestos sobre premios y cada persona es responsable de declarar sus ganancias ante la DIAN según la ley vigente. Los porcentajes y umbrales cambian cada año, así que consúltalos en la fuente oficial o con un contador. Esto es orientación general, no asesoría fiscal.' },
+      { question: '¿Puedo apostar en vivo los partidos de Colombia?', answer: 'Sí. BetFury tiene apuestas en vivo con cuotas en tiempo real y cash out, ideal para seguir a Los Cafeteros minuto a minuto y asegurar parte de la ganancia si el partido se pone a favor.' },
+      { question: '¿Qué mercados dan más valor al apostar a Colombia?', answer: 'Como Colombia es una selección popular, mucha gente apuesta emocionalmente a que gane y eso baja su cuota. El valor suele estar en mercados alternativos como hándicap asiático, total de goles, goleador o la fase que alcanza el equipo.' },
     ],
   },
   {
@@ -586,7 +589,7 @@ El torneo es corto y emocional; sin disciplina, la banca vuela. Reglas mínimas:
 
 ## Cómo apostar los octavos en BetFury, paso a paso
 
-1. Consigue cripto (USDT por red TRC20 es lo más cómodo y barato) y **regístrate con el código LUCKYSIRKO007 en https://betfury.io/?r=LUCKYSIRKO007**.
+1. Consigue cripto (USDT por red TRC20 es lo más cómodo y barato) y **[regístrate con el código LUCKYSIRKO007](https://betfury.io/?r=LUCKYSIRKO007)**.
 2. Deposita y, si te interesa, revisa las condiciones del [bono de bienvenida](/es/blog/betfury-bono-bienvenida-590) antes de activarlo.
 3. Entra en el sportsbook, abre el Mundial 2026 y selecciona el cruce de octavos.
 4. Elige el mercado **entendiendo cómo se liquida** (1X2 a 90' vs "clasificado" con prórroga/penaltis).

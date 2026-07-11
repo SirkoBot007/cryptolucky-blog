@@ -3656,7 +3656,7 @@ Si es tu primer Mundial apostando en cripto, empieza por la [guía para apostar 
       },
       {
         question: '¿Cuántos partidos tiene la fase de grupos del Mundial 2026?',
-        answer: 'La fase de grupos del Mundial 2026 tiene 48 partidos (4 por grupo × 12 grupos). En total, el torneo tiene 104 partidos desde el 11 de junio hasta el 19 de julio de 2026.',
+        answer: 'La fase de grupos del Mundial 2026 tiene 72 partidos (6 por grupo × 12 grupos). En total, el torneo tiene 104 partidos desde el 11 de junio hasta el 19 de julio de 2026.',
       },
     ],
   },
