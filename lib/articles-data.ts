@@ -67,7 +67,7 @@ export const ARTICLES: StaticArticle[] = [
 
 BetFury fue fundado en 2019 con una propuesta diferente a todos los casinos cripto existentes: compartir los ingresos del casino con sus propios usuarios a través del token nativo BFG. En 2022 superó el millón de usuarios registrados. En 2024 amplió su oferta añadiendo un sportsbook completo, convirtiéndose en plataforma integral de entretenimiento cripto.
 
-Hoy opera bajo licencia de Curaçao (número 8048/JAZ2016-020) y sirve a usuarios de más de 100 países. La plataforma está disponible en español, inglés y otros idiomas, con especial atención al mercado latinoamericano.
+Hoy opera bajo licencia de Curaçao (Curaçao Gaming Authority, nº OGL/2024/1494/0942) y sirve a usuarios de más de 100 países. La plataforma está disponible en español, inglés y otros idiomas, con especial atención al mercado latinoamericano.
 
 A diferencia de competidores como Stake.com (sin staking de token propio) o BC.Game (sin sistema de dividendos reales), BetFury ha construido un modelo donde jugar más equivale a ganar más — incluso en sesiones con pérdidas netas, el jugador acumula BFG que generan ingresos pasivos.
 
@@ -213,7 +213,7 @@ BetFury opera exclusivamente con criptomonedas. Para usuarios sin cripto, admite
 
 ## Seguridad y Licencia: ¿Es Seguro BetFury?
 
-BetFury opera bajo licencia de Curaçao **número 8048/JAZ2016-020**. Esta es la licencia estándar del sector de casinos cripto que permite operar en la mayoría de países del mundo (excepciones: EE.UU., Países Bajos, Reino Unido y algunas jurisdicciones específicas).
+BetFury opera bajo licencia de la **Curaçao Gaming Authority (CGA)**, nº **OGL/2024/1494/0942** (operadora Universe B Games B.V.). Desde 2025, la CGA licencia directamente a los operadores, en sustitución del antiguo sistema de submasterlicencias de Curaçao. Es la licencia estándar del sector de casinos cripto y permite operar en la mayoría de países del mundo (excepciones: EE.UU., Países Bajos, Reino Unido y algunas jurisdicciones específicas). Una licencia de Curaçao aporta garantías básicas de operación, aunque su nivel de supervisión es menor que el de reguladores como la DGOJ española o la MGA maltesa.
 
 Para un análisis a fondo de la licencia, el historial de pagos y las señales de confianza, consulta nuestra guía sobre si [¿es seguro y legítimo BetFury?](/es/blog/betfury-seguro-es-legitimo-licencia)
 
@@ -312,7 +312,7 @@ Para alguien completamente nuevo en cripto, la curva de aprendizaje inicial pued
     faqs: [
       {
         question: '¿BetFury paga de verdad? ¿Es una estafa?',
-        answer: 'BetFury paga de verdad. La plataforma lleva operativa desde 2019 con más de 1 millón de usuarios registrados. Los retiros se procesan automáticamente en menos de 10 minutos sin límite de monto. Opera bajo licencia de Curaçao 8048/JAZ2016-020 y sus juegos originales son verificables en blockchain (Provably Fair).'
+        answer: 'BetFury paga de verdad. La plataforma lleva operativa desde 2019 con más de 1 millón de usuarios registrados. Los retiros se procesan automáticamente en menos de 10 minutos sin límite de monto. Opera bajo licencia de Curaçao (CGA, OGL/2024/1494/0942) y sus juegos originales son verificables en blockchain (Provably Fair).'
       },
       {
         question: '¿Cuánto se puede ganar con el staking BFG de BetFury?',
@@ -447,7 +447,7 @@ En 2026, el mejor casino con criptomonedas para la mayoría de jugadores es **Be
       },
       {
         question: '¿Son seguros los casinos de criptomonedas?',
-        answer: 'Los casinos cripto con licencia válida como BetFury (licencia Curaçao 8048/JAZ) son seguros. Verifica siempre la licencia, las reseñas independientes y que ofrezcan juegos Provably Fair antes de depositar.'
+        answer: 'Los casinos cripto con licencia válida como BetFury (licencia de Curaçao, CGA OGL/2024/1494/0942) ofrecen más garantías, aunque ninguna licencia elimina el riesgo por completo. Verifica siempre la licencia, las reseñas independientes y que ofrezcan juegos Provably Fair antes de depositar.'
       },
       {
         question: '¿Qué criptomonedas aceptan los mejores casinos cripto?',
@@ -1254,7 +1254,7 @@ Si buscas el análisis global de la plataforma (juegos, bonos, staking y pagos),
 
 ## Licencia y Regulación
 
-BetFury opera bajo licencia de **Curaçao eGaming** (número 8048/JAZ), una de las jurisdicciones de licencias más establecidas en el sector de casinos online y criptomonedas.
+BetFury opera bajo licencia de la **Curaçao Gaming Authority (CGA)** (número OGL/2024/1494/0942), el organismo que desde 2025 regula directamente el juego online en Curaçao, una de las jurisdicciones más establecidas del sector.
 
 ### ¿Qué Significa la Licencia de Curaçao?
 
@@ -1396,7 +1396,7 @@ Aunque BetFury es legítimo, sigue estas recomendaciones para maximizar tu segur
 
 Si aún tienes dudas, puedes verificar por ti mismo:
 
-- **Verifica la licencia**: Busca "8048/JAZ Curaçao" en el registro oficial
+- **Verifica la licencia**: Busca "OGL/2024/1494/0942" en el registro de la Curaçao Gaming Authority (CGA)
 - **Lee reseñas independientes**: AskGamblers, Casino.guru, Trustpilot
 - **Verifica los juegos Provably Fair**: BetFury ofrece herramientas de verificación en su web
 - **Consulta la comunidad**: El Telegram oficial de BetFury tiene decenas de miles de miembros activos
@@ -1411,11 +1411,11 @@ Si estás buscando un casino cripto con staking de ingresos pasivos, gran varied
     faqs: [
       {
         question: '¿BetFury es una estafa?',
-        answer: 'No, BetFury no es una estafa. Opera desde 2019 con licencia de Curaçao (8048/JAZ), tiene miles de reseñas positivas verificadas, un Safety Index de 9.2/10 en Casino.guru y un historial impecable de pagos a usuarios. Es un casino cripto legítimo.'
+        answer: 'No, BetFury no es una estafa. Opera desde 2019 con licencia de Curaçao (CGA, OGL/2024/1494/0942), acumula reseñas mayoritariamente positivas en webs independientes como Casino.guru y AskGamblers, y mantiene un historial sólido de pagos. Como en cualquier casino online, conviene jugar con responsabilidad y verificar las condiciones vigentes.'
       },
       {
         question: '¿Qué licencia tiene BetFury?',
-        answer: 'BetFury opera bajo licencia de Curaçao eGaming con número 8048/JAZ. Es la licencia estándar en el sector de casinos cripto y cubre a BetFury para operar legalmente en la mayoría de países donde los juegos de azar online están permitidos.'
+        answer: 'BetFury opera bajo licencia de la Curaçao Gaming Authority (CGA), número OGL/2024/1494/0942. Es la licencia estándar en el sector de casinos cripto y cubre a BetFury para operar en la mayoría de países donde los juegos de azar online están permitidos.'
       },
       {
         question: '¿BetFury paga de verdad?',
